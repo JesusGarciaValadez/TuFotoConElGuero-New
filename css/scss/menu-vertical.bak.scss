@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+#cssmenu a {
+  line-height: 1.3;
+}
+#cssmenu {
+  width: 232px;
+}
+#cssmenu > ul > li {
+  margin: 0 0 0px 0; /*Establece la separación entre cada item (2)*/
+}
+#cssmenu > ul > li:last-child {
+  margin: 0;
+}
+#cssmenu > ul > li > a {
+  font-size: 15px;
+  display: block;
+  color: #ffffff;
+  text-shadow: 0 1px 1px #000;
+  background-image:url(img/bg_item_normal.png);
+  height:43px;
+}
+#cssmenu > ul > li > a > span {
+	/*padding:12px 99px;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;*/
+  
+  display: block;
+  padding: 12px 74px;
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+  background-image:url(img/bg_item_hover.png);
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.active > a {
+	background-image:url(img/bg_item_active.png);
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+}
+#cssmenu > ul > li.active > a span {
+  /*border: 1px solid yellow;*/
+}
+#cssmenu > ul > li.has-sub > a span {
+  background: url(img/icon_plus.png) 88% center no-repeat;
+}
+#cssmenu > ul > li.has-sub.active > a span {
+  background: url(img/icon_arrow.png) 88% center no-repeat;
+}
+
+/* submenu contenedor (div)*/
+#cssmenu ul div {
+  /*padding: 5px 12px;*/
+  display: none;
+  /*background-color:#C60;*/
+  height:auto;
+  /*overflow:scroll;*/
+  /*overflow-y:scroll;*/
+}
+
+
+/*********************************/
+/* Submenu vertical */
+
+#csssubmenu,
+#csssubmenu ul,
+#csssubmenu li,
+#csssubmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+#csssubmenu a {
+  line-height: 1.3;
+}
+#csssubmenu {
+  width: 232px;
+}
+#csssubmenu > ul > li > a {
+  /*padding-right: 40px;*/
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  /*background: #bd0e36;*/
+  color: #ffffff;
+  /*border-bottom: 1px solid #5e071b;*/
+  text-transform: uppercase;
+  background-image:url(img/bg_submenu.png);
+  height:43px;
+}
+#csssubmenu > ul > li > a > span {
+  /*background: #ed1144;*/
+  /*padding: 10px;*/
+  padding:12px 99px;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+}
+#csssubmenu > ul > li > a:hover {
+  text-decoration: none;
+  background-image:url(img/bg_item_hover.png);
+}
+#csssubmenu > ul > li.active {
+  border-bottom: none;
+}
+#csssubmenu > ul > li.active > a {
+  color: #fff;
+}
+#csssubmenu > ul > li.active > a span {
+  /*background: #bd0e36;*/
+}
+#csssubmenu span.cnt {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+
+
+/* Sub menu */
+#csssubmenu ul ul {
+  display: none;
+}
+#csssubmenu ul ul li {
+  /*border: 1px solid #e0e0e0;*/
+  border-top: 0;
+}
+#csssubmenu ul ul a {
+  /*padding: 10px;*/
+  padding:12px 100px;
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  height:43px;
+}
+#csssubmenu ul ul a:hover {
+  /*color: #bd0e36;*/
+  background-image:url(img/bg_item_hover.png);
+}
+#csssubmenu ul ul li.odd {
+  background: #f4f4f4;
+}
+#csssubmenu ul ul li.even {
+  background: #fff;
+}

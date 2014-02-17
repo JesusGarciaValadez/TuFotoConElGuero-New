@@ -1,0 +1,165 @@
+body { overflow: hidden;}
+.p { text-decoration: none; color:#0a7846; font-family:Arial, Helvetica, sans-serif; }
+.contenedor-panel { 
+    background: url("../img/dashboard/bg_dashboard.png") no-repeat scroll left top transparent;
+    background-size: 100% 100%;
+    text-align: center;
+    width: 80%;
+}
+.tabla-evento-reciente{
+    display: inline-block;
+    margin: 0 auto;
+    h1{
+        color: #0B6121;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: justify;
+        margin: 5px;
+    }
+    h2{
+        font-size: 12px;
+        margin:3px;
+        text-align: justify;
+    }
+    span { display:  block; }
+}
+.tabla-galeria,
+.tabla-pagina{
+    background-color:transparent;
+    height: 492px;
+    margin: 0 auto;
+    width: 726px;
+}
+.tabla-row{
+    
+    display:table-row;
+    height:164px;
+    width: 726px;
+    
+}
+.tabla-celda { 
+    display: inline-block;
+    text-align: left;
+    float: left;
+    .tabla-col{
+        display:inline-block;
+        border: 2px solid #FFF;
+        height: 157px;
+        margin: 3px;
+        position: relative;
+        width: 236px;
+    }
+    span {
+        display: inline-block;
+        color: #0a7846;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-left: 5px;
+        -webkit-margin-before: 1px;
+        -webkit-margin-after: 1px;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+    }
+}
+.tabla-col{
+    
+    a {
+        display: inline-block;
+        .galeria-lightbox,
+        img {      
+            cursor: pointer;
+            height: 153px;
+            width:232px;
+        }
+    }
+}
+.footer-paginar {
+    font-size: 24px;
+    height: 32px;
+    margin: 0 auto;
+    padding-left: 105px;
+    text-align: center;
+    width: 726px;
+    a{
+        @extend .p;
+        :hover { font-weight: 800; color:#0a7846; text-decoration: none;}
+    }
+}
+.footer-compartir{ float: right;}
+.mes {
+    background: url("../img/mes.png") no-repeat scroll top center transparent;
+    background-size: 102px 59px;
+    color: #fff;
+    font-size: 12px;
+    height: 59px;
+    line-height: 59px;
+    position: absolute;
+    right: 50px;
+    width: 102px;
+    z-index: 3;
+}
+.more { 
+    background: url("../img/mas-eventos.png") no-repeat scroll top center transparent;
+    background-size: 76px 44px;
+    bottom: 5px;
+    color: #fff;
+    font-size: 12px;
+    height: 44px;
+    line-height: 34px;
+    position: absolute;
+    right: 50px;
+    width: 76px;
+    z-index: 3;
+    a{ color: #FFF; }
+}
+.arriba{
+    background: url("../img/arriba.png") no-repeat scroll top center transparent;
+    background-size: 74px 45px;
+    bottom: 48px;
+    color: #FFF;
+    font-size: 12px;
+    height: 45px;
+    line-height: 58px;
+    position: absolute;
+    right: 52px;
+    width: 74px;
+    z-index: 3;
+    a{ color: #FFF; }
+}
+.more a:hover,
+.arriba a:hover{ color: #fff; font-weight:  700; text-decoration: none;}
+#msg {
+    background: #F7F2F2;
+    color: red;
+    display: block;
+    font-size: 12px;
+    line-height: 100px;
+    margin: 0 auto;
+    min-height: 25px;
+    opacity: 0.7;
+    position: absolute;
+    text-align: justify;
+    width: 72%;
+    z-index: 0;
+}
+.span_overlay{ 
+    background-color: #000;
+    bottom: 0px;
+    color: #FFF; 
+    opacity: 0.5;
+    position: absolute;
+    font-size: 12px;
+    width: 100%;
+    .municipio,
+    .fotos{
+        color: #FFF;
+        display: block;
+        font-size: 12px;
+        font-weight: normal;
+        padding: 1px;
+        margin: 0px;
+    }
+    .fotos { padding: 0px; margin:0px; text-align: right; padding-right: 2px; }
+}
+.hidden{ visibility: hidden; }

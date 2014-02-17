@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Formulario</title>
+</head>
+
+<body>
+<form action="envia.php" method="post"> 
+
+	<p><label>Nombre:<br />
+	<input type="text" name="nombre" required />
+	</label></p>
+
+	<p><label>Apellido:<br />
+	<input type="text" name="apellido" required />
+	</label></p>
+
+	<p><label>Email:<br />
+	<input type="email" name="email" required />
+	</label></p>
+
+	<p><label>Consulta:<br />
+	<textarea name="consulta"></textarea>
+	</label></p>
+	
+	<p>Opciones<br />
+	<label><input  type="radio" name="opcion" value="opcion1" />opción 1</label>
+	<label><input  type="radio" name="opcion" value="opcion2" />opción 2</label>
+	<label><input  type="radio" name="opcion" value="opcion3" />opción 3</label></p>
+
+	<label><input type="submit" value="Enviar" /></label>
+
+</form>
+
+</body>
+</html>

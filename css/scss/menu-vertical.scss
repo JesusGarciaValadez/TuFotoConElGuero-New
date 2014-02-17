@@ -1,0 +1,44 @@
+//@charset "utf-8";
+//@variables{ AnchoMenu:232px; }
+/* CSS Document */
+
+/*********************************/
+/******** Submenu eventos ********/
+/*********************************/
+#nav-evento {
+    /*float: left;*/
+    width: 232px;
+    /*border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-left: 1px solid #999;*/
+    li{
+        
+        a {
+            display: block;
+            padding: 10px 89px;
+            /*background: #ccc;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #999;*/
+            background-image:url(img/bg_submenu.png);
+            text-decoration: none;
+            color: #ffffff;
+            &:hover {
+                /*background: #999;*/
+                background-image:url(img/bg_item_hover.png);
+                color: #fff;
+            }
+        }
+        ul {
+            display: none; 
+            li{
+                
+                a{
+                    padding: 10px 110px;
+                    /*background: #ececec;
+                    border-bottom: 1px dotted #ccc;*/
+                    background-image:url(img/bg_item_normal.png);
+                }
+            }
+        }
+    }
+}

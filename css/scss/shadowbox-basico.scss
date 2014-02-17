@@ -1,0 +1,100 @@
+#sb-title-inner,#sb-info-inner,#sb-loading-inner,div.sb-message{font-family:Helvetica,Arial,sans-serif; font-weight:bold;color:#0a7846;}
+#sb-container{ position:fixed;margin:0;padding:0;top:0;left:0;z-index:999;text-align:left;visibility:hidden;display:none; }
+#sb-overlay{ position:relative;height:100%;width:100%; background-color: #fff; }
+#sb-wrapper{position:absolute;visibility:hidden;width:100px;}
+#sb-wrapper-inner{position:relative;border:4px solid #fff;overflow:hidden;height:100px;}
+#sb-body{
+    position:relative;
+    height:100%;
+    img{border:none;}
+}
+#sb-body-inner{position:absolute;height:100%;width:100%;}
+#sb-player.html{height:100%;overflow:auto;}
+#sb-loading{position:relative;height:100%;}
+#sb-loading-inner{
+    position:absolute;
+    font-size:14px;
+    line-height:24px;
+    height:24px;
+    top:50%;
+    margin-top:-12px;
+    width:100%;
+    text-align:center;
+    span{
+        background:url("../img/lighbox/loading.gif") no-repeat scroll left top transparent;
+        display:inline-block;
+        font-size: 10px;
+        font-weight: normal;
+        padding-left:34px;
+    }
+}
+#sb-body,#sb-loading{background-color:#060606;}
+#sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden;}
+#sb-title,#sb-title-inner{height:26px;line-height:26px;}
+#sb-title-inner{font-size:16px;}
+#sb-info,#sb-info-inner{height:20px;line-height:20px;}
+#sb-info-inner{font-size:12px;}
+#sb-nav{
+    float:right;
+    height:16px;
+    padding:2px 0;
+    width:45%;
+    a{
+        background-repeat:no-repeat;
+        cursor:pointer;
+        display:block;
+        float:right;
+        height:16px;
+        margin-left:3px;
+        width:16px;
+    }
+}
+#sb-nav-close{ background-image:url("../img/lighbox/close.png"); }
+#sb-nav-next{ background-image:url("../img/lighbox/next.png"); }
+#sb-nav-previous{ background-image:url("../img/lighbox/previous.png"); }
+#sb-nav-play{ background-image:url("../img/lighbox/play.png"); }
+#sb-nav-pause{ background-image:url("../img/lighbox/pause.png"); }
+#sb-counter{
+    float:left;
+    width:45%;
+    a{
+        color:#FFF;
+        cursor:pointer;
+        padding:0 4px 0 0;
+        text-decoration:none;
+    }
+    .sb-counter-current{text-decoration:underline;}
+}
+div.sb-message{
+    font-size:12px;
+    padding:10px;
+    text-align:center;
+    a{
+        
+        &:link,&:visited{color:#fff;text-decoration:underline;}
+    }
+}
+#lblsocial{ 
+    top: 22px;
+    z-index: 3;
+    right: -52px;
+    position:absolute;
+    padding: 5px;
+    border-radius: 5px;
+    a {
+        padding: 0px; 
+        display: block; 
+        overflow: hidden;
+        img { 
+            display: block;
+            width: 42px;
+            height: 43px;
+            padding: 0px;
+        }
+        &:hover { 
+            background-size:53px;
+            display: block;
+        }
+    }
+}
+ 
