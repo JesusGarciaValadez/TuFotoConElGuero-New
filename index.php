@@ -106,7 +106,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href='#' title="Contactos">
+                                <a href='#' title="Contactos" rel="#contact_form_wrapper" class="overlay_trigger">
                                     <span>Contactos</span>
                                 </a>
                             </li>
@@ -145,6 +145,17 @@
                     </div>
                 </div>
             </div><!-- Columna derecha (dashboard) -->
+            <div id="contact_form_wrapper">
+                <form action="contacto.php" method="post" accept-charset="utf-8" class="contact_form">
+                    <fieldset>
+                        <div class="contact_text_input">
+                            <label for="contact_name">Nombre</label>
+                            <input id="contact_name" type="text" name="contact_name" value="" placeholder="Nombre">
+                        </div>
+                        <a href="" title="" target="" class="close">Cerrar</a>
+                    </fieldset>
+                </form>
+            </div>
         </div><!-- Contenedor principal -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>

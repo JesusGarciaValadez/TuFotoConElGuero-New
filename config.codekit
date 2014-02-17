@@ -394,7 +394,7 @@
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_diagonals-small_0_aaaaaa_40x40.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_diagonals-small_0_aaaaaa_40x40.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-bg_diagonals-thick_15_444444_40x40.png": {
 		"fileType": 32768,
@@ -404,117 +404,117 @@
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_diagonals-thick_15_444444_40x40.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_diagonals-thick_15_444444_40x40.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-bg_diagonals-thick_95_ffdc2e_40x40.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 411,
+		"initialSize": 294,
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_diagonals-thick_95_ffdc2e_40x40.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_diagonals-thick_95_ffdc2e_40x40.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-bg_glass_55_fbf5d0_1x400.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 336,
+		"initialSize": 235,
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_glass_55_fbf5d0_1x400.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_glass_55_fbf5d0_1x400.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-bg_highlight-hard_30_285c00_1x100.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 331,
+		"initialSize": 226,
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_highlight-hard_30_285c00_1x100.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_highlight-hard_30_285c00_1x100.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-bg_highlight-soft_33_3a8104_1x100.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 345,
+		"initialSize": 242,
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_highlight-soft_33_3a8104_1x100.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_highlight-soft_33_3a8104_1x100.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-bg_highlight-soft_50_93b53f_1x100.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 347,
+		"initialSize": 240,
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_highlight-soft_50_93b53f_1x100.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_highlight-soft_50_93b53f_1x100.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-bg_highlight-soft_60_93b53f_1x100.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 345,
+		"initialSize": 235,
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_highlight-soft_60_93b53f_1x100.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_highlight-soft_60_93b53f_1x100.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-bg_inset-soft_10_2e2c2f_1x100.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 387,
+		"initialSize": 288,
 		"inputAbbreviatedPath": "\/css\/img\/ui-bg_inset-soft_10_2e2c2f_1x100.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-bg_inset-soft_10_2e2c2f_1x100.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-icons_4eb305_256x240.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4549,
+		"initialSize": 4305,
 		"inputAbbreviatedPath": "\/css\/img\/ui-icons_4eb305_256x240.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-icons_4eb305_256x240.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-icons_72b42d_256x240.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4549,
+		"initialSize": 4305,
 		"inputAbbreviatedPath": "\/css\/img\/ui-icons_72b42d_256x240.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-icons_72b42d_256x240.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-icons_cd0a0a_256x240.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4549,
+		"initialSize": 4305,
 		"inputAbbreviatedPath": "\/css\/img\/ui-icons_cd0a0a_256x240.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-icons_cd0a0a_256x240.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/ui-icons_ffffff_256x240.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6299,
+		"initialSize": 4750,
 		"inputAbbreviatedPath": "\/css\/img\/ui-icons_ffffff_256x240.png",
 		"outputAbbreviatedPath": "\/css\/img\/ui-icons_ffffff_256x240.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/main.css": {
 		"fileType": 16,
@@ -9069,7 +9069,7 @@
 	"javascriptOutputStyle": 2,
 	"javascriptOutputSuffix": ".min",
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "$,jQuery,_,TFG",
+	"jsCheckerReservedNamesString": "$,jQuery,_,TFG,_TFG",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

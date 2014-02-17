@@ -573,13 +573,11 @@
                 
                 imgNew  = "img/dashboard/cuadro-verde.png";
                 imgv    = false;
-            }
-            else if( imgg ) {
+            } else if( imgg ) {
                 
                 imgNew  = "img/dashboard/cuadro-gris.png";
                 imgg    = false;
-            }
-            else{
+            } else{
                 
                 imgNew  = "imagenes/" + fotos[ index ][ 'directorio' ] + "/thumb" + fotos[ index ][ 'archivo' ];
                 refNew  = "eventos.php?anio=" + fotos[ index ][ 'anio' ] + "&mes=" + fotos[ index ][ 'mes' ] + "&id=" + fotos[ index ][ 'evento' ] +"&foto=" +fotos[ index ][ 'foto' ];
@@ -1015,11 +1013,11 @@
     $( document ).on( 'ready', function ( e ) {
         
         //  !Crea una instancia de jQuery Overlay
-        if ( $( '.alert_box' ).exists() ) {
-           
-            TFG.doOverlay( $( 'a.alert_trigger' ), {
+        if ( $( '#contact_form_wrapper' ).exists() ) {
+            
+            TFG.doOverlay( $( '.overlay_trigger' ), {
                 effect: 'apple',
-                close: $( '.alert_box a.close' ),
+                close: $( '#contact_form_wrapper a.close' ),
                 closeOnClick: true,
                 closeOnEsc: true,
                 speed: 'normal',
@@ -1027,8 +1025,8 @@
                 onBeforeLoad: function ( e ) {
                    
                     $( '.alert_background' ).height( '100%' );
-                    $( '.alert_box' ).centerWidth();
-                    $( '.alert_box' ).centerHeight();
+                    $( '#contact_form_wrapper' ).centerWidth();
+                    $( '#contact_form_wrapper' ).centerHeight();
                 },
                 onLoad: function() {
                     $( '.alert_background' ).fadeIn( 100 );
@@ -1038,13 +1036,13 @@
                     $( '.alert_box' ).fadeOut( 10, function ( ) {
                        
                         $( '.alert_background' ).fadeOut( 10 );
-                        $( '.alert_box h4' ).text( '' );
-                        $( '.alert_box p' ).remove( );
-                        $( '.alert_box form' ).remove( );
-                        $( '.alert_box table' ).remove( );
-                        $( '.alert_box div' ).remove( );
-                        $( '.alert_box button' ).remove( );
-                        $( '.alert_box div.confirm' ).remove( );
+                        $( '#contact_form_wrapper h4' ).text( '' );
+                        $( '#contact_form_wrapper p' ).remove( );
+                        $( '#contact_form_wrapper form' ).remove( );
+                        $( '#contact_form_wrapper table' ).remove( );
+                        $( '#alertcontact_form_wrapper_box div' ).remove( );
+                        $( '#contact_form_wrapper button' ).remove( );
+                        $( '#contact_form_wrapper div.confirm' ).remove( );
                     } );
                 },
                 onClose: function ( e ) {
@@ -1052,9 +1050,9 @@
                 }
             } );
            
-            TFG.overlay    = $( '.alert_trigger' ).data( 'overlay' );
+            TFG.overlay    = $( '.overlay_trigger' ).data( 'overlay' );
            
-            $( '.alert_background' ).height( $( 'body' ).height() );
+            $( '#contact_form_wrapper' ).height( $( 'body' ).height() );
         }
         
         //  Crea una instancia de jQuery Overlay para el home de descubreone.mx
@@ -1062,14 +1060,10 @@
         //  la capa del video. Si en menor de 0 (ocurre en iPhone) utiliza
         //  el ancho del body en vez del ancho de la ventana para hacer
         //  el cálculo
-        if ( $( '.overlay.black' ).exists() ) {
+        if ( $( '.overlay' ).exists() ) {
            
-            $( '.overlay.black' ).centerWidth();
+            $( '.overlay' ).centerWidth();
            
-            if ( $( '.video' ).exists() ) {
-               
-                var myVideo = document.getElementsByTagName( 'video' )[ 0 ];
-            }
             TFG.doOverlay( 'img[rel]', {
                 effect: 'apple',
                 // custom top position
@@ -1093,57 +1087,12 @@
                 },
                 onLoad: function ( e ) {
                   
-                    if ( myVideo && myVideo.paused ) {
-                       
-                        myVideo.play();
-                    }
                 },
                 onBeforeClose: function ( e ) {
                    
-                    var player;
-                    function onYouTubeIframeAPIReady() {
-                       
-                        player  = new window.YT.Player( 'ytplayer', {
-                            events: {
-                                'onReady': onPlayerReady,
-                                'onStateChange': onPlayerStateChange
-                            }
-                        });
-                    }
-                   
-                    function onPlayerReady( event ) {
-                       
-                        event.target.playVideo();
-                    }
-                   
-                    var done = false;
-                    function onPlayerStateChange( event ) {
-                       
-                        if ( event.data == YT.PlayerState.PLAYING ) {
-                           
-                            stopVideo();
-                        }
-                    }
-                    function stopVideo() {
-                       
-                        player.stopVideo();
-                    }
                 },
                 onClose: function ( e ) {
                    
-                    if ( myVideo ) {
-                       
-                        myVideo.pause();
-                    }
-                    /*if ( $( '#exposeMask:visible' ).is( ':visible' ) && $( 'object,embed' ).exists() ) {
-                       
-                        $( 'object,embed' ).css( {
-                            display: "none",
-                            opacity: "0",
-                            filter: "alpha(opacity=0)",
-                            visibility: "none"
-                        } );
-                    }*/
                 }
             } );
            
@@ -1164,7 +1113,7 @@
         }
         
         // Validación de los formularios
-        if ( $( 'form' ).exists() ) {
+        if ( $( '#search_form' ).exists() ) {
             
             if ( $( 'select' ).exists() ) {
                 
