@@ -44,12 +44,12 @@
                 <div class="menu-lateral">
                     <nav id='cssmenu'>
                         <ul>
-                            <li class='active'>
+                            <li class='home active'>
                                 <a href='index.php'>
                                     <span>Inicio</span>
                                 </a>
                             </li>
-                            <li class='has-sub'>
+                            <li class='events has-sub'>
                                 <a href='#'>
                                     <span>Eventos</span>
                                 </a>
@@ -105,7 +105,7 @@
                                     <?php //$menu->PrintMenu(0,0); ?>
                                 </div>
                             </li>
-                            <li>
+                            <li class="contact_form_trigger">
                                 <a href='#' title="Contactos" rel="#contact_form_wrapper" class="overlay_trigger">
                                     <span>Contactos</span>
                                 </a>

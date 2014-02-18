@@ -19,7 +19,7 @@ html, body {
     .contenedor-izquierda{
         background:url("img/bg-shape.png") no-repeat scroll left top transparent;
         float:left;
-        width:233px;
+        width:232px;
         height:100%;
         .contenedor-logotipo{
             background:url("img/bg-shape.png") no-repeat scroll left top transparent;
@@ -83,8 +83,10 @@ html, body {
                                     li.has-sub{
                                         
                                         a{
-                                            border-bottom: 1px solid #000;
+                                            background: url("img/menu-items.png") no-repeat scroll 0px -516px transparent !important;
+                                            display: block;
                                             height: 41px;
+                                            width: 232px;
                                             span{
                                                 display: block;
                                                 height: 41px;
@@ -92,9 +94,13 @@ html, body {
                                                 text-indent: 75px;
                                                 width: 100%;
                                             }
+                                            &:hover{
+                                                background-position: 0px -172px !important;
+                                            }
                                         }
                                         a.active{
-                                            
+                                            background-position: 0px -344px !important;
+                                            border-bottom: 1px solid #000;
                                             span{}
                                         }
                                         > ul{
@@ -118,6 +124,53 @@ html, body {
                         }
                         &:last-child { margin: 0; }
                     }
+                    .home,
+                    .events,
+                    .contact_form_trigger{
+                        
+                        a{
+                            background: url("img/menu-items.png") no-repeat scroll 0 0 transparent !important;
+                            display: block;
+                            height: 41px;
+                            width: 232px;
+                        }
+                    }
+                    .home{
+                        
+                        a{ background-position: 0px -43px !important; }
+                        &:hover{
+                            
+                            a{ background-position: 0px -215px !important; }
+                        }
+                    }
+                    .home.active{
+                        
+                        a{ background-position: 0px -387px !important; border-bottom: 1px solid #000; }
+                    }
+                    .events{
+                        
+                        a{ background-position: 0px -86px !important; }
+                        &:hover{
+                            
+                            a{ background-position: 0px -258px !important; }
+                        }
+                    }
+                    .events.active{
+                        
+                        a{ background-position: 0px -430px !important; }
+                    }
+                    .contact_form_trigger{
+                        
+                        a{ background-position: 0px -129px !important; }
+                        &:hover{
+                            
+                            a{ background-position: 0px -301px !important; }
+                        }
+                    }
+                    .contact_form_trigger.active{
+                        
+                        a{ background-position: 0px -473px !important; border-bottom: 1px solid #000; }
+                    }
                     .active {
                         border-bottom: none;
                         > a {
@@ -139,7 +192,7 @@ html, body {
                     li.has-sub.active{
                         
                         > a{
-                            
+                            border-bottom: 1px solid #000;
                             span { background: url("img/icon_arrow.png") no-repeat scroll 88% center transparent; }
                         }
                     }
@@ -156,15 +209,18 @@ html, body {
             /*background-color:red;*/
             //bottom: 0 !importante;
             //bottom: -1px;*/
-            border-top: 1px solid #000;
+            background:url("img/pie.png") no-repeat scroll 0 0 #2D2B2E;
+            bottom: 0;
             color:#858388;
             font-family: 'Open Sans', sans-serif;
-            height: 110px;
-            padding: 30px 0 0;
-            width:233px;
+            height: 73px;
+            left: 0;
+            padding: 15px 0 0;
+            position: absolute;
+            width:232px;
             p,a{
                 color:#858388;
-                font: normal 10px/1.5em Helvetica,Arial,'sans-serif';
+                font: normal 9px/1.5em Helvetica,Arial,'sans-serif';
                 margin: 0;
                 padding:0 0 0 20px;
                 text-transform: uppercase;
@@ -173,6 +229,8 @@ html, body {
             a{
                 text-decoration:underline;
                 margin-bottom:4px;
+                position: relative;
+                top:-8px;
                 &:hover{ color:#858388; }
             }
         }
@@ -202,10 +260,11 @@ html, body {
                         float: left;
                         margin: 0;
                         padding: 0 13px 0 0;
+                        text-transform: uppercase;
                         width:214px !important;
                     }
                     legend{
-                        @include font-mask( #4d4d4d, em( 18.67, 16 ), em( 28, 18.67 ), normal, $myriadProBold );
+                        @include font-mask( #4d4d4d, em( 15, 16 ), em( 28, 15 ), normal, $myriadProBold );
                         display: inline-block;
                         width: 165px !important;
                     }
@@ -228,7 +287,7 @@ html, body {
                             position: relative;
                             width: 201px !important;
                             span{
-                                @include font-mask( #FFF, em( 14.7, 16 ), em( 28, 14.7 ), bold, $helveticaNeue );
+                                @include font-mask( #FFF, em( 12, 16 ), em( 28, 12 ), bold, $helveticaNeue );
                                 display: block;
                                 text-indent: -15px;
                                 width: 201px !important;
@@ -258,7 +317,7 @@ html, body {
                         height: 28px;
                         position: relative;
                         #date_search{
-                            @include font-mask( #FFF, em( 14.7, 16 ), em( 28, 16 ), bold, $helveticaNeue );
+                            @include font-mask( #FFF, em( 12, 16 ), em( 28, 12 ), bold, $helveticaNeue );
                             background: url("img/combo-box-gray.png") no-repeat scroll 0 0 transparent;
                             border: 0 none transparent;
                             display: inline-block;
@@ -266,6 +325,7 @@ html, body {
                             margin: 0;
                             left: 0;
                             text-indent: 15px;
+                            text-transform: uppercase;
                             top:0;
                             padding: 0;
                             position: absolute;
@@ -284,10 +344,11 @@ html, body {
                             margin: 0;
                             left: 0;
                             text-align: center;
+                            text-transform: uppercase;
                             top:0;
                             padding: 0;
                             position: absolute;
-                            width: 201px !important;
+                            width: 100px !important;
                         }
                     }
                 }
@@ -295,8 +356,10 @@ html, body {
         }
         .fondo-panel{
             /*background-color:gainsboro;*/
-            //background:url("img/bg_panel.png") no-repeat scroll left top transparent;
+            background:url("img/grid-.png") no-repeat scroll center center transparent;
             height:480px;
+            position: relative;
+            top:-86px;
             width:950px;
             /*margin-top:92px;*/
             /*margin-left:48px; */
@@ -307,11 +370,11 @@ html, body {
                 
                 /*border:solid red 1px;*/
                 /*padding-top:4px;*/
-                width:935px;
                 height:460px;
+                padding:10px 0 0;
+                width:935px;
                 .tabla-galeria{
                     background-color:transparent;
-                    box-shadow: 10px 9px 8px 3px #000;
                     display:table;
                     height: 459px;
                     overflow: hidden;
@@ -339,10 +402,7 @@ html, body {
             }
         }
     }
-    .contenedor-pie{
-        background:url("img/bg-shape.png") no-repeat scroll 0 0 transparent;
-        height: 110px;
-    }
+    .contenedor-pie{}
     #contact_form_wrapper{
         background: #FFF;
         border-radius: 5px;
