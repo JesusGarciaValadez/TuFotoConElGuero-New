@@ -57,6 +57,86 @@
         //  !Método inicializador
         init:   function ( ) {
             TFG.obtainActualDocument();
+            
+            /**
+             *  Function to detect the id of document by param and set current element on menu
+             *
+             */ 
+            var Url = String( location.href );
+            if ( Url.search( /\.php|\.html/i ) ) {
+                
+                Url = Url.replace(/.*\?(.*?)/,"$1");
+                Variables = Url.split ("&");
+                for ( i = 0; i < Variables.length; i++ ) {
+                    
+                    Separ   = Variables[ i ].split( "=" );
+                    if ( Separ[ 1 ] != undefined && Separ[ 1 ] != null ) {
+                        
+                        eval ('var ' + Separ[ 0 ] + '="' + Separ[ 1 ] + '"' );
+                    }
+                }
+                
+                if ( !anio ) {
+                    
+                    var anio    = '';
+                }
+                if ( !mes ) {
+                    
+                    var month   = new Date();
+                    month.getMonth() + 1;
+                    var mes     = String ( month );
+                }
+                switch( mes ) {
+                    case '0':
+                    default:    mes = '';
+                        break;
+                    case '1':   mes = 'Enero';
+                        break;
+                    case '2':   mes = 'Febrero';
+                        break;
+                    case '3':   mes = 'Marzo';
+                        break;
+                    case '4':   mes = 'Abril';
+                        break;
+                    case '5':   mes = 'Mayo';
+                        break;
+                    case '6':   mes = 'Junio';
+                        break;
+                    case '7':   mes = 'Julio';
+                        break;
+                    case '8':   mes = 'Agosto';
+                        break;
+                    case '9':   mes = 'Septiembre';
+                        break;
+                    case '10':  mes = 'Octubre';
+                        break;
+                    case '11':  mes = 'Noviembre';
+                        break;
+                    case '12':  mes = 'Diciembre';
+                        break;
+                }
+                
+                if ( anio ) {
+                    
+                    $.each( $('#nav-evento .has-sub a span'), function ( indexInArray, valueOfElement ) {
+                        
+                        if ( $( valueOfElement ).text() == anio ) {
+                            
+                            $( valueOfElement ).parent().addClass( 'active' );
+                        }
+                    } );
+                }
+                if ( mes ) {
+                    
+                    $.each( $('#nav-evento .has-sub ul li a span'), function ( indexInArray, valueOfElement ) {
+                        
+                        if ( $( valueOfElement ).text() == mes ) {
+                            
+                            $( valueOfElement ).parent().parent().addClass( 'active' );
+                        }
+                    } );
+                }
+            }
         },
         /**
          *
@@ -371,20 +451,11 @@
             var relativePath        = absolutePath.substring( lastSlashPosition + "/".length , absolutePath.length );
             var waste               = relativePath.substring( relativePath.lastIndexOf( '.' ), relativePath.length );
             relativePath            = relativePath.replace( waste, '' );
-            var _section            = new RegExp( "pro-meta|servicios|noticias|index*[^-]", "gi" );
+            var _section            = new RegExp( "eventos|index*[^-]", "gi" );
             var _nameSection        = String( relativePath.match( _section ) );
             $( '#nav nav ul li.active' ).removeClass( 'active' );
            
             switch ( _nameSection ) {
-                case "pro-meta":
-                    $( '#nav nav ul li' ).eq( 1 ).addClass( 'active' );
-                    break;
-                case "servicios":
-                    $( '#nav nav ul li' ).eq( 2 ).addClass( 'active' );
-                    break;
-                case "noticias":
-                    $( '#nav nav ul li' ).eq( 3 ).addClass( 'active' );
-                    break;
                 case "index":
                 default:
                     $( '#nav nav ul li' ).eq( 0 ).addClass( 'active' );
@@ -844,7 +915,7 @@
             //var hScreen = $( window ).height(); 
             //var hLogo = $( ".contenedor-logotipo" ).height();
             //var hBuscador = $( ".contenedor-buscador" ).height();
-            var hMenuNav = $( "#cssmenu" ).height();    
+            var hMenuNav = $( "#cssmenu" ).height();
             //var hPie = $( ".pie" ).height();  
             var hElementos = ($( ".contenedor-logotipo" ).height() + $( ".contenedor-buscador" ).height() + $( ".pie" ).height() ); 
             var hDashboard = $( ".contenedor-panel" ).height();

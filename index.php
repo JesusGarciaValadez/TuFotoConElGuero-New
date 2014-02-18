@@ -53,8 +53,8 @@
                                 <a href='#'>
                                     <span>Eventos</span>
                                 </a>
-                                <div id="csssubmenu">
-                                    <div id="csssubmenu" style="display: block;">
+                                <div class="csssubmenu">
+                                    <div class="csssubmenu" style="display: block;">
                                         <ul id="nav-evento">
                                             <li class="has-sub">
                                                 <a onclick="return false;" href="#" class="active">

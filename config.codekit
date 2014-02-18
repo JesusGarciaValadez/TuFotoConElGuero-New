@@ -454,6 +454,16 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/img\/menu-items.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65461,
+		"inputAbbreviatedPath": "\/css\/img\/menu-items.png",
+		"outputAbbreviatedPath": "\/css\/img\/menu-items.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/img\/next.png": {
 		"fileType": 32768,
 		"ignore": 0,

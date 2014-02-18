@@ -74,9 +74,9 @@ html, body {
                                 text-decoration: none;
                             }
                         }
-                        #csssubmenu{
+                        .csssubmenu{
                             
-                            #csssubmenu{
+                            .csssubmenu{
                                 
                                 ul#nav-evento{
                                     @extend .clearfix;
@@ -99,7 +99,7 @@ html, body {
                                             }
                                         }
                                         a.active{
-                                            background-position: 0px -344px !important;
+                                            //background-position: 0px -344px !important;
                                             border-bottom: 1px solid #000;
                                             span{}
                                         }
@@ -109,6 +109,7 @@ html, body {
                                             li{
                                                 
                                                 a{
+                                                    background: url("img/menu-items.png") no-repeat scroll 0px -645px transparent !important;
                                                     border-bottom: 1px solid #000;
                                                     span{
                                                         color: #98969C;
@@ -116,7 +117,10 @@ html, body {
                                                     }
                                                 }
                                             }
-                                            
+                                            .active{ 
+                                                color: #FFF;
+                                                a{ color: #FFF !important; background-position: 0px -344px !important; }
+                                            }
                                         }
                                     }
                                 }
@@ -176,7 +180,6 @@ html, body {
                         > a {
                             background-image:url("img/bg_item_active.png");
                             color: #fff;
-                            text-shadow: 0 1px 1px #000;
                             span { /*border: 1px solid yellow;*/ }
                         }
                     }
