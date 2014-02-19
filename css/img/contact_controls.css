@@ -1,0 +1,34 @@
+.borrar-enviar {
+  background: url(contact_controls.png) 0px -149px no-repeat;
+  display: block;
+  width: 226px;
+  height: 42px;
+}
+
+.cerrar {
+  background: url(contact_controls.png) 0px 0px no-repeat;
+  display: block;
+  width: 82px;
+  height: 15px;
+}
+
+.comentarios {
+  background: url(contact_controls.png) 0px -105px no-repeat;
+  display: block;
+  width: 111px;
+  height: 42px;
+}
+
+.email {
+  background: url(contact_controls.png) 0px -61px no-repeat;
+  display: block;
+  width: 111px;
+  height: 42px;
+}
+
+.nombre {
+  background: url(contact_controls.png) 0px -17px no-repeat;
+  display: block;
+  width: 111px;
+  height: 42px;
+}

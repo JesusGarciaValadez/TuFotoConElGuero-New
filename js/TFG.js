@@ -165,7 +165,7 @@
          *
          */
         //  !Validación del formulario de contacto.
-        validateFormsAjax:    function ( rule, messages ) {
+        validateForms:    function ( rule, messages ) {
             
             var _rule       = ( typeof( rule ) == 'object' ) ? rule : {};
             var _message    = ( typeof( messages ) == 'object' ) ? messages : {};
@@ -225,7 +225,7 @@
                                 $( '.alert_box' ).addClass( 'thank_you_message' );
                                 var _title      = 'Gracias';
                                 var _markup     = '<p>Nos comunicaremos con usted a la brevedad.</p>';
-                                TFG.openAlert( _title, _markup );
+                                Prometa.openAlert( _title, _markup );
                                 $( 'textarea' ).val( "" );
                                 //$( form ).fadeOut( 300 );
                             } else {
@@ -233,9 +233,9 @@
                                 $( '.alert_box' ).addClass( 'error_message' );
                                 var _title  = 'Error';
                                 var _markup = '<p>La encuesta no fue procesada correctamente. Por favor, contacta al administrador.</p>';
-                                TFG.openAlert( _title, _markup );
+                                Prometa.openAlert( _title, _markup );
                             }
-                            //TFG.smoothScroll( 'body' );
+                            //Prometa.smoothScroll( 'body' );
                         },
                         resetForm: false,
                         clearForm: false,
@@ -246,73 +246,10 @@
                             $( '.alert_box' ).addClass( 'error' );
                             var _title  = 'Error';
                             var _markup = '<p>La encuesta no fue procesada correctamente. Por favor, reporta este error al administrador.</p>';
-                            TFG.openAlert( _title, _markup );
+                            Prometa.openAlert( _title, _markup );
                         },
                         cache: false
                     } );
-                },
-                /*invalidHandler: function(form, validator) {
-                    var errors = validator.numberOfInvalids();
-                    if (errors) {
-                        var message = errors == 1 ? 'You missed 1 field. It has been highlighted' : 'You missed ' + errors + ' fields. They have been highlighted';
-                        $("div#summary").html(message);
-                        $("div#summary").show();
-                    } else {
-                        $("div#summary").hide();
-                    }
-                }*/
-            } );
-        },
-        /**
-         *
-         *  @function:  !validateContact
-         *  @description:   Makes the validation of the contact form
-         *  @see:   http://bassistance.de/jquery-plugins/jquery-plugin-validation/ ||
-         *          http://docs.jquery.com/Plugins/Validation
-         *  @author: @_Chucho_
-         *
-         */
-        //  !Validación del formulario de contacto.
-        validateForms:    function ( rule, messages ) {
-            
-            var _rule       = ( typeof( rule ) == 'object' ) ? rule : {};
-            var _message    = ( typeof( messages ) == 'object' ) ? messages : {};
-            
-            var formActive = $( 'form' ).validate( {
-                onfocusout: false,
-                onclick: true,
-                onkeyup: false,
-                onsubmit: true,
-                focusCleanup: true,
-                focusInvalid: false,
-                errorClass: "error",
-                validClass: "valid",
-                errorElement: "label",
-                ignore: "",
-                /*showErrors: function( errorMap, errorList ) {
-                    $('#message').empty().removeClass();
-                    $("#message").html('<p>Error al ingresar la información.</p><p>Verifique que sus datos están correctos o que no falte ningún dato.</p><p>Por favor, vuelvalo a intentar.</p>');
-                    $('#message').addClass('wrong').show('fast', function(){
-                        $('#message').show('fast');
-                    });
-                    this.defaultShowErrors();
-                },*/
-                errorPlacement: function(error, element) {
-                    error.appendTo( element.parent() );
-                },
-                //debug:true,
-                rules: _rule,
-                messages: _message,
-                ignore: 'textarea',
-                highlight: function( element, errorClass, validClass ) {
-                    $( element ).parent().addClass( 'error_wrapper' );
-                },
-                unhighlight: function( element, errorClass ) {
-                    $( element ).parent().removeClass( 'error_wrapper' );
-                },
-                submitHandler: function( form ) {
-                    // Form submit
-                    
                 },
                 /*invalidHandler: function(form, validator) {
                     var errors = validator.numberOfInvalids();
@@ -358,7 +295,7 @@
                 $( '.alert_box' ).append( '<h2>' + _title + '</h2>' );
             }
             $( '.alert_box' ).append( _message );
-            //TFG.overlay.load();
+            //Prometa.overlay.load();
             $( '.alert_trigger' ).click( );
             $( '.alert_box' ).centerHeight( );
             $( '.alert_box' ).centerWidth( );
@@ -379,7 +316,7 @@
         //  !Cierra un cuadro de diálogo con un mensaje
         closeAlert:  function ( ) {
            
-            TFG.overlay.close();
+            Prometa.overlay.close();
             /*$( '.alert_box' ).fadeOut( 'fast' );
             $( '.alert_background' ).fadeOut( 'fast' );
             $( '.alert_box h4' ).text( '' );
@@ -1019,372 +956,5 @@
     
     // Expose TFG to the global object
     window.TFG  = TFG;
-    
-    //  When DOM is loaded
-    $( function ( ) {
-        
-        TFG.init();
-        
-        if ( $( ".loader" ).exists() ) {
-           
-            $( '.alert_background' ).fadeOut( 300 );
-            $( ".loader" ).fadeOut( 300 );
-        }
-    } );
-    
-    //  When DOM is ready
-    $( document ).on( 'ready', function ( e ) {
-        
-        //  !Crea una instancia de jQuery Overlay
-        if ( $( '#contact_form_wrapper' ).exists() ) {
-            
-            TFG.doOverlay( $( '.overlay_trigger' ), {
-                effect: 'apple',
-                close: $( '#contact_form_wrapper a.close' ),
-                closeOnClick: true,
-                closeOnEsc: true,
-                speed: 'normal',
-                fixed: false,
-                onBeforeLoad: function ( e ) {
-                   
-                    $( '.alert_background' ).height( '100%' );
-                    $( '#contact_form_wrapper' ).centerWidth();
-                    $( '#contact_form_wrapper' ).centerHeight();
-                },
-                onLoad: function() {
-                    $( '.alert_background' ).fadeIn( 100 );
-                },
-                onBeforeClose:  function ( ){
-                   
-                    $( '.alert_box' ).fadeOut( 10, function ( ) {
-                       
-                        $( '.alert_background' ).fadeOut( 10 );
-                        $( '#contact_form_wrapper h4' ).text( '' );
-                        $( '#contact_form_wrapper p' ).remove( );
-                        $( '#contact_form_wrapper form' ).remove( );
-                        $( '#contact_form_wrapper table' ).remove( );
-                        $( '#alertcontact_form_wrapper_box div' ).remove( );
-                        $( '#contact_form_wrapper button' ).remove( );
-                        $( '#contact_form_wrapper div.confirm' ).remove( );
-                    } );
-                },
-                onClose: function ( e ) {
-                   
-                }
-            } );
-           
-            TFG.overlay    = $( '.overlay_trigger' ).data( 'overlay' );
-           
-            $( '#contact_form_wrapper' ).height( $( 'body' ).height() );
-        }
-        
-        //  Crea una instancia de jQuery Overlay para el home de descubreone.mx
-        //  Calcula la distancia entre el margen izquierdo para posicionar
-        //  la capa del video. Si en menor de 0 (ocurre en iPhone) utiliza
-        //  el ancho del body en vez del ancho de la ventana para hacer
-        //  el cálculo
-        if ( $( '.overlay' ).exists() ) {
-           
-            $( '.overlay' ).centerWidth();
-           
-            TFG.doOverlay( 'img[rel]', {
-                effect: 'apple',
-                // custom top position
-                //top: 260,
-                // some mask tweaks suitable for facebox-looking dialogs
-                mask: {
-                    // you might also consider a "transparent" color for the mask
-                    color: '#FFF',
-                    // load mask a little faster
-                    loadSpeed: 200,
-                    // very transparent
-                    opacity: 0.5
-                },
-                // disable this for modal dialog-type of overlays
-                closeOnClick: true,
-                closeOnEsc: true,
-                // load it immediately after the construction
-                load: true,
-                onBeforeLoad: function ( e ) {
-                   
-                },
-                onLoad: function ( e ) {
-                  
-                },
-                onBeforeClose: function ( e ) {
-                   
-                },
-                onClose: function ( e ) {
-                   
-                }
-            } );
-           
-            $( window ).on( {
-                resize: function ( e ) {
-                   
-                    $( '.overlay.black' ).centerWidth();
-                },
-                touchstart: function ( e ) {
-                   
-                    $( '.overlay.black' ).centerWidth();
-                },
-                touchend: function ( e ) {
-                   
-                    $( '.overlay.black' ).centerWidth();
-                }
-            } );
-        }
-        
-        // Validación de los formularios
-        if ( $( '#search_form' ).exists() ) {
-            
-            if ( $( 'select' ).exists() ) {
-                
-                TFG.makesUniform( 'select' );
-            }
-            if ( $( '.datepicker' ).exists() ) {
-                
-                $( '.datepicker' ).datepicker( {
-                    dateFormat: "dd-MM-yy",
-                    dayNames: [ "Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado" ],
-                    dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
-                    dayNamesShort: [ "Dom", "Lun", "Mar", "Mir", "Jue", "Vie", "Sab" ],
-                    firstDay: 1,
-                    gotoCurrent: true,
-                    monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ],
-                    monthNamesShort: [ "Enero", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic" ],
-                    //changeMonth: true,
-                    //changeYear: true
-                } );
-            }
-            
-            var rules   = {
-                    location: {
-                        required: true
-                    },
-                    date: {
-                        required: false
-                    },
-                };
-            var messages    = {
-                    location: "Por favor, selecciona una opción",
-                    date: "Por favor, selecciona una opción",
-                    required: "Por favor, selecciona una opción",
-                    minlength: "Por favor, haga su respuesta más amplia.",
-                    maxlength: "Por favor, acorte su respuesta",
-                    email: "Escriba un email válido",
-                    number: "Escriba solo números",
-                    digits: "Escriba solo números",
-                }
-           
-            TFG.validateForms( rules, messages );
-        }
-        
-        //  !Crea una instancia de jQuery Overlay
-        if ( $( '.alert_box' ).exists() ) {
-            
-            TFG.doOverlay( $( 'a.alert_trigger' ), {
-                effect: 'apple',
-                close: $( '.alert_box a.close' ),
-                closeOnClick: true,
-                closeOnEsc: true,
-                speed: 'normal',
-                fixed: true,
-                onBeforeLoad: function ( e ) {
-                    
-                    $( '.alert_background' ).height( '100%' );
-                    ( $( '.alert_box a.close' ).exists() ) ? true : $( '.alert_box' ).prepend( TFG.closer );
-                    $( '.alert_box' ).centerWidth();
-                    $( '.alert_box' ).centerHeight();
-                    ( $( '.alert_box p' ).text() == '' ) ? $( '.alert_box p' ).remove() : false;
-                },
-                onLoad: function() {
-                    $( '.alert_background' ).fadeIn( 100 );
-                },
-                onBeforeClose:  function ( ){
-                    
-                    $( '.alert_box' ).fadeOut( 10, function ( ) {
-                        
-                        $( '.alert_background' ).fadeOut( 10 );
-                        $( '.alert_box h2' ).text( '' );
-                        $( '.alert_box h4' ).text( '' );
-                        ( $( '.alert_box p' ).exists() ) ? $( '.alert_box p' ).remove( ) : false;
-                        ( $( '.alert_box form' ).exists() ) ? $( '.alert_box form' ).remove( ) : false;
-                        ( $( '.alert_box table' ).exists() ) ? $( '.alert_box table' ).remove( ) : false;
-                        ( $( '.alert_box div' ).exists() ) ? $( '.alert_box div' ).remove( ) : false;
-                        ( $( '.alert_box button' ).exists() ) ? $( '.alert_box button' ).remove( ) : false;
-                        ( $( '.alert_box div.confirm' ).exists() ) ? $( '.alert_box div.confirm' ).remove( ) : false;
-                    } );
-                },
-                onClose: function ( e ) {}
-            } );
-            
-            TFG.overlay    = $( '.alert_trigger' ).data( 'overlay' );
-            
-            //$( '.alert_background' ).height( $( 'body' ).height() );
-        }
-        
-        //  Crea una instancia de jQuery Overlay para el home de descubreone.mx
-        //  Calcula la distancia entre el margen izquierdo para posicionar
-        //  la capa del video. Si en menor de 0 (ocurre en iPhone) utiliza
-        //  el ancho del body en vez del ancho de la ventana para hacer
-        //  el cálculo
-        if ( $( '.overlay' ).exists() ) {
-            
-            $( '.overlay' ).centerWidth();
-            
-            $( window ).on( {
-                resize: function ( e ) {
-                   
-                    $( '.overlay' ).centerWidth();
-                },
-                touchstart: function ( e ) {
-                   
-                    $( '.overlay' ).centerWidth();
-                },
-                touchend: function ( e ) {
-                   
-                    $( '.overlay' ).centerWidth();
-                }
-            } );
-        }
-        
-        // Validación de los formularios
-        if ( $( '.contact_form' ).exists() ) {
-            
-            var rules   = {
-                    contact_name:       {
-                        required:   true,
-                        minlength:  5,
-                        maxlength:  250
-                    },
-                    contact_mail:       {
-                        required:   true,
-                        email:      true,
-                        minlength:  5,
-                        maxlength:  250
-                    },
-                    contact_message:    {
-                        required:   true,
-                        minlength:  50,
-                        maxlength:  512
-                    }
-                };
-            var messages    = {
-                    contact_name:       "Por favor, escribe tu nombre",
-                    contact_mail:       "Por favor, escribe tu mensaje",
-                    contact_message:    "Por favor, escribenos un mensaje",
-                    location:           "Por favor, selecciona una opción",
-                    date:               "Por favor, selecciona una opción",
-                    required:           "Por favor, selecciona una opción",
-                    minlength:          "Por favor, haga su respuesta más amplia.",
-                    maxlength:          "Por favor, acorte su respuesta",
-                    email:              "Escriba un email válido",
-                    number:             "Escriba solo números",
-                    digits:             "Escriba solo números",
-                }
-           
-            TFG.validateFormsAjax( rules, messages );
-        }
-        
-        //  Handler de contenido de textarea
-        if ( $( 'textarea' ).exists() ) {
-           
-            $( 'textarea' ).val( 'Mensaje' );
-            TFG.toggleValue( 'textarea', "Mensaje" );
-        }
-        
-        if ( $( '#home' ).exists() ) {
-            
-            var opacidad        = 0,
-                verde           = new Array(),
-                gris            = new Array(),
-                boxes           = new Array('11', '21', '31', '41',
-                                  '12', '22', '32', '42', 
-                                  '13', '23', '33', '43'),
-                crossv          = false,
-                crossg          = false,
-                imgv            = false,
-                imgg            = false,
-                ScrollableMenu  = false,
-                counter         = 0,
-                icounter        = 0;
-                
-            TFG.ConfigurarPantalla();
-            
-            if ( $('.tabla-col a img').exists() ) {
-                
-                //- Efectos hover
-                //$('tabla-col a img').animate({"opacity" : 1});
-                $('.tabla-col a img').on( {
-                    mouseenter: function( ) {
-                        
-                        $( e.currentTarget ).animate( { "opacity" : 0.5 } );
-                    },
-                    mouseleave: function( ) {
-                        $( e.currentTarget ).animate( { "opacity" : 1 } );
-                    } 
-                } );
-            }
-            
-            if ( $('#cssmenu > ul > li > a').exists() ) {
-                
-                //-Control menu vertical
-                $('#cssmenu > ul > li > a').on( 'click', function( e ){
-                    
-                    $('#cssmenu li').removeClass('active');
-                    $( e.currentTarget ).closest('li').addClass('active');
-                    
-                    var checkElement = $( e.currentTarget ).next();
-                    
-                    //-Para un elemento div
-                    if( ( checkElement.is( 'div' ) ) && ( checkElement.is( ':visible' ) ) ) {
-                        $( e.currentTarget ).closest( 'li' ).removeClass( 'active' );
-                        checkElement.slideUp( 'normal' );
-                        //Si contiene un div solo debe de cerrar y no perder el foco (mantener estado activo)
-                        TFG.ConfiguraScrollMenu( checkElement );
-                    }
-                    
-                    //-Para un elemento div
-                    if( ( checkElement.is( 'div' ) ) && ( !checkElement.is( ':visible' ) ) ) {
-                        
-                        $( '#cssmenu ul ul:visible' ).slideUp( 'normal' );
-                        checkElement.slideDown( 'normal', function( ) { TFG.ConfiguraScrollMenu( e.currentTarget ); } );
-                    }
-                    
-                    if( $( e.currentTarget ).closest('li').find('div').children().length == 0) {
-                        
-                        return true;
-                    } else {
-                        
-                        return false;
-                    }
-                } );
-            }
-            
-            if ( $( '#nav-evento > li > a' ).exists() ) {
-                
-                //-Control submenu vertical
-                $( '#nav-evento > li > a' ).on( 'click', function ( e ) {
-                    
-                    if ( $( e.currentTarget ).attr( 'class' ) != 'active' ) {
-                        
-                        $( '#nav-evento li ul' ).slideUp( );
-                        $( e.currentTarget ).next().slideToggle( );
-                        $( '#nav-evento li a' ).removeClass( 'active' );
-                        $( e.currentTarget ).addClass( 'active' );
-                        //-Verificar el scroll
-                        TFG.ConfiguraScrollMenu( $( "#submenu-evento" ) );
-                    }
-                } );
-            }
-            
-            //-Se ejecuta cuando se redimensiona la ventana del navegador
-            $( window ).resize( function( ) {
-                
-                TFG.ConfigurarPantalla();
-            } );
-        }
-    } );
    
 })( jQuery, window, document );

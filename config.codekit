@@ -126,6 +126,16 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/img\/background_lightbox.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 921,
+		"inputAbbreviatedPath": "\/css\/img\/background_lightbox.png",
+		"outputAbbreviatedPath": "\/css\/img\/background_lightbox.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/css\/img\/bg-search.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -326,6 +336,26 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/css\/img\/borrar-enviar.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5333,
+		"inputAbbreviatedPath": "\/css\/img\/borrar-enviar.png",
+		"outputAbbreviatedPath": "\/css\/img\/borrar-enviar.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/css\/img\/cerrar.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1615,
+		"inputAbbreviatedPath": "\/css\/img\/cerrar.png",
+		"outputAbbreviatedPath": "\/css\/img\/cerrar.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/css\/img\/combo-box-gray.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -343,6 +373,44 @@
 		"initialSize": 601,
 		"inputAbbreviatedPath": "\/css\/img\/combo-box-green.png",
 		"outputAbbreviatedPath": "\/css\/img\/combo-box-green.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/css\/img\/comentarios.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3685,
+		"inputAbbreviatedPath": "\/css\/img\/comentarios.png",
+		"outputAbbreviatedPath": "\/css\/img\/comentarios.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/css\/img\/contact_controls.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/img\/contact_controls.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/img\/contact_controls.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18001,
+		"inputAbbreviatedPath": "\/css\/img\/contact_controls.png",
+		"outputAbbreviatedPath": "\/css\/img\/contact_controls.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/css\/img\/email.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3260,
+		"inputAbbreviatedPath": "\/css\/img\/email.png",
+		"outputAbbreviatedPath": "\/css\/img\/email.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
@@ -416,6 +484,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/css\/img\/Logo-Gris.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5659,
+		"inputAbbreviatedPath": "\/css\/img\/Logo-Gris.png",
+		"outputAbbreviatedPath": "\/css\/img\/Logo-Gris.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/css\/img\/logotipo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -462,7 +540,7 @@
 		"inputAbbreviatedPath": "\/css\/img\/menu-items.png",
 		"outputAbbreviatedPath": "\/css\/img\/menu-items.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/css\/img\/next.png": {
 		"fileType": 32768,
@@ -481,6 +559,16 @@
 		"initialSize": 1512,
 		"inputAbbreviatedPath": "\/css\/img\/next_back.png",
 		"outputAbbreviatedPath": "\/css\/img\/next_back.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/css\/img\/nombre.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3451,
+		"inputAbbreviatedPath": "\/css\/img\/nombre.png",
+		"outputAbbreviatedPath": "\/css\/img\/nombre.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
@@ -521,6 +609,16 @@
 		"initialSize": 5374,
 		"inputAbbreviatedPath": "\/css\/img\/print2.png",
 		"outputAbbreviatedPath": "\/css\/img\/print2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/css\/img\/temas.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8759,
+		"inputAbbreviatedPath": "\/css\/img\/temas.png",
+		"outputAbbreviatedPath": "\/css\/img\/temas.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
@@ -8782,6 +8880,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/shadowbox.js",
 		"outputAbbreviatedPath": "\/js\/shadowbox.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/TFG.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/TFG.js",
+		"outputAbbreviatedPath": "\/js\/TFG.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/TFG.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/TFG.min.js",
+		"outputAbbreviatedPath": "\/js\/TFG.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1

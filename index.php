@@ -122,7 +122,7 @@
             </aside><!-- Columna izquierda (logotipo, buscador, menú scroll y pie) -->
             <div class="contenedor-panel"><!-- Columna derecha (dashboard) -->
                 <div id="search_form">
-                    <form action=".php" method="get" accept-charset="utf-8" name="images_search" id="images_search">
+                    <form action="evento.php" method="get" accept-charset="utf-8" name="images_search" id="images_search">
                         <fieldset>
                             <legend>Busca tu Foto por:</legend>
                             <div class="select_input">
@@ -145,16 +145,32 @@
                     </div>
                 </div>
             </div><!-- Columna derecha (dashboard) -->
-            <div id="contact_form_wrapper">
+            <div class="alert_background"></div>
+            <div id="contact_form_wrapper" class="alert_box">
+                <a title="Cerrar" class="close">Cerrar</a>
                 <form action="contacto.php" method="post" accept-charset="utf-8" class="contact_form">
                     <fieldset>
-                        <div class="contact_text_input">
+                        <div class="contact_text_input" id="contact_name_wrapper">
                             <label for="contact_name">Nombre</label>
-                            <input id="contact_name" type="text" name="contact_name" value="" placeholder="Nombre">
+                            <input id="contact_name" type="text" name="contact_name" value="" placeholder="Nombre y Apellido">
                         </div>
-                        <a href="" title="" target="" class="close">Cerrar</a>
+                        <div class="contact_text_input" id="contact_mail_wrapper">
+                            <label for="contact_mail">Correo</label>
+                            <input id="contact_mail" type="mail" name="contact_mail" value="" placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="contact_text_input" id="contact_message_wrapper">
+                            <label for="contact_message">Comentario</label>
+                            <textarea id="contact_message" name="contact_message" value="" placeholder="Escribe tu Mensaje…"></textarea>
+                        </div>
+                        <div class="contact_controls_input">
+                            <input id="contact_reset" type="reset" name="contact_reset" value="Borrar" placeholder="Borrar">
+                            <input id="contact_submit" type="submit" name="contact_submit" value="Enviar" placeholder="Enviar">
+                        </div>
                     </fieldset>
                 </form>
+                <div id="logo_holder">
+                    <img src="css/img/Logo-Gris.png" alt="Logo Tu Foto con el Güero" width="163" height="76" />
+                </div>
             </div>
         </div><!-- Contenedor principal -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

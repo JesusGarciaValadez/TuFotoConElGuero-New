@@ -107,6 +107,7 @@ $myriadProBold:     'Myriad-Pro Bold',Helvetica,Arial,'sans-serif';
 $myriadProBlack:    'Myriad-Pro Black',Helvetica,Arial,'sans-serif';
 $helveticaNeue:     'helvetica_neue_lt_std',Helvetica,Arial,'sans-serif';
 $helvetica:         Helvetica,Arial,'sans-serif';
+$text_gray:         #474747;
 @mixin font-mask( $color,$size,$height,$weight,$font:$helvetica ) {
     color: $color;
     font-size: $size;
@@ -121,10 +122,11 @@ menuitem,nav,iframe,embed,object,*{
     outline: transparent thin none;
 }
 .alert_background {
-    background: url('../img/background_lightbox.png') repeat scroll 0 0 transparent;
-    display: block;
+    background: url('img/background_lightbox.png') repeat scroll 0 0 transparent;
+    display: none;
     height: 100%;
     min-height: em( 1720, 16 );
+    top:0;
     position: absolute;
     width: 100%;
     z-index: 16;
@@ -132,37 +134,34 @@ menuitem,nav,iframe,embed,object,*{
 .alert_box {
     @extend .clearfix;
     background-color: #FFF;
-    border-radius: 10px;
-    box-shadow: 1px 3px 7px #AAA;
+    border: 1px solid #E1E1E1;
     display: none;
     margin: 0 auto;
     padding: 30px;
-    position: relative;
-    /*width: 502px;*/
     z-index: 17;
     h2{
         background:none no-repeat scroll 0 1px transparent;
         color: #27A9E0;
-        font: normal 1.188em/1em $helvetica;
+        font: normal 1.188em/1em $helveticaNeue;
         margin: 0;
         padding: 0 46px 0 0;
         text-transform: uppercase;
     }
-    a{
+    a.close{
+        //background: url('img/cerrar.png') no-repeat scroll 0 0 transparent;
         cursor: pointer;
-        height: 35px;
+        //height: 18px;
         overflow: hidden;
         position: absolute;
-        right: 20px;
-        top: 20px;
-        width: 35px;
+        text-indent: -2000em;
+        //width: 83px;
         img{
             
         }
     }
     p{
         color: #000;
-        font: normal 0.875em/1em $helvetica;
+        font: normal 0.875em/1em $helveticaNeue;
         padding: 20px 0 0;
         width: 100%;
     }
