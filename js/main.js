@@ -170,7 +170,7 @@
             var _rule       = ( typeof( rule ) == 'object' ) ? rule : {};
             var _message    = ( typeof( messages ) == 'object' ) ? messages : {};
             
-            var formActive = $( 'form' ).validate( {
+            var formActive = $( '.contact_form' ).validate( {
                 onfocusout: false,
                 onclick: true,
                 onkeyup: false,
@@ -180,7 +180,7 @@
                 errorClass: "error",
                 validClass: "valid",
                 errorElement: "label",
-                ignore: "",
+                ignore: '',
                 /*showErrors: function( errorMap, errorList ) {
                     $('#message').empty().removeClass();
                     $("#message").html('<p>Error al ingresar la información.</p><p>Verifique que sus datos están correctos o que no falte ningún dato.</p><p>Por favor, vuelvalo a intentar.</p>');
@@ -195,7 +195,6 @@
                 //debug:true,
                 rules: _rule,
                 messages: _message,
-                ignore: 'textarea',
                 highlight: function( element, errorClass, validClass ) {
                     $( element ).parent().addClass( 'error_wrapper' );
                 },
@@ -209,35 +208,20 @@
                         beforeSubmit: function showRequestLogin( arr, form, options ) {
                             
                             $('.error_indicator').remove();
-                            if ( $('textarea' ).val() == "" ) {
-                               
-                                $('textarea' ).val( 'Ninguno' );
-                            }
                         },
                         //  !Function for handle data from server
                         success: function showResponseLogin( responseText, statusText, xhr, form ) {
                             
-                            //console.log(responseText.success);
-                            responseText    = $.parseJSON( responseText );
+                            responseText    = ( $.parseJSON( responseText ) == null ) ? responseText : $.parseJSON( responseText );
                             
                             if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
                                 
-                                $( '.alert_box' ).addClass( 'thank_you_message' );
-                                var _title      = 'Gracias';
-                                var _markup     = '<p>Nos comunicaremos con usted a la brevedad.</p>';
-                                TFG.openAlert( _title, _markup );
-                                $( 'textarea' ).val( "" );
-                                //$( form ).fadeOut( 300 );
+                                $( '#contact_message_wrapper' ).append( '<label for="contact_message" class="response sended">Tu comentario se ha enviado</label>' );
                             } else {
-                                
-                                $( '.alert_box' ).addClass( 'error_message' );
-                                var _title  = 'Error';
-                                var _markup = '<p>La encuesta no fue procesada correctamente. Por favor, contacta al administrador.</p>';
-                                TFG.openAlert( _title, _markup );
+                                $( '#contact_message_wrapper' ).append( '<label for="contact_message" class="response wrong">Error</label>' );
                             }
-                            //TFG.smoothScroll( 'body' );
                         },
-                        resetForm: false,
+                        resetForm: true,
                         clearForm: false,
                         //   If something is wrong
                         error: function( jqXHR, textStatus, errorThrown ) {
@@ -278,7 +262,7 @@
             var _rule       = ( typeof( rule ) == 'object' ) ? rule : {};
             var _message    = ( typeof( messages ) == 'object' ) ? messages : {};
             
-            var formActive = $( 'form' ).validate( {
+            var formActive = $( '#images_search' ).validate( {
                 onfocusout: false,
                 onclick: true,
                 onkeyup: false,
@@ -303,7 +287,6 @@
                 //debug:true,
                 rules: _rule,
                 messages: _message,
-                ignore: 'textarea',
                 highlight: function( element, errorClass, validClass ) {
                     $( element ).parent().addClass( 'error_wrapper' );
                 },
@@ -1035,7 +1018,11 @@
     //  When DOM is ready
     $( document ).on( 'ready', function ( e ) {
         
-        //  !Crea una instancia de jQuery Overlay
+        //  Crea una instancia de jQuery Overlay para el home de descubreone.mx
+        //  Calcula la distancia entre el margen izquierdo para posicionar
+        //  la capa del video. Si en menor de 0 (ocurre en iPhone) utiliza
+        //  el ancho del body en vez del ancho de la ventana para hacer
+        //  el cálculo
         if ( $( '#contact_form_wrapper' ).exists() ) {
             
             TFG.doOverlay( $( '.overlay_trigger' ), {
@@ -1055,83 +1042,41 @@
                     $( '.alert_background' ).fadeIn( 100 );
                 },
                 onBeforeClose:  function ( ){
-                   
+                    
                     $( '.alert_box' ).fadeOut( 10, function ( ) {
-                       
+                        
                         $( '.alert_background' ).fadeOut( 10 );
-                        $( '#contact_form_wrapper h4' ).text( '' );
-                        $( '#contact_form_wrapper p' ).remove( );
-                        $( '#contact_form_wrapper form' ).remove( );
-                        $( '#contact_form_wrapper table' ).remove( );
-                        $( '#alertcontact_form_wrapper_box div' ).remove( );
-                        $( '#contact_form_wrapper button' ).remove( );
-                        $( '#contact_form_wrapper div.confirm' ).remove( );
+                        $( '.response.sended,.response.wrong' ).remove();
                     } );
                 },
-                onClose: function ( e ) {
-                   
-                }
+                onClose: function ( e ) {}
             } );
-           
+            
+            //TFG.overlay    = $( '.alert_trigger' ).data( 'overlay' );
             TFG.overlay    = $( '.overlay_trigger' ).data( 'overlay' );
-           
+            
             $( '#contact_form_wrapper' ).height( $( 'body' ).height() );
-        }
-        
-        //  Crea una instancia de jQuery Overlay para el home de descubreone.mx
-        //  Calcula la distancia entre el margen izquierdo para posicionar
-        //  la capa del video. Si en menor de 0 (ocurre en iPhone) utiliza
-        //  el ancho del body en vez del ancho de la ventana para hacer
-        //  el cálculo
-        if ( $( '.overlay' ).exists() ) {
-           
-            $( '.overlay' ).centerWidth();
-           
-            TFG.doOverlay( 'img[rel]', {
-                effect: 'apple',
-                // custom top position
-                //top: 260,
-                // some mask tweaks suitable for facebox-looking dialogs
-                mask: {
-                    // you might also consider a "transparent" color for the mask
-                    color: '#FFF',
-                    // load mask a little faster
-                    loadSpeed: 200,
-                    // very transparent
-                    opacity: 0.5
-                },
-                // disable this for modal dialog-type of overlays
-                closeOnClick: true,
-                closeOnEsc: true,
-                // load it immediately after the construction
-                load: true,
-                onBeforeLoad: function ( e ) {
-                   
-                },
-                onLoad: function ( e ) {
-                  
-                },
-                onBeforeClose: function ( e ) {
-                   
-                },
-                onClose: function ( e ) {
-                   
-                }
-            } );
-           
+            
             $( window ).on( {
                 resize: function ( e ) {
                    
-                    $( '.overlay.black' ).centerWidth();
+                    $( '.alert_box' ).centerWidth();
                 },
                 touchstart: function ( e ) {
                    
-                    $( '.overlay.black' ).centerWidth();
+                    $( '.alert_box' ).centerWidth();
                 },
                 touchend: function ( e ) {
                    
-                    $( '.overlay.black' ).centerWidth();
+                    $( '.alert_box' ).centerWidth();
                 }
+            } );
+        }
+        
+        if ( $( '.alert_background' ).exists() ) {
+            
+            $( '.alert_background' ).on( 'click', function( e ) {
+                TFG.closeAlert();
             } );
         }
         
@@ -1180,75 +1125,6 @@
             TFG.validateForms( rules, messages );
         }
         
-        //  !Crea una instancia de jQuery Overlay
-        if ( $( '.alert_box' ).exists() ) {
-            
-            TFG.doOverlay( $( 'a.alert_trigger' ), {
-                effect: 'apple',
-                close: $( '.alert_box a.close' ),
-                closeOnClick: true,
-                closeOnEsc: true,
-                speed: 'normal',
-                fixed: true,
-                onBeforeLoad: function ( e ) {
-                    
-                    $( '.alert_background' ).height( '100%' );
-                    ( $( '.alert_box a.close' ).exists() ) ? true : $( '.alert_box' ).prepend( TFG.closer );
-                    $( '.alert_box' ).centerWidth();
-                    $( '.alert_box' ).centerHeight();
-                    ( $( '.alert_box p' ).text() == '' ) ? $( '.alert_box p' ).remove() : false;
-                },
-                onLoad: function() {
-                    $( '.alert_background' ).fadeIn( 100 );
-                },
-                onBeforeClose:  function ( ){
-                    
-                    $( '.alert_box' ).fadeOut( 10, function ( ) {
-                        
-                        $( '.alert_background' ).fadeOut( 10 );
-                        $( '.alert_box h2' ).text( '' );
-                        $( '.alert_box h4' ).text( '' );
-                        ( $( '.alert_box p' ).exists() ) ? $( '.alert_box p' ).remove( ) : false;
-                        ( $( '.alert_box form' ).exists() ) ? $( '.alert_box form' ).remove( ) : false;
-                        ( $( '.alert_box table' ).exists() ) ? $( '.alert_box table' ).remove( ) : false;
-                        ( $( '.alert_box div' ).exists() ) ? $( '.alert_box div' ).remove( ) : false;
-                        ( $( '.alert_box button' ).exists() ) ? $( '.alert_box button' ).remove( ) : false;
-                        ( $( '.alert_box div.confirm' ).exists() ) ? $( '.alert_box div.confirm' ).remove( ) : false;
-                    } );
-                },
-                onClose: function ( e ) {}
-            } );
-            
-            TFG.overlay    = $( '.alert_trigger' ).data( 'overlay' );
-            
-            //$( '.alert_background' ).height( $( 'body' ).height() );
-        }
-        
-        //  Crea una instancia de jQuery Overlay para el home de descubreone.mx
-        //  Calcula la distancia entre el margen izquierdo para posicionar
-        //  la capa del video. Si en menor de 0 (ocurre en iPhone) utiliza
-        //  el ancho del body en vez del ancho de la ventana para hacer
-        //  el cálculo
-        if ( $( '.overlay' ).exists() ) {
-            
-            $( '.overlay' ).centerWidth();
-            
-            $( window ).on( {
-                resize: function ( e ) {
-                   
-                    $( '.overlay' ).centerWidth();
-                },
-                touchstart: function ( e ) {
-                   
-                    $( '.overlay' ).centerWidth();
-                },
-                touchend: function ( e ) {
-                   
-                    $( '.overlay' ).centerWidth();
-                }
-            } );
-        }
-        
         // Validación de los formularios
         if ( $( '.contact_form' ).exists() ) {
             
@@ -1266,13 +1142,13 @@
                     },
                     contact_message:    {
                         required:   true,
-                        minlength:  50,
+                        minlength:  5,
                         maxlength:  512
                     }
                 };
             var messages    = {
                     contact_name:       "Por favor, escribe tu nombre",
-                    contact_mail:       "Por favor, escribe tu mensaje",
+                    contact_mail:       "Por favor, escribe tu email",
                     contact_message:    "Por favor, escribenos un mensaje",
                     location:           "Por favor, selecciona una opción",
                     date:               "Por favor, selecciona una opción",
@@ -1287,11 +1163,13 @@
             TFG.validateFormsAjax( rules, messages );
         }
         
-        //  Handler de contenido de textarea
-        if ( $( 'textarea' ).exists() ) {
-           
-            $( 'textarea' ).val( 'Mensaje' );
-            TFG.toggleValue( 'textarea', "Mensaje" );
+        if ( $( 'input[type="reset"]' ).exists() ) {
+            
+            $( 'input[type="reset"]' ).on( 'click', function ( e ) {
+                
+                e.stopPropagation();
+                $( ".response.sended, .response.wrong" ).remove();
+            } );
         }
         
         if ( $( '#home' ).exists() ) {

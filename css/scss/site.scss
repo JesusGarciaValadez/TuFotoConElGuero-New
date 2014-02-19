@@ -428,6 +428,7 @@ html, body {
                 width: 467px;
                 .contact_text_input{
                     padding: 0 0 11px;
+                    position: relative;
                     label{
                         background: url("img/contact_controls.png") no-repeat scroll 0 0 transparent;
                         display: block;
@@ -436,6 +437,21 @@ html, body {
                         padding: 0;
                         text-indent: -2000em;
                         width: 111px;
+                    }
+                    .error{
+                        @include font-mask( #BE1206, em( 13, 16 ), em( 13, 13 ), normal, $helveticaNeue );
+                        background: none;
+                        bottom: -10px;
+                        font-style: italic;
+                        height: auto;
+                        position: absolute;
+                        right: 0;
+                        text-align: right;
+                        text-indent: 0;
+                        width: 50%;
+                        &:before{
+                            content: "* ";
+                        }
                     }
                     input, 
                     textarea{
@@ -462,7 +478,27 @@ html, body {
                 #contact_message_wrapper{
                     
                     label{ background-position: 0 -105px; margin: 0 0 4px; }
+                    .error{ left: -11px; }
                     #contact_message{}
+                    .response.sended,
+                    .response.wrong{
+                        @include font-mask( #BE1206, em( 13, 16 ), em( 16, 13 ), normal, $helveticaNeue );
+                        background: none;
+                        bottom: -25px;
+                        height: auto;
+                        font-style: italic;
+                        left: -1px;
+                        position: absolute;
+                        right: -1px;
+                        text-align: left;
+                        text-indent: 0;
+                        width: 46%;
+                        &:before{
+                            content: "* ";
+                        }
+                    }
+                    .response.sended{}
+                    .response.wrong{}
                 }
                 .contact_controls_input{
                     float: right;

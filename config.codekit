@@ -801,7 +801,7 @@
 		"outputAbbreviatedPath": "\/css\/estilo_admin.css",
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -816,7 +816,7 @@
 		"outputAbbreviatedPath": "\/css\/estilos.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -831,7 +831,7 @@
 		"outputAbbreviatedPath": "\/css\/eventos.bak.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -846,7 +846,7 @@
 		"outputAbbreviatedPath": "\/css\/eventos.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -861,7 +861,7 @@
 		"outputAbbreviatedPath": "\/css\/eventos_back.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -876,7 +876,7 @@
 		"outputAbbreviatedPath": "\/css\/eventoss.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -891,7 +891,7 @@
 		"outputAbbreviatedPath": "\/css\/jquery-ui-1.10.4.custom.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -906,7 +906,7 @@
 		"outputAbbreviatedPath": "\/css\/jquery.carousel-lightbox.bak.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -921,7 +921,7 @@
 		"outputAbbreviatedPath": "\/css\/jquery.carousel-lightbox.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -936,7 +936,7 @@
 		"outputAbbreviatedPath": "\/css\/magnific-popup.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -951,7 +951,7 @@
 		"outputAbbreviatedPath": "\/css\/main.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -966,7 +966,7 @@
 		"outputAbbreviatedPath": "\/css\/menu-vertical.bak.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -981,7 +981,7 @@
 		"outputAbbreviatedPath": "\/css\/menu-vertical.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -996,7 +996,7 @@
 		"outputAbbreviatedPath": "\/css\/navigation.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -1011,7 +1011,7 @@
 		"outputAbbreviatedPath": "\/css\/normalize.min.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -1026,7 +1026,7 @@
 		"outputAbbreviatedPath": "\/css\/perfect-scrollbar.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -1041,7 +1041,7 @@
 		"outputAbbreviatedPath": "\/css\/shadowbox-basico.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -1056,7 +1056,7 @@
 		"outputAbbreviatedPath": "\/css\/shadowbox.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -1071,7 +1071,7 @@
 		"outputAbbreviatedPath": "\/css\/site.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -1102,7 +1102,7 @@
 		"outputAbbreviatedPath": "\/css\/TFG\/jquery-ui-1.10.4.custom.css",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -9228,14 +9228,14 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Jesús García Valadez",
+"lastSavedByUser": "Jesús Antonio García Valadez",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "Tu Foto con el Güero",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-facepalm"
+	"iconImageName": "meme-lotr"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 1,

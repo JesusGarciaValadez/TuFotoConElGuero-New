@@ -142,9 +142,11 @@ menuitem,nav,iframe,embed,object,*{
     h2{
         background:none no-repeat scroll 0 1px transparent;
         color: #27A9E0;
+        display: block;
         font: normal 1.188em/1em $helveticaNeue;
-        margin: 0;
-        padding: 0 46px 0 0;
+        margin: 0 auto;
+        padding: 200px 0 0 0;
+        text-align: center;
         text-transform: uppercase;
     }
     a.close{
@@ -163,6 +165,7 @@ menuitem,nav,iframe,embed,object,*{
         color: #000;
         font: normal 0.875em/1em $helveticaNeue;
         padding: 20px 0 0;
+        text-align: center;
         width: 100%;
     }
 }
