@@ -37,6 +37,65 @@
         <link rel="stylesheet" href="css/shadowbox.css" type="text/css" media="screen" />
         
         <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"><\/script>')
+        </script>
+        <script type="text/javascript" src="js/shadowbox.min.js"></script>
+        <script type="text/javascript">
+            var hScreen = $(window).height();
+            var scrolled = 0;
+            var paginas = 1;
+            var sDatos = "";
+            var lightbox = false;
+            
+            Shadowbox.init({
+                handleOversize: "resize",
+                overlayColor: "#fff",
+                onOpen: function () {
+                    $(".a-fblightbox").on('click', function (e) {
+                        var imagen = $('#sb-player').attr('src');
+                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+                        var url = "http://www.facebook.com/sharer.php?u=" + imagen; //plugin.settings.imageUrl;
+                        
+                        nueva = window.open(url, 'Comparte en Fb', caracteristicas);
+                        e.preventDefault();
+                    });
+                    
+                    $('.a-twlightbox').on('click', function () {
+                        var imagen = $('#sb-player').attr('src');
+                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+                        //nueva=window.open( "http://twitter.com/share", 'Comparte en twiter', caracteristicas);
+                        
+                        var dir = imagen; //plugin.settings.imageUrl;//window.document.URL;
+                        var dir2 = encodeURIComponent(dir);
+                        var tit = window.document.title;
+                        var tit2 = encodeURIComponent(tit);
+                        
+                        nueva = window.open('http://twitter.com/?status=' + tit2 + ',%20' + dir2 + '', 'Comparte en twiter', caracteristicas);
+                        e.preventDefault();
+                    });
+                    
+                    $('.a-gPluslightbox').on('click', function () {
+                        var imagen = $('#sb-player').attr('src');
+                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+                        
+                        nueva = window.open("https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas);
+                        e.preventDefault();
+                    });
+                }
+            });
+            
+            function blurElement(element, size) {
+                var filterVal = 'blur(' + size + 'px)';
+                $(element)
+                    .css('filter', filterVal)
+                    .css('webkitFilter', filterVal)
+                    .css('mozFilter', filterVal)
+                    .css('oFilter', filterVal)
+                    .css('msFilter', filterVal);
+            }
+        </script>
     </head>
     
     <body id="home">
@@ -299,66 +358,6 @@
                 </div>
             </div><!-- Formulario de Contacto -->
         </div><!-- Contenedor principal -->
-        
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript">
-            window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"><\/script>')
-        </script>
-        <script type="text/javascript" src="js/shadowbox.js"></script>
-        <script type="text/javascript">
-            var hScreen = $(window).height();
-            var scrolled = 0;
-            var paginas = 1;
-            var sDatos = "";
-            var lightbox = false;
-            
-            Shadowbox.init({
-                handleOversize: "resize",
-                overlayColor: "#fff",
-                onOpen: function () {
-                    $(".a-fblightbox").on('click', function (e) {
-                        var imagen = $('#sb-player').attr('src');
-                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
-                        var url = "http://www.facebook.com/sharer.php?u=" + imagen; //plugin.settings.imageUrl;
-                        
-                        nueva = window.open(url, 'Comparte en Fb', caracteristicas);
-                        e.preventDefault();
-                    });
-                    
-                    $('.a-twlightbox').on('click', function () {
-                        var imagen = $('#sb-player').attr('src');
-                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
-                        //nueva=window.open( "http://twitter.com/share", 'Comparte en twiter', caracteristicas);
-                        
-                        var dir = imagen; //plugin.settings.imageUrl;//window.document.URL;
-                        var dir2 = encodeURIComponent(dir);
-                        var tit = window.document.title;
-                        var tit2 = encodeURIComponent(tit);
-                        
-                        nueva = window.open('http://twitter.com/?status=' + tit2 + ',%20' + dir2 + '', 'Comparte en twiter', caracteristicas);
-                        e.preventDefault();
-                    });
-                    
-                    $('.a-gPluslightbox').on('click', function () {
-                        var imagen = $('#sb-player').attr('src');
-                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
-                        
-                        nueva = window.open("https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas);
-                        e.preventDefault();
-                    });
-                }
-            });
-            
-            function blurElement(element, size) {
-                var filterVal = 'blur(' + size + 'px)';
-                $(element)
-                    .css('filter', filterVal)
-                    .css('webkitFilter', filterVal)
-                    .css('mozFilter', filterVal)
-                    .css('oFilter', filterVal)
-                    .css('msFilter', filterVal);
-            }
-        </script>
         <script type="text/javascript" src="js/plugins.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript">

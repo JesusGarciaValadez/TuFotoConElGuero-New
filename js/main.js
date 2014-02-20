@@ -124,7 +124,6 @@
                         if ( $( valueOfElement ).text() == anio ) {
                             
                             //$( valueOfElement ).parent().addClass( 'active' );
-                            console.log( $( valueOfElement ).parent() );
                         }
                     } );
                 }
