@@ -119,7 +119,13 @@ html, body {
                                             }
                                             .active{ 
                                                 color: #FFF;
-                                                a{ color: #FFF !important; background-position: 0px -344px !important; }
+                                                a{
+                                                    color: #FFF !important;
+                                                    background-position: 0px -344px !important;
+                                                    span{
+                                                        color: #FFF;
+                                                    }
+                                                }
                                             }
                                         }
                                     }

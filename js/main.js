@@ -123,7 +123,8 @@
                         
                         if ( $( valueOfElement ).text() == anio ) {
                             
-                            $( valueOfElement ).parent().addClass( 'active' );
+                            //$( valueOfElement ).parent().addClass( 'active' );
+                            console.log( $( valueOfElement ).parent() );
                         }
                     } );
                 }
@@ -133,7 +134,11 @@
                         
                         if ( $( valueOfElement ).text() == mes ) {
                             
-                            $( valueOfElement ).parent().parent().addClass( 'active' );
+                            $( valueOfElement ).parents( '.csssubmenu' ).show();
+                            $( valueOfElement ).parents( '.has-sub' ).siblings().children( 'ul' ).hide();
+                            $( valueOfElement ).parents( '.has-sub' ).siblings().children( 'a' ).removeClass( 'active' );
+                            $( valueOfElement ).parent().parent().removeClass( 'noactive' ).addClass( 'active' );
+                            $( valueOfElement ).parent().parent().parent().show();
                         }
                     } );
                 }
@@ -1015,8 +1020,6 @@
     //  When DOM is loaded
     $( function ( ) {
         
-        TFG.init();
-        
         if ( $( ".loader" ).exists() ) {
            
             $( '.alert_background' ).fadeOut( 300 );
@@ -1272,6 +1275,8 @@
                 TFG.ConfigurarPantalla();
             } );
         }
+        
+        TFG.init();
     } );
    
 })( jQuery, window, document );
