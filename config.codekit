@@ -8940,6 +8940,16 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/shadowbox.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/shadowbox.js",
+		"outputAbbreviatedPath": "\/js\/shadowbox.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/shadowbox.min.js": {
 		"fileType": 64,
 		"ignore": 1,
