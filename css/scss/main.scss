@@ -187,9 +187,9 @@ menuitem,nav,iframe,embed,object,*{
 @import "site.scss";
 @import "navigation.scss";
 @import "menu-vertical.scss";
-@import "shadowbox-basico.scss";
+//@import "shadowbox-basico.scss";
 @import "eventos.scss";
-@import "shadowbox.scss";
+@import "../shadowbox.css";
 @import "../../bootstrap/css/bootstrap.css";
 @import "jquery-ui-1.10.4.custom.scss";
 

@@ -2,10 +2,10 @@
  //require_once("eventos.php");
  //redirect('eventos.php?municipio='.$municipio.'&fecha='.$fecha);
 //}
-echo "ok";
+
 $municipio = trim($_POST['location']);
 $fecha = trim($_POST['date']);  
-redirect('eventos.php?municipio='.$municipio.'&fecha='.$fecha);
+header("Location:eventos.php?municipio={$municipio}&fecha={$fecha}");
 
 // if($_POST['submit_search'] == "Submit") 
 //{

@@ -227,10 +227,7 @@
                         error: function( jqXHR, textStatus, errorThrown ) {
                             //console.log(textStatus);
                             //console.log(errorThrown);
-                            $( '.alert_box' ).addClass( 'error' );
-                            var _title  = 'Error';
-                            var _markup = '<p>La encuesta no fue procesada correctamente. Por favor, reporta este error al administrador.</p>';
-                            TFG.openAlert( _title, _markup );
+                            $( '#contact_message_wrapper' ).append( '<label for="contact_message" class="response wrong">Hubo un error</label>' );
                         },
                         cache: false
                     } );
@@ -295,7 +292,18 @@
                 },
                 submitHandler: function( form ) {
                     // Form submit
+                    var locationString, dateString;
                     
+                    if ( $( '#location_search' ).val() != '' ) {
+                        
+                        locationString  = $( '#location_search' ).val();
+                    }
+                    if ( $( '#date_search' ).val() != '' ) {
+                        
+                        dateString      = $( '#date_search' ).val();
+                    }
+                    
+                    window.location.href    = 'eventos.php?municipio=' + locationString + '&fecha=' + dateString;
                 },
                 /*invalidHandler: function(form, validator) {
                     var errors = validator.numberOfInvalids();
@@ -691,6 +699,7 @@
             var imgNew;
             var refNew  ="#";
             var alink   = $(ctl).parent();
+            var fotos;
             
             if ( imgv ) {
                 
@@ -704,10 +713,10 @@
                 
                 imgNew  = "imagenes/" + fotos[ index ][ 'directorio' ] + "/thumb" + fotos[ index ][ 'archivo' ];
                 refNew  = "eventos.php?anio=" + fotos[ index ][ 'anio' ] + "&mes=" + fotos[ index ][ 'mes' ] + "&id=" + fotos[ index ][ 'evento' ] +"&foto=" +fotos[ index ][ 'foto' ];
+                
+                fotos.splice( index, 1 );
+                items   = fotos.length;
             }
-            
-            fotos.splice( index, 1 );
-            items   = fotos.length;
             
             //$('.pie a').html(counter + ' ' + items);
             
