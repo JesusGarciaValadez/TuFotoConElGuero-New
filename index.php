@@ -122,7 +122,7 @@
             </aside><!-- Columna izquierda (logotipo, buscador, menú scroll y pie) -->
             <div class="contenedor-panel"><!-- Columna derecha (dashboard) -->
                 <div id="search_form">
-                    <form action="resultados.php" method="get" accept-charset="utf-8" name="images_search" id="images_search">
+                    <form action="buscar.php" method="get" accept-charset="utf-8" name="images_search" id="images_search">
                         <fieldset>
                             <legend>Busca tu Foto por:</legend>
                             <div class="select_input">
@@ -149,8 +149,7 @@
             <div class="alert_background"></div>
             <div id="contact_form_wrapper" class="alert_box">
                 <a title="Cerrar" class="close">Cerrar</a>
-                <form action="js/response.json" method="post" accept-charset="utf-8" class="contact_form">
-                <!--form action="enviamail.php" method="post" accept-charset="utf-8" class="contact_form"-->
+                <form action="enviamail.php" method="post" accept-charset="utf-8" class="contact_form">
                     <fieldset>
                         <div class="contact_text_input" id="contact_name_wrapper">
                             <label for="contact_name">Nombre</label>
