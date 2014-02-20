@@ -27,7 +27,9 @@
     imgg            = false,
     ScrollableMenu  = false,
     counter         = 0,
-    icounter        = 0;
+    icounter        = 0,
+    fotos           = {},
+    items           = 0;
     
     // Define a local copy of TFG
     TFG = function() {
@@ -703,7 +705,6 @@
             var imgNew;
             var refNew  ="#";
             var alink   = $(ctl).parent();
-            var fotos;
             
             if ( imgv ) {
                 
