@@ -577,7 +577,7 @@
                     complete: function ( jqXHR, textStatus ) {
                         
                     },
-                    contentType: "application/x-www-form-urlencoded",  
+                    contentType: "application/x-www-form-urlencoded",
                     converters: {
                         "* text":       window.String,
                         "text html":    true,
@@ -593,7 +593,7 @@
                     success: function ( data, textStatus, jqXHR ) {
                         
                         //var obj = $.parseJSON(data);
-                        fotos   = $.parseJSON( data );
+                        fotos   = ( $.parseJSON( data ) == null ) ? data : $.parseJSON( data );
                         items   = fotos.length;
                         
                         //alert(items );

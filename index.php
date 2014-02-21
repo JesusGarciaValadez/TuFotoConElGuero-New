@@ -297,7 +297,7 @@
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
         <script type="text/javascript" src="js/plugins.min.js"></script>
-        <script type="text/javascript" src="js/main.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript">
             var fotos = <?php echo json_encode($fotos); ?>;
             var items = <?php echo count($fotos); ?>;
