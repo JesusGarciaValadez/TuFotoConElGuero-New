@@ -11,24 +11,24 @@
 #RewriteEngine On
 #RewriteBase /
 
-# Rewrite www.domain.com -> domain.com -- used with SEO Strict URLs plugin
+# Rewrite www.tufotoconelguero.com -> tufotoconelguero.com -- used with SEO Strict URLs plugin
 #RewriteCond %{HTTP_HOST} .
-#RewriteCond %{HTTP_HOST} !^pro-meta\.com\.mx [NC]
-#RewriteRule (.*) http://pro-meta.com.mx/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^tufotoconelguero\.com\.mx [NC]
+#RewriteRule (.*) http://tufotoconelguero.com.mx/$1 [R=301,L]
 #
-# or for the opposite domain.com -> www.domain.com use the following
+# or for the opposite tufotoconelguero.com -> www.tufotoconelguero.com use the following
 # DO NOT USE BOTH
 #
 #RewriteCond %{HTTP_HOST} .
-#RewriteCond %{HTTP_HOST} !^www\.pro-meta\.com\.mx [NC]
-#RewriteRule (.*) http://www.pro-meta.com.mx/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^www\.tufotoconelguero\.com\.mx [NC]
+#RewriteRule (.*) http://www.tufotoconelguero.com.mx/$1 [R=301,L]
 
 
 
 # Rewrite secure requests properly to prevent SSL cert warnings, e.g. prevent 
-# https://www.domain.com when your cert only allows https://secure.domain.com
+# https://www.tufotoconelguero.com when your cert only allows https://secure.tufotoconelguero.com
 #RewriteCond %{SERVER_PORT} !^443
-#RewriteRule (.*) https://pro-meta.com.mx/$1 [R=301,L]
+#RewriteRule (.*) https://tufotoconelguero.com.mx/$1 [R=301,L]
 
 
 
@@ -105,7 +105,7 @@ RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 # ##############################################################################
 
 # ------------------------------------------------------------------------------
-# | Cross-domain AJAX requests                                                 |
+# | Cross-tufotoconelguero AJAX requests                                                 |
 # ------------------------------------------------------------------------------
 
 # Enable cross-origin AJAX requests.
@@ -122,8 +122,8 @@ RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 
 # Send the CORS header for images when browsers request it.
 # https://developer.mozilla.org/en/CORS_Enabled_Image
-# http://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
-# http://hacks.mozilla.org/2011/11/using-cors-to-load-webgl-textures-from-cross-domain-images/
+# http://blog.chromium.org/2011/07/using-cross-tufotoconelguero-images-in-webgl-and.html
+# http://hacks.mozilla.org/2011/11/using-cors-to-load-webgl-textures-from-cross-tufotoconelguero-images/
 
 <IfModule mod_setenvif.c>
     <IfModule mod_headers.c>
@@ -138,7 +138,7 @@ RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 # | Web fonts access                                                           |
 # ------------------------------------------------------------------------------
 
-# Allow access from all domains for web fonts
+# Allow access from all tufotoconelgueros for web fonts
 
 <IfModule mod_headers.c>
     <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
@@ -351,7 +351,7 @@ AddDefaultCharset utf-8
 # Option 2: rewrite example.com → www.example.com
 
 # Be aware that the following might not be a good idea if you use "real"
-# subdomains for certain parts of your website.
+# subtufotoconelgueros for certain parts of your website.
 
 #<IfModule mod_rewrite.c>
 #    RewriteCond %{HTTPS} !=on
@@ -433,7 +433,7 @@ AddDefaultCharset utf-8
 
 # <IfModule mod_rewrite.c>
 #    RewriteCond %{SERVER_PORT} !^443
-#    RewriteRule ^ https://pro-meta.com.mx%{REQUEST_URI} [R=301,L]
+#    RewriteRule ^ https://tufotoconelguero.com.mx%{REQUEST_URI} [R=301,L]
 # </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

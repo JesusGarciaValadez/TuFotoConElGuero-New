@@ -22,11 +22,44 @@
         <meta http-equiv="pragma" content="no-cache" />
         <meta name="description" content="" />
         <meta name="robots" content="all" />
-        <meta name="author" content="Jesús Antonio García Valadez" >
         <meta name="author" content="Leonides Zavala Vidal" >
-        <meta name="author" content="ksa zavi">
+        <meta name="author" content="Jesús Antonio García Valadez" >
         
         <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
+        
+        <meta property="og:title"
+        content="Tu Foto con el Güero" />
+        
+        <!-- A site name: -->
+        
+        <meta property="og:site_name" content="Tu Foto con el Güero"/>
+        
+        <meta property="og:image" content="http://www.tufotoconelguero.com/imagenes/default/7.jpg" />
+        
+        <!-- A URL with no session id or extraneous parameters. All shares on Facebook will use this as the identifying URL for this article. -->
+        
+        <meta property="og:url"
+        content="http://www.tufotoconelguero.com/eventos.php" />
+        
+        <!-- A clear description, at least two sentences long. -->
+        
+        <meta property="og:description" content="Workday, a provider of cloud-based
+        applications for human resources, said on Monday that it would seek to price
+        its initial public offering at $21 to $24 a share.  At the midpoint of that
+        range, the offering would value the company at $3.6 billion. Like many other
+        technology start-ups, Workday, founded in 2005, will have a dual-class share
+        structure, with each Class B share having 10 votes. Its co-chief executives,
+        David Duffield, the founder of PeopleSoft, and Aneel Bhusri, who was chief
+        strategist at PeopleSoft, will have 67 percent of the voting rights after
+        the I.P.O., according to the prospectus." />
+        
+        <!-- Unique ID that identifies your domain to Facebook. -->
+        
+        <meta property="fb:app_id" content="[FB_APP_ID]" />
+        
+        <!-- The type of object: -->
+        
+        <meta property="og:type" content="website" />
         
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -41,7 +74,7 @@
         <script type="text/javascript">
             window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"><\/script>')
         </script>
-        <script type="text/javascript" src="js/shadowbox.min.js"></script>
+        <script type="text/javascript" src="js/shadowbox.js"></script>
         <script type="text/javascript">
             var hScreen = $(window).height();
             var scrolled = 0;
@@ -56,7 +89,7 @@
                     $(".a-fblightbox").on('click', function (e) {
                         var imagen = $('#sb-player').attr('src');
                         var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
-                        var url = "http://www.facebook.com/sharer.php?u=" + imagen; //plugin.settings.imageUrl;
+                        var url = "http://www.facebook.com/sharer.php?u=http://tufotoconelguero.com/" + imagen; //plugin.settings.imageUrl;
                         
                         nueva = window.open(url, 'Comparte en Fb', caracteristicas);
                         e.preventDefault();
@@ -180,7 +213,7 @@
                 <div class="pie">
                     <p id="site_name">&copy; 2013 TUFOTOCONELGÜERO.COM,</p>
                     <p>Todos los Derechos Reservados</p>
-                    <a href="contacto.html" title="Políticas de Privacidad" target="_blank" rel="Shadowbox;">Políticas de Privacidad</a>
+                    <a href="#" title="Políticas de Privacidad" target="_blank" >Políticas de Privacidad</a>
                 </div>
             </aside><!-- Columna izquierda (logotipo, buscador, menú scroll y pie) -->
             <div class="contenedor-panel"><!-- Columna derecha (dashboard) -->
@@ -323,11 +356,11 @@
                         </fieldset>
                     </form>
                 </div><!-- Formulario de Búsqueda -->
-                <div class="fondo-panel"><!-- Capa que contiene la sombra con el shadow -->
-                    <div class="panel-galeria">
+                <div class="fondo-eventos"><!-- Capa que contiene la sombra con el shadow -->
+                    
                         <!-- Capa que cotiene las imagenes, Ancho 935 y alto de 460 pixeles -->
                         <?php $eventos->PrintEventos(); ?>
-                    </div>
+                    
                 </div><!-- Capa que contiene la sombra con el shadow -->
             </div><!-- Columna derecha (dashboard) -->
             <div class="alert_background"></div><!-- Background de Overlay -->
@@ -358,17 +391,32 @@
                 </div>
             </div><!-- Formulario de Contacto -->
         </div><!-- Contenedor principal -->
+        <link href="css/eventos.css" rel="stylesheet" />    
         <script type="text/javascript" src="js/plugins.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript">
-            var fotos = <?php echo json_encode($fotos); ?> ;
-            var items = <?php echo count($fotos); ?> ;
-            
-            window.TFG.ControlGaleria();
-        </script>
+        <script type="text/javascript" src="js/js-eventos.js"></script>
+<?php
+		if(!isset($_GET["pagina"]) and isset($_GET["id"]) ) 
+			{
+				
+				echo "<script type='text/javascript'>";
+				echo "window.setTimeout(function(){";
+					echo "  Shadowbox.open({ ";
+					echo "  content: '".$eventos->primerFoto."',"; 
+					echo "  player: 'img',";	
+					echo "  gallery: 'principal".(string)$_GET['id']."',";					
+					echo "title: '',";
+					echo "          });";
+				echo "     }, 200);";
+				echo "</script>";						
+			}    
+?>
+
+    
     </body>
 </html>
 <?php
+			
     $g          = null;
     $menu       = null;
     $eventos    = null;

@@ -84,6 +84,7 @@ html, body {
                                         
                                         a{
                                             background: url("img/menu-items.png") no-repeat scroll 0px -516px transparent !important;
+                                            border-top: 1px solid #000;
                                             display: block;
                                             height: 41px;
                                             width: 232px;
@@ -98,28 +99,30 @@ html, body {
                                                 background-position: 0px -172px !important;
                                             }
                                         }
-                                        a.active{
-                                            //background-position: 0px -344px !important;
-                                            border-bottom: 1px solid #000;
-                                            span{}
-                                        }
+                                        > a{ border-top:1px solid #000; }
                                         > ul{
                                             @extend .clearfix;
                                             display: none;
                                             li{
                                                 
-                                                a{
+                                                > a{
                                                     background: url("img/menu-items.png") no-repeat scroll 0px -645px transparent !important;
-                                                    border-bottom: 1px solid #000;
+                                                    border-bottom: 0 none transparent;
                                                     span{
                                                         color: #98969C;
                                                         text-indent: 100px;
                                                     }
                                                 }
+                                                &:last-child{
+                                                    
+                                                    > a{
+                                                        border-bottom: 0 none transparent;
+                                                    }
+                                                }
                                             }
                                             .active{ 
                                                 color: #FFF;
-                                                a{
+                                                > a{
                                                     color: #FFF !important;
                                                     background-position: 0px -344px !important;
                                                     span{

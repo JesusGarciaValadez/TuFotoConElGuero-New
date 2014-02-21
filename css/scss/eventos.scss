@@ -1,5 +1,8 @@
 body { overflow: hidden;}
-.p { text-decoration: none; color:#0a7846; font-family:Arial, Helvetica, sans-serif; }
+.p {
+    @include font-mask( #0A7846, em( 24, 16 ), em( 33.6, 24 ), bold, $helvetica );
+    text-decoration: none;
+}
 .contenedor-panel { 
     background: url("../img/dashboard/bg_dashboard.png") no-repeat scroll left top transparent;
     background-size: 100% 100%;

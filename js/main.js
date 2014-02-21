@@ -62,7 +62,8 @@
             TFG.obtainActualDocument();
             
             /**
-             *  Function to detect the id of document by param and set current element on menu
+             *  Function to detect the id of document by param and set current 
+             *  element on menu
              *
              */ 
             var Url = String( location.href );
@@ -1021,7 +1022,7 @@
     $( function ( ) {
         
         if ( $( ".loader" ).exists() ) {
-           
+            
             $( '.alert_background' ).fadeOut( 300 );
             $( ".loader" ).fadeOut( 300 );
         }

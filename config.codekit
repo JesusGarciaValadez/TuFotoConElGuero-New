@@ -1051,8 +1051,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/shadowbox-basico.scss",
 		"outputAbbreviatedPath": "\/css\/shadowbox-basico.css",
 		"outputPathIsSetByUser": 0,
@@ -1066,8 +1066,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/shadowbox.scss",
 		"outputAbbreviatedPath": "\/css\/shadowbox.css",
 		"outputPathIsSetByUser": 0,
@@ -7860,6 +7860,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/imagenes\/noviembre\/thumbIMG_4734.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30340,
+		"inputAbbreviatedPath": "\/imagenes\/noviembre\/thumbIMG_4734.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/noviembre\/thumbIMG_4734.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/imagenes\/octubre\/IMG_2540.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -8470,6 +8480,206 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/lighbox3\/ant.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26315,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/ant.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/ant.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/cerrar.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1804,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/cerrar.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/cerrar.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/cerrar2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/cerrar2.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/cerrar2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/close.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/close.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/close.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/compic2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27360,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/compic2.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/compic2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/dl2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26798,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/dl2.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/dl2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/fb3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3223,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/fb3.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/fb3.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/google_plus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30514,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/google_plus.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/google_plus.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/mail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30809,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/mail.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/mail.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/next.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/next.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/next.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/pause.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/pause.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/pause.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/play.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/play.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/play.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/previous-.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/previous-.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/previous-.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/previous.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/previous.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/previous.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/sig.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/sig.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/sig.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/sombra-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/sombra-1.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/sombra-1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/sombra-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/sombra-2.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/sombra-2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/sombra-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/sombra-3.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/sombra-3.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/tu-foto-guero-grises.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/tu-foto-guero-grises.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/tu-foto-guero-grises.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/lighbox3\/twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/twitter.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/twitter.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/mail.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -8710,12 +8920,32 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/jquery.carousel-lightbox.bak.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.bak.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.bak.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/jquery.carousel-lightbox.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.js",
 		"outputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/jquery.carousel-lightbox.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
@@ -8730,12 +8960,32 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/jquery.cycle.all.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/jquery.cycle.all.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.cycle.all.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/jquery.flip.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.flip.js",
 		"outputAbbreviatedPath": "\/js\/jquery.flip.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/jquery.flip.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/jquery.flip.min.js",
+		"outputAbbreviatedPath": "\/js\/jquery.flip.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
@@ -8800,6 +9050,16 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/js-eventos_11-02.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/js-eventos_11-02.min.js",
+		"outputAbbreviatedPath": "\/js\/js-eventos_11-02.min.min.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/js-galeria-back.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -8826,16 +9086,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/js-galeria.js",
 		"outputAbbreviatedPath": "\/js\/js-galeria.min.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/js-galeria.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/js-galeria.min.js",
-		"outputAbbreviatedPath": "\/js\/js-galeria.min.min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
@@ -9312,14 +9562,14 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Jesús Antonio García Valadez",
+"lastSavedByUser": "Jesús García Valadez",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "Tu Foto con el Güero",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-lotr"
+	"iconImageName": "meme-facepalm"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 1,

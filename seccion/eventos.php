@@ -11,7 +11,7 @@ class Eventos extends Model
     private $table;
     private $db;
     private $where;
-    private $primerFoto;
+    public $primerFoto;
 	 private $omitir_in_hide;
 	function __construct()
 	{		
@@ -150,7 +150,7 @@ echo '<div id="caja_eventos">
 <div id="fecha_event">';
 echo  $parse_date["day"].' de '.$meses[$parse_date["month"]-1].' de ' .$parse_date["year"];
 echo '</div>
-<hr style ="margin: 1px 0;" align="LEFT" size="1" width="210" color="#999999" noshade> 
+<hr  align="LEFT" size="1"  color="#999999" noshade> 
 <div id="Img-foto">';
 	
 	if ($this->primerFoto == $rutaimg) {
@@ -162,7 +162,7 @@ echo '</div>
 			echo "<img width='206' height='145' class='".$class."' src='".$rutathumb."' alt='".$fecha."'     title = '".$fecha."'>";
 	echo "</a>";
 		
-	//<img src="'.$rutathumb.'" width="206" height="145" /> 
+	 
 echo '</div>
 <div id="descrip_event">'.substr($descripcion,70).'...</div>';
 
@@ -443,7 +443,7 @@ function get_FullEventoRecienteMunicipio ($evento) {
 		
 	
 	}
-function get_FullEventoReciente ($evento) {
+function get_FullEventoReciente ($evento,$fecha='' ) {
 	
 	$rsEvento = $this->get_rows(1 ," evento =".$evento);
 			
@@ -568,7 +568,7 @@ function get_FullEventoReciente ($evento) {
 								
 								if ( $indexfilas==3) {
 									 echo "</div >"; // cierra pagina 
-									 echo "<div class='tabla-pagina' >"; //abro nueva pagina 
+									 echo "<div class='mas-EventoReciente' >"; //abro nueva pagina 
 									$indexfilas=0; 
 								}
 
@@ -584,7 +584,7 @@ function get_FullEventoReciente ($evento) {
 						 	}
 						}					 		
 						else {
-							if (!$openpagina) echo "<div class='tabla-pagina' >";
+							if (!$openpagina) echo "<div class='EventoReciente' >";
 						 	echo "<div class='tabla-row' >";
 						 	echo "<div class='tabla-celda' >";	
 							//echo "<span>".$rowEvento->fecha."</span>";
@@ -688,11 +688,11 @@ function PrintEventoTop( $rsResumenEventos)
           	$rutathumb="imagenes/".$rowEvento->directorio."/thumb".$rowEvento->archivo;
 								
 				 		$parse_date = date_parse($rowEvento->fecha);						
-						 		
-				 		echo '<div class="mes">'.$meses[$mes-1].'</div>';
+												 		
+				 		echo '<div class="mes">'.$meses[$parse_date["month"]-1].'</div>';
 				 		echo '<div class="more"> <a id="morelnk" href="#">REGRESAR</a></div>';
 				 						 		
-				 			echo '<div class="tabla-pagina tabla-evento-reciente">';
+				 			echo '<div class="PrintEventoTop tabla-evento-reciente">';
 				 			echo "<span>";	
 				 			echo  $parse_date["day"].' de '.$meses[$parse_date["month"]-1].' de ' .$parse_date["year"];
 				 			echo "</span>";
@@ -722,20 +722,16 @@ function PrintEventoTop( $rsResumenEventos)
 			
 			foreach ($rsResumenEventos as $rowEvento) 
           {
-          	$rutathumb="imagenes/".$rowEvento->directorio."/thumb".$rowEvento->archivo;
-								
-				 		$parse_date = date_parse($rowEvento->fecha);						
-						 		
+          	$rutathumb="imagenes/".$rowEvento->directorio."/thumb".$rowEvento->archivo;								
+				 		$parse_date = date_parse($rowEvento->fecha);						 		
 				 		echo '<div class="mes">'.$meses[$mes-1].'</div>';
-				 		echo '<div class="more"> <a id="morelnk" href="#">REGRESAR</a></div>';
-				 						 		
-				 			echo '<div class="tabla-pagina tabla-evento-reciente">';
+				 		echo '<div class="more"> <a id="morelnk" href="#">REGRESAR</a></div>';				 						 		
+				 			echo '<div class="PrintEventoReciente tabla-evento-reciente">';
 				 			echo "<span>";	
 				 			echo  $parse_date["day"].' de '.$meses[$parse_date["month"]-1].' de ' .$parse_date["year"];
 				 			echo "</span>";
 				 			echo "<span>".$rowEvento->titulo."...</span>";
-				 			echo "<span>".$rowEvento->descripcion."...</span>";		
-				 			//$this->omitir_in_hide[] =$_GET["foto"];	 							 	
+				 			echo "<span>".$rowEvento->descripcion."...</span>";				 				 							 	
 				 			$this->get_FullEventoReciente ($_GET['id'],$rowEvento->fecha);
 				 			$this->generaListaImgShadow_lighbox($_GET['id']);
 				 							 			
@@ -747,22 +743,32 @@ function PrintEventoTop( $rsResumenEventos)
 		    
 		}
 	}	
-	function PrintEventoxMunicipio ( $municipio,$fecha)  {	
-	$parse_date = date_parse($fecha);	
-	$fechaFormateada= $parse_date["year"]."-".$parse_date["month"]."-".$parse_date["day"];
-	$rsResumenEventos = $this->get_rows(0," idmunicipio = ".$municipio. " and fecha='".$fechaFormateada."'", " fecha DESC");
-	//print_r($rsResumenEventos);
+	function PrintEventoxMunicipio ( $municipio,$fecha)  {
+		
+		$Meses = array(0 => 'Enero', 1 => 'Febrero', 2 => 'Marzo', 3 => 'Abril',4 => 'Mayo',5 => 'Junio',6 => 'Julio',7 => 'Agosto',8 => 'Septiembre',9 => 'Octubre',10 => 'Noviembre',11 => 'Diciembre');
+		
+		$dia= substr($fecha,0,2);
+		$restofecha=substr($fecha,3);
+		$resultado = strpos($restofecha, "-");
+		$mes= substr($fecha,3,$resultado);
+		$cveMes= array_search($mes, $Meses) + 1 ;
+		$anio=substr($fecha, -4);
+
+		$fechaFormateada= $anio."-".$cveMes."-".$dia;	
+	
+		$rsResumenEventos = $this->get_rows(0," idmunicipio = ".$municipio. " and fecha='".$fechaFormateada."'", " fecha DESC");
+	
 	if($rsResumenEventos)
 		{
 			
 			$calculo = count( $rsResumenEventos);
 			if ( $calculo > 1 ) { 
 				//imprime el evento tipoxfecha
-				echo "imprime el evento tipoxfecha";
+				//echo "imprime el evento tipoxfecha";
 				$this->PrintEventoxFechaxMunicipios ($rsResumenEventos);
 			}
 			else { 
-				echo "imprime el evento tipo lighbox"; 
+				//echo "imprime el evento tipo lighbox"; 
 				//echo $rsResumenEventos[0]->evento;
 				
 				//$this->PrintEventoxMunicipioxEvento( $rsResumenEventos[0]->evento,$rsResumenEventos[0]->id, $rsResumenEventos);
@@ -776,10 +782,9 @@ function PrintEventoTop( $rsResumenEventos)
 	}	
 	
 function PrintEventoxFoto( $id, $foto)
-	{
+	{		
+		$rsEvento = $this->get_rows(4," evento = " .$id ." and id= ".$foto);				
 		
-		$rsEvento = $this->get_rows(4," evento = " .$id ." and id= ".$foto);
-				
 		if($rsEvento)
 		{			
 			$rowEvento = $rsEvento[0];			
@@ -787,19 +792,7 @@ function PrintEventoxFoto( $id, $foto)
 			
 			$this->primerFoto="imagenes/".$rowEvento->directorio."/".$rowEvento->archivo;				
 			$this->PrintEventoReciente( $parse_date["year"],$parse_date["month"]);
-			if(!isset($_GET["pagina"]) ) 
-			{
-				echo "<script>";
-				echo "window.setTimeout(function(){";
-					echo "  Shadowbox.open({ ";
-					echo "  content: '".$this->primerFoto."',"; 
-					echo "  player: 'img',";	
-					echo "  gallery: 'principal".(string)$_GET['id']."',";					
-					echo "title: '".$rowEvento->fecha."',";
-					echo "          });";
-				echo "     }, 200);";
-				echo "</script>";						
-			}							  
+								  
 		}
 	}	
 
@@ -1032,7 +1025,7 @@ function PrintEventoxFecha( $anio, $mes)
 			
 			if($municipio!= 0){
 			//Este llama el evento  con un ligbox al inicio   
-			echo "Evento x muni".$id;						  
+			//echo "Evento x muni".$id;						  
 				$this->PrintEventoxMunicipio($municipio,$fecha);								
 			
 			}
