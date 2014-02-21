@@ -86,6 +86,7 @@
                 handleOversize: "resize",
                 overlayColor: "#fff",
                 onOpen: function () {
+                    
                     $(".a-fblightbox").on('click', function (e) {
                         var imagen = $('#sb-player').attr('src');
                         var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
@@ -396,27 +397,25 @@
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/js-eventos.js"></script>
 <?php
-		if(!isset($_GET["pagina"]) and isset($_GET["id"]) ) 
-			{
-				
-				echo "<script type='text/javascript'>";
-				echo "window.setTimeout(function(){";
-					echo "  Shadowbox.open({ ";
-					echo "  content: '".$eventos->primerFoto."',"; 
-					echo "  player: 'img',";	
-					echo "  gallery: 'principal".(string)$_GET['id']."',";					
-					echo "title: '',";
-					echo "          });";
-				echo "     }, 200);";
-				echo "</script>";						
-			}    
+        if(!isset($_GET["pagina"]) and isset($_GET["id"]) ) 
+            {
+                
+                echo "<script type='text/javascript'>";
+                echo "window.setTimeout(function(){";
+                    echo "  Shadowbox.open({ ";
+                    echo "  content: '".$eventos->primerFoto."',"; 
+                    echo "  player: 'img',";    
+                    echo "  gallery: 'principal".(string)$_GET['id']."',";                  
+                    echo "title: '',";
+                    echo "          });";
+                echo "     }, 200);";
+                echo "</script>";                       
+            }    
 ?>
-
-    
     </body>
 </html>
 <?php
-			
+            
     $g          = null;
     $menu       = null;
     $eventos    = null;
