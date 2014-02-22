@@ -29,7 +29,12 @@
     counter         = 0,
     icounter        = 0,
     fotos           = {},
+    index           = 0,
     items           = 0;
+    
+    window.fotos    = fotos;
+    window.index    = index;
+    window.items    = items;
     
     // Define a local copy of TFG
     TFG = function() {
@@ -554,7 +559,7 @@
             
             boxes.splice( i, 1 );
             
-            if( boxes.length    == 0 ) {
+            if( boxes.length == 0 ) {
                 boxes   = new Array( '11', '21', '31', '41',
                                   '12', '22', '32', '42', 
                                   '13', '23', '33', '43');
@@ -570,13 +575,9 @@
                 counter = 0;
                 
                 $.ajax ( 'masimagenes.php', {
-                    beforeSend: function ( jqXHR, settings ) {
-                        
-                    },
+                    beforeSend: function ( jqXHR, settings ) {},
                     cache: false,
-                    complete: function ( jqXHR, textStatus ) {
-                        
-                    },
+                    complete: function ( jqXHR, textStatus ) {},
                     contentType: "application/x-www-form-urlencoded",
                     converters: {
                         "* text":       window.String,
@@ -584,19 +585,13 @@
                         "text json":    $.parseJSON,
                         "text xml":     $.parseXML
                     },
-                    data: {
-                        
-                    },
-                    error:  function ( jqXHR, textStatus, errorThrown ) {
-                        
-                    },
+                    data: {},
+                    error:  function ( jqXHR, textStatus, errorThrown ) {},
                     success: function ( data, textStatus, jqXHR ) {
                         
-                        //var obj = $.parseJSON(data);
                         fotos   = ( $.parseJSON( data ) == null ) ? data : $.parseJSON( data );
+                        index   = fotos.length;
                         items   = fotos.length;
-                        
-                        //alert(items );
                     },
                     type: "POST"
                 } );
@@ -701,7 +696,7 @@
             return result;
         },
         CambiaFoto  : function ( ctl ) {
-            
+            items       = ( items == undefined || items == 'undefined' ) ? 0 : items;
             var index   =  Math.floor( Math.random( ) * items ); //indice de la imagen a mostrar
             var imgNew;
             var refNew  ="#";
@@ -717,11 +712,13 @@
                 imgg    = false;
             } else{
                 
-                imgNew  = "imagenes/" + fotos[ index ][ 'directorio' ] + "/thumb" + fotos[ index ][ 'archivo' ];
-                refNew  = "eventos.php?anio=" + fotos[ index ][ 'anio' ] + "&mes=" + fotos[ index ][ 'mes' ] + "&id=" + fotos[ index ][ 'evento' ] +"&foto=" +fotos[ index ][ 'foto' ];
-                
-                fotos.splice( index, 1 );
-                items   = fotos.length;
+                if ( fotos[ index ] != undefined && fotos[ index ] != 'undefined' ) {
+                    imgNew  = "imagenes/" + fotos[ index ][ 'directorio' ] + "/thumb" + fotos[ index ][ 'archivo' ];
+                    refNew  = "eventos.php?anio=" + fotos[ index ][ 'anio' ] + "&mes=" + fotos[ index ][ 'mes' ] + "&id=" + fotos[ index ][ 'evento' ] +"&foto=" +fotos[ index ][ 'foto' ];
+                    
+                    fotos.splice( index, 1 );
+                    items   = fotos.length;
+                }
             }
             
             //$('.pie a').html(counter + ' ' + items);
@@ -1020,11 +1017,20 @@
     
     //  When DOM is loaded
     $( function ( ) {
-        
+        //  Configura una pantalla de carga del sitio
         if ( $( ".loader" ).exists() ) {
             
             $( '.alert_background' ).fadeOut( 300 );
             $( ".loader" ).fadeOut( 300 );
+        }
+        //  Comportamiento del botón de "Regresar"
+        if ( $( "#go_back_button" ).exists() ) {
+            
+            $( "#go_back_button" ).on( 'click', function ( e ) {
+                e.preventDefault();
+                e.stopPropagation();
+                window.history.back();
+            } );
         }
     } );
     
@@ -1185,7 +1191,7 @@
             } );
         }
         
-        if ( $( '#home' ).exists() ) {
+        if ( $( '.contenedor' ).exists() ) {
             
             var opacidad        = 0,
                 verde           = new Array(),
@@ -1270,7 +1276,7 @@
                 } );
             }
             
-            //-Se ejecuta cuando se redimensiona la ventana del navegador
+            //  Se ejecuta cuando se redimensiona la ventana del navegador
             $( window ).resize( function( ) {
                 
                 TFG.ConfigurarPantalla();

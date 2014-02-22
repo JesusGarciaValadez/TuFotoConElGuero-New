@@ -44,8 +44,8 @@
 		},
 	"\/bootstrap\/js\/bootstrap.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/bootstrap\/js\/bootstrap.js",
 		"outputAbbreviatedPath": "\/bootstrap\/js\/bootstrap.min.js",
 		"outputPathIsSetByUser": 0,
@@ -134,11 +134,69 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/compic2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14600,
+		"inputAbbreviatedPath": "\/css\/compic2.png",
+		"outputAbbreviatedPath": "\/css\/compic2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/estilo_admin.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/estilo_admin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/estilos.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/estilos.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/event.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/event.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/eventos.bak.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/eventos.bak.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/eventos.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/eventos.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/eventos_back.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/eventos_back.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/eventoss.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/eventoss.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -447,6 +505,16 @@
 		"initialSize": 1172,
 		"inputAbbreviatedPath": "\/css\/img\/g+2.jpg",
 		"outputAbbreviatedPath": "\/css\/img\/g+2.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/img\/go-back-button.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2046,
+		"inputAbbreviatedPath": "\/css\/img\/go-back-button.png",
+		"outputAbbreviatedPath": "\/css\/img\/go-back-button.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -806,13 +874,29 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/menu-vertical.bak.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/menu-vertical.bak.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/perfect-scrollbar.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/perfect-scrollbar.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/scss\/estilo_admin.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/estilo_admin.scss",
 		"outputAbbreviatedPath": "\/css\/estilo_admin.css",
 		"outputPathIsSetByUser": 0,
@@ -826,8 +910,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/estilos.scss",
 		"outputAbbreviatedPath": "\/css\/estilos.css",
 		"outputPathIsSetByUser": 0,
@@ -841,8 +925,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/eventos.bak.scss",
 		"outputAbbreviatedPath": "\/css\/eventos.bak.css",
 		"outputPathIsSetByUser": 0,
@@ -857,7 +941,7 @@
 		"decimalPrecision": 2,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/eventos.scss",
 		"outputAbbreviatedPath": "\/css\/eventos.css",
 		"outputPathIsSetByUser": 0,
@@ -871,8 +955,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/eventos_back.scss",
 		"outputAbbreviatedPath": "\/css\/eventos_back.css",
 		"outputPathIsSetByUser": 0,
@@ -886,8 +970,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/eventoss.scss",
 		"outputAbbreviatedPath": "\/css\/eventoss.css",
 		"outputPathIsSetByUser": 0,
@@ -902,7 +986,7 @@
 		"decimalPrecision": 2,
 		"fileType": 4,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/jquery-ui-1.10.4.custom.scss",
 		"outputAbbreviatedPath": "\/css\/jquery-ui-1.10.4.custom.css",
 		"outputPathIsSetByUser": 0,
@@ -916,8 +1000,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/jquery.carousel-lightbox.bak.scss",
 		"outputAbbreviatedPath": "\/css\/jquery.carousel-lightbox.bak.css",
 		"outputPathIsSetByUser": 0,
@@ -931,8 +1015,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/jquery.carousel-lightbox.scss",
 		"outputAbbreviatedPath": "\/css\/jquery.carousel-lightbox.css",
 		"outputPathIsSetByUser": 0,
@@ -946,8 +1030,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/magnific-popup.scss",
 		"outputAbbreviatedPath": "\/css\/magnific-popup.css",
 		"outputPathIsSetByUser": 0,
@@ -962,7 +1046,7 @@
 		"decimalPrecision": 2,
 		"fileType": 4,
 		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/main.scss",
 		"outputAbbreviatedPath": "\/css\/main.css",
 		"outputPathIsSetByUser": 0,
@@ -976,8 +1060,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/menu-vertical.bak.scss",
 		"outputAbbreviatedPath": "\/css\/menu-vertical.bak.css",
 		"outputPathIsSetByUser": 0,
@@ -1036,8 +1120,8 @@
 		"debugStyle": 0,
 		"decimalPrecision": 2,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/css\/scss\/perfect-scrollbar.scss",
 		"outputAbbreviatedPath": "\/css\/perfect-scrollbar.css",
 		"outputPathIsSetByUser": 0,
@@ -1107,6 +1191,36 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/sombra-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/css\/sombra-1.png",
+		"outputAbbreviatedPath": "\/css\/sombra-1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/sombra-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/css\/sombra-2.png",
+		"outputAbbreviatedPath": "\/css\/sombra-2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/sombra-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/css\/sombra-3.png",
+		"outputAbbreviatedPath": "\/css\/sombra-3.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/TFG\/jquery-ui-1.10.4.custom.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -1137,6 +1251,16 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/css\/tu-foto-guero-grises.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/css\/tu-foto-guero-grises.png",
+		"outputAbbreviatedPath": "\/css\/tu-foto-guero-grises.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/edita_evento.php": {
 		"fileType": 8192,
@@ -1191,6 +1315,14 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/eventos.bak.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/eventos.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/eventos.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -8484,121 +8616,151 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 26315,
+		"initialSize": 838,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/ant.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/ant.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/cerrar.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1804,
+		"initialSize": 1615,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/cerrar.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/cerrar.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/cerrar2.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 363,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/cerrar2.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/cerrar2.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/close.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 225,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/close.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/close.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/compic2.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 27360,
+		"initialSize": 1967,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/compic2.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/compic2.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/lighbox3\/dl2.bak.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 975,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/dl2.bak.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/dl2.bak.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/lighbox3\/dl2.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 26798,
+		"initialSize": 5421,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/dl2.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/dl2.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/lighbox3\/em2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 874,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/em2.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/em2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/lighbox3\/fb3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3223,
+		"initialSize": 2749,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/fb3.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/fb3.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/lighbox3\/g+3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2261,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/g+3.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/g+3.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/lighbox3\/google_plus.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 30514,
+		"initialSize": 3783,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/google_plus.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/google_plus.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/mail.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 30809,
+		"initialSize": 3297,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/mail.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/mail.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/next.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 206,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/next.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/next.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/pause.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 131,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/pause.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/pause.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/play.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 184,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/play.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/play.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/previous-.png": {
 		"fileType": 32768,
@@ -8608,77 +8770,87 @@
 		"inputAbbreviatedPath": "\/img\/lighbox3\/previous-.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/previous-.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/previous.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 212,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/previous.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/previous.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/sig.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 809,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/sig.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/sig.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/sombra-1.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 3083,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/sombra-1.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/sombra-1.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/sombra-2.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 3762,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/sombra-2.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/sombra-2.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/sombra-3.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 3083,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/sombra-3.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/sombra-3.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/tu-foto-guero-grises.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 8896,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/tu-foto-guero-grises.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/tu-foto-guero-grises.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/img\/lighbox3\/tw3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1544,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/tw3.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/tw3.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/img\/lighbox3\/twitter.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 3561,
 		"inputAbbreviatedPath": "\/img\/lighbox3\/twitter.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/twitter.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/mail.png": {
 		"fileType": 32768,
@@ -8872,8 +9044,8 @@
 		},
 	"\/js\/funciones.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/funciones.js",
 		"outputAbbreviatedPath": "\/js\/funciones.min.js",
 		"outputPathIsSetByUser": 0,
@@ -8882,8 +9054,8 @@
 		},
 	"\/js\/jquery-1.11.0.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery-1.11.0.js",
 		"outputAbbreviatedPath": "\/js\/jquery-1.11.0.min.js",
 		"outputPathIsSetByUser": 0,
@@ -8892,8 +9064,8 @@
 		},
 	"\/js\/jquery-resize.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery-resize.js",
 		"outputAbbreviatedPath": "\/js\/jquery-resize.min.js",
 		"outputPathIsSetByUser": 0,
@@ -8903,7 +9075,7 @@
 	"\/js\/jquery.backstretch.min.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.backstretch.min.js",
 		"outputAbbreviatedPath": "\/js\/jquery.backstretch.min.min.js",
 		"outputPathIsSetByUser": 0,
@@ -8912,8 +9084,8 @@
 		},
 	"\/js\/jquery.carousel-lightbox.bak.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.bak.js",
 		"outputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.bak.min.js",
 		"outputPathIsSetByUser": 0,
@@ -8932,8 +9104,8 @@
 		},
 	"\/js\/jquery.carousel-lightbox.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.js",
 		"outputAbbreviatedPath": "\/js\/jquery.carousel-lightbox.min.js",
 		"outputPathIsSetByUser": 0,
@@ -8952,8 +9124,8 @@
 		},
 	"\/js\/jquery.cycle.all.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.cycle.all.js",
 		"outputAbbreviatedPath": "\/js\/jquery.cycle.all.min.js",
 		"outputPathIsSetByUser": 0,
@@ -8972,8 +9144,8 @@
 		},
 	"\/js\/jquery.flip.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.flip.js",
 		"outputAbbreviatedPath": "\/js\/jquery.flip.min.js",
 		"outputPathIsSetByUser": 0,
@@ -8992,8 +9164,8 @@
 		},
 	"\/js\/jquery.magnific-popup.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.magnific-popup.js",
 		"outputAbbreviatedPath": "\/js\/jquery.magnific-popup.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9003,7 +9175,7 @@
 	"\/js\/jquery.mousewheel.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.mousewheel.js",
 		"outputAbbreviatedPath": "\/js\/jquery.mousewheel.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9012,8 +9184,8 @@
 		},
 	"\/js\/js-eventos-back.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-eventos-back.js",
 		"outputAbbreviatedPath": "\/js\/js-eventos-back.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9022,8 +9194,8 @@
 		},
 	"\/js\/js-eventos-back14.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-eventos-back14.js",
 		"outputAbbreviatedPath": "\/js\/js-eventos-back14.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9032,8 +9204,8 @@
 		},
 	"\/js\/js-eventos.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-eventos.js",
 		"outputAbbreviatedPath": "\/js\/js-eventos.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9042,8 +9214,8 @@
 		},
 	"\/js\/js-eventos_11-02.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-eventos_11-02.js",
 		"outputAbbreviatedPath": "\/js\/js-eventos_11-02.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9062,8 +9234,8 @@
 		},
 	"\/js\/js-galeria-back.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-galeria-back.js",
 		"outputAbbreviatedPath": "\/js\/js-galeria-back.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9072,8 +9244,8 @@
 		},
 	"\/js\/js-galeria.bak.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-galeria.bak.js",
 		"outputAbbreviatedPath": "\/js\/js-galeria.bak.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9082,8 +9254,8 @@
 		},
 	"\/js\/js-galeria.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-galeria.js",
 		"outputAbbreviatedPath": "\/js\/js-galeria.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9092,8 +9264,8 @@
 		},
 	"\/js\/js-index-14-feb.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-index-14-feb.js",
 		"outputAbbreviatedPath": "\/js\/js-index-14-feb.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9102,8 +9274,8 @@
 		},
 	"\/js\/js-index.bak.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-index.bak.js",
 		"outputAbbreviatedPath": "\/js\/js-index.bak.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9112,8 +9284,8 @@
 		},
 	"\/js\/js-index.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-index.js",
 		"outputAbbreviatedPath": "\/js\/js-index.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9182,8 +9354,8 @@
 		},
 	"\/js\/shadowbox-basico.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/shadowbox-basico.js",
 		"outputAbbreviatedPath": "\/js\/shadowbox-basico.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9192,8 +9364,8 @@
 		},
 	"\/js\/shadowbox.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/shadowbox.js",
 		"outputAbbreviatedPath": "\/js\/shadowbox.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9242,8 +9414,8 @@
 		},
 	"\/js\/vendor\/jquery-1.8.3.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery-1.8.3.min.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery-1.8.3.min.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9252,8 +9424,8 @@
 		},
 	"\/js\/vendor\/jquery-1.9.0.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery-1.9.0.min.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery-1.9.0.min.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9263,7 +9435,7 @@
 	"\/js\/vendor\/jquery-ui-1.10.4.custom.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery-ui-1.10.4.custom.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery-ui-1.10.4.custom.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9283,7 +9455,7 @@
 	"\/js\/vendor\/jquery.form.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.form.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery.form.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9292,8 +9464,8 @@
 		},
 	"\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo-1.4.3.1-min.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9303,7 +9475,7 @@
 	"\/js\/vendor\/jquery.scrollTo-1.4.3.1.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo-1.4.3.1.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery.scrollTo-1.4.3.1.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9313,7 +9485,7 @@
 	"\/js\/vendor\/jquery.tools.custom.min.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.tools.custom.min.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery.tools.custom.min.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9322,8 +9494,8 @@
 		},
 	"\/js\/vendor\/jquery.tools.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.tools.min.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery.tools.min.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9333,7 +9505,7 @@
 	"\/js\/vendor\/jquery.uniform.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.uniform.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery.uniform.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9343,7 +9515,7 @@
 	"\/js\/vendor\/jquery.validate.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery.validate.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/jquery.validate.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9362,8 +9534,8 @@
 		},
 	"\/js\/vendor\/modernizr-2.6.2.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/modernizr-2.6.2.min.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/modernizr-2.6.2.min.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9372,8 +9544,8 @@
 		},
 	"\/js\/vendor\/prefixfree.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/vendor\/prefixfree.min.js",
 		"outputAbbreviatedPath": "\/js\/vendor\/prefixfree.min.min.js",
 		"outputPathIsSetByUser": 0,

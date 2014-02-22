@@ -347,6 +347,22 @@ html, body {
                     .submit_input{
                         height: 28px;
                         position: relative;
+                        #go_back_button{
+                            @include font-mask( transparent, em( 14.7, 16 ), em( 28, 16 ), bold, $helveticaNeue );
+                            background: url("img/go-back-button.png") no-repeat scroll 0 0 transparent;
+                            border: 0 none transparent;
+                            cursor: pointer;
+                            display: inline-block;
+                            height: 28px !important;
+                            margin: 0;
+                            left: 0;
+                            text-align: center;
+                            text-transform: uppercase;
+                            top:0;
+                            padding: 0;
+                            position: absolute;
+                            width: 100%;
+                        }
                         #submit_search{
                             @include font-mask( #FFF, em( 14.7, 16 ), em( 28, 16 ), bold, $helveticaNeue );
                             background: no-repeat scroll 0 0 #78a608;

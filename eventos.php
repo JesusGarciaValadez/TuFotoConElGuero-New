@@ -117,6 +117,17 @@
                         nueva = window.open("https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas);
                         e.preventDefault();
                     });
+                    
+                    setTimeout( function () {
+                        var path    = $( '#sb-player' ).attr( 'src' );
+                        $( '#sb-down' ).attr( 'href', path );
+                        $( '#sb-down' ).attr( 'download', path );
+                    }, 1000 );
+                },
+                onChange:   function () {
+                    var path    = $( '#sb-player' ).attr( 'src' );
+                    $( '#sb-down' ).attr( 'href', path );
+                    $( '#sb-down' ).attr( 'download', path );
                 }
             });
             
@@ -352,16 +363,14 @@
                                 <input type="text" name="date" id="date_search" placeholder="Selecciona la Fecha" class="datepicker" value="" />
                             </div>
                             <div class="submit_input">
-                                <input id="submit_search" type="submit" name="submit_search" value="Buscar">
+                                <a id="go_back_button" title="Regresar" target="_self">Regresar</a>
                             </div>
                         </fieldset>
                     </form>
                 </div><!-- Formulario de Búsqueda -->
                 <div class="fondo-eventos"><!-- Capa que contiene la sombra con el shadow -->
-                    
                         <!-- Capa que cotiene las imagenes, Ancho 935 y alto de 460 pixeles -->
                         <?php $eventos->PrintEventos(); ?>
-                    
                 </div><!-- Capa que contiene la sombra con el shadow -->
             </div><!-- Columna derecha (dashboard) -->
             <div class="alert_background"></div><!-- Background de Overlay -->
@@ -392,9 +401,8 @@
                 </div>
             </div><!-- Formulario de Contacto -->
         </div><!-- Contenedor principal -->
-        <link href="css/eventos.css" rel="stylesheet" />    
         <script type="text/javascript" src="js/plugins.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/main.min.js"></script>
         <script type="text/javascript" src="js/js-eventos.js"></script>
 <?php
         if(!isset($_GET["pagina"]) and isset($_GET["id"]) ) 
