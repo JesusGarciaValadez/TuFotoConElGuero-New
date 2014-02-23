@@ -1017,6 +1017,7 @@
     
     //  When DOM is loaded
     $( function ( ) {
+        
         //  Configura una pantalla de carga del sitio
         if ( $( ".loader" ).exists() ) {
             
@@ -1281,6 +1282,11 @@
                 
                 TFG.ConfigurarPantalla();
             } );
+        }
+        
+        if ( $( '.fondo-eventos .more' ).exists() ) {
+            
+            $( '.fondo-eventos .more' ).centerHeight();
         }
         
         TFG.init();

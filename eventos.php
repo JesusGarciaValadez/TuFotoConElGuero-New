@@ -24,6 +24,7 @@
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
         <meta name="author" content="Jesús Antonio García Valadez" >
+        <meta name="canonical" content="http://www.tufotoconelguero.com/eventos.php" />
         
         <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
         
@@ -76,70 +77,85 @@
         </script>
         <script type="text/javascript" src="js/shadowbox.js"></script>
         <script type="text/javascript">
-            var hScreen = $(window).height();
-            var scrolled = 0;
-            var paginas = 1;
-            var sDatos = "";
-            var lightbox = false;
+            var hScreen     = $( window ).height();
+            var scrolled    = 0;
+            var paginas     = 1;
+            var sDatos      = "";
+            var lightbox    = false;
             
-            Shadowbox.init({
+            Shadowbox.init( {
                 handleOversize: "resize",
-                overlayColor: "#fff",
-                onOpen: function () {
+                overlayColor:   "#fff",
+                onOpen:         function () {
+                    var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+                    var imagen          = $( '#sb-player' ).attr( 'src' );
                     
-                    $(".a-fblightbox").on('click', function (e) {
-                        var imagen = $('#sb-player').attr('src');
-                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+                    $( ".a-fblightbox" ).on( 'click', function ( e ) {
+                        e.preventDefault();
+                        e.stopPropagation();
                         var url = "http://www.facebook.com/sharer.php?u=http://tufotoconelguero.com/" + imagen; //plugin.settings.imageUrl;
                         
-                        nueva = window.open(url, 'Comparte en Fb', caracteristicas);
-                        e.preventDefault();
-                    });
+                        nueva   = window.open( url, 'Comparte en Fb', caracteristicas );
+                    } );
                     
-                    $('.a-twlightbox').on('click', function () {
-                        var imagen = $('#sb-player').attr('src');
+                    $( '.a-twlightbox' ).on( 'click', function ( e ) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        var imagen          = $( '#sb-player' ).attr( 'src' );
                         var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
                         //nueva=window.open( "http://twitter.com/share", 'Comparte en twiter', caracteristicas);
                         
-                        var dir = imagen; //plugin.settings.imageUrl;//window.document.URL;
-                        var dir2 = encodeURIComponent(dir);
-                        var tit = window.document.title;
-                        var tit2 = encodeURIComponent(tit);
+                        var dir             = imagen; //plugin.settings.imageUrl;//window.document.URL;
+                        var dir2            = encodeURIComponent( dir );
+                        var tit             = window.document.title;
+                        var tit2            = encodeURIComponent( tit );
                         
-                        nueva = window.open('http://twitter.com/?status=' + tit2 + ',%20' + dir2 + '', 'Comparte en twiter', caracteristicas);
-                        e.preventDefault();
-                    });
+                        nueva               = window.open( 'http://twitter.com/?status=' + tit2 + ',%20' + dir2 + '', 'Comparte en twiter', caracteristicas );
+                    } );
                     
-                    $('.a-gPluslightbox').on('click', function () {
-                        var imagen = $('#sb-player').attr('src');
+                    $( '.a-gPluslightbox' ).on( 'click', function ( e ) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
                         var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
                         
-                        nueva = window.open("https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas);
-                        e.preventDefault();
-                    });
+                        nueva               = window.open( "https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas );
+                    } );
                     
-                    setTimeout( function () {
+                    var interval    = setInterval( function () {
                         var path    = $( '#sb-player' ).attr( 'src' );
                         $( '#sb-down' ).attr( 'href', path );
                         $( '#sb-down' ).attr( 'download', path );
-                    }, 1000 );
+                        
+                        if ( $( '#sb-down' ).attr( 'href' ) != '#' && $( '#sb-down' ).attr( 'download' ) != '#' ) {
+                            clearInterval( interval );
+                        }
+                    }, 2000 );
                 },
                 onChange:   function () {
-                    var path    = $( '#sb-player' ).attr( 'src' );
-                    $( '#sb-down' ).attr( 'href', path );
-                    $( '#sb-down' ).attr( 'download', path );
+                    var interval    = setInterval( function () {
+                        var path    = $( '#sb-player' ).attr( 'src' );
+                        $( '#sb-down' ).attr( 'href', path );
+                        $( '#sb-down' ).attr( 'download', path );
+                        
+                        if ( $( '#sb-down' ).attr( 'href' ) != '#' && $( '#sb-down' ).attr( 'download' ) != '#' ) {
+                            clearInterval( interval );
+                        }
+                    }, 500 );
                 }
-            });
+            } );
             
-            function blurElement(element, size) {
+            var blurElement = function ( element, size ) {
                 var filterVal = 'blur(' + size + 'px)';
-                $(element)
-                    .css('filter', filterVal)
-                    .css('webkitFilter', filterVal)
-                    .css('mozFilter', filterVal)
-                    .css('oFilter', filterVal)
-                    .css('msFilter', filterVal);
-            }
+                $( element ).css( {
+                    'filter':       filterVal,
+                    'webkitFilter': filterVal,
+                    'mozFilter':    filterVal,
+                    'oFilter':      filterVal,
+                    'msFilter':     filterVal
+                } );
+            };
         </script>
     </head>
     
