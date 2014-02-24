@@ -36,11 +36,12 @@ body { overflow: hidden; }
         margin:3px;
     }
 }
-.tabla-galeria , .tabla-pagina{
+.tabla-galeria, .tabla-pagina{
     background-color:transparent;
     width: 726px;
     height: 492px;
     margin: 0 auto;
+    padding: 0 !important;
 }
 .tabla-row{
     display:table-row;
@@ -197,10 +198,10 @@ body { overflow: hidden; }
 .hidden { visibility: hidden;}
 .EventoReciente { width: 726px; margin: 0 auto; }
 .PrintEventoReciente {
-    max-height: 638px; 
+    max-height: 638px;
     min-height: 638px;
 }
-#caja_eventos{
+.caja_eventos{
     
     hr {
         border: none;

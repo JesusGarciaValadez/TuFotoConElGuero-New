@@ -108,6 +108,7 @@ $myriadProBlack:    'Myriad-Pro Black',Helvetica,Arial,'sans-serif';
 $helveticaNeue:     'helvetica_neue_lt_std',Helvetica,Arial,'sans-serif';
 $helvetica:         Helvetica,Arial,'sans-serif';
 $lucida:            "Lucida Bright Regular";
+$times:             "Times New Roman", "sans-serif";
 $text_gray:         #474747;
 $green:             #78A609;
 @mixin font-mask( $color,$size,$height,$weight,$font:$helvetica ) {
@@ -190,6 +191,7 @@ menuitem,nav,iframe,embed,object,*{
 @import "navigation.scss";
 @import "menu-vertical.scss";
 //@import "shadowbox-basico.scss";
+@import "event.scss";
 @import "eventos.scss";
 @import "../shadowbox.css";
 @import "../../bootstrap/css/bootstrap.css";

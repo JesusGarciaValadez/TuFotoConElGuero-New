@@ -65,9 +65,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png" type="image/png" />
-        
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/event.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/shadowbox.css" type="text/css" media="screen" />
         
         <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>

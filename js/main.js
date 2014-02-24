@@ -63,7 +63,7 @@
          *
          */
         //  !Método inicializador
-        init:   function ( ) {
+        init:                       function ( ) {
             TFG.obtainActualDocument();
             
             /**
@@ -162,7 +162,7 @@
          */
         //  !Crea un efecto para poder dar estilos a los elementos checkbox,
         //  radio, file y select
-        makesUniform:   function ( selector ) {
+        makesUniform:               function ( selector ) {
             _selector       = ( typeof( selector ) == "undefined" ) ? "*" : selector;
             _selector       = ( typeof( _selector ) == "object" ) ? _selector : $( _selector );
             _selector.uniform();
@@ -177,7 +177,7 @@
          *
          */
         //  !Validación del formulario de contacto.
-        validateFormsAjax:    function ( rule, messages ) {
+        validateFormsAjax:          function ( rule, messages ) {
             
             var _rule       = ( typeof( rule ) == 'object' ) ? rule : {};
             var _message    = ( typeof( messages ) == 'object' ) ? messages : {};
@@ -266,7 +266,7 @@
          *
          */
         //  !Validación del formulario de contacto.
-        validateForms:    function ( rule, messages ) {
+        validateForms:              function ( rule, messages ) {
             
             var _rule       = ( typeof( rule ) == 'object' ) ? rule : {};
             var _message    = ( typeof( messages ) == 'object' ) ? messages : {};
@@ -341,14 +341,14 @@
          *
          */
         //  !Hace un efecto de overlay sobre un elemento determinado
-        doOverlay:  function ( selector, options ) {
+        doOverlay:                  function ( selector, options ) {
             var _selector   = ( typeof( selector ) == "string" )? $( selector ) : ( ( typeof( selector ) == "object" )? selector : $( '*' ) );
             var _options    = ( typeof( options )   == "object" )? options : {};
            
             _selector.overlay( _options );
         },
         //  !Abre un cuadro de diálogo con un mensaje
-        openAlert:  function ( title, markupMessage ) {
+        openAlert:                  function ( title, markupMessage ) {
             
             var _title      = ( title == "" || title == undefined ) ? "Error" : title;
             var _message    = ( markupMessage == "" || markupMessage == undefined ) ? "<p>Hubo un error inesperado.</p>" : markupMessage;
@@ -380,7 +380,7 @@
          *
          */
         //  !Cierra un cuadro de diálogo con un mensaje
-        closeAlert:  function ( ) {
+        closeAlert:                 function ( ) {
            
             TFG.overlay.close();
             /*$( '.alert_box' ).fadeOut( 'fast' );
@@ -404,7 +404,7 @@
          *
          */
         //  !Realiza el efecto para dar la impresión de scroll "suavizado"
-        smoothScroll:   function ( selector, durationInSec ) {
+        smoothScroll:               function ( selector, durationInSec ) {
            
             _selector       = ( typeof( selector ) == "undefined" ) ? "*" : selector;
             _selector       = ( typeof( _selector ) == "object" ) ? _selector : ( typeof( _selector ) == "number" ) ? _selector : $( _selector );
@@ -438,7 +438,7 @@
          */
         //  !Revisa si el valor de un input es el original o no y lo preserva o
         //  respeta el nuevo valor.
-        toggleValue:    function ( selector, valueChange ) {
+        toggleValue:                function ( selector, valueChange ) {
            
             _selector       = ( typeof( selector ) == "undefined" ) ? "*" : selector;
             _selector       = ( typeof( _selector ) == "object" ) ? _selector : $( _selector );
@@ -494,7 +494,7 @@
          *
          */
         //  !Hace toggle de una clase a un selector específico
-        toggleClass: function ( selector, className ) {
+        toggleClass:                function ( selector, className ) {
            
             _selector       = ( typeof( selector )  == "undefined" ) ? "*" : selector;
             _selector       = ( typeof( _selector ) == "object" )    ? _selector : $( _selector );
@@ -515,7 +515,7 @@
          *
          */
         //  !Obtiene el nombre de la sección de la url y pone una clase al link correspondiente
-        obtainActualDocument:   function ( ) {
+        obtainActualDocument:       function ( ) {
            
             //  obtain url and determine wich function execute on base at name sectionn.
             var absolutePath        = self.location.href;
@@ -537,7 +537,7 @@
         /************************************************************************************************/
         /************************************* CONTROL DE ANIMACIONES ***********************************/
         /************************************************************************************************/
-        ControlGaleria  : function ( ) { 
+        ControlGaleria:             function ( ) { 
             var verde   = [ 0, 0, 1 ];
             var gris    = [ 0, 0, 1 ];
             TFG.AnimarCuadro( 0 );
@@ -547,7 +547,7 @@
                 TFG.CambiarImagen()
             }, 3000 ); 
         },
-        CambiarImagen   : function ( ) {
+        CambiarImagen:              function ( ) {
             
             var s       = "";
             var a       = Math.floor( Math.random() * 2 );
@@ -602,7 +602,7 @@
             crossg  = TFG.Cross( nombre, gris );
             TFG.AnimarImagen( nombre, a );
         },
-        AnimarCuadro    : function ( i ) { 
+        AnimarCuadro:               function ( i ) { 
             
             var s ="";
             if( i == 0 ) {// Animar cuadro verde
@@ -637,7 +637,7 @@
                 }
             }
         },
-        AnimarImagen    : function ( name, animacion ) {
+        AnimarImagen:               function ( name, animacion ) {
             
             var imgPrev = $( "#img-" + name + '' );//x + '' + y );
             var m       = $( imgPrev ).attr( "mouse" );
@@ -678,7 +678,7 @@
                 TFG.CambiarImagen()
             }, 3000 );
         },
-        Cross   : function ( idimg, obj ) {
+        Cross:                      function ( idimg, obj ) {
             var result  = false,
             str      = idimg.toString(),
             x       = parseInt(str.substring(0,1)),//11
@@ -695,7 +695,7 @@
             
             return result;
         },
-        CambiaFoto  : function ( ctl ) {
+        CambiaFoto:                 function ( ctl ) {
             items       = ( items == undefined || items == 'undefined' ) ? 0 : items;
             var index   =  Math.floor( Math.random( ) * items ); //indice de la imagen a mostrar
             var imgNew;
@@ -726,7 +726,7 @@
             $( alink ).attr( "href", refNew );
             $( ctl ).attr( "src", imgNew );
         },
-        FlipHorizontal  : function ( imgPrev ) {
+        FlipHorizontal:             function ( imgPrev ) {
             var margin  = $( imgPrev ).width( ) / 2;
             var ancho   = $( imgPrev ).width( );
             var alto    = $( imgPrev ).height( );
@@ -753,7 +753,7 @@
                 } );
             }, 200 );
         },
-        FlipVertical    : function ( imgPrev ) {
+        FlipVertical:               function ( imgPrev ) {
             var margin  = $( imgPrev ).height( ) / 2;
             var ancho   = $( imgPrev ).width( );
             var alto    = $( imgPrev ).height( );
@@ -780,7 +780,7 @@
                 } );
             }, 200);
         },
-        DesvanecerAparecer  : function ( imgPrev ) {
+        DesvanecerAparecer:         function ( imgPrev ) {
             
             $( imgPrev ).fadeOut( 300, function( ) {
                 
@@ -789,7 +789,7 @@
             
             $(imgPrev).fadeIn(300).delay(300);
         },
-        SlideDerecho    : function ( imgPrev ) {
+        SlideDerecho:               function ( imgPrev ) {
             
             var ancho   = $( imgPrev ).width();
             var alto    = $( imgPrev ).height();
@@ -815,7 +815,7 @@
                 duration:   300
             } );
         },
-        TogleUp : function ( imgPrev ) {
+        TogleUp:                    function ( imgPrev ) {
             var ancho   = $( imgPrev ).width();
             var alto    = $( imgPrev ).height();
             
@@ -840,17 +840,17 @@
                 duration:   800
             } );
         },
-        onOver  : function ( obj ){
+        onOver:                     function ( obj ){
             
             $( obj ).attr( "mouse", "1" );
         },
-        onOut   : function ( obj ) {
+        onOut:                      function ( obj ) {
             
             $( obj ).attr( "mouse", "0" );
         },
-        onBefore : function ( ) { return false; },
-        onAfter : function ( ) { return false; },
-        blurElement : function ( element, size ) {
+        onBefore:                   function ( ) { return false; },
+        onAfter:                    function ( ) { return false; },
+        blurElement:                function ( element, size ) {
             
             var filterVal   = 'blur(' + size + 'px)';
             $( element ).css( {
@@ -861,7 +861,7 @@
                 'msFilter':     filterVal
             } );
         },
-        ConfigurarPantalla  : function ( ) {
+        ConfigurarPantalla:         function ( ) {
             TFG.ConfigurarPanel();
             TFG.ConfigurarDespliegueMenu();
             //-Verificar el scroll
@@ -873,7 +873,7 @@
             //- jquery-backstretch
             $( ".contenedor" ).backstretch( "img/dashboard/bg_dashboard.png" );
         },
-        ConfiguraScrollMenu : function ( div ) {
+        ConfiguraScrollMenu:        function ( div ) {
             
             var s               = "";
             var hScroll         = 0;
@@ -918,7 +918,7 @@
             //$(".pie").html(s);
         },
         //- Funcion que se encarga de configurar el alto y ancho del panel de imagenes
-        ConfigurarPanel     : function ( ) { 
+        ConfigurarPanel:            function ( ) { 
             var sDatos  = "";
             var top     = 0;
             var left    = 0;
@@ -973,7 +973,7 @@
             $( div ).css( "height", hContent );
         },
         //- Funcion para configurar la barra lateral de acuerdo a la resolución del navegador
-        ConfigurarDespliegueMenu    : function ( ) { 
+        ConfigurarDespliegueMenu:   function ( ) { 
             //var sDatos ="";
             //var hMenu = 0;
             //var hScreen = $( window ).height(); 
@@ -989,7 +989,7 @@
             
             $(div).css("height", hMenuNav);
         },
-        OpenContacto    : function ( ) {
+        OpenContacto:               function ( ) {
             
             //gallery to launch
             var id = "contato.html";
@@ -1004,7 +1004,7 @@
             } );
             
             return false;
-        },
+        }
     };
     
     // Give the init function the TFG prototype for later instantiation

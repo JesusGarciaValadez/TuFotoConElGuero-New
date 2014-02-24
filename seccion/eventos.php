@@ -130,13 +130,13 @@ class Eventos extends Model
         
         $parse_date = date_parse($fecha);
         
-        echo "<div id=\"caja_eventos\"><!--Municipio-->
-            <div id=\"muni\">{$municipio}</div>
-            <div id=\"fecha_event\">";
+        echo "<div class=\"caja_eventos\"><!--Municipio-->
+            <div class=\"muni\">{$municipio}</div>
+            <div class=\"fecha_event\">";
         echo $parse_date["day"] . ' de ' . $meses[$parse_date["month"] - 1] . ' de ' . $parse_date["year"];
         echo "</div>
             <hr align=\"left\" size=\"1\" color=\"#999999\" noshade>
-            <div id=\"Img-foto\">";
+            <div class=\"Img-foto\">";
         if ($this->primerFoto == $rutaimg) {
             echo "<a class='{$class}' href=\"{$rutaimg}\" rel=\"Shadowbox[principall{$evento}]\" title=\"{$fecha}\" class=\"hidden\">";
         } else {
@@ -145,7 +145,7 @@ class Eventos extends Model
         echo "<img width='206' height='145' class='{$class}' src='{$rutathumb}' alt='{$fecha}' title='{$fecha}'>
             </a>
         </div>
-        <div id=\"descrip_event\">" . substr($descripcion, 70) . "...</div>";
+        <div class=\"descrip_event\">" . substr($descripcion, 70) . "...</div>";
         $this->generaListaImgShadow( $evento, $fecha, $id );
         echo '</div>';
         
@@ -867,7 +867,7 @@ class Eventos extends Model
     }
     function PrintEventoxFecha( $anio, $mes )
     {
-        $meses            = array(
+        $meses  = array(
             "Enero",
             "Febrero",
             "Marzo",

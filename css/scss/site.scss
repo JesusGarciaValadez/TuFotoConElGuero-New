@@ -1,8 +1,5 @@
 /* Estilo general */
-html {
-    height: 100%;
-}
-
+html { height: 100%; }
 html, body {
     /*margin: 0;
     padding: 0;*/
@@ -401,7 +398,7 @@ html, body {
                 height:460px;
                 padding:10px 0 0;
                 width:935px;
-                .tabla-galeria{
+                .tabla-galeria,.tabla-pagina{
                     background-color:transparent;
                     display:table;
                     height: 459px;
