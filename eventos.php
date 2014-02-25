@@ -377,6 +377,7 @@
                                 <input type="text" name="date" id="date_search" placeholder="Selecciona la Fecha" class="datepicker" value="" />
                             </div>
                             <div class="submit_input">
+                                <input id="submit_search" type="submit" name="submit_search" value="Buscar">
                                 <?php
                                     if ( 
                                         ( isset( $_GET['anio'] ) && $_GET['anio'] != '' ) && 
