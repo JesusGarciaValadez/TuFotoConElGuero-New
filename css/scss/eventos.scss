@@ -38,10 +38,10 @@ body { overflow: hidden; }
 }
 .tabla-galeria, .tabla-pagina{
     background-color:transparent;
-    width: 726px;
     height: 492px;
     margin: 0 auto;
     padding: 0 !important;
+    width: 735px;
 }
 .tabla-row{
     display:table-row;
@@ -56,10 +56,10 @@ body { overflow: hidden; }
             border: 2px solid #FFF;
             border-radius: 5px;
             box-shadow: 1px 1px 8px 1px #BBB;
-            height: 157px;
+            height: 154px;
             margin: 3px;
             position: relative;
-            width: 236px;
+            width: 232px;
             a {
                 border-radius: 5px;
                 display: inline-block;

@@ -1025,14 +1025,14 @@
             $( ".loader" ).fadeOut( 300 );
         }
         //  Comportamiento del botón de "Regresar"
-        if ( $( "#go_back_button" ).exists() ) {
+        /*if ( $( "#go_back_button" ).exists() ) {
             
             $( "#go_back_button" ).on( 'click', function ( e ) {
                 e.preventDefault();
                 e.stopPropagation();
                 window.history.back();
             } );
-        }
+        }*/
     } );
     
     //  When DOM is ready

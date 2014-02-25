@@ -377,7 +377,21 @@
                                 <input type="text" name="date" id="date_search" placeholder="Selecciona la Fecha" class="datepicker" value="" />
                             </div>
                             <div class="submit_input">
-                                <a id="go_back_button" title="Regresar" target="_self">Regresar</a>
+                                <?php
+                                    if ( 
+                                        ( isset( $_GET['anio'] ) && $_GET['anio'] != '' ) && 
+                                        ( isset( $_GET['mes'] ) && $_GET['mes'] != '' ) && 
+                                        ( isset( $_GET['id'] ) && $_GET['id'] != '' ) && 
+                                        ( isset( $_GET['foto'] ) && $_GET['foto'] != '' ) /*&& 
+                                        ( 
+                                            ( stristr( $_SERVER['HTTP_REFERER'], 'index.php' ) ) || 
+                                            ( stristr( $_SERVER['HTTP_REFERER'], '' ) ) 
+                                        )*/
+                                    ) { ?>
+                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . DIRECTORY_SEPARATOR . 'tufotoconelguero' . DIRECTORY_SEPARATOR . "eventos.php?anio={$_GET['anio']}&mes={$_GET['mes']}"; ?>" id="go_back_button" title="Regresar" target="_self">Regresar</a>
+                                <?php
+                                    }
+                                ?>
                             </div>
                         </fieldset>
                     </form>
@@ -419,25 +433,22 @@
         <script type="text/javascript" src="js/main.min.js"></script>
         <script type="text/javascript" src="js/js-eventos.js"></script>
 <?php
-        if(!isset($_GET["pagina"]) and isset($_GET["id"]) ) 
-            {
-                
-                echo "<script type='text/javascript'>";
-                echo "window.setTimeout(function(){";
-                    echo "  Shadowbox.open({ ";
-                    echo "  content: '".$eventos->primerFoto."',"; 
-                    echo "  player: 'img',";    
-                    echo "  gallery: 'principal".(string)$_GET['id']."',";                  
-                    echo "title: '',";
-                    echo "          });";
-                echo "     }, 200);";
-                echo "</script>";                       
-            }    
+        if( !isset( $_GET["pagina"] ) and isset( $_GET["id"] ) ) {
+            echo "<script type='text/javascript'>";
+            echo "  window.setTimeout( function() {";
+            echo "      Shadowbox.open( { ";
+            echo "          content: '".$eventos->primerFoto."',";
+            echo "          player: 'img',";
+            echo "          gallery: 'principal".(string)$_GET['id']."',";
+            echo "          title: '',";
+            echo "      } );";
+            echo "  }, 200 );";
+            echo "</script>";
+        }
 ?>
     </body>
 </html>
 <?php
-            
     $g          = null;
     $menu       = null;
     $eventos    = null;
