@@ -1319,6 +1319,11 @@
             $( '.fondo-eventos .arriba' ).css( 'top', moreHeight );
         }
         
+        if ( $( '#morelnk' ).exists() ) {
+            
+            $( '#morelnk' ).parent( '.more' ).hide();
+        }
+        
         TFG.init();
     } );
    

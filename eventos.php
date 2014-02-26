@@ -344,7 +344,7 @@
                                             ( stristr( $_SERVER['HTTP_REFERER'], '' ) ) 
                                         )*/
                                     ) { ?>
-                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . DIRECTORY_SEPARATOR . 'tufotoconelguero' . DIRECTORY_SEPARATOR . "eventos.php?anio={$_GET['anio']}&mes={$_GET['mes']}"; ?>" id="go_back_button" title="Regresar" target="_self">Regresar</a>
+                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . DIRECTORY_SEPARATOR . "eventos.php?anio={$_GET['anio']}&mes={$_GET['mes']}"; ?>" id="go_back_button" title="Regresar" target="_self">Regresar</a>
                                 <?php
                                     }
                                 ?>
