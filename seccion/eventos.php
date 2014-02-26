@@ -388,11 +388,6 @@ class Eventos extends Model
                         
                         //Fin paginacion 
                         //compartir social
-                        echo "<div class='footer-compartir'>";
-                        echo "  <a class='lnk_eventofb' rel='pop-upfb' href=''> <img class='social' src='img/fb.png' alt='' > </a>";
-                        echo "  <a class='lnk_eventotw' rel='pop-uptw' href=''> <img class='social' src='img/tw.png' alt='' > </a>";
-                        echo "  <a class='lnk_eventog+' rel='pop-upg+' href=''> <img class='social' src='img/g+.png' alt='' > </a>";
-                        echo "</div>"; //compartir
                         echo "</div>"; //fin div paginar  
                         
                     } //Fin evaluacion contulta ejecutada 
@@ -592,11 +587,6 @@ class Eventos extends Model
                         
                         //Fin paginacion 
                         //compartir social
-                        echo "<div class='footer-compartir'>";
-                        echo "  <a class='lnk_eventofb' rel='pop-upfb' href=''> <img class='social' src='img/fb.png' alt='' > </a>";
-                        echo "  <a class='lnk_eventotw' rel='pop-uptw' href=''> <img class='social' src='img/tw.png' alt='' > </a>";
-                        echo "  <a class='lnk_eventog+' rel='pop-upg+' href=''> <img class='social' src='img/g+.png' alt='' > </a>";
-                        echo "</div>"; //compartir
                         echo "</div>"; //fin div paginar
                         
                     } //Fin evaluacion contulta 
