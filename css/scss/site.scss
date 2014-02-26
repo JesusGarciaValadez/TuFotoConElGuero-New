@@ -315,6 +315,7 @@ html, body {
                         }
                         #uniform-location_search{
                             background: url("img/combo-box-green.png") no-repeat scroll 0 0 transparent;
+                            border-radius: 3px;
                             span{}
                             #location_search{
                                 
@@ -329,6 +330,7 @@ html, body {
                             @include font-mask( #FFF, em( 12, 16 ), em( 28, 12 ), bold, $helveticaNeue );
                             background: url("img/combo-box-gray.png") no-repeat scroll 0 0 transparent;
                             border: 0 none transparent;
+                            border-radius: 3px;
                             display: inline-block;
                             height: 28px !important;
                             margin: 0;
@@ -343,13 +345,17 @@ html, body {
                     }
                     .submit_input{
                         height: 28px;
+                        padding: 0;
                         position: relative;
-                        #go_back_button{
+                        width: 235px !important;
+                        #go_back_button,
+                        #submit_search{
                             @include font-mask( transparent, em( 14.7, 16 ), em( 28, 16 ), bold, $helveticaNeue );
-                            background: url("img/go-back-button.png") no-repeat scroll 0 0 transparent;
+                            border-radius: 3px;
                             border: 0 none transparent;
                             cursor: pointer;
                             display: inline-block;
+                            float: left;
                             height: 28px !important;
                             margin: 0;
                             left: 0;
@@ -357,23 +363,16 @@ html, body {
                             text-transform: uppercase;
                             top:0;
                             padding: 0;
-                            position: absolute;
-                            width: 100%;
+                            position: relative;
+                            width: 111px;
                         }
                         #submit_search{
-                            @include font-mask( #FFF, em( 14.7, 16 ), em( 28, 16 ), bold, $helveticaNeue );
                             background: no-repeat scroll 0 0 #78a608;
-                            border: 0 none transparent;
-                            display: inline-block;
-                            height: 28px !important;
-                            margin: 0;
-                            left: 0;
-                            text-align: center;
-                            text-transform: uppercase;
-                            top:0;
-                            padding: 0;
-                            position: absolute;
-                            width: 100px !important;
+                            color: #FFF !important;
+                            margin: 0 10px 0 0;
+                        }
+                        #go_back_button{
+                            background: url("img/go-back-button.png") no-repeat scroll 0 0 transparent;
                         }
                     }
                 }
