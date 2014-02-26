@@ -160,9 +160,9 @@
     <body id="home">
         <div class="contenedor"><!-- Contenedor principal -->
             <aside class="contenedor-izquierda"><!-- Columna izquierda (logotipo, menú scroll y pie) -->
-                <div class="contenedor-logotipo">
+                <a href="http://www.tufotoconelguero.com/" class="contenedor-logotipo" target="_self" title="Tu Foto con el Güero.com">
                     <div class="logotipo"></div>
-                </div>
+                </a>
                 <div class="menu-lateral">
                     <nav id='cssmenu'>
                         <ul>

@@ -120,6 +120,7 @@ body { overflow: hidden; }
     line-height: 59px;
     position: absolute;
     right: 50px;
+    top: 85px;
     width: 102px;
     z-index: 3;
 }
@@ -132,24 +133,11 @@ body { overflow: hidden; }
     height: 44px;
     line-height: 34px;
     right: 50px;
-    position: absolute;
     width: 76px;
     z-index: 3;
 }
-.more, .arriba {
-    
-    a{
-        color: #fff;
-        &:hover{
-            color: #fff;
-            font-weight: 700;
-            text-decoration: none;
-        }
-    }
-}
 .arriba {
-    position: absolute;
-    background: url(../img/arriba.png) no-repeat top center;
+    background: url("../img/arriba.png") no-repeat top center;
     background-size: 74px 45px;
     width: 74px;
     height: 45px;
@@ -159,6 +147,17 @@ body { overflow: hidden; }
     color: #fff;
     font-size: 12px;
     z-index: 3;
+}
+.more, .arriba {
+    position: fixed;
+    a{
+        color: #fff;
+        &:hover{
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
 }
 .tabla-evento-reciente {
     margin: 0 auto;
