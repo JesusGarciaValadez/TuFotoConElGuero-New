@@ -1004,6 +1004,29 @@
             } );
             
             return false;
+        },
+        getCenterHeight:            function ( selector ) {
+            
+            var winHeight;
+            _selector       = ( typeof( selector )  == "undefined" ) ? "*" : selector;
+            _selector       = ( typeof( _selector ) == "object" )    ? _selector : $( _selector );
+            
+            if ( $.browser.msie && $.browser.version == '8.0' ) {
+                
+                winHeight    = $(window).height() / 2;
+            } else {
+                
+                winHeight    = window.innerHeight / 2;
+            }
+            
+            var elemHeight   = $( _selector ).width() / 2;
+            
+            if ( parseInt( winHeight - elemHeight ) < 100 ) {
+                
+                winHeight    = $( 'body' ).innerHeight() / 2;
+            }
+            
+            return elemLeft    = winHeight - elemHeight;
         }
     };
     
@@ -1286,7 +1309,14 @@
         
         if ( $( '.fondo-eventos .more' ).exists() ) {
             
-            $( '.fondo-eventos .more' ).centerHeight();
+            var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .more' ) ) + 23;
+            $( '.fondo-eventos .more' ).css( 'top', moreHeight );
+        }
+        
+        if ( $( '.fondo-eventos .arriba' ).exists() ) {
+            
+            var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .arriba' ) ) - 23;
+            $( '.fondo-eventos .arriba' ).css( 'top', moreHeight );
         }
         
         TFG.init();
