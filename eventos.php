@@ -23,7 +23,7 @@
         <meta name="description" content="" />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
-        <meta name="author" content="Jesús Antonio García Valadez" >
+        <meta name="author" content="Leonides Zavala Vidal" >
         <meta name="canonical" content="http://www.tufotoconelguero.com/eventos.php" />
         
         <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
@@ -177,54 +177,9 @@
                                 </a>
                                 <div class="csssubmenu">
                                     <div class="csssubmenu" style="display: block;">
-                                        <ul id="nav-evento">
-                                            <li class="has-sub">
-                                                <a onclick="return false;" href="#" class="active">
-                                                    <span>2014</span>
-                                                </a>
-                                                <ul style="display: block;">
-                                                    <li class="noactive">
-                                                        <a href="eventos.php?anio=2014&amp;mes=2">
-                                                            <span>Febrero</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="noactive">
-                                                        <a href="eventos.php?anio=2014&amp;mes=1">
-                                                            <span>Enero</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-sub">
-                                                <a onclick="return false;" href="#">
-                                                    <span>2013</span>
-                                                </a>
-                                                <ul style="">
-                                                    <li class="noactive">
-                                                        <a href="eventos.php?anio=2013&amp;mes=12">
-                                                            <span>Diciembre</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="noactive">
-                                                        <a href="eventos.php?anio=2013&amp;mes=11">
-                                                            <span>Noviembre</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="noactive">
-                                                        <a href="eventos.php?anio=2013&amp;mes=10">
-                                                            <span>Octubre</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="noactive">
-                                                        <a href="eventos.php?anio=2013&amp;mes=9">
-                                                            <span>Septiembre</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        <?php $menu->PrintMenu(0,0); ?>
                                     </div>
-                                    <?php //$menu->PrintMenu(0,0); ?>
+                                    
                                 </div>
                             </li>
                             <li class="contact_form_trigger">
