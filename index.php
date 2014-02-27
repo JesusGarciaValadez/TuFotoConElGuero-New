@@ -56,7 +56,7 @@
                                 <div class="csssubmenu">
                                     <div class="csssubmenu" style="display: block;">
                                         <?php $menu->PrintMenu(0,0); ?>
-                                    </div>
+                                    </div>                                    
                                 </div>
                             </li>
                             <li class="contact_form_trigger">

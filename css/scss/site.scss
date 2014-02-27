@@ -384,7 +384,6 @@ html, body {
             /*background-color:gainsboro;*/
             background:url("img/grid-.png") no-repeat scroll center center transparent;
             height:480px;
-            padding-top: 72px !important;
             position: relative;
             top:-86px;
             width:950px;
@@ -429,7 +428,7 @@ html, body {
                 }
             }
         }
-        .fondo-eventos{ padding-top: 72px !important; position: relative; top:-86px; }
+        .fondo-eventos{ padding-top: 0 !important; position: relative; top:-86px; }
     }
     .contenedor-pie{}
     #contact_form_wrapper{
@@ -559,3 +558,4 @@ html, body {
 /* Extras*/
 .input.placeholder{text-align:center;}
 .img{border:solid green 1px;}
+

@@ -958,7 +958,8 @@
             $( ".contenedor" ).css( "width", wContent + wBarraIzq );
             
             /************** Cálcular alto de elementos ***************************/
-            top = Math.round( ( hScreen - hFondoPanel ) / 2 );
+            top                 = Math.round( ( hScreen - hFondoPanel ) / 2 );
+            
             
             //-Controlar el espaciado vertical
             if( top < 20 ) {
@@ -969,7 +970,27 @@
             }
             
             hContent    = hFondoPanel + margen;
-            $( ".fondo-panel" ).css( "marginTop", top );
+            
+            if ( $( ".fondo-panel" ).exists() ) {
+                
+                if ( top < 144 ) {
+                    
+                    $( ".fondo-panel" ).css( "marginTop", 144 + 'px' );
+                } else {
+                    
+                    $( ".fondo-panel" ).css( "marginTop", top );
+                }
+            }
+            if ( $( ".fondo-eventos" ).exists() ) {
+                
+                if ( top < 372 ) {
+                    
+                    $( ".fondo-eventos" ).css( "marginTop", 124 + 'px' );
+                } else {
+                    marginValue = top / 3;
+                    $( ".fondo-eventos" ).css( "marginTop", marginValue + 'px' );
+                }
+            }
             $( div ).css( "height", hContent );
         },
         //- Funcion para configurar la barra lateral de acuerdo a la resolución del navegador
@@ -1215,7 +1236,7 @@
             } );
         }
         
-        if ( $( '.contenedor' ).exists() ) {
+        if ( $( '.contenedor, .contenedor-panel' ).exists() ) {
             
             var opacidad        = 0,
                 verde           = new Array(),
