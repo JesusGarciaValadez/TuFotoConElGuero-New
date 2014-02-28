@@ -715,7 +715,9 @@ class Eventos extends Model {
                 
                 $parse_date = date_parse($rowEvento->fecha);
                 
-                echo '<div class="mes">' . $meses[$parse_date["month"] - 1] . '</div>';
+                if ( !empty( $parse_date["month"] ) ) 
+                    echo '<div class="mes">' . $meses[$parse_date["month"] - 1] . '</div>';
+                
                 echo '<div class="more"> <a id="morelnk" href="#">REGRESAR</a></div>';
                 
                 echo '<div class="PrintEventoTop tabla-evento-reciente">';
@@ -759,7 +761,9 @@ class Eventos extends Model {
             foreach ($rsResumenEventos as $rowEvento) {
                 $rutathumb  = "imagenes/" . $rowEvento->directorio . "/thumb" . $rowEvento->archivo;
                 $parse_date = date_parse($rowEvento->fecha);
-                echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
+                if ( !empty( $mes ) )
+                    echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
+                
                 echo '<div class="regresarXdia"> <a id="back" href="eventos.php?anio=' . $parse_date["year"] . '&mes=' . $parse_date["month"] . '"></a></div>';
                 echo '<div class="PrintEventoReciente tabla-evento-reciente">';
                 echo "<span class='fecha'>";
@@ -824,6 +828,28 @@ class Eventos extends Model {
             echo "<div class=\"PrintEventoReciente tabla-evento-reciente\"><span class=\"fecha\">No hay Resultados.</span></div>";
         }
     }
+    function PrintEventoxMunicipioSinFecha($municipio) {        
+        
+        $rsResumenEventos = $this->get_rows(0, " idmunicipio = " . $municipio , " fecha DESC");
+        
+        if ($rsResumenEventos) {
+            
+            $calculo = count($rsResumenEventos);
+            if ($calculo > 1) {
+                //imprime el evento tipoxfecha
+                //echo "imprime el evento tipoxfecha";
+                $this->PrintEventoxFechaxMunicipios($rsResumenEventos);
+            } else {
+                //echo "imprime el evento tipo lighbox"; 
+                //echo $rsResumenEventos[0]->evento;
+                
+                //$this->PrintEventoxMunicipioxEvento( $rsResumenEventos[0]->evento,$rsResumenEventos[0]->id, $rsResumenEventos);
+                $this->PrintEventoTop($rsResumenEventos);
+            }
+        } else {
+            echo "<div class=\"PrintEventoReciente tabla-evento-reciente\"><span class=\"fecha\">No hay Resultados.</span></div>";
+        }
+    }
     function PrintEventoxFoto($id, $foto) {
         $rsEvento = $this->get_rows(4, " evento = " . $id . " and id= " . $foto);
         
@@ -853,7 +879,9 @@ class Eventos extends Model {
         );
         //$rsResumenEventos = $this->get_rows(0," YEAR(  fecha ) = ".$anio. " and MONTH(fecha)=".$mes, "fecha DESC");
         
-        echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
+        if ( !empty( $mes ) ) 
+            echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
+        
         echo '<div id="msg" class="msg"></div>';
         echo '<div class="more"> <a id="morelnk" href="#">+EVENTOS</a></div>';
         echo '<div class="arriba"> <a id="menoslnk" href="#">+ARRIBA</a></div>';
@@ -963,7 +991,9 @@ class Eventos extends Model {
         );
         $rsResumenEventos = $this->get_rows(0, " YEAR(  fecha ) = " . $anio . " and MONTH(fecha)=" . $mes, "fecha DESC");
         
-        echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
+        if ( !empty( $mes ) )
+            echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
+        
         echo '<div id="msg" class="msg"></div>';
         echo '<div class="more"> <a id="morelnk" href="#">+EVENTOS</a></div>';
         echo '<div class="arriba"> <a id="menoslnk" href="#">+ARRIBA</a></div>';
@@ -1076,7 +1106,12 @@ class Eventos extends Model {
             if ($municipio != 0) {
                 //Este llama el evento  con un ligbox al inicio
                 //echo "Evento x muni".$id;
-                $this->PrintEventoxMunicipio($municipio, $fecha);
+                if ($fecha!=0) {
+               	 $this->PrintEventoxMunicipio($municipio, $fecha);
+             		}
+             		else {
+             			$this->PrintEventoxMunicipioSinFecha($municipio);
+             		}
                 
             } else {
                 //Cuando  se le pasa el año (anio), mes y un evento (id) en especifico, se lanza desde mas eventos
