@@ -150,6 +150,19 @@
                     } );
                 }
             }
+            
+            if ( $( 'aside.contenedor-izquierda' ).exists() ) {
+                
+                var windowHeight    = $( 'div.contenedor' ).height();
+                $( 'aside.contenedor-izquierda' ).height( windowHeight );
+            }
+            
+            if ( $.browser.safari ) {
+                
+                $( '.contenedor-izquierda .pie' ).css( {
+                    bottom: '38px'
+                } );
+            }
         },
         /**
          *
@@ -1251,7 +1264,7 @@
                 ScrollableMenu  = false,
                 counter         = 0,
                 icounter        = 0;
-                
+            
             TFG.ConfigurarPantalla();
             
             if ( $('.tabla-col a img').exists() ) {

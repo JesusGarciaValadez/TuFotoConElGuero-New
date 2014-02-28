@@ -17,8 +17,8 @@ if(trim($contact_name) == "" ) {
             $resultados['success'] = false;
             $resultados['message'] = "Olvido indicarnos el motivo de su consulta.";
         } else {
-            //$emailTo = "contacto@tufotoconelguero.com";
-            $emailTo = "ideas.reticular@gmail.com";
+            $emailTo = "contacto@tufotoconelguero.com";
+            //$emailTo = "ideas.reticular@gmail.com";
             $subject = "Solicitud de contacto!";
             $Message = "{$contact_name} ({$contact_mail})<br /><br />Dice:<br />{$contact_message}";
             $Headers = "From:{$contact_mail}\r\n"; // Asi usaremos la opciones responder

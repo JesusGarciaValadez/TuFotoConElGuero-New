@@ -15,9 +15,10 @@ html, body {
     /**************************************/
     .contenedor-izquierda{
         background:url("img/bg-shape.png") no-repeat scroll left top transparent;
-        float:left;
-        width:232px;
         height:100%;
+        float:left;
+        position: relative;
+        width:232px;
         .contenedor-logotipo{
             background:url("img/bg-shape.png") no-repeat scroll left top transparent;
             height:113px;
