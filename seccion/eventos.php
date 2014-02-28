@@ -718,18 +718,20 @@ class Eventos extends Model {
                 if ( !empty( $parse_date["month"] ) ) 
                     echo '<div class="mes">' . $meses[$parse_date["month"] - 1] . '</div>';
                 
-                echo '<div class="more"> <a id="morelnk" href="#">REGRESAR</a></div>';
+                echo '<div class="items">';
+                echo '  <div class="more"> <a id="morelnk" href="#">REGRESAR</a></div>';
                 
-                echo '<div class="PrintEventoTop tabla-evento-reciente">';
-                echo '<span class="fecha" >';
+                echo '  <div class="PrintEventoTop tabla-evento-reciente">';
+                echo '      <span class="fecha" >';
                 echo $parse_date["day"] . ' de ' . $meses[$parse_date["month"] - 1] . ' de ' . $parse_date["year"];
-                echo '</span>';
-                echo '<span class="titulo">"' . $rowEvento->titulo . '...</span>';
-                echo '<span class="descripcion">' . substr($rowEvento->descripcion, 0, 60) . '...</span>';
+                echo '      </span>';
+                echo '      <span class="titulo">"' . $rowEvento->titulo . '...</span>';
+                echo '      <span class="descripcion">' . substr($rowEvento->descripcion, 0, 60) . '...</span>';
                 //$this->omitir_in_hide[] =$_GET["foto"];                                      
                 $this->get_FullEventoReciente($rowEvento->evento);
                 $this->generaListaImgShadow_lighbox($rowEvento->evento);
                 
+                echo '  </div>';
                 echo '</div>';
                 
                 break;
@@ -882,9 +884,10 @@ class Eventos extends Model {
         if ( !empty( $mes ) ) 
             echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
         
-        echo '<div id="msg" class="msg"></div>';
+        //echo '<div class="msg" class="msg"></div>';
         echo '<div class="more"> <a id="morelnk" href="#">+EVENTOS</a></div>';
         echo '<div class="arriba"> <a id="menoslnk" href="#">+ARRIBA</a></div>';
+        echo '<div class="items">';
         
         if ($rsResumenEventos) {
             $indexCols  = 1;
@@ -971,7 +974,7 @@ class Eventos extends Model {
             if ($openrow)
                 echo "</div >"; // cierra row
             if ($openpagina)
-                echo "</div >"; // cierra row  
+                echo "</div >"; // cierra row
         }
     }
     function PrintEventoxFecha($anio, $mes) {
@@ -994,7 +997,7 @@ class Eventos extends Model {
         if ( !empty( $mes ) )
             echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
         
-        echo '<div id="msg" class="msg"></div>';
+        //echo '<div class="msg" class="msg"></div>';
         echo '<div class="more"> <a id="morelnk" href="#">+EVENTOS</a></div>';
         echo '<div class="arriba"> <a id="menoslnk" href="#">+ARRIBA</a></div>';
         

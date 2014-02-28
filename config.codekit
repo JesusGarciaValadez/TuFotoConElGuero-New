@@ -9165,16 +9165,6 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/jquery.mousewheel.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/js\/jquery.mousewheel.js",
-		"outputAbbreviatedPath": "\/js\/jquery.mousewheel.min.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/js-eventos-back.js": {
 		"fileType": 64,
 		"ignore": 1,

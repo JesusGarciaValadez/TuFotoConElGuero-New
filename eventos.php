@@ -354,7 +354,7 @@
                         </fieldset>
                     </form>
                 </div><!-- Formulario de Búsqueda -->
-                <div class="fondo-eventos"><!-- Capa que contiene la sombra con el shadow -->
+                <div class="fondo-eventos scrollable"><!-- Capa que contiene la sombra con el shadow -->
                         <!-- Capa que cotiene las imagenes, Ancho 935 y alto de 460 pixeles -->
                         <?php $eventos->PrintEventos(); ?>
                 </div><!-- Capa que contiene la sombra con el shadow -->

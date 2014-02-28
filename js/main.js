@@ -151,12 +151,12 @@
                 }
             }
             
+            //  Ajusta la posición del footer de acuerdo al browser
             if ( $( 'aside.contenedor-izquierda' ).exists() ) {
                 
                 var windowHeight    = $( 'div.contenedor' ).height();
                 $( 'aside.contenedor-izquierda' ).height( windowHeight );
             }
-            
             if ( $.browser.safari ) {
                 
                 $( '.contenedor-izquierda .pie' ).css( {
@@ -1356,6 +1356,11 @@
         if ( $( '#morelnk' ).exists() ) {
             
             $( '#morelnk' ).parent( '.more' ).hide();
+        }
+        
+        if () {
+            
+            
         }
         
         TFG.init();
