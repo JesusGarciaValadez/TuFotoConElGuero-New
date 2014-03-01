@@ -128,16 +128,6 @@
                             $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeIn( 300 );
                         }, 500 );
                         
-                        //  Obtiene la url de la imagen y la pone el el link de 
-                        //  descarga
-                        var path    = $( '#sb-player' ).attr( 'src' );
-                        $( '#sb-down' ).attr( 'href', path );
-                        $( '#sb-down' ).attr( 'download', path );
-                        
-                        if ( $( '#sb-down' ).attr( 'href' ) != '#' && $( '#sb-down' ).attr( 'download' ) != '#' ) {
-                            clearInterval( interval );
-                        }
-                        
                         //  Calcula el ancho del shadowbox y lo centra en la
                         //  pantalla
                         var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
@@ -149,23 +139,26 @@
                         //  Event handler de botón de cierre para ocultar los 
                         //  elementos del panel del shadowbox
                         $( '#lbl-cerrar' ).on( 'click',function( e ){
-                            console.log( 'click' );
+                            
                             $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeOut( 100 );
                         } );
+                        
+                        //  Obtiene la url de la imagen y la pone el el link de 
+                        //  descarga
+                        var path        = $( '#sb-player' ).attr( 'src' );
+                        var regMatch    = /\/imagenes\/(\w|\W)*\.(png|jpg)/gi;
+                        var match       = path.match( regMatch );
+                        
+                        $( '#sb-down' ).attr( 'href', 'download.php?file="http://www.tufotoconelguero.com/' + path + '"');
+                        $( '#sb-down' ).attr( 'download', path );
+                        
+                        if ( $( '#sb-down' ).attr( 'href' ) != '#' || $( '#sb-down' ).attr( 'download' ) != '#' ) {
+                            clearInterval( interval );
+                        }
                     }, 2000 );
                 },
                 onChange:   function () {
                     var interval    = setInterval( function () {
-                        //  Obtiene la url de la imagen y la pone el el link de 
-                        //  descarga
-                        var path    = $( '#sb-player' ).attr( 'src' );
-                        $( '#sb-down' ).attr( 'href', path );
-                        $( '#sb-down' ).attr( 'download', path );
-                        
-                        if ( $( '#sb-down' ).attr( 'href' ) != '#' && $( '#sb-down' ).attr( 'download' ) != '#' ) {
-                            clearInterval( interval );
-                        }
-                        
                         //  Calcula el ancho del shadowbox y lo centra en la
                         //  pantalla
                         var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
@@ -173,6 +166,17 @@
                         newWidth           -= 40;
                         
                         $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
+                        
+                        //  Obtiene la url de la imagen y la pone el el link de 
+                        //  descarga
+                        var path        = $( '#sb-player' ).attr( 'src' );
+                        
+                        $( '#sb-down' ).attr( 'href', 'download.php?file="' + path + '"');
+                        $( '#sb-down' ).attr( 'download', path );
+                        
+                        if ( $( '#sb-down' ).attr( 'href' ) != '#' || $( '#sb-down' ).attr( 'download' ) != '#' ) {
+                            clearInterval( interval );
+                        }
                     }, 500 );
                 }
             } );

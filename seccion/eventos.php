@@ -727,7 +727,7 @@ class Eventos extends Model {
                 echo '      </span>';
                 echo '      <span class="titulo">"' . $rowEvento->titulo . '...</span>';
                 echo '      <span class="descripcion">' . substr($rowEvento->descripcion, 0, 60) . '...</span>';
-                //$this->omitir_in_hide[] =$_GET["foto"];                                      
+                //$this->omitir_in_hide[] =$_GET["foto"];
                 $this->get_FullEventoReciente($rowEvento->evento);
                 $this->generaListaImgShadow_lighbox($rowEvento->evento);
                 

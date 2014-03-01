@@ -8657,6 +8657,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/lighbox3\/dl2.bak2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5421,
+		"inputAbbreviatedPath": "\/img\/lighbox3\/dl2.bak2.png",
+		"outputAbbreviatedPath": "\/img\/lighbox3\/dl2.bak2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/lighbox3\/dl2.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -8665,7 +8675,7 @@
 		"inputAbbreviatedPath": "\/img\/lighbox3\/dl2.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/dl2.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/lighbox3\/em2.png": {
 		"fileType": 32768,
