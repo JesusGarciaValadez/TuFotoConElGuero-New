@@ -157,7 +157,7 @@
                         }
                     }, 2000 );
                 },
-                onChange:   function () {
+                onChange:       function () {
                     var interval    = setInterval( function () {
                         //  Calcula el ancho del shadowbox y lo centra en la
                         //  pantalla

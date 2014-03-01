@@ -69,16 +69,17 @@ var bajar                       = function() {
     } );
 };
 
-var operaEvento                 = function( evento ){
+//  
+var operaEvento                 = function( e ){
     
-    evento.preventDefault();
+    //e.preventDefault();
     if (lightbox) {
         return;
     }
-    if (evento.which == 38) { //baja
+    if ( e.which == 38) { //baja
         bajar();
     }
-    if (evento.which == 40) { //sube
+    if ( e.which == 40) { //sube
         subir();
     }
 };
