@@ -1341,6 +1341,13 @@
             } );
         }
         
+        if ( $( '.tabla-pagina' ).exists() && $( '.tabla-pagina' ).length > 1 ) {
+            
+            setTimeout( function() {
+                $( '.fondo-eventos .more' ).fadeIn( 300 );
+            }, 300 );
+        }
+        
         if ( $( '.fondo-eventos .more' ).exists() ) {
             
             var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .more' ) ) + 23;
