@@ -121,8 +121,13 @@
                         
                         nueva               = window.open( "https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas );
                     } );
-                    
+                                        
                     var interval    = setInterval( function () {
+                        //  Muestra los controles del shadowbox
+                        setTimeout( function () {
+                            $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeIn( 300 );
+                        }, 500 );
+                        
                         //  Obtiene la url de la imagen y la pone el el link de 
                         //  descarga
                         var path    = $( '#sb-player' ).attr( 'src' );
@@ -140,6 +145,13 @@
                         newWidth           -= 40;
                         
                         $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
+                        
+                        //  Event handler de botón de cierre para ocultar los 
+                        //  elementos del panel del shadowbox
+                        $( '#lbl-cerrar' ).on( 'click',function( e ){
+                            console.log( 'click' );
+                            $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeOut( 100 );
+                        } );
                     }, 2000 );
                 },
                 onChange:   function () {

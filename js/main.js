@@ -1358,11 +1358,6 @@
             $( '#morelnk' ).parent( '.more' ).hide();
         }
         
-        if () {
-            
-            
-        }
-        
         TFG.init();
     } );
    

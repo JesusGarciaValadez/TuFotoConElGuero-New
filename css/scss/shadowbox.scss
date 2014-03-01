@@ -51,21 +51,21 @@
     bottom: 0px;
 }
 #lbl-cerrar {
-    display: block;
+    display: none;
     float: right;
     height: 25px;
     position: relative;
 }
 #sb-logo {
     position: relative;
-    display: block;
+    display: none;
     background: url(tu-foto-guero-grises.png) no-repeat center;
     top: 50px;
     height: 125px;
 }
 #sb-comp-foto {
     position: relative;
-    display: block;
+    display: none;
     background: url(compic2.png) no-repeat center;
     top: 90px;
     height: 66px;
@@ -111,6 +111,7 @@
     background-color: #060606;
 }
 #sb-title,#sb-info {
+    display: none;
     position: relative;
     margin: 0;
     padding: 0;
@@ -139,7 +140,7 @@
     padding-top: 10px;
     width: 100%;
     background: transparent;
-    display: block;
+    display: none;
     position: absolute;
     top: 175px;
 }
@@ -215,7 +216,7 @@ top: 50%;*/
     margin-left: 20px;
 }
 #sb-descarga {
-    display: block;
+    display: none;
     height: auto;
     padding: 0;
     position: relative;
@@ -252,6 +253,7 @@ div.sb-message a:link,div.sb-message a:visited {
     text-decoration: underline;
 }
 #lblsocial {
+    display: none;
     top: 290px;
     /*z-index: 3;
     right: -52px;*/
@@ -283,3 +285,43 @@ div.sb-message a:link,div.sb-message a:visited {
 div.clearfix {
     clear: both;
 }
+
+
+/*<div id="sb-wrapper2-inner" style="height: 550px;">
+    <div id="lbl-cerrar">
+        <a id="sb-nav-close" title="Cerrar" onclick="Shadowbox.close()">
+            <img src="img/lighbox3/cerrar.png" class="btn-close">
+        </a>
+    </div>
+    <div id="sb-nav">
+        <div id="sb-ant">
+            <a id="sb-nav-previous" title="Anterior" onclick="Shadowbox.previous()">
+                <img src="img/lighbox3/ant.png">
+            </a>
+        </div><
+        div id="sb-sig">
+            <a id="sb-nav-next" title="Siguiente" onclick="Shadowbox.next()">
+                <img src="img/lighbox3/sig.png">
+            </a>
+        </div>
+    </div>
+    <div id="lblsocial">
+        <a href="#" class="a-fblightbox">
+            <img src="img/lighbox3/fb3.png">
+        </a>
+        <a href="#" class="a-twlightbox">
+            <img src="img/lighbox3/twitter.png">
+        </a>
+        <a href="#" class="a-gPluslightbox">
+            <img src="img/lighbox3/google_plus.png">
+        </a>
+        <a href="#">
+            <img src="img/lighbox3/mail.png">
+        </a>
+    </div>
+    <div id="sb-descarga">
+        <a id="sb-down" href="imagenes/13-12t/91.jpg" download="imagenes/13-12t/91.jpg" class="a-descarga">
+            <img src="img/lighbox3/dl2.png" class="descargar-lightbox">
+        </a>
+    </div>
+</div>*/
