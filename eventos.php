@@ -68,7 +68,6 @@
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/event.css" type="text/css" media="screen" />
         <!--link href="css/eventos.css" rel="stylesheet" /-->
-        <link rel="stylesheet" href="css/shadowbox.css" type="text/css" media="screen" />
         
         <script type="text/javascript" src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -124,6 +123,8 @@
                     } );
                     
                     var interval    = setInterval( function () {
+                        //  Obtiene la url de la imagen y la pone el el link de 
+                        //  descarga
                         var path    = $( '#sb-player' ).attr( 'src' );
                         $( '#sb-down' ).attr( 'href', path );
                         $( '#sb-down' ).attr( 'download', path );
@@ -131,10 +132,20 @@
                         if ( $( '#sb-down' ).attr( 'href' ) != '#' && $( '#sb-down' ).attr( 'download' ) != '#' ) {
                             clearInterval( interval );
                         }
+                        
+                        //  Calcula el ancho del shadowbox y lo centra en la
+                        //  pantalla
+                        var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
+                        var newWidth        = Number( leftPosition.replace( /px$/, '', 'gi' ) );
+                        newWidth           -= 40;
+                        
+                        $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
                     }, 2000 );
                 },
                 onChange:   function () {
                     var interval    = setInterval( function () {
+                        //  Obtiene la url de la imagen y la pone el el link de 
+                        //  descarga
                         var path    = $( '#sb-player' ).attr( 'src' );
                         $( '#sb-down' ).attr( 'href', path );
                         $( '#sb-down' ).attr( 'download', path );
@@ -142,6 +153,14 @@
                         if ( $( '#sb-down' ).attr( 'href' ) != '#' && $( '#sb-down' ).attr( 'download' ) != '#' ) {
                             clearInterval( interval );
                         }
+                        
+                        //  Calcula el ancho del shadowbox y lo centra en la
+                        //  pantalla
+                        var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
+                        var newWidth        = Number( leftPosition.replace( /px$/, '', 'gi' ) );
+                        newWidth           -= 40;
+                        
+                        $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
                     }, 500 );
                 }
             } );
