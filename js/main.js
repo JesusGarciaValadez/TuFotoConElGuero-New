@@ -998,7 +998,7 @@
                 
                 if ( top < 372 ) {
                     
-                    $( ".fondo-eventos" ).css( "marginTop", 124 + 'px' );
+                    $( ".fondo-eventos" ).css( "marginTop", 100 + 'px' );
                 } else {
                     marginValue = top / 3;
                     $( ".fondo-eventos" ).css( "marginTop", marginValue + 'px' );
