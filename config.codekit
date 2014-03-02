@@ -9359,7 +9359,7 @@
 		},
 	"\/js\/shadowbox.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/shadowbox.js",
 		"outputAbbreviatedPath": "\/js\/shadowbox.min.js",

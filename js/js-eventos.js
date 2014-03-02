@@ -34,6 +34,7 @@ var subir                       = function() {
         scrollTop: scrolled
     }, 700, function () {
         
+        prevDelta   = undefined;
         $("#morelnk").fadeIn( 130 ).delay( 700 );
         //$(".more").html("<a href='#' id='morelnk'  >+EVENTOS</a>").delay(100);
     } );
@@ -64,6 +65,7 @@ var bajar                       = function() {
         scrollTop: scrolled
     }, 700, function () {
         
+        prevDelta   = undefined;
         $( "#menoslnk" ).fadeIn( 130 ).delay( 700 );
         //$(".arriba").html("<a href='#' id='menoslnk'  >ARRIBA</span>").delay(100);
     } );
@@ -232,52 +234,67 @@ $( document ).ready( function () {
 var delta       = 0,
     prevDelta   = 0,
     paginas     = 1,
-    tool        = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    tool        = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
+    flag;
 
-/*$( document ).on( mousewheelevt, function ( e ) {
+//$( document ).on( mousewheelevt, function ( e ) {
+$( document ).on( 'mousewheel', function ( e ) {
     e.preventDefault();
     e.stopPropagation();
-
+    e.stopImmediatePropagation();
+    
     if ( lightbox ) {
         return;
     }
-    var evt     = window.event || e //equalize event object
+    /*var evt     = window.event || e //equalize event object
     evt         = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible
     if ( delta === 0 ) {
         delta   = evt.detail ? evt.detail * ( -40 ) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
-    }
-    console.log( tool );
+    }*/
     
-    setTimeout( function () {
+    //console.log( e.deltaY );
+    
+    delta       = Math.round( e.deltaY / 100 );
+    if ( delta > 1 ) {
+        delta   = 1;
+    } else if ( delta < -1 ) {
+        delta   = -1;
+    }
+    console.log( 'delta:'+delta );
+    
+    flag    = ( ( delta == prevDelta ) || ( delta == 0 ) )? false : true;
+    console.log( 'flag:'+flag );
+    
+    //console.log( 'comprobacion:',( ( delta == -1 ) || ( delta == 1 ) ) && ( ( flag == false ) || ( flag == undefined ) ) );
+    /*if ( ( ( delta == -1 ) || ( delta == 1 ) ) && ( ( flag == false ) || ( flag == undefined ) ) ) {
+        flag    = true;
+    } else {
+        return false;
+    }*/
+    //console.log( 'flag comprobado:'+flag );
+    
+    if ( delta == -1 && flag == true ) {
         
-        console.log( 'begin' );
-        if ( delta > 0 && delta >= prevDelta ) {
-            
-            if ( paginas < 1 ) {
-                return;
-            }
-            bajar();
-            if ( delta != prevDelta ) {
-                prevDelta   = tool;
-            } else {
-                prevDelta++;
-            }
+        if ( paginas >= $( ".tabla-pagina" ).length ) {
+            flag    = false;
+            return;
         }
-        if ( delta > 0 && delta <= prevDelta ) {
-            
-            if ( paginas >= $( ".tabla-pagina" ).length ) {
-                return;
-            }
-            subir();
-            if ( delta != prevDelta ) {
-                prevDelta   = tool;
-            } else {
-                prevDelta--;
-            }
+        console.log( 'sube' );
+        subir();
+        prevDelta   = delta;
+        //flag        = false;
+    } else if( delta == 1 && flag == true ) {
+        
+        if ( paginas < 1 ) {
+            flag    = false;
+            return;
         }
-    }, 400 );
-
-} );*/
+        console.log( 'baja' );
+        bajar();
+        prevDelta   = delta;
+        //flag        = false;
+    }
+} );
 
 //-Se ejecuta cuando el documento esta cargado o en la cache
 $( window ).load( function () {} );
