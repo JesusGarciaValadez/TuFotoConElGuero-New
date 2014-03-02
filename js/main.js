@@ -279,6 +279,126 @@
          *
          */
         //  !Validación del formulario de contacto.
+        validateFormImage:          function ( rule, messages, _image ) {
+            
+            var _rule                   = ( typeof( rule ) == 'object' ) ? rule : {};
+            var _message                = ( typeof( messages ) == 'object' ) ? messages : {};
+            var _image                  = ( typeof( image ) == 'string' ) ? message : "";
+            var _mailing_image          = $( '#mailing_image' ).val();
+            var _data_sended            = {};
+            _data_sended.contact_mail   = _mailing_image;
+            _data_sended.lnk            = _image;
+            
+            var formActive = $( '#image_sended_by_email' ).validate( {
+                onfocusout: false,
+                onclick: true,
+                onkeyup: false,
+                onsubmit: true,
+                focusCleanup: true,
+                focusInvalid: false,
+                errorClass: "error",
+                validClass: "valid",
+                errorElement: "label",
+                ignore: '',
+                /*showErrors: function( errorMap, errorList ) {
+                    $('#message').empty().removeClass();
+                    $("#message").html('<p>Error al ingresar la información.</p><p>Verifique que sus datos están correctos o que no falte ningún dato.</p><p>Por favor, vuelvalo a intentar.</p>');
+                    $('#message').addClass('wrong').show('fast', function(){
+                        $('#message').show('fast');
+                    });
+                    this.defaultShowErrors();
+                },*/
+                errorPlacement: function(error, element) {
+                    error.appendTo( element.parent() );
+                },
+                //debug:true,
+                rules: _rule,
+                messages: _message,
+                highlight: function( element, errorClass, validClass ) {
+                    $( element ).parent().addClass( 'error_wrapper' );
+                },
+                unhighlight: function( element, errorClass ) {
+                    $( element ).parent().removeClass( 'error_wrapper' );
+                },
+                submitHandler: function( form ) {
+                    // Form submit
+                    $( form ).ajaxSubmit( {
+                        //    Before submitting the form
+                        beforeSubmit: function showRequestLogin( arr, form, options ) {
+                            
+                            $('.error_indicator').remove();
+                        },
+                        data: _data_sended,
+                        //  !Function for handle data from server
+                        success: function showResponseLogin( responseText, statusText, xhr, form ) {
+                            
+                            if ( typeof( responseText ) != 'string' ) {
+                                
+                                responseText    = ( $.parseJSON( responseText ) == null ) ? responseText : $.parseJSON( responseText );
+                                
+                                if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
+                                    
+                                    $( 'fieldset' ).fadeIn( 200, function() {
+                                        $( '#image_sended_by_email' ).append( '<p>La imagen ha sido enviada al correo.</p>' ).fadeIn( 200, function () {
+                                            setTimeout( function () {
+                                                $( '#image_sended_by_email' ).fadeOut( 200 )
+                                            }, 3000 );
+                                        } );
+                                    } );
+                                } else {
+                                    
+                                    TFG.errorProccess();
+                                }
+                            } else {
+                                
+                                TFG.errorProccess();
+                            }
+                        },
+                        resetForm: true,
+                        clearForm: false,
+                        //   If something is wrong
+                        error: function( jqXHR, textStatus, errorThrown ) {
+                            //console.log(textStatus);
+                            //console.log(errorThrown);
+                            TFG.errorProccess();
+                        },
+                        cache: false
+                    } );
+                },
+                /*invalidHandler: function(form, validator) {
+                    var errors = validator.numberOfInvalids();
+                    if (errors) {
+                        var message = errors == 1 ? 'You missed 1 field. It has been highlighted' : 'You missed ' + errors + ' fields. They have been highlighted';
+                        $("div#summary").html(message);
+                        $("div#summary").show();
+                    } else {
+                        $("div#summary").hide();
+                    }
+                }*/
+            } );
+        },
+        errorProccess:              function () {
+            $( '#mailing_image' ).parent().addClass( 'error_wrapper' ).append( '<label for="mailing_image" class="error">Hubo un error. ¿Puedes intentarlo de nuevo?</label>' );
+            
+            setTimeout( function () {
+                
+                $( '#mailing_image' ).parent().removeClass( 'error_wrapper' );
+                $( '#mailing_image' ).siblings( 'label' ).fadeOut( 200, function(){
+                    
+                    $( this ).remove();
+                } );
+            }, 3000 );
+        },
+        /**
+         *
+         *  @function:  !validateContact
+         *  @description:   Makes the validation of the contact form
+         *  @see:   http://bassistance.de/jquery-plugins/jquery-plugin-validation/ ||
+         *          http://docs.jquery.com/Plugins/Validation
+         *  @author: @_Chucho_
+         *
+         */
+        //  !Validación del formulario de contacto.
         validateForms:              function ( rule, messages ) {
             
             var _rule       = ( typeof( rule ) == 'object' ) ? rule : {};

@@ -121,7 +121,9 @@
                         
                         nueva               = window.open( "https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas );
                     } );
-                                        
+                    
+                    var path,regMatch,match;
+                    
                     var interval    = setInterval( function () {
                         //  Muestra los controles del shadowbox
                         setTimeout( function () {
@@ -143,19 +145,49 @@
                             $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeOut( 100 );
                         } );
                         
-                        //  Obtiene la url de la imagen y la pone el el link de 
+                        //  Obtiene la url de la imagen y la pone el link de 
                         //  descarga
-                        var path        = $( '#sb-player' ).attr( 'src' );
-                        var regMatch    = /\/imagenes\/(\w|\W)*\.(png|jpg)/gi;
-                        var match       = path.match( regMatch );
+                        //  Obtiene parte de la ruta de la imagen
+                        path        = $( '#sb-player' ).attr( 'src' );
+                        regMatch    = /\/imagenes\/(\w|\W)*\.(png|jpg)/gi;
+                        match       = path.match( regMatch );
                         
-                        $( '#sb-down' ).attr( 'href', 'download.php?file="http://www.tufotoconelguero.com/' + path + '"');
-                        $( '#sb-down' ).attr( 'download', path );
+                        $( '#sb-down' ).attr( 'href', 'download.php?file="http://www.tufotoconelguero.com/' + match + '"');
+                        $( '#sb-down' ).attr( 'download', match );
                         
                         if ( $( '#sb-down' ).attr( 'href' ) != '#' || $( '#sb-down' ).attr( 'download' ) != '#' ) {
                             clearInterval( interval );
                         }
+                        
+                        //  Validación de formulario de envio de imagen
+                        var rules   = {
+                            mailing_image: {
+                                required:   true,
+                                email:      true
+                            }
+                        };
+                        
+                        var messages    = {
+                                mailing_image:  "Por favor, escribe tu email",
+                                required:       "Por favor, selecciona una opción",
+                                minlength:      "Por favor, haga su respuesta más amplia.",
+                                maxlength:      "Por favor, acorte su respuesta",
+                                email:          "Escriba un email válido",
+                                number:         "Escriba solo números",
+                                digits:         "Escriba solo números",
+                            }
+                        
+                        TFG.validateFormImage( rules, messages, match );
                     }, 2000 );
+                    
+                    //  Muestra el formulario de contacto
+                    $( '.image_sended_by_email_trigger' ).on( 'click', function ( e ) {
+                        
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        $( '#image_sended_by_email' ).fadeToggle( 200 );
+                    } );
                 },
                 onChange:       function () {
                     var interval    = setInterval( function () {

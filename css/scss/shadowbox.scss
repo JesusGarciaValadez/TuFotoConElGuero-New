@@ -220,12 +220,22 @@
                 .a-twlightbox{}
                 .a-gPluslightbox{}
                 #image_sended_by_email{
-                    display: block;
+                    display: none;
                     width: 100%;
                     fieldset{
                         
                         div{
                             float: left;
+                            position: relative;
+                            label{
+                                @include font-mask( red, em( 12, 16 ), em( 16, 12 ), normal );
+                                left: 0;
+                                margin: 0;
+                                padding: 0 0 5px;
+                                position: relative;
+                                top: 7px;
+                                width: 240px;
+                            }
                             input{
                                 @include font-mask( #FFF, em( 16, 16 ), em( 20, 16 ), normal );
                                 border: 0 none transparent;
@@ -236,7 +246,7 @@
                             margin: 0 10px 0 0;
                             padding: 5px 0 5px 18px;
                             width: 65%;
-                            #contact_mail{
+                            #mailing_image{
                                 color: $text_gray;
                                 padding: 0 5px;
                             }
