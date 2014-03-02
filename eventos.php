@@ -76,11 +76,19 @@
         </script>
         <script type="text/javascript" src="js/shadowbox.js"></script>
         <script type="text/javascript">
-            var hScreen     = $( window ).height();
-            var scrolled    = 0;
-            var paginas     = 1;
-            var sDatos      = "";
-            var lightbox    = false;
+            var hScreen     = $( window ).height(),
+                scrolled    = 0,
+                paginas     = 1,
+                sDatos      = "",
+                lightbox    = false,
+                path,regMatch,match;
+            
+            //  Obtiene parte de la ruta de la imagen
+            var regExpImageSearch   = function () {
+                path            = $( '#sb-player' ).attr( 'src' );
+                regMatch        = /(\/)*imagenes\/(\S)*\/(\S)*\.(jpg|png)/gi;
+                return match    = path.match( regMatch );
+            };
             
             Shadowbox.init( {
                 handleOversize: "resize",
@@ -122,8 +130,6 @@
                         nueva               = window.open( "https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas );
                     } );
                     
-                    var path,regMatch,match;
-                    
                     var interval    = setInterval( function () {
                         //  Muestra los controles del shadowbox
                         setTimeout( function () {
@@ -147,13 +153,9 @@
                         
                         //  Obtiene la url de la imagen y la pone el link de 
                         //  descarga
-                        //  Obtiene parte de la ruta de la imagen
-                        path        = $( '#sb-player' ).attr( 'src' );
-                        regMatch    = /\/imagenes\/(\w|\W)*\.(png|jpg)/gi;
-                        match       = path.match( regMatch );
-                        
-                        $( '#sb-down' ).attr( 'href', 'download.php?file="http://www.tufotoconelguero.com/' + match + '"');
-                        $( '#sb-down' ).attr( 'download', match );
+                        var imageResult = regExpImageSearch();
+                        $( '#sb-down' ).attr( 'href', 'download.php?file="http://www.tufotoconelguero.com/' + imageResult + '"');
+                        $( '#sb-down' ).attr( 'download', imageResult );
                         
                         if ( $( '#sb-down' ).attr( 'href' ) != '#' || $( '#sb-down' ).attr( 'download' ) != '#' ) {
                             clearInterval( interval );
@@ -177,7 +179,7 @@
                                 digits:         "Escriba solo números",
                             }
                         
-                        TFG.validateFormImage( rules, messages, match );
+                        TFG.validateFormImage( rules, messages );
                     }, 2000 );
                     
                     //  Muestra el formulario de contacto
@@ -201,10 +203,9 @@
                         
                         //  Obtiene la url de la imagen y la pone el el link de 
                         //  descarga
-                        var path        = $( '#sb-player' ).attr( 'src' );
-                        
-                        $( '#sb-down' ).attr( 'href', 'download.php?file="' + path + '"');
-                        $( '#sb-down' ).attr( 'download', path );
+                        var imageResult = regExpImageSearch();
+                        $( '#sb-down' ).attr( 'href', 'download.php?file="http://www.tufotoconelguero.com' + imageResult + '"');
+                        $( '#sb-down' ).attr( 'download', imageResult );
                         
                         if ( $( '#sb-down' ).attr( 'href' ) != '#' || $( '#sb-down' ).attr( 'download' ) != '#' ) {
                             clearInterval( interval );
@@ -456,7 +457,7 @@
         </div><!-- Contenedor principal -->
         <script type="text/javascript" src="js/plugins.min.js"></script>
         <script type="text/javascript" src="js/main.min.js"></script>
-        <script type="text/javascript" src="js/js-eventos.js"></script>
+        <script type="text/javascript" src="js/js-eventos.min.js"></script>
 <?php
         if( !isset( $_GET["pagina"] ) and isset( $_GET["id"] ) ) {
             echo "<script type='text/javascript'>";

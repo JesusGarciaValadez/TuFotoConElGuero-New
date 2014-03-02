@@ -233,66 +233,51 @@ $( document ).ready( function () {
 //$( document ).bind( mousewheelevt, function ( e ) {
 var delta       = 0,
     prevDelta   = 0,
-    paginas     = 1,
-    tool        = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop,
     flag;
 
-//$( document ).on( mousewheelevt, function ( e ) {
+//  Maneja el evento mousewheel para el scroll en la sección de eventos por 
+//  búsqueda o por mes
 $( document ).on( 'mousewheel', function ( e ) {
     e.preventDefault();
     e.stopPropagation();
     e.stopImmediatePropagation();
     
+    //  Si hay un lightbox, no hace nada
     if ( lightbox ) {
         return;
     }
-    /*var evt     = window.event || e //equalize event object
-    evt         = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible
-    if ( delta === 0 ) {
-        delta   = evt.detail ? evt.detail * ( -40 ) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
-    }*/
     
-    //console.log( e.deltaY );
-    
+    //  Calcula si el mousewheel es hacia arriba o hacia abajo y los transforma 
+    //  en 1 para arriba y 1 para abajo
     delta       = Math.round( e.deltaY / 100 );
     if ( delta > 1 ) {
         delta   = 1;
     } else if ( delta < -1 ) {
         delta   = -1;
     }
-    console.log( 'delta:'+delta );
     
+    //  Flag para determinar un punto único del cual fijarnos y traducir 
+    //  la recurrencia del evento mousewheel en un único evento en vez
+    //  de tener multiples eventos de un solo scroll
     flag    = ( ( delta == prevDelta ) || ( delta == 0 ) )? false : true;
-    console.log( 'flag:'+flag );
     
-    //console.log( 'comprobacion:',( ( delta == -1 ) || ( delta == 1 ) ) && ( ( flag == false ) || ( flag == undefined ) ) );
-    /*if ( ( ( delta == -1 ) || ( delta == 1 ) ) && ( ( flag == false ) || ( flag == undefined ) ) ) {
-        flag    = true;
-    } else {
-        return false;
-    }*/
-    //console.log( 'flag comprobado:'+flag );
-    
+    //  Determina si se baja o se sube
     if ( delta == -1 && flag == true ) {
         
         if ( paginas >= $( ".tabla-pagina" ).length ) {
             flag    = false;
             return;
         }
-        console.log( 'sube' );
         subir();
         prevDelta   = delta;
-        //flag        = false;
     } else if( delta == 1 && flag == true ) {
         
         if ( paginas < 1 ) {
             flag    = false;
             return;
         }
-        console.log( 'baja' );
         bajar();
         prevDelta   = delta;
-        //flag        = false;
     }
 } );
 

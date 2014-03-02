@@ -279,15 +279,10 @@
          *
          */
         //  !Validación del formulario de contacto.
-        validateFormImage:          function ( rule, messages, _image ) {
+        validateFormImage:          function ( rule, messages ) {
             
             var _rule                   = ( typeof( rule ) == 'object' ) ? rule : {};
             var _message                = ( typeof( messages ) == 'object' ) ? messages : {};
-            var _image                  = ( typeof( image ) == 'string' ) ? message : "";
-            var _mailing_image          = $( '#mailing_image' ).val();
-            var _data_sended            = {};
-            _data_sended.contact_mail   = _mailing_image;
-            _data_sended.lnk            = _image;
             
             var formActive = $( '#image_sended_by_email' ).validate( {
                 onfocusout: false,
@@ -321,6 +316,14 @@
                     $( element ).parent().removeClass( 'error_wrapper' );
                 },
                 submitHandler: function( form ) {
+                    path            = $( '#sb-player' ).attr( 'src' );
+                    regMatch        = /imagenes\/(\S)*\/(\S)*\.(jpg|png)/gi;
+                    match           = path.match( regMatch );
+                    
+                    var _mailing_image          = $( '#mailing_image' ).val();
+                    var _data_sended            = {};
+                    _data_sended.contact_mail   = _mailing_image;
+                    _data_sended.lnk            = "http://www.tufotoconelguero.com/" + match;
                     // Form submit
                     $( form ).ajaxSubmit( {
                         //    Before submitting the form
