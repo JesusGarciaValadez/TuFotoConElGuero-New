@@ -19,11 +19,11 @@
         <title>Tu Foto Con el Güero.com - Eventos</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
-        <meta http-equiv="pragma" content="no-cache" />
+        <!--meta http-equiv="pragma" content="no-cache" /-->
         <meta name="description" content="" />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
-        <meta name="author" content="Leonides Zavala Vidal" >
+        <meta name="author" content="Jesús Antonio García Valadez" >
         <meta name="canonical" content="http://www.tufotoconelguero.com/eventos.php" />
         
         <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
@@ -63,8 +63,8 @@
         <meta property="og:type" content="website" />
         
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png" type="image/png" />
+        <!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png" type="image/png" /-->
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/event.css" type="text/css" media="screen" />
         <!--link href="css/eventos.css" rel="stylesheet" /-->
@@ -136,13 +136,16 @@
                             $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeIn( 300 );
                         }, 500 );
                         
-                        //  Calcula el ancho del shadowbox y lo centra en la
-                        //  pantalla
-                        var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
-                        var newWidth        = Number( leftPosition.replace( /px$/, '', 'gi' ) );
-                        newWidth           -= 40;
-                        
-                        $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
+                        if ( $( '#sb-player' ).length >= 1 ) {
+                            
+                            //  Calcula el ancho del shadowbox y lo centra en la
+                            //  pantalla
+                            var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
+                            var newWidth        = Number( leftPosition.replace( /px$/, '', 'gi' ) );
+                            newWidth           -= 40;
+                            
+                            $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
+                        }
                         
                         //  Event handler de botón de cierre para ocultar los 
                         //  elementos del panel del shadowbox
@@ -153,7 +156,7 @@
                         
                         //  Obtiene la url de la imagen y la pone el link de 
                         //  descarga
-                        var imageResult = regExpImageSearch();
+                        var imageResult     = regExpImageSearch();
                         $( '#sb-down' ).attr( 'href', 'download.php?file="http://www.tufotoconelguero.com/' + imageResult + '"');
                         $( '#sb-down' ).attr( 'download', imageResult );
                         
@@ -179,7 +182,7 @@
                                 digits:         "Escriba solo números",
                             }
                         
-                        TFG.validateFormImage( rules, messages );
+                        TFG.validateFormImage( rules, messages, match );
                     }, 2000 );
                     
                     //  Muestra el formulario de contacto

@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16653",
+"creatorBuild": "16828",
 "files": {
 	"\/admin.php": {
 		"fileType": 8192,
@@ -1249,7 +1249,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
+		"initialSize": 22046,
 		"inputAbbreviatedPath": "\/email-template\/logotipo-negro.png",
 		"outputAbbreviatedPath": "\/email-template\/logotipo-negro.png",
 		"outputPathIsSetByUser": 0,
@@ -2054,6 +2054,546 @@
 		"initialSize": 308497,
 		"inputAbbreviatedPath": "\/imagenes\/2014-02-17.jpg",
 		"outputAbbreviatedPath": "\/imagenes\/2014-02-17.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/1_1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 390900,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_1.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_1.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/1_2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 403089,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_2.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_2.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/1_3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 361569,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_3.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_3.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/1_4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 308482,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_4.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_4.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/1_5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 347763,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_5.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_5.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/1_6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 325286,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_6.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/1_6.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/2_10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 358100,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/2_10.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/2_10.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/2_7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 374355,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/2_7.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/2_7.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/2_8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 381001,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/2_8.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/2_8.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/2_9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 391070,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/2_9.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/2_9.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/3_11.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 365302,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_11.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_11.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/3_12.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 379039,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_12.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_12.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/3_13.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 397495,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_13.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_13.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/3_14.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 292359,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_14.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_14.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/imagenes\/2014\/March\/Monday10\/3_15.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 312569,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_15.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_15.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/3_16.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 342976,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_16.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_16.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/3_17.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 343840,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_17.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/3_17.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/4_18.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 320585,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/4_18.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/4_18.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/4_19.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 403696,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/4_19.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/4_19.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/5_20.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 375680,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_20.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_20.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/5_21.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 332306,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_21.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_21.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/5_22.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 262799,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_22.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_22.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/5_23.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 399461,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_23.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_23.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/5_24.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 323098,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_24.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_24.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/5_25.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 335899,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_25.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_25.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/5_26.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 325774,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_26.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_26.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/5_27.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 356282,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_27.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/5_27.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb1_1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21249,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_1.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_1.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb1_2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19428,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_2.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_2.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb1_3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19833,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_3.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_3.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb1_4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17153,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_4.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_4.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb1_5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18456,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_5.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_5.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb1_6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16997,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_6.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb1_6.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb2_10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19930,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb2_10.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb2_10.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb2_7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18615,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb2_7.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb2_7.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb2_8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20658,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb2_8.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb2_8.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb2_9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19521,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb2_9.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb2_9.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb3_11.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12555,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_11.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_11.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb3_12.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16355,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_12.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_12.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb3_13.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15754,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_13.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_13.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb3_14.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11387,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_14.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_14.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb3_15.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11453,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_15.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_15.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb3_16.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12033,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_16.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_16.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb3_17.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17373,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_17.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb3_17.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb4_18.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13052,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb4_18.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb4_18.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb4_19.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14601,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb4_19.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb4_19.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb5_20.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12612,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_20.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_20.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb5_21.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19826,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_21.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_21.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb5_22.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12119,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_22.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_22.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb5_23.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12142,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_23.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_23.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb5_24.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12249,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_24.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_24.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb5_25.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14134,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_25.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_25.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb5_26.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12795,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_26.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_26.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/imagenes\/2014\/March\/Monday10\/thumb5_27.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9842,
+		"inputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_27.jpg",
+		"outputAbbreviatedPath": "\/imagenes\/2014\/March\/Monday10\/thumb5_27.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
@@ -8675,7 +9215,7 @@
 		"inputAbbreviatedPath": "\/img\/lighbox3\/dl2.png",
 		"outputAbbreviatedPath": "\/img\/lighbox3\/dl2.png",
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/lighbox3\/em2.png": {
 		"fileType": 32768,
@@ -9170,7 +9710,7 @@
 	"\/js\/jquery.mousewheel.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/jquery.mousewheel.js",
 		"outputAbbreviatedPath": "\/js\/jquery.mousewheel.min.js",
 		"outputPathIsSetByUser": 0,
@@ -9199,7 +9739,7 @@
 		},
 	"\/js\/js-eventos.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/js-eventos.js",
 		"outputAbbreviatedPath": "\/js\/js-eventos.min.js",
@@ -9369,7 +9909,7 @@
 		},
 	"\/js\/shadowbox.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/shadowbox.js",
 		"outputAbbreviatedPath": "\/js\/shadowbox.min.js",
@@ -9739,14 +10279,14 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Jesús García Valadez",
+"lastSavedByUser": "Jesús Antonio García Valadez",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "Tu Foto con el Güero",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-facepalm"
+	"iconImageName": "meme-lotr"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 1,
@@ -9768,6 +10308,10 @@
 		"camel_case_classes": {
 			"active": 1,
 			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
 			},
 		"cyclomatic_complexity": {
 			"active": 0,
@@ -9793,9 +10337,17 @@
 			"active": 0,
 			"flagValue": 150
 			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"newlines_after_classes": {
 			"active": 0,
 			"flagValue": 3
+			},
+		"no-unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
 			},
 		"no_backticks": {
 			"active": 1,

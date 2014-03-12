@@ -19,17 +19,17 @@
         <title>Tu Foto Con el Güero.com</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
-        <meta http-equiv="pragma" content="no-cache" />
+        <!--meta http-equiv="pragma" content="no-cache" /-->
         <meta name="description" content="" />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
-        <meta name="author" content="Leonides Zavala Vidal" >
+        <meta name="author" content="Jesús Antonio García Valadez" >
         
         <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
         
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png" type="image/png" />
+        <!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png" type="image/png" /-->
         
         <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
         
