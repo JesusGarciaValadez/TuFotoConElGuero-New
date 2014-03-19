@@ -334,6 +334,19 @@
                         data: _data_sended,
                         //  !Function for handle data from server
                         success: function showResponseLogin( responseText, statusText, xhr, form ) {
+<<<<<<< HEAD
+                            
+                            responseText    = ( $.parseJSON( responseText ) == null ) ? responseText : $.parseJSON( responseText );
+                            
+                            if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
+                                
+                                $( 'fieldset' ).fadeIn( 200, function() {
+                                    $( '#image_sended_by_email' ).append( '<p>La imagen ha sido enviada al correo.</p>' ).fadeIn( 200, function () {
+                                        setTimeout( function () {
+                                            $( '#image_sended_by_email' ).fadeOut( 200 )
+                                        }, 3000 );
+                                    } );
+=======
                            
                             responseText    = ( $.parseJSON( responseText ) === null ) ? responseText : $.parseJSON( responseText );
                            
@@ -346,6 +359,7 @@
                                             clearTimeout( 'disappear' );
                                         } );
                                     }, 3000 );
+>>>>>>> ca85252960714ed3c130c98d5b2b9866502a65c4
                                 } );
                             } else {
                                

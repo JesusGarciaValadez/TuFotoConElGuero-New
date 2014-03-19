@@ -19,7 +19,7 @@
         <title>Tu Foto Con el Güero.com - Eventos</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
-        <!--meta http-equiv="pragma" content="no-cache" /-->
+        <meta http-equiv="pragma" content="no-cache" />
         <meta name="description" content="" />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
@@ -93,6 +93,7 @@
             Shadowbox.init( {
                 handleOversize: "resize",
                 overlayColor:   "#fff",
+                enableKeys:     false,
                 onOpen:         function () {
                     var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
                     var imagen          = $( '#sb-player' ).attr( 'src' );
@@ -131,28 +132,6 @@
                     } );
                     
                     var interval    = setInterval( function () {
-                        //  Muestra los controles del shadowbox
-                        setTimeout( function () {
-                            $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeIn( 300 );
-                        }, 500 );
-                        
-                        if ( $( '#sb-player' ).length >= 1 ) {
-                            
-                            //  Calcula el ancho del shadowbox y lo centra en la
-                            //  pantalla
-                            var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
-                            var newWidth        = Number( leftPosition.replace( /px$/, '', 'gi' ) );
-                            newWidth           -= 40;
-                            
-                            $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
-                        }
-                        
-                        //  Event handler de botón de cierre para ocultar los 
-                        //  elementos del panel del shadowbox
-                        $( '#lbl-cerrar' ).on( 'click',function( e ){
-                            
-                            $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeOut( 100 );
-                        } );
                         
                         //  Obtiene la url de la imagen y la pone el link de 
                         //  descarga
@@ -191,18 +170,11 @@
                         e.preventDefault();
                         e.stopPropagation();
                         
-                        $( '#image_sended_by_email' ).fadeToggle( 200 );
+                        $( '#image_sended_by_email' ).dequeue().fadeToggle( 200 );
                     } );
                 },
                 onChange:       function () {
                     var interval    = setInterval( function () {
-                        //  Calcula el ancho del shadowbox y lo centra en la
-                        //  pantalla
-                        var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
-                        var newWidth        = Number( leftPosition.replace( /px$/, '', 'gi' ) );
-                        newWidth           -= 40;
-                        
-                        $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
                         
                         //  Obtiene la url de la imagen y la pone el el link de 
                         //  descarga
@@ -214,6 +186,33 @@
                             clearInterval( interval );
                         }
                     }, 500 );
+                    
+                    $( '#image_sended_by_email' ).dequeue().fadeOut( 100 );
+                    $( '#mailing_image' ).val( '' );
+                }, 
+                onClose:        function () {
+                    //  Muestra los controles del shadowbox
+                    $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeOut( 100 );
+                    
+                    $( '#image_sended_by_email' ).dequeue().fadeOut( 100 );
+                    $( '#mailing_image' ).val( '' );
+                    
+                    $( '.image_sended_by_email_trigger' ).off( 'click' );
+                },
+                onFinish:       function () {
+                    
+                    if ( $( '#sb-player' ).length >= 1 ) {
+                        
+                        //  Calcula el ancho del shadowbox y lo centra en la
+                        //  pantalla
+                        var leftPosition    = $( '#sb-wrapper' ).css( 'left' );
+                        var newWidth        = Number( leftPosition.replace( /px$/, '', 'gi' ) );
+                        newWidth           -= 40;
+                        
+                        $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
+                    }
+                    
+                    $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeIn( 300 );
                 }
             } );
             
@@ -267,7 +266,7 @@
                 <div class="pie">
                     <p id="site_name">&copy; 2013 TUFOTOCONELGÜERO.COM,</p>
                     <p>Todos los Derechos Reservados</p>
-                    <a href="#" title="Políticas de Privacidad" target="_blank" >Políticas de Privacidad</a>
+                    <a href="contacto.html" title="Políticas de Privacidad" target="_blank" rel="#privacy_policy_wrapper" class="overlay_trigger">Políticas de Privacidad</a>
                 </div>
             </aside><!-- Columna izquierda (logotipo, buscador, menú scroll y pie) -->
             <div class="contenedor-panel"><!-- Columna derecha (dashboard) -->
@@ -457,6 +456,13 @@
                     <img src="css/img/Logo-Gris.png" alt="Logo Tu Foto con el Güero" width="163" height="76" />
                 </div>
             </div><!-- Formulario de Contacto -->
+            <div id="privacy_policy_wrapper" class="alert_box"><!-- Política de privacidad -->
+                <a title="Cerrar" class="close">Cerrar</a>
+                <p>En construcción</p>
+                <div id="logo_holder">
+                    <img src="css/img/Logo-Gris.png" alt="Logo Tu Foto con el Güero" width="163" height="76" />
+                </div>
+            </div><!-- Política de privacidad -->
         </div><!-- Contenedor principal -->
         <script type="text/javascript" src="js/plugins.min.js"></script>
         <script type="text/javascript" src="js/main.min.js"></script>
@@ -470,6 +476,7 @@
             echo "          player: 'img',";
             echo "          gallery: 'principal".(string)$_GET['id']."',";
             echo "          title: '',";
+            echo "          enableKeys: false"; 
             echo "      } );";
             echo "  }, 200 );";
             echo "</script>";
