@@ -56,7 +56,7 @@
                                 <div class="csssubmenu">
                                     <div class="csssubmenu" style="display: block;">
                                         <?php $menu->PrintMenu(0,0); ?>
-                                    </div>                                    
+                                    </div>
                                 </div>
                             </li>
                             <li class="contact_form_trigger">
@@ -71,7 +71,7 @@
                 <div class="pie">
                     <p id="site_name">&copy; 2013 TUFOTOCONELGÜERO.COM,</p>
                     <p>Todos los Derechos Reservados</p>
-                    <a href="contacto.html" title="Políticas de Privacidad" target="_blank" rel="Shadowbox;">Políticas de Privacidad</a>
+                    <a href="contacto.html" title="Políticas de Privacidad" target="_blank" rel="#privacy_policy_wrapper" class="overlay_trigger">Políticas de Privacidad</a>
                 </div>
             </aside><!-- Columna izquierda (logotipo, buscador, menú scroll y pie) -->
             <div class="contenedor-panel"><!-- Columna derecha (dashboard) -->
@@ -247,6 +247,13 @@
                     <img src="css/img/Logo-Gris.png" alt="Logo Tu Foto con el Güero" width="163" height="76" />
                 </div>
             </div><!-- Formulario de Contacto -->
+            <div id="privacy_policy_wrapper" class="alert_box"><!-- Política de privacidad -->
+                <a title="Cerrar" class="close">Cerrar</a>
+                <p>En construcción</p>
+                <div id="logo_holder">
+                    <img src="css/img/Logo-Gris.png" alt="Logo Tu Foto con el Güero" width="163" height="76" />
+                </div>
+            </div><!-- Política de privacidad -->
         </div><!-- Contenedor principal -->
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>

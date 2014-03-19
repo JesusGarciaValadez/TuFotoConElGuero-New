@@ -555,6 +555,18 @@ html, body {
             }
         }
     }
+    #privacy_policy_wrapper{
+        padding: 6px 5px 8px 5px !important;
+        position: absolute;
+        .close{
+            background: url("img/contact_controls.png") 0px 0px no-repeat;
+            display: block;
+            height: 15px;
+            right: 18px;
+            top: 14px;
+            width: 82px;
+        }
+    }
 }
 /* Extras*/
 .input.placeholder{text-align:center;}
