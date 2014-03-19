@@ -335,23 +335,17 @@
                         //  !Function for handle data from server
                         success: function showResponseLogin( responseText, statusText, xhr, form ) {
                             
-                            if ( typeof( responseText ) != 'string' ) {
+                            responseText    = ( $.parseJSON( responseText ) == null ) ? responseText : $.parseJSON( responseText );
+                            
+                            if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
                                 
-                                responseText    = ( $.parseJSON( responseText ) == null ) ? responseText : $.parseJSON( responseText );
-                                
-                                if( responseText && ( responseText.success == 'true' || responseText.success == true ) ) {
-                                    
-                                    $( 'fieldset' ).fadeIn( 200, function() {
-                                        $( '#image_sended_by_email' ).append( '<p>La imagen ha sido enviada al correo.</p>' ).fadeIn( 200, function () {
-                                            setTimeout( function () {
-                                                $( '#image_sended_by_email' ).fadeOut( 200 )
-                                            }, 3000 );
-                                        } );
+                                $( 'fieldset' ).fadeIn( 200, function() {
+                                    $( '#image_sended_by_email' ).append( '<p>La imagen ha sido enviada al correo.</p>' ).fadeIn( 200, function () {
+                                        setTimeout( function () {
+                                            $( '#image_sended_by_email' ).fadeOut( 200 )
+                                        }, 3000 );
                                     } );
-                                } else {
-                                    
-                                    TFG.errorProccess();
-                                }
+                                } );
                             } else {
                                 
                                 TFG.errorProccess();
