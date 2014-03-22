@@ -133,6 +133,11 @@ menuitem,nav,iframe,embed,object,*{
     position: absolute;
     width: 100%;
     z-index: 16;
+    img{
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
 }
 .alert_box {
     @extend .clearfix;

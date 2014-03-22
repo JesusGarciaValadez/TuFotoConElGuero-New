@@ -429,7 +429,9 @@
                         <?php $eventos->PrintEventos(); ?>
                 </div><!-- Capa que contiene la sombra con el shadow -->
             </div><!-- Columna derecha (dashboard) -->
-            <div class="alert_background"></div><!-- Background de Overlay -->
+            <div class="alert_background">
+                <img src="css/img/logotipo.png" alt="Tu Foto con el Güero" width="197" height="94" />
+            </div><!-- Background de Overlay -->
             <div id="contact_form_wrapper" class="alert_box"><!-- Formulario de Contacto -->
                 <a title="Cerrar" class="close">Cerrar</a>
                 <form action="enviamail.php" method="post" accept-charset="utf-8" class="contact_form">
@@ -464,6 +466,15 @@
                 </div>
             </div><!-- Política de privacidad -->
         </div><!-- Contenedor principal -->
+        <script>
+           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+               })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+               
+               ga('create', 'UA-49224938-1', 'tufotoconelguero.com');
+               ga('send', 'pageview');
+        </script>
         <script type="text/javascript" src="js/plugins.min.js"></script>
         <script type="text/javascript" src="js/main.min.js"></script>
         <script type="text/javascript" src="js/js-eventos.min.js"></script>
