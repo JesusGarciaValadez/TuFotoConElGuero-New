@@ -220,7 +220,7 @@
                     </div>
                 </div>
             </div><!-- Columna derecha (dashboard) -->
-            <div class="alert_background"></div><!-- Background de Overlay -->
+            <div class="alert_background opening"></div><!-- Background de Overlay -->
             <div id="contact_form_wrapper" class="alert_box"><!-- Formulario de Contacto -->
                 <a title="Cerrar" class="close">Cerrar</a>
                 <form action="enviamail.php" method="post" accept-charset="utf-8" class="contact_form">

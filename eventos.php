@@ -74,6 +74,7 @@
         <script type="text/javascript">
             window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js"><\/script>')
         </script>
+        <script type="text/javascript" src="js/plugins.min.js"></script>
         <script type="text/javascript" src="js/shadowbox.js"></script>
         <script type="text/javascript">
             var hScreen     = $( window ).height(),
@@ -91,9 +92,14 @@
             };
             
             Shadowbox.init( {
+                continuous:     true,
                 handleOversize: "resize",
                 overlayColor:   "#fff",
                 enableKeys:     false,
+                animSequence:   'sync',
+                fadeDuration:   1.0,
+                handleOversize: 'resize',
+                resizeDuration: 0.1,
                 onOpen:         function () {
                     var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
                     var imagen          = $( '#sb-player' ).attr( 'src' );
@@ -172,8 +178,26 @@
                         
                         $( '#image_sended_by_email' ).dequeue().fadeToggle( 200 );
                     } );
+                    
+                    $( document ).keydown( function( e ){
+                        if ( Shadowbox.isOpen() ) {
+                            
+                            if ( e.which === 37 ) {
+                                console.log( 'previuos' );
+                                Shadowbox.previous();
+                            }
+                            if ( Shadowbox.hasNext() ) {
+                                
+                                if ( e.which === 39 ) {
+                                    console.log( 'next' );
+                                    Shadowbox.next();
+                                }
+                            }
+                        }
+                    });
                 },
                 onChange:       function () {
+                    $( '#sb-wrapper' ).fadeOut( 20 );
                     var interval    = setInterval( function () {
                         
                         //  Obtiene la url de la imagen y la pone el el link de 
@@ -189,7 +213,7 @@
                     
                     $( '#image_sended_by_email' ).dequeue().fadeOut( 100 );
                     $( '#mailing_image' ).val( '' );
-                }, 
+                },
                 onClose:        function () {
                     //  Muestra los controles del shadowbox
                     $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeOut( 100 );
@@ -209,11 +233,25 @@
                         var newWidth        = Number( leftPosition.replace( /px$/, '', 'gi' ) );
                         newWidth           -= 40;
                         
-                        $( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
+                        //$( '#sb-wrapper' ).animate( { 'left': newWidth + 'px' }, 300 );
                     }
                     
-                    $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeIn( 300 );
+                    var imageWidth  = $( '#sb-player' ).width() + 280;
+                    
+                    $( '#sb-wrapper' ).css( 'width', imageWidth + 'px' );
+                    
+                    $( '#sb-wrapper' ).centerWidth();
+                    
+                    $( '#sb-wrapper' ).fadeIn( 200, function () {
+                        $( '#sb-title,#lbl-cerrar,#sb-logo,#sb-nav,#sb-comp-foto,#lblsocial,#sb-social,#sb-descarga' ).fadeIn( 300 );
+                    } );
                 }
+            } );
+            
+            $( window ).on( 'resize', function ( e ) {
+                
+                $( '#sb-wrapper' ).centerWidth();
+                $( '#sb-wrapper' ).centerHeight();
             } );
             
             var blurElement = function ( element, size ) {
@@ -429,7 +467,7 @@
                         <?php $eventos->PrintEventos(); ?>
                 </div><!-- Capa que contiene la sombra con el shadow -->
             </div><!-- Columna derecha (dashboard) -->
-            <div class="alert_background">
+            <div class="alert_background opening">
                 <img src="css/img/logotipo.png" alt="Tu Foto con el Güero" width="197" height="94" />
             </div><!-- Background de Overlay -->
             <div id="contact_form_wrapper" class="alert_box"><!-- Formulario de Contacto -->
@@ -475,7 +513,6 @@
                ga('create', 'UA-49224938-1', 'tufotoconelguero.com');
                ga('send', 'pageview');
         </script>
-        <script type="text/javascript" src="js/plugins.min.js"></script>
         <script type="text/javascript" src="js/main.min.js"></script>
         <script type="text/javascript" src="js/js-eventos.min.js"></script>
 <?php

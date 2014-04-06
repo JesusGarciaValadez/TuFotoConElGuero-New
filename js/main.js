@@ -157,16 +157,17 @@
                 var windowHeight    = $( 'div.contenedor' ).height();
                 $( 'aside.contenedor-izquierda' ).height( windowHeight );
             }
-            if ( $.browser.safari ) {
-               
+            if ( $.browser.safari || $.browser.chrome ) {
+                
                 $( '.contenedor-izquierda .pie' ).css( {
                     bottom: '38px'
                 } );
             }
             
-            $( '.alert_background' ).fadeOut( 300, function () {
+            /*$( '.alert_background' ).fadeOut( 300, function () {
+                $( '.alert_background' ).removeClass( 'opening' );
                 $( '.alert_background img' ).remove();
-            } );
+            } );*/
         },
         /**
          *
@@ -518,14 +519,14 @@
         closeAlert:                 function ( ) {
           
             TFG.overlay.close();
-            /*$( '.alert_box' ).fadeOut( 'fast' );
+            $( '.alert_box' ).fadeOut( 'fast' );
             $( '.alert_background' ).fadeOut( 'fast' );
             $( '.alert_box h4' ).text( '' );
             $( '.alert_box p' ).remove( );
             $( '.alert_box form' ).remove( );
             $( '.alert_box table' ).remove( );
             $( '.alert_box div' ).remove( );
-            $( '.alert_box button' ).remove( );*/
+            $( '.alert_box button' ).remove( );
         },
         /**
          *
@@ -1204,9 +1205,10 @@
             $( ".loader" ).fadeOut( 300 );
         }
         $( '.alert_background img' ).centerHeight();
+        $( '.alert_background img' ).fadeIn( 100 );
         //  Comportamiento del botón de "Regresar"
         /*if ( $( "#go_back_button" ).exists() ) {
-           
+            
             $( "#go_back_button" ).on( 'click', function ( e ) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -1288,6 +1290,7 @@
             
             $( '.alert_background' ).fadeOut( '300' );
             $( '.alert_background' ).on( 'click', function( e ) {
+                
                 TFG.closeAlert();
             } );
         }

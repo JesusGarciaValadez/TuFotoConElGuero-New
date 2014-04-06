@@ -134,10 +134,13 @@ menuitem,nav,iframe,embed,object,*{
     width: 100%;
     z-index: 16;
     img{
-        display: block;
+        display: none;
         position: relative;
         margin: 0 auto;
     }
+}
+.opening{
+    background: #2C2A2E;
 }
 .alert_box {
     @extend .clearfix;
