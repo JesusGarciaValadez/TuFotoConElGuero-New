@@ -65,7 +65,7 @@
         //  !Método inicializador
         init:                       function ( ) {
             TFG.obtainActualDocument();
-           
+            
             /**
              *  Function to detect the id of document by param and set current
              *  element on menu
@@ -150,19 +150,24 @@
                     } );
                 }
             }
-           
+            
             //  Ajusta la posición del footer de acuerdo al browser
             if ( $( 'aside.contenedor-izquierda' ).exists() ) {
                
                 var windowHeight    = $( 'div.contenedor' ).height();
                 $( 'aside.contenedor-izquierda' ).height( windowHeight );
             }
-            if ( $.browser.safari ) {
-               
+            if ( $.browser.safari || $.browser.chrome ) {
+                
                 $( '.contenedor-izquierda .pie' ).css( {
                     bottom: '38px'
                 } );
             }
+            
+            /*$( '.alert_background' ).fadeOut( 300, function () {
+                $( '.alert_background' ).removeClass( 'opening' );
+                $( '.alert_background img' ).remove();
+            } );*/
         },
         /**
          *
@@ -514,14 +519,14 @@
         closeAlert:                 function ( ) {
           
             TFG.overlay.close();
-            /*$( '.alert_box' ).fadeOut( 'fast' );
+            $( '.alert_box' ).fadeOut( 'fast' );
             $( '.alert_background' ).fadeOut( 'fast' );
             $( '.alert_box h4' ).text( '' );
             $( '.alert_box p' ).remove( );
             $( '.alert_box form' ).remove( );
             $( '.alert_box table' ).remove( );
             $( '.alert_box div' ).remove( );
-            $( '.alert_box button' ).remove( );*/
+            $( '.alert_box button' ).remove( );
         },
         /**
          *
@@ -1199,9 +1204,11 @@
             $( '.alert_background' ).fadeOut( 300 );
             $( ".loader" ).fadeOut( 300 );
         }
+        $( '.alert_background img' ).centerHeight();
+        $( '.alert_background img' ).fadeIn( 100 );
         //  Comportamiento del botón de "Regresar"
         /*if ( $( "#go_back_button" ).exists() ) {
-           
+            
             $( "#go_back_button" ).on( 'click', function ( e ) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -1283,10 +1290,11 @@
             
             $( '.alert_background' ).fadeOut( '300' );
             $( '.alert_background' ).on( 'click', function( e ) {
+                
                 TFG.closeAlert();
             } );
         }
-       
+        
         // Validación de los formularios
         if ( $( '#search_form' ).exists() ) {
            
@@ -1331,7 +1339,7 @@
           
             TFG.validateForms( rules, messages );
         }
-       
+        
         // Validación de los formularios
         if ( $( '.contact_form' ).exists() ) {
            
@@ -1369,7 +1377,7 @@
           
             TFG.validateFormsAjax( rules, messages );
         }
-       
+        
         if ( $( 'input[type="reset"]' ).exists() ) {
            
             $( 'input[type="reset"]' ).on( 'click', function ( e ) {
@@ -1378,7 +1386,7 @@
                 $( ".response.sended, .response.wrong" ).remove();
             } );
         }
-       
+        
         if ( $( '.contenedor, .contenedor-panel' ).exists() ) {
            
             var opacidad        = 0,
@@ -1470,31 +1478,31 @@
                 TFG.ConfigurarPantalla();
             } );
         }
-       
+        
         if ( $( '.tabla-pagina' ).exists() && $( '.tabla-pagina' ).length > 1 ) {
            
             setTimeout( function() {
                 $( '.fondo-eventos .more' ).fadeIn( 300 );
             }, 300 );
         }
-       
+        
         if ( $( '.fondo-eventos .more' ).exists() ) {
            
             var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .more' ) ) + 23;
             $( '.fondo-eventos .more' ).css( 'top', moreHeight );
         }
-       
+        
         if ( $( '.fondo-eventos .arriba' ).exists() ) {
            
             var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .arriba' ) ) - 23;
             $( '.fondo-eventos .arriba' ).css( 'top', moreHeight );
         }
-       
+        
         if ( $( '#morelnk' ).exists() ) {
            
             $( '#morelnk' ).parent( '.more' ).hide();
         }
-       
+        
         TFG.init();
     } );
   

@@ -20,18 +20,23 @@
         background-color: #fff;
     }
     #sb-wrapper {
+        display: none;
         position: absolute;
         visibility: hidden;
-        width: 100px;
+        min-width: 667px;
+        max-width: 1109px;
         #sb-wrapper-inner {
             position: relative;
             border: 4px solid #fff;
             overflow: hidden;
             height: 100px;
-            left: -100px;
+            //left: -100px;
+            left: 0;
             #sb-body {
                 position: relative;
                 height: 100%;
+                max-width: 768px;
+                min-width: 420px;
                 #sb-body-inner {
                     position: absolute;
                     height: 100%;
@@ -41,11 +46,14 @@
                         height: 100%;
                         overflow: auto;
                     }
+                    img{
+                    }
                 }
                 #sb-loading {
                     background-color: #060606;
                     position: relative;
                     height: 100%;
+                    width: 768px;
                     #sb-loading-inner {
                         position: absolute;
                         font-size: 14px;
@@ -67,16 +75,17 @@
             }
         }
         #sb-wrapper2-inner {
-            position: absolute;
             background-color: #d2d2d2;
+            border: 4px solid #fff;
+            bottom: 0px;
+            position: absolute;
             width: 33%;
             height: 100px;
             top: 0px;
-            right: -180px;
+            right: 0;
+            //right: -180px;
             max-width: 280px;
             min-width: 280px;
-            border: 4px solid #fff;
-            bottom: 0px;
             #sb-title, #sb-info{
                 display: none;
                 position: relative;

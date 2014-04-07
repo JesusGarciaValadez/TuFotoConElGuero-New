@@ -95,6 +95,7 @@ body { overflow: hidden; }
     width: 726px;
     > a,b,strong{
         @extend .p;
+        @include font-mask( #78A609 !important, em( 16, 16 ) !important, em( 16, 16 ) !important, bold !important, "Lucida Bright Regular" !important );
         letter-spacing: 5px;
         &:hover{ text-decoration: none; }
         &:first-child,&:last-child{ letter-spacing: 1px; }
@@ -112,12 +113,11 @@ body { overflow: hidden; }
     text-decoration: none;
 }
 .mes { 
-    background: url("../img/mes.png") no-repeat top center;
+    @include font-mask( #78A609, em( 18, 16 ), em( 59, 18 ), bold, "Lucida Bright Regular" );
+    //background: url("../img/mes.png") no-repeat top center;
     background-size: 102px 59px;
-    color: #fff;
-    font-size: 12px;
+    font-style: italic;
     height: 59px;
-    line-height: 59px;
     position: fixed;
     right: 30px;
     top: 85px;

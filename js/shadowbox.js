@@ -66,18 +66,33 @@ function adjustHeight(height,top,anim,callback){
 function adjustWidth(width,left,anim,callback){var duration=(anim?S.options.resizeDuration:0);animate(wrapper,"left",left,duration);animate(wrapper,"width",width,duration,callback)}
 
 function setDimensions(height,width){
+	
 var bodyInner=get("sb-body-inner"),
     height=parseInt(height),
     width=parseInt(width),
     topBottom=wrapper.offsetHeight-bodyInner.offsetHeight,
-    leftRight=wrapper.offsetWidth-bodyInner.offsetWidth,maxHeight=overlay.offsetHeight,
+    leftRight=wrapper.offsetWidth-bodyInner.offsetWidth,
+    maxHeight=overlay.offsetHeight,
     maxWidth=overlay.offsetWidth,
     padding=parseInt(S.options.viewportPadding)||20,
     preserveAspect=(S.player&&S.options.handleOversize!="drag");
+    
+    
+    if (  width > maxWidth ) { 
+			    width =  maxWidth -280; 
+    }
+     
+    console.log("height-> " + height );
+    console.log("width-> " + width );
+    
+    console.log("maxHeight-> " + maxHeight );
+    console.log("maxWidth-> " + maxWidth );
+    
     return S.setDimensions(height,width,maxHeight,maxWidth,topBottom,leftRight,padding,preserveAspect)
 }
 
-var K={};K.markup='<div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>{loading}</span></div></div></div></div><div id="sb-wrapper2-inner"><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="{close}" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="{next}" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="{play}" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="{pause}" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="{previous}" onclick="Shadowbox.previous()"></a></div></div></div><div id="sb-title"><div id="sb-title-inner"></div></div><div id="lbl-cerrar"><a id="sb-nav-close" title="{close}" onclick="Shadowbox.close()"><img src="img/lighbox3/cerrar.png" class="btn-close"></a></div><div id="sb-logo"></div><div id="sb-nav"><div id="sb-ant"><a id="sb-nav-previous" title="{previous}" onclick="Shadowbox.previous()" ><img src="img/lighbox3/ant.png" /></a></div><div id="sb-sig"><a id="sb-nav-next" title="{next}" onclick="Shadowbox.next()" ><img src="img/lighbox3/sig.png" /></a></div></div><div id="sb-comp-foto"></div><div id="lblsocial"><a href="#" class="a-fblightbox"><img src="img/lighbox3/fb3.png" ></a><a href="#" class="a-twlightbox"><img src="img/lighbox3/twitter.png" ></a><a href="#" class="a-gPluslightbox"><img src="img/lighbox3/google_plus.png" ></a><a href="#" class="image_sended_by_email_trigger"><img src="img/lighbox3/mail.png" ></a><form action="email-template/email.php" method="post" accept-charset="utf-8" id="image_sended_by_email"><fieldset><div class="input_text"><input type="text" name="mailing_image" placeholder="Correo" id="mailing_image" autocomplete="off" /></div><div class="input_submit"><input type="submit" name="submit_button_send" value="Enviar" id="submit_button_send"></div></fieldset></form></div><div id="sb-descarga"><a id="sb-down" href="#" download="#" class="a-descarga"><img src="img/lighbox3/dl2.png" class="descargar-lightbox"></a></div></div></div></div>';K.options={animSequence:"sync",counterLimit:10,counterType:"default",displayCounter:true,displayNav:true,fadeDuration:0.35,initialHeight:160,initialWidth:320,modal:false,overlayColor:"#000",overlayOpacity:0.5,resizeDuration:0.35,showOverlay:true,troubleElements:["select","object","embed","canvas"]};K.init=function(){S.appendHTML(document.body,sprintf(K.markup,S.lang));K.body=get("sb-body-inner");container=get("sb-container");overlay=get("sb-overlay");wrapper=get("sb-wrapper");if(!supportsFixed){container.style.position="absolute"}if(!supportsOpacity){var el,m,re=/url\("(.*\.png)"\)/;each(pngIds,function(i,id){el=get(id);if(el){m=S.getStyle(el,"backgroundImage").match(re);if(m){el.style.backgroundImage="none";el.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="+m[1]+",sizingMethod=scale);"}}})}var timer;addEvent(window,"resize",function(){if(timer){clearTimeout(timer);timer=null}if(open){timer=setTimeout(K.onWindowResize,10)}})};
+var K={};K.markup='<div id="sb-container"><div id="sb-overlay"></div><div id="sb-wrapper"><div id="sb-wrapper-inner"><div id="sb-body"><div id="sb-body-inner"></div><div id="sb-loading"><div id="sb-loading-inner"><span>{loading}</span></div></div></div></div><div id="sb-wrapper2-inner"><div id="sb-info"><div id="sb-info-inner"><div id="sb-counter"></div><div id="sb-nav"><a id="sb-nav-close" title="{close}" onclick="Shadowbox.close()"></a><a id="sb-nav-next" title="{next}" onclick="Shadowbox.next()"></a><a id="sb-nav-play" title="{play}" onclick="Shadowbox.play()"></a><a id="sb-nav-pause" title="{pause}" onclick="Shadowbox.pause()"></a><a id="sb-nav-previous" title="{previous}" onclick="Shadowbox.previous()"></a></div></div></div><div id="sb-title"><div id="sb-title-inner"></div></div><div id="lbl-cerrar"><a id="sb-nav-close" title="{close}" onclick="Shadowbox.close()"><img src="img/lighbox3/cerrar.png" class="btn-close"></a></div><div id="sb-logo"></div><div id="sb-nav"><div id="sb-ant"><a id="sb-nav-previous" title="{previous}" onclick="Shadowbox.previous()" ><img src="img/lighbox3/ant.png" /></a></div><div id="sb-sig"><a id="sb-nav-next" title="{next}" onclick="Shadowbox.next()" ><img src="img/lighbox3/sig.png" /></a></div></div><div id="sb-comp-foto"></div><div id="lblsocial"><a href="#" class="a-fblightbox"><img src="img/lighbox3/fb3.png" ></a><a href="#" class="a-twlightbox"><img src="img/lighbox3/twitter.png" ></a><a href="#" class="a-gPluslightbox"><img src="img/lighbox3/google_plus.png" ></a><a href="#" class="image_sended_by_email_trigger"><img src="img/lighbox3/mail.png" ></a><form action="email-template/email.php" method="post" accept-charset="utf-8" id="image_sended_by_email"><fieldset><div class="input_text"><input type="text" name="mailing_image" placeholder="Correo" id="mailing_image" autocomplete="off" /></div><div class="input_submit"><input type="submit" name="submit_button_send" value="Enviar" id="submit_button_send"></div></fieldset></form></div><div id="sb-descarga"><a id="sb-down" href="#" download="#" class="a-descarga"><img src="img/lighbox3/dl2.png" class="descargar-lightbox"></a></div></div></div></div>';
+    K.options={animSequence:"sync",counterLimit:10,counterType:"default",displayCounter:true,displayNav:true,fadeDuration:0.35,initialHeight:160,initialWidth:320,modal:false,overlayColor:"#000",overlayOpacity:0.5,resizeDuration:0.35,showOverlay:true,troubleElements:["select","object","embed","canvas"]};K.init=function(){S.appendHTML(document.body,sprintf(K.markup,S.lang));K.body=get("sb-body-inner");container=get("sb-container");overlay=get("sb-overlay");wrapper=get("sb-wrapper");if(!supportsFixed){container.style.position="absolute"}if(!supportsOpacity){var el,m,re=/url\("(.*\.png)"\)/;each(pngIds,function(i,id){el=get(id);if(el){m=S.getStyle(el,"backgroundImage").match(re);if(m){el.style.backgroundImage="none";el.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="+m[1]+",sizingMethod=scale);"}}})}var timer;addEvent(window,"resize",function(){if(timer){clearTimeout(timer);timer=null}if(open){timer=setTimeout(K.onWindowResize,10)}})};
 
 K.onOpen=function(obj,callback)
 {
@@ -88,7 +103,7 @@ K.onOpen=function(obj,callback)
 	var dims=setDimensions(S.options.initialHeight,S.options.initialWidth);
 
 	adjustHeight(dims.innerHeight,dims.top);
-	adjustWidth(dims.width,dims.left);
+	adjustWidth(dims.width-280,dims.left-280);
 	if(S.options.showOverlay){
 		overlay.style.backgroundColor=S.options.overlayColor;S.setOpacity(overlay,0);
 		if(!S.options.modal){addEvent(overlay,"click",S.close)}overlayOn=true}
