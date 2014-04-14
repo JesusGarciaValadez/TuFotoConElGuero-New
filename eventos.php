@@ -19,7 +19,7 @@
         <title>Tu Foto Con el Güero.com - Eventos</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
-        <meta http-equiv="pragma" content="no-cache" />
+        <!--meta http-equiv="pragma" content="no-cache" /-->
         <meta name="description" content="" />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
@@ -101,41 +101,6 @@
                 handleOversize: 'resize',
                 resizeDuration: 0.1,
                 onOpen:         function () {
-                    var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
-                    var imagen          = $( '#sb-player' ).attr( 'src' );
-                    
-                    $( ".a-fblightbox" ).on( 'click', function ( e ) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        var url = "http://www.facebook.com/sharer.php?u=http://tufotoconelguero.com/" + imagen; //plugin.settings.imageUrl;
-                        
-                        nueva   = window.open( url, 'Comparte en Fb', caracteristicas );
-                    } );
-                    
-                    $( '.a-twlightbox' ).on( 'click', function ( e ) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        var imagen          = $( '#sb-player' ).attr( 'src' );
-                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
-                        //nueva=window.open( "http://twitter.com/share", 'Comparte en twiter', caracteristicas);
-                        
-                        var dir             = imagen; //plugin.settings.imageUrl;//window.document.URL;
-                        var dir2            = encodeURIComponent( dir );
-                        var tit             = window.document.title;
-                        var tit2            = encodeURIComponent( tit );
-                        
-                        nueva               = window.open( 'http://twitter.com/?status=' + tit2 + ',%20' + dir2 + '', 'Comparte en twiter', caracteristicas );
-                    } );
-                    
-                    $( '.a-gPluslightbox' ).on( 'click', function ( e ) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
-                        
-                        nueva               = window.open( "https://plus.google.com/share?url=" + imagen, 'Comparte en g+', caracteristicas );
-                    } );
                     
                     var interval    = setInterval( function () {
                         
@@ -224,6 +189,42 @@
                     $( '.image_sended_by_email_trigger' ).off( 'click' );
                 },
                 onFinish:       function () {
+                    
+                    var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+                    var imagen          = $( '#sb-player' ).attr( 'src' );
+                    
+                    $( ".a-fblightbox" ).on( 'click', function ( e ) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        var url = "http://www.facebook.com/sharer.php?u=http://www.tufotoconelguero.com/" + imagen; //plugin.settings.imageUrl;
+                        
+                        nueva   = window.open( url, 'Comparte en Fb', caracteristicas );
+                    } );
+                    
+                    $( '.a-twlightbox' ).on( 'click', function ( e ) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        var imagen          = $( '#sb-player' ).attr( 'src' );
+                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+                        //nueva=window.open( "http://twitter.com/share", 'Comparte en twiter', caracteristicas);
+                        
+                        var dir             = imagen; //plugin.settings.imageUrl;//window.document.URL;
+                        var dir2            = encodeURIComponent( dir );
+                        var tit             = window.document.title;
+                        var tit2            = encodeURIComponent( tit );
+                        
+                        nueva               = window.open( 'http://twitter.com/?status=' + tit2 + ', http://www.tufotoconelguero.com/' + dir2 + '', 'Comparte en twiter', caracteristicas );
+                    } );
+                    
+                    $( '.a-gPluslightbox' ).on( 'click', function ( e ) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        var caracteristicas = "height=750,width=800,scrollTo,resizable=1,scrollbars=1,location=0";
+                        
+                        nueva               = window.open( "https://plus.google.com/share?url=http://www.tufotoconelguero.com/" + imagen, 'Comparte en g+', caracteristicas );
+                    } );
                     
                     if ( $( '#sb-player' ).length >= 1 ) {
                         
@@ -468,7 +469,7 @@
                 </div><!-- Capa que contiene la sombra con el shadow -->
             </div><!-- Columna derecha (dashboard) -->
             <div class="alert_background opening">
-                <img src="css/img/logotipo.png" alt="Tu Foto con el Güero" width="197" height="94" />
+                <img src="css/img/Logo-front.png" alt="Logo Tu Foto con el Güero" width="464" height="220">
             </div><!-- Background de Overlay -->
             <div id="contact_form_wrapper" class="alert_box"><!-- Formulario de Contacto -->
                 <a title="Cerrar" class="close">Cerrar</a>

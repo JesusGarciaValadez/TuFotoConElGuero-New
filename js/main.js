@@ -1205,7 +1205,26 @@
             $( ".loader" ).fadeOut( 300 );
         }
         $( '.alert_background img' ).centerHeight();
-        $( '.alert_background img' ).fadeIn( 100 );
+        $( '.alert_background img' ).centerWidth();
+        $( '.alert_background img' ).fadeIn( 50 );
+        
+        if ( $( '#contact_form_wrapper' ).exists() ) {
+            
+            $( '#contact_form_wrapper' ).height( $( 'body' ).height() );
+        }
+        
+        if ( $( '.fondo-eventos .more' ).exists() ) {
+            
+            var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .more' ) ) + 23;
+            $( '.fondo-eventos .more' ).css( 'top', moreHeight );
+        }
+        
+        if ( $( '.fondo-eventos .arriba' ).exists() ) {
+            
+            var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .arriba' ) ) - 23;
+            $( '.fondo-eventos .arriba' ).css( 'top', moreHeight );
+        }
+        
         //  Comportamiento del botón de "Regresar"
         /*if ( $( "#go_back_button" ).exists() ) {
             
@@ -1226,7 +1245,7 @@
         //  el ancho del body en vez del ancho de la ventana para hacer
         //  el cálculo
         if ( $( '#contact_form_wrapper' ).exists() ) {
-           
+            
             TFG.doOverlay( $( '.overlay_trigger' ), {
                 effect: 'apple',
                 close: $( '.alert_box a.close' ),
@@ -1255,12 +1274,12 @@
                 },
                 onClose: function ( e ) {}
             } );
-           
+            
             //TFG.overlay    = $( '.alert_trigger' ).data( 'overlay' );
             TFG.overlay    = $( '.overlay_trigger' ).data( 'overlay' );
-           
+            
             $( '#contact_form_wrapper' ).height( $( 'body' ).height() );
-           
+            
             $( window ).on( {
                 resize: function ( e ) {
                     
@@ -1288,7 +1307,12 @@
         
         if ( $( '.alert_background' ).exists() ) {
             
-            $( '.alert_background' ).fadeOut( '300' );
+            setTimeout( function () {
+                $( '.alert_background' ).fadeOut( '300', function () {
+                    $( '.alert_background' ).removeClass( 'opening' );
+                    $( '.alert_background img' ).remove();
+                } );
+            }, 1000 );
             $( '.alert_background' ).on( 'click', function( e ) {
                 
                 TFG.closeAlert();
@@ -1297,7 +1321,7 @@
         
         // Validación de los formularios
         if ( $( '#search_form' ).exists() ) {
-           
+            
             if ( $( 'select' ).exists() ) {
                
                 TFG.makesUniform( 'select' );
@@ -1317,7 +1341,7 @@
                     //changeYear: true
                 } );
             }
-           
+            
             var rules   = {
                     location: {
                         required: true
@@ -1342,7 +1366,7 @@
         
         // Validación de los formularios
         if ( $( '.contact_form' ).exists() ) {
-           
+            
             var rules   = {
                     contact_name:       {
                         required:   true,
@@ -1374,21 +1398,21 @@
                     number:             "Escriba solo números",
                     digits:             "Escriba solo números",
                 };
-          
+            
             TFG.validateFormsAjax( rules, messages );
         }
         
         if ( $( 'input[type="reset"]' ).exists() ) {
-           
+            
             $( 'input[type="reset"]' ).on( 'click', function ( e ) {
-               
+                
                 e.stopPropagation();
                 $( ".response.sended, .response.wrong" ).remove();
             } );
         }
         
         if ( $( '.contenedor, .contenedor-panel' ).exists() ) {
-           
+            
             var opacidad        = 0,
                 verde           = new Array(),
                 gris            = new Array(),
@@ -1402,11 +1426,11 @@
                 ScrollableMenu  = false,
                 counter         = 0,
                 icounter        = 0;
-           
+                
             TFG.ConfigurarPantalla();
-           
+            
             if ( $('.tabla-col a img').exists() ) {
-               
+                
                 //- Efectos hover
                 //$('tabla-col a img').animate({"opacity" : 1});
                 $('.tabla-col a img').on( {
@@ -1419,17 +1443,17 @@
                     }
                 } );
             }
-           
+            
             if ( $('#cssmenu > ul > li > a').exists() ) {
-               
+                
                 //-Control menu vertical
                 $('#cssmenu > ul > li > a').on( 'click', function( e ){
-                   
+                    
                     $('#cssmenu li').removeClass('active');
                     $( e.currentTarget ).closest('li').addClass('active');
-                   
+                    
                     var checkElement = $( e.currentTarget ).next();
-                   
+                    
                     //-Para un elemento div
                     if( ( checkElement.is( 'div' ) ) && ( checkElement.is( ':visible' ) ) ) {
                         $( e.currentTarget ).closest( 'li' ).removeClass( 'active' );
@@ -1437,31 +1461,31 @@
                         //Si contiene un div solo debe de cerrar y no perder el foco (mantener estado activo)
                         TFG.ConfiguraScrollMenu( checkElement );
                     }
-                   
+                    
                     //-Para un elemento div
                     if( ( checkElement.is( 'div' ) ) && ( !checkElement.is( ':visible' ) ) ) {
-                       
+                        
                         $( '#cssmenu ul ul:visible' ).slideUp( 'normal' );
                         checkElement.slideDown( 'normal', function( ) { TFG.ConfiguraScrollMenu( e.currentTarget ); } );
                     }
-                   
+                    
                     if( $( e.currentTarget ).closest('li').find('div').children().length === 0) {
-                       
+                        
                         return true;
                     } else {
-                       
+                        
                         return false;
                     }
                 } );
             }
-           
+            
             if ( $( '#nav-evento > li > a' ).exists() ) {
-               
+                
                 //-Control submenu vertical
                 $( '#nav-evento > li > a' ).on( 'click', function ( e ) {
-                   
+                    
                     if ( $( e.currentTarget ).attr( 'class' ) !== 'active' ) {
-                       
+                        
                         $( '#nav-evento li ul' ).slideUp( );
                         $( e.currentTarget ).next().slideToggle( );
                         $( '#nav-evento li a' ).removeClass( 'active' );
@@ -1471,7 +1495,7 @@
                     }
                 } );
             }
-           
+            
             //  Se ejecuta cuando se redimensiona la ventana del navegador
             $( window ).resize( function( ) {
                
@@ -1480,26 +1504,14 @@
         }
         
         if ( $( '.tabla-pagina' ).exists() && $( '.tabla-pagina' ).length > 1 ) {
-           
+            
             setTimeout( function() {
                 $( '.fondo-eventos .more' ).fadeIn( 300 );
             }, 300 );
         }
         
-        if ( $( '.fondo-eventos .more' ).exists() ) {
-           
-            var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .more' ) ) + 23;
-            $( '.fondo-eventos .more' ).css( 'top', moreHeight );
-        }
-        
-        if ( $( '.fondo-eventos .arriba' ).exists() ) {
-           
-            var moreHeight  = TFG.getCenterHeight( $( '.fondo-eventos .arriba' ) ) - 23;
-            $( '.fondo-eventos .arriba' ).css( 'top', moreHeight );
-        }
-        
         if ( $( '#morelnk' ).exists() ) {
-           
+            
             $( '#morelnk' ).parent( '.more' ).hide();
         }
         
