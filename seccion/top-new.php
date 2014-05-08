@@ -64,7 +64,7 @@
 							<a href="eventos.php?anio='.$temp['anio'].'&mes='.$temp['mes'].'&id='.$temp['evento'].'&foto='.$temp["foto"].'" title="">
 								<img id="img-'.($j+1).''.($i+1).'" 
 									src="imagenes/'. $temp["directorio"] .'/thumb'.$temp["archivo"].'" 
-									mouse="0" onmouseover="TFG.onOver(this);" onmouseout="TFG.onOut(this);" />
+									mouse="0"  />
 							</a>
 						</div>
 					';

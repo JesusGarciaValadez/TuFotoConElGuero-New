@@ -5,7 +5,7 @@ if (!defined('__ROOT__'))
 require_once(__ROOT__ . "/core/Model.php");
 require_once(__ROOT__ . "/core/Mysql.php");
 require_once(__ROOT__ . '/seccion/thumb.php');
-
+header('Content-Type: text/html; charset=UTF-8');
 class Eventos extends Model {
     private $fields;
     private $table;
@@ -41,7 +41,147 @@ class Eventos extends Model {
     }
     
     function __destruct() {}
-    
+    function dibujaCeldaGenerica($evento, $id, $fecha, $rutaimg, $rutathumb, $class = 'img-width', $descripcion = '') {
+	$meses = array("Enero","Febrero","Marzo", "Abril", "Mayo","Junio", "Julio", "Agosto", "Septiembre", "Octubre","Noviembre","Diciembre");        
+   $rsDetalle = $this->get_rows(3, " evento = " . $evento);
+        
+        $fotos     = "1";
+        $municipio = "Tapachula";
+        
+        if ($rsDetalle) {
+            $rowEvento = $rsDetalle[0];
+            $fotos     = $rowEvento->fotos;
+            $municipio = $rowEvento->municipio;
+        }
+        
+        $parse_date = date_parse($fecha);
+        
+        
+        
+        echo '<div class="caja_eventos">
+<!--Municipio-->
+<div class="muni">
+ ' . $municipio . '
+</div>
+<div class="fecha_event">';
+        echo $parse_date["day"] . ' de ' . $meses[$parse_date["month"] - 1] . ' de ' . $parse_date["year"];
+        echo '</div>
+<hr  align="LEFT" size="1"  color="#999999" noshade> 
+<div class="Img-foto">';
+        
+        if ($this->primerFoto == $rutaimg) {
+            echo "<a class='" . $class . "'  href='eventos.php?lighbox=off&anio='" . $parse_date["year"] . "&mes=" . $parse_date["month"] . "  &id=" . $evento . "&foto=" . $id . "'  title='" . $fecha . "' class='hidden'>";
+        } else {
+            echo "<a class='" . $class . "'  href='eventos.php?lighbox=off&anio=" . $parse_date["year"] . "&mes=" . $parse_date["month"] . "&id=" . $evento . "&foto=" . $id . "'    title='" . $fecha . "' class='hidden'>";
+        }
+        echo "<img width='206' height='145' class='" . $class . "' src='" . $rutathumb . "' alt='" . $fecha . "'     title = '" . $fecha . "'>";
+        echo "</a>";
+        
+        
+        echo '</div> ';        
+        
+        echo '</div>';
+        
+    }
+function PrintEventoxFechaGenerica($anio, $mes) {
+        $meses            = array( "Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+        $rsResumenEventos = $this->get_rows(0, " YEAR(  fecha ) = " . $anio . " and MONTH(fecha)=" . $mes, "fecha DESC");
+        
+        
+        if ( !empty( $mes ) )
+            echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
+        
+        //echo '<div class="msg" class="msg"></div>';
+        echo '<div class="more"> <a id="morelnk" href="#">+EVENTOS</a></div>';
+        echo '<div class="arriba"> <a id="menoslnk" href="#">+ARRIBA</a></div>';
+        
+        if ($rsResumenEventos) {
+            $indexCols  = 1;
+            $indexfilas = 0;
+            
+            $openrow    = false;
+            $openpagina = false;
+            
+            foreach ($rsResumenEventos as $rowEvento) {
+                $rutathumb = "imagenes/" . $rowEvento->directorio . "/thumb" . $rowEvento->archivo;
+                $rutaimg   = "imagenes/" . $rowEvento->directorio . "/" . $rowEvento->archivo;
+                
+                if (file_exists($rutaimg)) {
+                    $size    = GetImageSize($rutaimg);
+                    $anchura = $size[0];
+                    $altura  = $size[1];
+                    
+                    if ($altura > $anchura) {
+                        $estilo  = "height";
+                        $ajustar = 256;
+                    } else {
+                        $estilo  = "width";
+                        $ajustar = 233;
+                    }
+                } else {
+                	  echo "No existe->".$rutaimg;
+                    continue;
+                }
+                
+                if (!file_exists($rutathumb)) {
+                    $mythumb = new thumb();
+                    $mythumb->loadImage($rutaimg);
+                    $mythumb->resize($ajustar, $estilo);
+                    if ($estilo == "height") {
+                        $mythumb->crop(232, 153, "top");
+                    }
+                    $mythumb->save($rutathumb, 90);
+                    //$rutaimg=$rutathumb;
+                }
+                
+                if ($openrow) { //si esta bierta la fila
+                    //echo "indexCols".$indexCols;
+                    if ($indexCols <= 3) { //agregamos una celda mas
+                        
+                        echo "<div class='tabla-celda' >";                        
+                        $this->dibujaCeldaGenerica($rowEvento->evento, $rowEvento->id, $rowEvento->fecha, $rutaimg, $rutathumb, $estilo, $rowEvento->descripcion);
+                        echo "</div >";
+                    } else { //cerramos la fila
+                        
+                        echo "</div >";
+                        $indexCols = 1;
+                        $indexfilas += 1;
+                        
+                        if ($indexfilas == 2) {
+                            echo "</div >"; // cierra pagina 
+                            echo "<div class='tabla-pagina ' >"; //abro nueva pagina 
+                            $indexfilas = 0;
+                        }
+                        
+                        
+                        echo "<div class='tabla-row' >";
+                        echo "<div class='tabla-celda' >";                        
+                        $this->dibujaCeldaGenerica($rowEvento->evento, $rowEvento->id, $rowEvento->fecha, $rutaimg, $rutathumb, $estilo, $rowEvento->descripcion);
+                        echo "</div >";
+                        $openrow = true;
+                        
+                        
+                    }
+                } else {
+                    if (!$openpagina)
+                        echo "<div class='tabla-pagina' >";
+                    echo "<div class='tabla-row' >";
+                    echo "<div class='tabla-celda' >";
+                    //echo "<span>".$rowEvento->fecha."</span>";
+                    $this->dibujaCeldaGenerica($rowEvento->evento, $rowEvento->id, $rowEvento->fecha, $rutaimg, $rutathumb, $estilo, $rowEvento->descripcion);
+                    echo "</div >";
+                    $openrow    = true;
+                    $openpagina = true;
+                }
+                $indexCols += 1;
+                
+            }
+            if ($openrow)
+                echo "</div >"; // cierra row
+            if ($openpagina)
+                echo "</div >"; // cierra row
+        }
+    }
     function generaListaImgShadow_lighbox($evento) {
         $idfoto = 0;
         //print_r($this->omitir_in_hide);
@@ -111,7 +251,7 @@ class Eventos extends Model {
         }
     }
     
-    function dibujaCelda($evento, $id, $fecha, $rutaimg, $rutathumb, $class = 'img-width', $descripcion = 'Sin Descripción') {
+    function dibujaCelda($evento, $id, $fecha, $rutaimg, $rutathumb, $class = 'img-width', $descripcion = 'Sin Descripci�n') {
         $meses = array(
             "Enero",
             "Febrero",
@@ -162,15 +302,13 @@ class Eventos extends Model {
         echo "</a>";
         
         
-        echo '</div>
-<div class="descrip_event">' . substr($descripcion, 70) . '...</div>';
-        
+        echo '</div> ';        
         
         //$this->generaListaImgShadow($evento,$fecha,$id);
         echo '</div>';
         
     }
-    function dibujaCeldaConLinks($evento, $id, $fecha, $rutaimg, $rutathumb, $class = 'img-width', $descripcion = 'Sin Descripción') {
+    function dibujaCeldaConLinks($evento, $id, $fecha, $rutaimg, $rutathumb, $class = 'img-width', $descripcion = 'Sin Descripci�n') {
         $meses = array(
             "Enero",
             "Febrero",
@@ -194,7 +332,7 @@ class Eventos extends Model {
         if ($rsDetalle) {
             $rowEvento = $rsDetalle[0];
             $fotos     = $rowEvento->fotos;
-            $municipio = $rowEvento->municipio;
+            $municipio =  $rowEvento->municipio;
         }
         
         $parse_date = date_parse($fecha);
@@ -222,7 +360,7 @@ class Eventos extends Model {
         
         
         echo '</div>
-<div class="descrip_event">' . substr($descripcion, 70) . '...</div>';
+<div class="descrip_event">' . utf8_encode ( substr( utf8_decode($descripcion), 0, ( strlen ($descripcion)>70) ? 70:strlen ($descripcion) ) ). '...</div>';
         
         
         $this->generaListaImgShadow($evento, $fecha, $id);
@@ -291,11 +429,12 @@ class Eventos extends Model {
                 
                 if ($row->Total <= 0) {
                     echo "<span >";
-                    echo "No se encontraron imágenes en este evento";
+                    echo "No se encontraron im&aacute;genes en este evento";
                     echo "</span>";
                 } else {
                     $numeroRegistros = $row->Total;
-                    $tamPag          = 9;
+                    //$tamPag          = 9;
+                    $tamPag          = 6;
                     
                     if (!isset($_GET["pagina"])) {
                         $pagina = 1;
@@ -389,7 +528,7 @@ class Eventos extends Model {
                                     $indexCols = 1;
                                     $indexfilas += 1;
                                     
-                                    if ($indexfilas == 3) {
+                                    if ($indexfilas == 2) {
                                         echo "</div >"; // cierra pagina 
                                         echo "<div class='tabla-pagina' >"; //abro nueva pagina 
                                         $indexfilas = 0;
@@ -491,11 +630,12 @@ class Eventos extends Model {
                 
                 if ($row->Total <= 0) {
                     echo "<span >";
-                    echo "No se encontraron imágenes en este evento";
+                    echo "No se encontraron im�genes en este evento";
                     echo "</span>";
                 } else {
                     $numeroRegistros = $row->Total;
-                    $tamPag          = 9;
+                    //$tamPag          = 9;
+                    $tamPag          = 6;
                     
                     if (!isset($_GET["pagina"])) {
                         $pagina = 1;
@@ -589,7 +729,7 @@ class Eventos extends Model {
                                     $indexCols = 1;
                                     $indexfilas += 1;
                                     
-                                    if ($indexfilas == 3) {
+                                    if ($indexfilas == 2) {
                                         echo "</div >"; // cierra pagina 
                                         echo "<div class='mas-EventoReciente' >"; //abro nueva pagina 
                                         $indexfilas = 0;
@@ -673,12 +813,7 @@ class Eventos extends Model {
                         }
                         
                         //Fin paginacion 
-                        //compartir social
-                        //echo "<div class='footer-compartir'>";
-                        //echo "    <a class='lnk_eventofb' rel='pop-upfb' href=''> <img class='social' src='img/fb.png' alt='' > </a>";
-                        //echo "    <a class='lnk_eventotw' rel='pop-uptw' href=''> <img class='social' src='img/tw.png' alt='' > </a>";
-                        //echo "    <a class='lnk_eventog+' rel='pop-upg+' href=''> <img class='social' src='img/g+.png' alt='' > </a>";
-                        //echo "</div>"; //compartir
+                        
                         echo "</div>"; //fin div paginar
                         
                     } //Fin evaluacion contulta ejecutada 
@@ -726,7 +861,7 @@ class Eventos extends Model {
                 echo $parse_date["day"] . ' de ' . $meses[$parse_date["month"] - 1] . ' de ' . $parse_date["year"];
                 echo '      </span>';
                 echo '      <span class="titulo">"' . $rowEvento->titulo . '...</span>';
-                echo '      <span class="descripcion">' . substr($rowEvento->descripcion, 0, 60) . '...</span>';
+                echo '      <span class="descripcion">' .$rowEvento->descripcion . '</span>';
                 //$this->omitir_in_hide[] =$_GET["foto"];
                 $this->get_FullEventoReciente($rowEvento->evento);
                 $this->generaListaImgShadow_lighbox($rowEvento->evento);
@@ -771,8 +906,10 @@ class Eventos extends Model {
                 echo "<span class='fecha'>";
                 echo $parse_date["day"] . ' de ' . $meses[$parse_date["month"] - 1] . ' de ' . $parse_date["year"];
                 echo "</span>";
-                echo "<span class='titulo'>" . $rowEvento->titulo . "...</span>";
-                echo "<span class='descripcion'>" . $rowEvento->descripcion . "...</span>";
+                echo "<span class='municipio' >" . $rowEvento->municipio . "</span>";
+                echo "<span class='titulo'>" . $rowEvento->titulo . "</span>";
+                               
+                //echo "<span class='descripcion'>" . $rowEvento->descripcion . "...</span>";
                 $this->get_FullEventoReciente($_GET['id'], $rowEvento->fecha);
                 $this->generaListaImgShadow_lighbox($_GET['id']);
                 
@@ -852,6 +989,8 @@ class Eventos extends Model {
             echo "<div class=\"PrintEventoReciente tabla-evento-reciente\"><span class=\"fecha\">No hay Resultados.</span></div>";
         }
     }
+
+//Esta funcion carga las fotos cuando entro por  1.- Seleccion de fecha del menu iz y 2.- seleccion de evento desde galeria del mes      
     function PrintEventoxFoto($id, $foto) {
         $rsEvento = $this->get_rows(4, " evento = " . $id . " and id= " . $foto);
         
@@ -993,7 +1132,7 @@ class Eventos extends Model {
             "Diciembre"
         );
         $rsResumenEventos = $this->get_rows(0, " YEAR(  fecha ) = " . $anio . " and MONTH(fecha)=" . $mes, "fecha DESC");
-        
+        //print_r($rsResumenEventos);
         if ( !empty( $mes ) )
             echo '<div class="mes">' . $meses[$mes - 1] . '</div>';
         
@@ -1011,7 +1150,7 @@ class Eventos extends Model {
             foreach ($rsResumenEventos as $rowEvento) {
                 $rutathumb = "imagenes/" . $rowEvento->directorio . "/thumb" . $rowEvento->archivo;
                 $rutaimg   = "imagenes/" . $rowEvento->directorio . "/" . $rowEvento->archivo;
-                //$rutathumb="imagenes/".$rowEvento->directorio."/thumb".$rowEvento->archivo;
+                
                 if (file_exists($rutaimg)) {
                     $size    = GetImageSize($rutaimg);
                     $anchura = $size[0];
@@ -1025,6 +1164,7 @@ class Eventos extends Model {
                         $ajustar = 233;
                     }
                 } else {
+                	  echo "No existe->".$rutaimg;
                     continue;
                 }
                 
@@ -1043,8 +1183,7 @@ class Eventos extends Model {
                     //echo "indexCols".$indexCols;
                     if ($indexCols <= 3) { //agregamos una celda mas
                         
-                        echo "<div class='tabla-celda' >";
-                        //echo "<span>".$rowEvento->fecha."</span>";
+                        echo "<div class='tabla-celda' >";                        
                         $this->dibujaCelda($rowEvento->evento, $rowEvento->id, $rowEvento->fecha, $rutaimg, $rutathumb, $estilo, $rowEvento->descripcion);
                         echo "</div >";
                     } else { //cerramos la fila
@@ -1055,14 +1194,13 @@ class Eventos extends Model {
                         
                         if ($indexfilas == 2) {
                             echo "</div >"; // cierra pagina 
-                            echo "<div class='tabla-pagina' >"; //abro nueva pagina 
+                            echo "<div class='tabla-pagina ' >"; //abro nueva pagina 
                             $indexfilas = 0;
                         }
                         
                         
                         echo "<div class='tabla-row' >";
-                        echo "<div class='tabla-celda' >";
-                        //echo "<span>".$rowEvento->fecha."</span>";
+                        echo "<div class='tabla-celda' >";                        
                         $this->dibujaCelda($rowEvento->evento, $rowEvento->id, $rowEvento->fecha, $rutaimg, $rutathumb, $estilo, $rowEvento->descripcion);
                         echo "</div >";
                         $openrow = true;
@@ -1101,7 +1239,7 @@ class Eventos extends Model {
         
         if ($id != 0) {
             //Este llama el evento  con un ligbox al inicio
-            //echo "Evento x foto".$id;
+            //echo "Evento x  foto ".$id;
             $this->PrintEventoxFoto($id, $foto);
             
         } else {
@@ -1113,15 +1251,17 @@ class Eventos extends Model {
                	 $this->PrintEventoxMunicipio($municipio, $fecha);
              		}
              		else {
+             			//echo "Evento x muni sin fecha ".$id;
              			$this->PrintEventoxMunicipioSinFecha($municipio);
              		}
                 
             } else {
-                //Cuando  se le pasa el año (anio), mes y un evento (id) en especifico, se lanza desde mas eventos
+                //Cuando  se le pasa el a�o (anio), mes y un evento (id) en especifico, se lanza desde mas eventos
                 // leer parametro $id y cargar el evento que se ha seleccionado
                 //$eventos->PrintEventoReciente($anio,$mes);
-                //echo "Evento x fecha";
-                $this->PrintEventoxFecha($anio, $mes);
+               // echo "Evento x fecha";
+                //$this->PrintEventoxFecha($anio, $mes);
+                $this->PrintEventoxFechaGenerica($anio, $mes);
             }
         }
         
@@ -1140,4 +1280,7 @@ class Eventos extends Model {
         return $rst;
     }
 }
+
+
+    
 ?>
