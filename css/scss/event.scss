@@ -14,15 +14,15 @@
         @include font-mask( #999, em( 16, 16 ), em( 16, 16 ), normal, $times );
         height: 20px;
         padding: 2px;
-        text-align: center; 
+        text-align: center;
         width: 210px;
     }
     .linea_div { height:5px; }
     .Img-foto {
         border: 5px solid #FFF;
-        height: 155px;
+        height: 145px;
         text-align: center;
-        width: 217px;
+        width: 210px;
     }
     .descrip_event {
         @include font-mask( #666, em( 12, 16 ), em( 16, 12 ), normal, $helveticaNeue );

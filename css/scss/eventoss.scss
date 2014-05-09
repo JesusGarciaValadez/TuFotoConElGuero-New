@@ -1,9 +1,9 @@
 body { overflow: hidden;}
-.contenedor-panel { 
-	text-align: center; 
-	width: 100%; 
+.contenedor-panel {
+	text-align: center;
+	width: 100%;
 	background: url(../img/dashboard/bg_dashboard.png) no-repeat;
-	background-size: 100% 100%; 
+	background-size: 100% 100%;
 	}
 
 .tabla-evento-reciente span { display:  block;}
@@ -24,7 +24,7 @@ body { overflow: hidden;}
 	background-color:transparent;
 	width: 726px;
 	height: 492px;
-	margin: 0 auto; 
+	margin: 0 auto;
 	
 }
 .tabla-row{
@@ -34,16 +34,16 @@ body { overflow: hidden;}
 	width: 726px;
 	
 }
-.tabla-celda { 
+.tabla-celda {
 	display: inline-block;
 	text-align: left;
 	float: left;
 }
-.tabla-celda  .tabla-col { 
+.tabla-celda  .tabla-col {
 	 
 	display: block;	  position: relative;
 }
-.tabla-celda span { 
+.tabla-celda span {
 	display: inline-block;padding-left: 5px;
 
 color: #0a7846;
@@ -56,23 +56,23 @@ font-size: 1.5em;
 font-weight: bold;
 font-family: Helvetica, Arial, sans-serif;
 	
-	} 
+	}
 .tabla-col{
-	display:inline-block;	
+	display:inline-block;
 	border: 2px solid #fff;
 	margin: 3px;
-	width: 236px;
-	height: 157px;
+	width: 232px;
+	height: 153px;
 }
-.tabla-col a { display: inline-block;} 
-.tabla-col img{		
+.tabla-col a { display: inline-block;}
+.tabla-col img{
 	width:232px;
-	height: 153px;	
+	height: 153px;
 	cursor: pointer;
 }
-.footer-paginar { 
-	width: 726px; 
-	margin: 0 auto; 
+.footer-paginar {
+	width: 726px;
+	margin: 0 auto;
 	text-align: center;
 	height: 32px;
 	font-size: 24px;
@@ -82,9 +82,9 @@ font-family: Helvetica, Arial, sans-serif;
 .footer-paginar a:hover { font-weight: 800; color:#0a7846; text-decoration: none;}
 
 .footer-compartir{ float: right;}
-.mes { 
+.mes {
 	position: absolute;
-	background: url(../img/mes.png) no-repeat top center;	
+	background: url(../img/mes.png) no-repeat top center;
 	background-size: 102px 59px;
 	width: 102px;
 	height: 59px;
@@ -95,7 +95,7 @@ color: #fff;
 	z-index: 3;
 }
 
-.more { 
+.more {
 position: absolute;
 	background: url(../img/mas-eventos.png) no-repeat top center;
 	background-size: 76px 44px;
@@ -109,7 +109,7 @@ position: absolute;
 	z-index: 3;
 }
 
-.arriba 
+.arriba
 {
 	
 position: absolute;
@@ -133,7 +133,7 @@ z-index: 3;
 	
 }
 
-#msg { 
+#msg {
 	position: absolute;
 
 font-size: 12px;
@@ -148,15 +148,15 @@ margin: 0 auto;
 min-height: 25px;
 text-align: justify;
 }
-.span_overlay{ 
-	position: absolute; 
-	bottom: 0px;  
-	background-color: #000; 
-	opacity: 0.5;color: #fff; 
+.span_overlay{
+	position: absolute;
+	bottom: 0px;
+	background-color: #000;
+	opacity: 0.5;color: #fff;
 	font-size: 12px;
 	width: 100%;
 }
-.span_overlay .municipio, .span_overlay .fotos  { 
+.span_overlay .municipio, .span_overlay .fotos  {
 	font-size: 12px;
 	display: block;
 	color: #fff;
