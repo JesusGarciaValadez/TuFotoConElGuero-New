@@ -17,13 +17,13 @@
 <!--<![endif]-->
     <head>
         <title>Tu Foto Con el Güero.com - Eventos</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
         <!--meta http-equiv="pragma" content="no-cache" /-->
         <meta name="description" content="" />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
-        <meta name="author" content="Jesús Antonio García Valadez" >
+        <meta name="author" content="Leonides Zavala Vidal" >
         <meta name="canonical" content="http://www.tufotoconelguero.com/eventos.php" />
         
         <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
@@ -433,10 +433,10 @@
                                     <option value="117">Montecristo de Guerrero</option>
                                     <option value="118">San Andrés Duraznal</option>
                                     <option value="119">Santiago el Pinar</option>
-                                    <option value="120">Belisario Domínguez3</option>
-                                    <option value="121">Emiliano Zapata3</option>
-                                    <option value="122">El Parral3</option>
-                                    <option value="123">Mezcalapa3</option>
+                                    <option value="120">Belisario Domínguez</option>
+                                    <option value="121">Emiliano Zapata</option>
+                                    <option value="122">El Parral</option>
+                                    <option value="123">Mezcalapa</option>
                                 </select>
                             </div>
                             <div class="text_input">
@@ -517,6 +517,7 @@
         <script type="text/javascript" src="js/main.min.js"></script>
         <script type="text/javascript" src="js/js-eventos.min.js"></script>
 <?php
+		if (  !isset( $_GET["lighbox"] ) ){			
         if( !isset( $_GET["pagina"] ) and isset( $_GET["id"] ) ) {
             echo "<script type='text/javascript'>";
             echo "  window.setTimeout( function() {";
@@ -530,6 +531,23 @@
             echo "  }, 200 );";
             echo "</script>";
         }
+		}
+		else { 
+			if ($_GET["lighbox"]=="on") {
+				echo "<script type='text/javascript'>";
+            echo "  window.setTimeout( function() {";
+            echo "      Shadowbox.open( { ";
+            echo "          content: '".$eventos->primerFoto."',";
+            echo "          player: 'img',";
+            echo "          gallery: 'principal".(string)$_GET['id']."',";
+            echo "          title: '',";
+            echo "          enableKeys: false"; 
+            echo "      } );";
+            echo "  }, 200 );";
+            echo "</script>";
+			}
+			
+		}
 ?>
     </body>
 </html>
