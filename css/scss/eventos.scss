@@ -1,7 +1,7 @@
 body { overflow: hidden; }
-.contenedor-panel { 
+.contenedor-panel {
     background: url("../img/dashboard/bg_dashboard.png") no-repeat;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
     text-align: center;
     width: 80%;
 }
@@ -13,6 +13,12 @@ body { overflow: hidden; }
         font-style: italic;
         margin: 0;
         padding: 10px 0 0;
+    }
+    .municipio{
+        @include font-mask( $text_gray, em( 16, 16 ), em( 16, 16 ), normal, $lucida );
+        font-style: italic;
+        margin: 0;
+        padding: 0 0 10px;
     }
     .titulo{ display: none; }
     .descripcion{
@@ -47,7 +53,7 @@ body { overflow: hidden; }
     display:table-row;
     height:164px;
     width: 726px;
-    .tabla-celda { 
+    .tabla-celda {
         display: inline-block;
         text-align: left;
         float: left;
@@ -59,7 +65,7 @@ body { overflow: hidden; }
             height: 157px;
             margin: 3px;
             position: relative;
-            width: 236px;
+            width: 237px;
             a {
                 border-radius: 5px;
                 display: inline-block;
@@ -112,7 +118,7 @@ body { overflow: hidden; }
     font-style: italic;
     text-decoration: none;
 }
-.mes { 
+.mes {
     @include font-mask( #78A609, em( 18, 16 ), em( 59, 18 ), bold, "Lucida Bright Regular" );
     //background: url("../img/mes.png") no-repeat top center;
     background-size: 102px 59px;
@@ -163,7 +169,7 @@ body { overflow: hidden; }
     margin: 0 auto;
     display: inline-block;
 }
-#msg { 
+#msg {
     position: absolute;
     font-size: 12px;
     color: red;
@@ -179,7 +185,7 @@ body { overflow: hidden; }
 }
 .span_overlay{
     position: absolute;
-    bottom: 0px; 
+    bottom: 0px;
     background-color: #000;
     opacity: 0.5;color: #fff;
     font-size: 12px;
@@ -195,7 +201,7 @@ body { overflow: hidden; }
     .fotos { padding: 0px; margin:0px; text-align: right; padding-right: 2px;}
 }
 .hidden { visibility: hidden;}
-.EventoReciente { width: 726px; margin: 0 auto; }
+.EventoReciente { width: 730px; margin: 0 auto; }
 .PrintEventoReciente {
     max-height: 638px;
     min-height: 638px;

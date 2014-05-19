@@ -31,6 +31,7 @@ html, body {
         .menu-lateral{
             /*background-color:red;*/
             background:url("img/bg-shape.png") no-repeat scroll left top transparent;
+            min-height:90%;
             #cssmenu,
             #cssmenu ul,
             #cssmenu li,
@@ -119,7 +120,7 @@ html, body {
                                                     }
                                                 }
                                             }
-                                            .active{ 
+                                            .active{
                                                 color: #FFF;
                                                 > a{
                                                     color: #FFF !important;
@@ -196,7 +197,7 @@ html, body {
                         > a{
                             
                             span {
-                                background: url("img/icon_plus.png") no-repeat scroll 88% center transparent; 
+                                background: url("img/icon_plus.png") no-repeat scroll 88% center transparent;
                             }
                         }
                     }
@@ -480,7 +481,7 @@ html, body {
                             content: "* ";
                         }
                     }
-                    input, 
+                    input,
                     textarea{
                         background-color: #E1E1E1;
                         border: 1px solid #C5C5C5;
@@ -572,4 +573,3 @@ html, body {
 /* Extras*/
 .input.placeholder{text-align:center;}
 .img{border:solid green 1px;}
-
