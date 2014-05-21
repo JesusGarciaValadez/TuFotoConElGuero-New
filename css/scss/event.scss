@@ -20,9 +20,9 @@
     .linea_div { height:5px; }
     .Img-foto {
         border: 5px solid #FFF;
-        height: 145px;
+        height: 156px;
         text-align: center;
-        width: 210px;
+        width: 217px;
     }
     .descrip_event {
         @include font-mask( #666, em( 12, 16 ), em( 16, 12 ), normal, $helveticaNeue );

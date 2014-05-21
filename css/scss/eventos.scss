@@ -52,7 +52,7 @@ body { overflow: hidden; }
 .tabla-row{
     display:table-row;
     height:164px;
-    width: 726px;
+    width: 730px;
     .tabla-celda {
         display: inline-block;
         text-align: left;
@@ -62,10 +62,10 @@ body { overflow: hidden; }
             border: 2px solid #FFF;
             border-radius: 5px;
             box-shadow: 1px 1px 8px 1px #BBB;
-            height: 153px;
+            height: 157px;
             margin: 3px;
             position: relative;
-            width: 232px;
+            width: 237px;
             a {
                 border-radius: 5px;
                 display: inline-block;
@@ -201,7 +201,7 @@ body { overflow: hidden; }
     .fotos { padding: 0px; margin:0px; text-align: right; padding-right: 2px;}
 }
 .hidden { visibility: hidden;}
-.EventoReciente { width: 726px; margin: 0 auto; }
+.EventoReciente { width: 730px; margin: 0 auto; }
 .PrintEventoReciente {
     max-height: 638px;
     min-height: 638px;
