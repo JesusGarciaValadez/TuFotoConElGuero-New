@@ -220,7 +220,7 @@ AddDefaultCharset utf-8
     Options +FollowSymlinks
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
-    RewriteBase /test/
+    RewriteBase /
 </IfModule>
 
 # ------------------------------------------------------------------------------

@@ -20,7 +20,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
         <!--meta http-equiv="pragma" content="no-cache" /-->
-        <meta name="description" content="" />
+        <meta name="description" content="Encuentra Tu foto con el Güero Velasco BUSCA | DESCARGAR | COMPARTE tu foto" />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
         <meta name="author" content="Jesús Antonio García Valadez" >
