@@ -20,10 +20,10 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
         <!--meta http-equiv="pragma" content="no-cache" /-->
-        <meta name="description" content="" />
+        <meta name="description" content="Busca, encuentra, descarga o comparte tu foto con el güero Velasco en diferentes eventos públicos del Gobernador del estado de Chiapas." />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
-        <meta name="author" content="Leonides Zavala Vidal" >
+        <meta name="author" content="Jesús Antonio García Valadez" >
         <meta name="canonical" content="http://www.tufotoconelguero.com/eventos.php" />
         
         <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=yes" />
