@@ -20,7 +20,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=edge,chrome=1" />
         <!--meta http-equiv="pragma" content="no-cache" /-->
-        <meta name="description" content="" />
+        <meta name="description" content="Encuentra Tu foto con el Güero Velasco BUSCA | DESCARGAR | COMPARTE tu foto" />
         <meta name="robots" content="all" />
         <meta name="author" content="Leonides Zavala Vidal" >
         <meta name="author" content="Jesús Antonio García Valadez" >
@@ -218,6 +218,7 @@
                     <div class="panel-galeria"> <!-- Capa que cotiene las imagenes, Ancho 935 y alto de 460 pixeles -->
                         <?php $fotos = $i->MostrarGaleria(); ?>
                     </div>
+                    <img src="img/banner-img.jpg" alt="Por primera vez en la historia de Chiapas todos los alumnos y alumnas recibirán gratuitamente uniformes, útilies escolares y mochilas." width="727" height="124" style="display: block;margin: 30px auto;" />
                 </div>
             </div><!-- Columna derecha (dashboard) -->
             <div class="alert_background opening">
