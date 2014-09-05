@@ -218,7 +218,8 @@
                     <div class="panel-galeria"> <!-- Capa que cotiene las imagenes, Ancho 935 y alto de 460 pixeles -->
                         <?php $fotos = $i->MostrarGaleria(); ?>
                     </div>
-                    <img src="img/banner-img.jpg" alt="Por primera vez en la historia de Chiapas todos los alumnos y alumnas recibirán gratuitamente uniformes, útilies escolares y mochilas." width="727" height="124" style="display: block;margin: 30px auto;" />
+                    <img src="img/banner-img.jpg" alt="Por primera vez en la historia de Chiapas todos los alumnos y alumnas recibirán gratuitamente uniformes, útilies escolares y mochilas." width="727" height="124" style="display: block;margin: 20px auto 10px;" />
+                    <p style="font: 10px/1em Helvetica; display: block; margin: 0px auto; width: 700px">El contenido de la información publicada en este portal, es exclusiva responsabilidad de quien la emite, en el ejercicio de su libertad de expresión y de la libre manifestación de ideas. Se deslinda de toda responsabilidad a los anunciantes, por  ser ajenos a este proceso.</p>
                 </div>
             </div><!-- Columna derecha (dashboard) -->
             <div class="alert_background opening">

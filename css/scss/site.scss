@@ -251,6 +251,7 @@ html, body {
     /****************************************/
     .contenedor-panel{
         float:right;
+        position: relative;
         /*width:auto;
         height:auto;*/
         /*background-color:green;*/
@@ -258,7 +259,7 @@ html, body {
             border-bottom: 1px dashed #959595;
             display: block;
             margin: 0 auto;
-            padding: 50px 0 7px 50px;
+            padding: 20px 0 7px 50px;
             position: relative;
             width: em( 883, 16 );
             z-index: 1;
@@ -387,8 +388,10 @@ html, body {
             /*background-color:gainsboro;*/
             background:url("img/grid-.png") no-repeat scroll center center transparent;
             height:480px;
-            position: relative;
-            top:-86px;
+            left: 50%;
+            margin: ( -480px / 2 ) 0 0 ( -950px / 2 ) !important;
+            position: absolute;
+            top:43%;
             width:950px;
             z-index: 0;
             /*margin-top:92px;*/
