@@ -199,10 +199,10 @@
                                     <option value="117">Montecristo de Guerrero</option>
                                     <option value="118">San Andrés Duraznal</option>
                                     <option value="119">Santiago el Pinar</option>
-                                    <option value="120">Belisario Domínguez3</option>
-                                    <option value="121">Emiliano Zapata3</option>
-                                    <option value="122">El Parral3</option>
-                                    <option value="123">Mezcalapa3</option>
+                                    <option value="120">Belisario Domínguez</option>
+                                    <option value="121">Emiliano Zapata</option>
+                                    <option value="122">El Parral</option>
+                                    <option value="123">Mezcalapa</option>
                                 </select>
                             </div>
                             <div class="text_input">
