@@ -24,13 +24,6 @@
 @import "default-styles/_general"
 
 @import "custom-styles/desktop/home"
-@import "custom-styles/desktop/blog"
-@import "custom-styles/desktop/blog_article"
-@import "custom-styles/desktop/bio"
-@import "custom-styles/desktop/invited_artists"
-@import "custom-styles/desktop/contact"
-@import "custom-styles/desktop/category"
-@import "custom-styles/desktop/photography"
 
 /* ==========================================================================
    Helper classes
@@ -42,7 +35,7 @@
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-   
+
 /* ==========================================================================
    iPhone 3GS/4/4S Portrait Orientation
    ========================================================================== */
@@ -55,44 +48,33 @@
 @media only screen and (max-width: em( 568, 16 ))
     /* Style adjustments for viewports that meet the condition */
     @import "default-styles/_general_mobile"
-    
+
     @import "custom-styles/mobile/home_mobile"
-    @import "custom-styles/mobile/blog_mobile"
-    @import "custom-styles/mobile/bio_mobile"
-    @import "custom-styles/mobile/invited_artists_mobile"
-    @import "custom-styles/mobile/contact_mobile"
-    @import "custom-styles/mobile/category_mobile"
-    @import "custom-styles/mobile/photography_mobile"
 
 /* ==========================================================================
    iPhone 5/5S Landscape Orientation
-   ========================================================================== */    
+   ========================================================================== */
 @media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
     /* Style adjustments for viewports that meet the condition */
     @import "default-styles/_general_mobile_lanscape"
-    
-    @import "custom-styles/mobile/category_mobile_landscape"
+
 
 /* ==========================================================================
    iPad
    ========================================================================== */
 @media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1024, 16 ))
-    @import "default-styles/_general_tablet"
-    
-    @import "custom-styles/tablet/home_tablet"
-        
+
+
 /* ==========================================================================
    iPad Portrait Orientation
    ========================================================================== */
 @media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1024, 16 )) and (orientation:portrait)
-    @import "custom-styles/tablet/category_tablet_portrait"
-    
+
 /* ==========================================================================
    iPad Landscape Orientation
    ========================================================================== */
 @media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1024, 16 )) and (orientation:landscape)
-    @import "custom-styles/tablet/category_tablet_landscape"
-    
+
 /* ==========================================================================
    Desktop High Resolution
    ========================================================================== */
@@ -102,12 +84,7 @@
     @import "default-styles/_general_hd"
 
     @import "custom-styles/desktop/home_hd"
-    @import "custom-styles/desktop/blog_hd"
-    @import "custom-styles/desktop/bio_hd"
-    @import "custom-styles/desktop/invited_artists_hd"
-    @import "custom-styles/desktop/contact_hd"
-    @import "custom-styles/desktop/category_hd"
-    
+
 
 /* ==========================================================================
    Print styles.
