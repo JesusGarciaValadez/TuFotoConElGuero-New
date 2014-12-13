@@ -1,0 +1,102 @@
+html,body
+    -webkit-overflow-scrolling: touch
+    ::-webkit-scrollbar,:-webkit-scrollbar
+        -webkit-appearance: none
+        width: 8px
+header
+    height: 70px !important
+    transition: all 0.5s ease
+    h2
+        transition: all 0.5s ease
+        width: 45%
+        a
+            span
+            img 
+nav
+    background: #141414
+    clear: none
+    display: none
+    float: right
+    height: 100%
+    margin: 0
+    min-height: 575px
+    overflow: hidden
+    position: absolute
+    right: 0
+    transition: width 0.5s ease 0s
+    top: 0
+    width: 0
+    z-index: 6
+    &.active
+        display: block
+        transition: width 0.5s ease 0s
+        width: 215px
+    p
+        @include font-mask( bold, em( 18, 16 ), 1.5em, $font, #333333 )
+        position: relative
+        text-indent: 20px
+        text-transform: uppercase
+        &:after
+            content: "x"
+            cursor: pointer
+            font-size: em( 20, 15 )
+            line-height: 1em
+            position: absolute
+            right: 5%
+            text-transform: lowercase
+    ul
+        margin: 0 auto
+        padding: 0
+        li
+            border-right: 0 none transparent !important
+            box-sizing: border-box
+            clear: both
+            float: auto
+            padding: 15px 20px !important
+            width: 100%
+            a
+                @include font-mask( normal, em( 15, 16 ), 1.5em, $font, $text-normal )
+                &:hover,&.active
+                    color: $text-active !important
+            a[title="Mariano Dominguez Minvielle"]
+                color: $text-normal
+            ul
+                background-color: transparent
+                display: block
+                padding: 20px 0 0
+                position: static
+                width: 100%
+                li
+                    border-bottom: 1px solid $submenu-separator
+                    border-right: 0 none transparent
+                    clear: both
+                    display: block
+                    float: auto
+                    padding: 5px 0 5px 15px !important
+                    width: 100%
+                    &:nth-child( 2n )
+                        padding: 0 0 5px 15px !important
+                    &.triangle
+                        display: none
+                    a
+                        @include font-mask( normal, em( 14, 16 ), 1.5em, $font, $text-normal )
+.desktop
+    display: none
+.mobile
+    display: block
+.wrapper
+.central
+    width: 95%
+.icon
+    display: inline-block
+    width: 45px
+    height: 45px
+    fill: currentColor
+.icon-menu
+    /*fill: #fff210*/
+.cell
+    color: #fff210
+    float: right
+    font-size: em( 16, 16 )
+    overflow: hidden
+    width: 45px

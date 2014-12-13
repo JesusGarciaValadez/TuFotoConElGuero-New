@@ -1,0 +1,10 @@
+
+/* Start Sprite Master CSS */
+.phone_frameless,.phone_with_frame,.contact-facebook-icon,.contact-google-icon,.contact-twitter-icon,.contact-youtube-icon{display: inline-block;background-repeat: no-repeat;background-image: url('../img/contact/sprite_contact.png');}
+.phone_frameless{background-position:0px 0px;width:12px;height:11px;}
+.phone_with_frame{background-position:0px -11px;width:13px;height:12px;}
+.contact-facebook-icon{background-position:0px -23px;width:39px;height:40px;}
+.contact-google-icon{background-position:0px -63px;width:40px;height:40px;}
+.contact-twitter-icon{background-position:0px -103px;width:40px;height:40px;}
+.contact-youtube-icon{background-position:0px -143px;width:39px;height:40px;}
+/* End Sprite Master CSS */

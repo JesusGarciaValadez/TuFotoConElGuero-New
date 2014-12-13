@@ -1,0 +1,36 @@
+.category,.album
+    .wrapper
+        section.central
+            margin-bottom: 10px
+            h1
+                @include font-mask( normal, em( 30, 16  ), 1.5em, $font, $image-border )
+                margin: 0
+                text-transform: uppercase
+            .masonry
+                display: block
+                margin: 0 auto
+                max-width: 93.75%
+                .item
+                    @include putYellowBorder()
+                    box-sizing: border-box
+                    float: left
+                    margin: 0 1.5px 3px
+                    overflow: hidden
+                    position: relative
+                    width: 19.6875%
+                    a
+                        display: block
+                        img
+                            display: block
+                            width: 100%
+                        figcaption
+                            @include magicFigcaption()
+                            p
+                                @include magicFigcaptionText()
+                                @include font-mask( normal, em( 11, 16 ), em( 24, 11 ), $font, $white-color )
+                    &:hover
+
+                        a
+
+                            figcaption
+                                display: block !important

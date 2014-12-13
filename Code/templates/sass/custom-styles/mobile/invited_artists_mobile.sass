@@ -1,0 +1,42 @@
+.invited-artist
+    .wrapper
+        section.central
+            h2
+                @include font-mask( normal, em( 30, 16  ), 1.5em, $font, $image-border )
+            article
+                clear: both
+                display: block
+                float: none
+                padding: 0
+                width: 100%
+                h1
+                    @include font-mask( normal, em( 50, 16  ), 1em, $font, $image-border )
+                p, ol li
+                    @include font-mask( normal, em( 13, 16 ), 1.5em, $font, $white-color )
+                    a
+                ol
+                    li
+                        margin: 30px 0
+            aside
+                clear: both
+                display: block
+                float: none
+                height: 460px !important
+                min-height: initial
+                position: relative
+                width: 100%
+                .wrapper_photos
+                    .bigger
+                        img
+                            width: 100%
+                ul
+                    position: absolute
+                    top: 220px !important
+                    li
+                        margin: 0 5% 2% 0 !important
+                        width: 47.5%
+                        &:nth-child( 2n ),&:last-child
+                            margin: 0 !important
+                        .smaller
+                            @include putYellowBorder
+                            img

@@ -1,0 +1,35 @@
+
+/* Start Sprite Master CSS */
+.flecha-derecha-hd,
+.flecha-izquierda-hd,
+.marca-de-agua-md-minvielle-hd,
+.mariano-dominguez-minvielle-logo-hd{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-image: url('../img/home/sprite-hd.png') !important;
+}
+.flecha-derecha-hd
+{
+	background-position:0px 0px !important;
+	width:47px !important;
+	height:153px !important;
+}
+.flecha-izquierda-hd
+{
+	background-position:-47px 0px !important;
+	width:47px !important;
+	height:146px !important;
+}
+.marca-de-agua-md-minvielle-hd
+{
+	background-position:-94px 0px !important;
+	width:244px !important;
+	height:47px !important;
+}
+.mariano-dominguez-minvielle-logo-hd
+{
+	background-position:-94px -47px !important;
+	width:478px !important;
+	height:100px !important;
+}
+/* End Sprite Master CSS */

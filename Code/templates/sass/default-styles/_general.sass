@@ -1,0 +1,194 @@
+html,body
+    background-color: $site-background
+    display: table
+    height: 100%
+    width: 100%
+header
+    clear: right
+    height: 77px
+    position: relative
+    transition: all 0.5s ease
+    z-index: 1
+    h2
+        //@extend .mariano-dominguez-minvielle-logo
+        display: inline-block
+        float: left
+        height: 100%
+        margin: 0
+        text-indent: -2000em
+        transition: all 0.5s ease
+        width: 35%
+        a
+            color: transparent
+            display: block
+            height: 100%
+            position: relative
+            width: 100%
+            span
+                display: inline-block
+                height: auto
+                float: left
+                left: 0
+                position: absolute
+                top: 0
+                width: 100%
+                z-index: 0
+            img
+                height: auto !important
+                left: 0
+                max-width: 60%
+                top: 0
+                position: absolute
+                width: 100%
+                z-index: 1
+nav
+    clear: right
+    float: right
+    margin: ( -23px / 2 ) auto 0
+    position: absolute
+    right: 0
+    top: 50%
+    ul
+        margin: 0 auto
+        padding: 0
+        li
+            border-right: 1px solid $text-normal
+            box-sizing: border-box
+            float: left
+            padding: 0 20px
+            position: relative
+            &:first-child
+                padding: 0 20px 0 0
+            &:last-child
+                border-right: 0 none transparent
+                padding: 0 0 0 20px
+            a
+                @include font-mask( normal, em( 12, 16 ), em( 15, 12 ), $font, $text-normal )
+                text-align: center
+                text-decoration: none
+                text-transform: uppercase
+                &:hover,&.active
+                    color: $text-active
+                &:hover ~ ul
+                    display: block
+                    transition: all 1s ease 1s
+            a[title="Mariano Dominguez Minvielle"]
+                color: $image-border
+            ul
+                background-color: $submenu-color
+                border-radius: 5px
+                box-sizing: border-box
+                display: none
+                left: 0
+                padding: 20px 10px 10px
+                position: absolute
+                transition: all 1s ease 1s
+                top: 40px
+                width: 180px
+                &:hover
+                    display: block
+                    transition: all 1s ease 1s
+                li
+                    border-bottom: 1px solid $submenu-separator
+                    border-right: 0 none transparent
+                    clear: both
+                    display: block
+                    float: auto
+                    padding: 5px 0 5px 15px
+                    width: 100%
+                    &:nth-child( 3n + 1 )
+                        padding: 5px 0 5px 15px !important
+                    &:nth-child( 2n )
+                        padding: 0 0 5px 15px
+                    &.triangle
+                        border-bottom: 0 none transparent
+                        height: 30px
+                        left: 0
+                        padding: 0 !important
+                        position: absolute
+                        top: -30px
+                        &:before
+                            @include triangle( transparent, solid, 0, transparent, solid, 15px, $submenu-color, solid, 15px, transparent, solid, 15px )
+                            content: ""
+                            display: block
+                            height: 10px
+                            left: 25px
+                            position: absolute
+                            top: 15px
+                            width: 30px
+footer
+    bottom: 5px
+    box-sizing: border-box
+    clear: both
+    height: 30px
+    left: 50%
+    margin: 0 0 0 ( -93.75% / 2 ) !important
+    padding: 0
+    position: relative
+    ul
+        float: left
+        margin: 0 10px 0 0
+        padding: 0
+        li
+            float: left
+            list-style: none inside
+            margin: 0 2.5px
+            &:first-child
+                margin:  0 2.5px 0 0
+            &:last-child
+                margin: 0 0 0 2.55px
+            a
+                color: transparent
+                &[title="Facebook"]
+                    @extend .facebook
+                &[title="Twitter"]
+                    @extend .twitter
+                &[title="Flickr"]
+                    @extend .flickr
+    p
+        @include font-mask( normal, em( 9, 16 ), em( 13, 9 ), $font, $footer-text )
+        float: left
+        text-align: left
+        text-transform: capitalize
+    &.sticky
+        position: absolute !important
+.desktop
+.mobile
+    display: none
+.central
+    display: block
+    margin: 0 auto
+    //max-width: 960px
+    width: 93.75%
+    .B_crumbBox
+        @include font-mask( normal, em( 16, 16  ), 1.5em, $font, $text-normal )
+        display: block
+        margin: 0 0 15px
+        padding: 0
+        width: 100%
+        li
+            display: inline-block
+            list-style: none inside
+            a
+                text-decoration: none
+                span
+                    @include font-mask( normal, em( 12, 16  ), 1.5em, $font, $text-normal )
+                    text-transform: uppercase
+        .slash_crumb
+            &:nth-child( 1n )
+                display: none
+            &:nth-child( 1n + 3 )
+                display: inline
+        .B_firstCrumb
+            display: none
+        .B_homeCrumb
+        .B_crumb
+        .B_lastCrumb
+        .B_currentCrumb
+            @include font-mask( normal, em( 12, 16  ), 1.5em, $font, $text-normal )
+            text-transform: uppercase
+.page
+.wrapper
+    display: table
+    width: 100%
+

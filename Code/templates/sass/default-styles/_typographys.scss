@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'vag_rounded_regular';
+    src: url('fonts/vag-rounded-thin-webfont.eot');
+    src: url('fonts/vag-rounded-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vag-rounded-thin-webfont.woff') format('woff'),
+         url('fonts/vag-rounded-thin-webfont.ttf') format('truetype'),
+         url('fonts/vag-rounded-thin-webfont.svg#vag_roundedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}//    vag_rounded_regular
+$helvetica: Helvetica,Arial,"sans-serif";
+$font:       "Myriad Pro",#{$helvetica};

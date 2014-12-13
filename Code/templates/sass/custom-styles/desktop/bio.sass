@@ -1,0 +1,59 @@
+.bio
+    .wrapper
+        section.central
+            clear: both
+            display: block
+            h1
+                @include font-mask( normal, em( 30, 16  ), 1.5em, $font, $image-border )
+                margin: 0
+                text-transform: uppercase
+            section
+                display: block
+                margin: 0 auto
+                position: relative
+                width: 740px
+                h2
+                    @include font-mask( normal, em( 50, 16  ), 1em, $font, $image-border )
+                    clear: left
+                    display: block
+                    margin: 30px 0 20px
+                    padding: 0
+                    span
+                        text-transform: uppercase
+                figure
+                    float: left
+                    height: 165px
+                    overflow: hidden
+                    position: relative
+                    width: ( 750px / 2 )
+                    img
+                        margin: 0 0 0 ( -750px / 2 )
+                        position: absolute
+                        left: 50%
+                        top: 0
+                p, ul li
+                    @include font-mask( normal, em( 13, 16  ), 1.5em, $font, $white-color )
+                p
+                    float: left
+                    text-align: justify
+                    width: ( 750px / 2 )
+                aside
+                    clear: none
+                    display: inline-block
+                    position: absolute
+                    right: 0
+                    top: 0
+                    width: 300px
+                    h3
+                        @include font-mask( normal, em( 30, 16  ), 1em, $font, $image-border )  
+                        margin: 30px 0 10px
+                    ul
+                        margin: 0
+                        padding: 0
+                        li
+                            border-top: 1px solid #5E5E5E
+                            box-sizing: border-box
+                            color: $text-normal
+                            list-style: none inside
+                            padding: 10px 0
+                            text-indent: 10px

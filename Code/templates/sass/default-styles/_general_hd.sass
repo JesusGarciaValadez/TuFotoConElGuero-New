@@ -1,0 +1,48 @@
+header
+    height: 125px !important
+    h2
+        transition: all 0.5s ease
+        a
+            img
+                max-width: 90%
+nav
+    margin: ( -22.4px / 2 ) 0 0
+    position: relative
+    top: 50%
+    ul
+        margin: 0 auto !important
+        padding: 0
+        position: relative
+        top: 50%
+        li
+            a
+                @include font-mask( normal, em( 18, 16 ) !important, em( 21, 18 ) !important, $font, $text-normal )
+            a[title="Mariano Dominguez Minvielle"]
+                color: $image-border !important
+main
+    .B_crumbBox
+        li
+            a
+                span
+                    font-size: em( 15, 16 )
+        span
+            font-size: em( 15, 16 )
+footer
+    margin: 20px 0 0 -46.875% !important
+    position: relative
+    p
+        @include font-mask( normal, em( 12, 16 ), em( 30, 12 ), $font, $footer-text )
+        margin: 0
+.central
+    display: block
+    margin: 0 auto
+    //max-width: 960px
+    width: 93.75%
+    .B_crumbBox
+        @include font-mask( normal, em( 16, 16  ), 1.5em, $font, $text-normal )
+        li
+            a
+                span
+                    @include font-mask( normal, em( 14, 16  ), 1.5em, $font, $text-normal )
+        .B_currentCrumb
+            @include font-mask( normal, em( 14, 16  ), 1.5em, $font, $text-normal )

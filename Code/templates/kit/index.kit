@@ -1,0 +1,30 @@
+<!--@import head-->
+    <body class="page home">
+<!--@import svgMenu-->
+        <div class="wrapper">
+<!--@import header-->
+
+            <section class="central clearfix">
+                <div class="scrollable_main_photography clearfix">
+                    <div class="items_glympse clearfix">
+[[!getResources?
+    &parents=`15`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE carrusel-figure-item.html`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &showUnpublished=`1`
+    &showHidden=`0`
+    &includeContent=`1`
+    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+    &depth=`0`
+    &limit=`0`
+ ]]
+                    </div>
+                </div>
+            </section>
+        </div>
+<!--@import footer-->
+
+<!--@import html_end-->

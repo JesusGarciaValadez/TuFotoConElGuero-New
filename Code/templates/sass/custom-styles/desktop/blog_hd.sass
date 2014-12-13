@@ -1,0 +1,26 @@
+.blog
+    .wrapper
+        section.central
+            h1
+                @include font-mask( normal, em( 30, 16  ), 1.5em, $font, $image-border )
+                clear: both
+                margin: 0 0 5px
+                text-transform: uppercase
+            article
+                clear: none
+                display: inline-block
+                float: left
+                width: 531px
+                &:nth-child(n)
+                    margin: 0 40px 0 0
+                &:nth-child(n):nth-child(2n)
+                    margin: 0 40px
+                &:last-child
+                    margin: 0 0 0 40px
+                h2
+                hr
+                figure
+                    img
+                h3
+                h4
+                a

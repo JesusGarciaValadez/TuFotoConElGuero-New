@@ -1,0 +1,73 @@
+.article
+    .wrapper
+        section.central
+            h1
+                @include font-mask( normal, em( 30, 16  ), 1.5em, $font, $image-border )
+                clear: both
+                margin: 0 0 5px
+                text-transform: uppercase
+            article
+                clear: both
+                display: block
+                margin: 0 auto
+                &:first-child
+                    h2
+                        margin: 0
+                h2
+                    @include font-mask( normal, em( 28, 16  ), 1.5em, $font, $image-border )
+                    clear: both
+                    display: block
+                    padding: 20px 0 0
+                hr
+                    border-top: 1px solid #5E5E5E
+                    clear: both
+                    display: block
+                    float: left
+                    height: 0
+                    margin: 10px 0 25px
+                    width: 100%
+                    &:last-child
+                        margin: 30px 0
+                figure
+                    display: block
+                    margin: 0 auto
+                    width: 100%
+                    img
+                h3
+                    @include font-mask( bold, em( 16, 16  ), 1.5em, $font, $white-color )
+                    font-style: italic
+                h4
+                    @include font-mask( normal, em( 13, 16  ), 1.5em, $font, $white-color )
+                    text-align: justify
+                a
+                    @include roundedButton()
+                    float: right
+        .page-nav
+            display: block   
+            .page-list
+                display: block
+                margin: 0 auto
+                padding: 0
+                li
+                    float: left
+                    height: 20px
+                    list-style: none inside
+                    padding: 0
+                    width: 20px
+                    &.control
+                        a
+                            background-color: $text-normal
+                            color: $site-background
+                            display: inline-block
+                            font-weight: bold
+                        &:first-child, &:last-child
+                            display: none
+                    a
+                        @include font-mask( normal, em( 13, 16 ), em( 20, 13 ), $font, $text-normal )
+                        float: left
+                        height: 100%
+                        text-align: center
+                        text-decoration: none
+                        width: 100%
+                    .active
+                        color: $text-active
