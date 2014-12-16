@@ -1,0 +1,25 @@
+<!--@import head-->
+    <body class="page photo">
+<!--@import svgMenu-->
+
+        <div class="wrapper">
+<!--@import header-->
+
+            <section class="central clearfix">
+                <h1>[[*pagetitle]]</h1>
+<!--@import breadcrumbs-->
+                [[!siblingNav]]
+                [[+sn.prev]]
+                <figure class="clearfix">
+                    <img src="[[++site_url]][[*photo]]" alt="[[+pagetitle]]" />
+                    <div class="display"></div>
+                </figure>
+                [[+sn.next]]
+            </section>
+        </div>
+
+<!--@import banner-->
+
+<!--@import footer-->
+
+<!--@import html_end-->
