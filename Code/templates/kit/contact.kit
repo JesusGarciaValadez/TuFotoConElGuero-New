@@ -1,0 +1,38 @@
+<!--@import head-->
+    <body class="page contact-form">
+<!--@import svgMenu-->
+
+        <div class="wrapper">
+<!--@import header-->
+
+            <section class="central clearfix">
+                <h1>[[*pagetitle]]</h1>
+                <form action="[[++site_url]]assets/snippets/controller.php?action=contact" method="post">
+                    <fieldset>
+                        <div class="input">
+                            <label for="name"><sup>*</sup>Nombre</label>
+                            <input type="text" name="name" validate="validate" />
+                        </div>
+                        <div class="input">
+                            <label for="email"><sup>*</sup>Correo Electrónico</label>
+                            <input type="text" name="email" validate="validate" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="input">
+                            <label for="comments">Comentarios</label>
+                            <textarea name="comments"></textarea>
+                        </div>
+                        <div class="input">
+                            <input type="submit" />
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+<!--@import banner-->
+
+<!--@import footer-->
+
+<!--@import html_end-->
