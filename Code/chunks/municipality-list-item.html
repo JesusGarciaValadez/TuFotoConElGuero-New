@@ -1,3 +1,19 @@
                         <li>
-                            <a href="[[++site_url]][[~[[+id]]]]" title="[[+pagetitle]]">[[+pagetitle]]</a>
+                            <a href="[[!getResources?
+    &parents=`4`
+    &depth=`1`
+    &where=`{'id:!=':[[*id]],'template:=':1}`
+    &limit=`0`
+    &showUnpublished=`1`
+    &showHidden=`1`
+    &includeContent=`1`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &sortby=`{'menuindex':'ASC','createdon':'ASC','publishedon':'ASC'}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE municipality-list-item-url.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{'20':'@FILE menu-list-item-conditional.html'}`
+ ]]" title="[[+pagetitle]]">[[+pagetitle]]</a>
                         </li>

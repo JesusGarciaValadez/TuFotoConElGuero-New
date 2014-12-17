@@ -9,7 +9,9 @@ html,body
     box-sizing: border-box
     header
         box-sizing: border-box
+        display: block
         height: 82px
+        margin: 0 auto
         position: relative
         transition: all 0.5s ease
         z-index: 1
@@ -17,38 +19,29 @@ html,body
             display: inline-block
             float: left
             height: 52px
-            margin: 0
-            text-indent: -2000em
+            margin: ( -52px / 2 ) auto 0
+            position: absolute
             transition: all 0.5s ease
-            width: 11.770833333%
-            a
+            text-indent: -2000em
+            top: 50%
+            width: 113px //11.77083%
+            .logo
                 color: transparent
                 display: block
-                height: 100%
+                height: 52px
+                overflow: hidden
                 position: relative
-                width: 100%
+                width: 113px
+                z-index: 5
                 span
-                    display: inline-block
-                    height: auto
-                    float: left
-                    left: 0
-                    position: absolute
-                    top: 0
-                    width: 100%
-                    z-index: 0
-                img
-                    height: auto !important
-                    left: 0
-                    max-width: 60%
-                    top: 0
-                    position: absolute
-                    width: 100%
-                    z-index: 1
-            .logo
+                    display: none
                 .logo-vector
-                .guero-logo
+                    display: inline-block
+                    fill: red
+                    height: 52px
+                    width: 113px
         .cell
-            color: #fff210
+            color: $dark_green
             float: right
             font-size: em( 16, 16 )
             overflow: hidden
@@ -59,7 +52,7 @@ html,body
                 display: inline-block
                 width: 45px
                 height: 45px
-                fill: currentColor
+                fill: $dark_green
             .icon-menu
                 /*fill: #fff210*/
         nav
@@ -124,6 +117,7 @@ html,body
                     width: 100%
 .banner
     img
+        display: block
         margin: 20px auto 0
     figcaption
         p
@@ -159,7 +153,6 @@ footer
 .central
     display: block
     margin: 0 auto
-    //max-width: 960px
     width: 93.75%
     .B_crumbBox
         @include font-mask( normal, em( 16, 16  ), 1.5em, $asap-regular, $text-normal )
