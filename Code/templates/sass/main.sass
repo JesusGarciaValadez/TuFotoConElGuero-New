@@ -18,8 +18,6 @@
    Author's custom styles
    ========================================================================== */
 @import "default-styles/_variables"
-@import "sprites/_sprite"
-@import "sprites/_sprite_contact"
 @import "default-styles/_mixins"
 @import "default-styles/_general"
 
@@ -48,7 +46,6 @@
 @media only screen and (max-width: em( 568, 16 ))
     /* Style adjustments for viewports that meet the condition */
     @import "default-styles/_general_mobile"
-
     @import "custom-styles/mobile/home_mobile"
 
 /* ==========================================================================
@@ -57,7 +54,6 @@
 @media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
     /* Style adjustments for viewports that meet the condition */
     @import "default-styles/_general_mobile_lanscape"
-
 
 /* ==========================================================================
    iPad
@@ -79,8 +75,6 @@
    Desktop High Resolution
    ========================================================================== */
 @media only screen and (min-width: em( 1919, 16 ))
-    @import "sprites/_sprite_hd"
-    @import "sprites/_sprite_contact_hd"
     @import "default-styles/_general_hd"
 
     @import "custom-styles/desktop/home_hd"

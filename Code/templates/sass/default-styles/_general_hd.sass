@@ -5,20 +5,20 @@ header
         a
             img
                 max-width: 90%
-nav
-    margin: ( -22.4px / 2 ) 0 0
-    position: relative
-    top: 50%
-    ul
-        margin: 0 auto !important
-        padding: 0
+    nav
+        margin: ( -22.4px / 2 ) 0 0
         position: relative
         top: 50%
-        li
-            a
-                @include font-mask( normal, em( 18, 16 ) !important, em( 21, 18 ) !important, $font, $text-normal )
-            a[title="Mariano Dominguez Minvielle"]
-                color: $image-border !important
+        ul
+            margin: 0 auto !important
+            padding: 0
+            position: relative
+            top: 50%
+            li
+                a
+                    @include font-mask( normal, em( 18, 16 ) !important, em( 21, 18 ) !important, $asap-regular, $text-normal )
+                a[title="Mariano Dominguez Minvielle"]
+                    color: $image-border !important
 main
     .B_crumbBox
         li
@@ -31,7 +31,7 @@ footer
     margin: 20px 0 0 -46.875% !important
     position: relative
     p
-        @include font-mask( normal, em( 12, 16 ), em( 30, 12 ), $font, $footer-text )
+        @include font-mask( normal, em( 12, 16 ), em( 30, 12 ), $asap-regular, $footer-text )
         margin: 0
 .central
     display: block
@@ -39,10 +39,10 @@ footer
     //max-width: 960px
     width: 93.75%
     .B_crumbBox
-        @include font-mask( normal, em( 16, 16  ), 1.5em, $font, $text-normal )
+        @include font-mask( normal, em( 16, 16  ), 1.5em, $asap-regular, $text-normal )
         li
             a
                 span
-                    @include font-mask( normal, em( 14, 16  ), 1.5em, $font, $text-normal )
+                    @include font-mask( normal, em( 14, 16  ), 1.5em, $asap-regular, $text-normal )
         .B_currentCrumb
-            @include font-mask( normal, em( 14, 16  ), 1.5em, $font, $text-normal )
+            @include font-mask( normal, em( 14, 16  ), 1.5em, $asap-regular, $text-normal )

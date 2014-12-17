@@ -68,17 +68,18 @@
             </defs>
         </svg>
         <div class="wrapper">
-            <header class="central">
-                <p>
-                    <a href="[[++site_url]]" title="[[++site_name]]" class="clearfix">
-                        <span>[[++site_name]]</span>
-                        <svg class="icon guero-logo" viewBox="-9 5 61 37">
-                            <use xlink:href="#guero-logo"></use>
-                        </svg>
-                    </a>
-                </p>
-                <nav class="clearfix desktop">
-                    <ul class="clearfix">
+            <div class="wrapper header">
+                <header class="central clearfix">
+                    <p>
+                        <a href="[[++site_url]]" title="[[++site_name]]" class="clearfix logo">
+                            <span>[[++site_name]]</span>
+                            <svg class="logo-vector guero-logo" viewBox="-9 5 61 37">
+                                <use xlink:href="#guero-logo"></use>
+                            </svg>
+                        </a>
+                    </p>
+                    <nav class="clearfix desktop">
+                        <ul class="clearfix">
 [[!getResources?
     &parents=`4`
     &depth=`0`
@@ -97,24 +98,23 @@
     &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
  ]]
 
-                    </ul>
-                </nav>
-                <!--form action="" method="post" class="clearfix mobile">
-                    <fieldset>
-                        <select class="clearfix">
-                            <option value="">Elige un municipio</option>
-                            <option value="[[++site_url]][[~[[+id]]]]">[[+pagetitle]]</option>
+                        </ul>
+                    </nav>
+                    <!--form action="" method="post" class="clearfix mobile">
+                        <fieldset>
+                            <select class="clearfix">
+                                <option value="">Elige un municipio</option>
+                                <option value="[[++site_url]][[~[[+id]]]]">[[+pagetitle]]</option>
 
-                        </select>
-                    </fieldset>
-                </form-->
-                <a href="" title="Menu" class="cell mobile">
-                    <svg class="icon icon-menu" viewBox="-9 5 61 37">
-                        <use xlink:href="#icon-menu"></use>
-                    </svg>
-                </a>
-                <ul>
-                    <li>
+                            </select>
+                        </fieldset>
+                    </form-->
+                    <a href="" title="Menu" class="cell mobile">
+                        <svg class="icon icon-menu" viewBox="-9 5 61 37">
+                            <use xlink:href="#icon-menu"></use>
+                        </svg>
+                    </a>
+                    <ul>
 [[!getResources?
     &parents=`1`
     &resources=`1,2,3,-4`
@@ -129,9 +129,9 @@
     &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
     &depth=`0`
  ]]
-                    </li>
-                </ul>
-            </header>
+                    </ul>
+                </header>
+            </div>
             <section class="central clearfix">
                 <h1>[[*pagetitle]]</h1>
 [[!breadcrumbs?

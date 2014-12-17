@@ -39,7 +39,7 @@ nav
         transition: width 0.5s ease 0s
         width: 215px
     p
-        @include font-mask( bold, em( 18, 16 ), 1.5em, $font, #333333 )
+        @include font-mask( bold, em( 18, 16 ), 1.5em, $asap-regular, #333333 )
         position: relative
         text-indent: 20px
         text-transform: uppercase
@@ -62,7 +62,7 @@ nav
             padding: 15px 20px !important
             width: 100%
             a
-                @include font-mask( normal, em( 15, 16 ), 1.5em, $font, $text-normal )
+                @include font-mask( normal, em( 15, 16 ), 1.5em, $asap-regular, $text-normal )
                 &:hover,&.active
                     color: $text-active !important
             a[title="Mariano Dominguez Minvielle"]
@@ -86,7 +86,7 @@ nav
                     &.triangle
                         display: none
                     a
-                        @include font-mask( normal, em( 14, 16 ), 1.5em, $font, $text-normal )
+                        @include font-mask( normal, em( 14, 16 ), 1.5em, $asap-regular, $text-normal )
 footer
     height: auto
     left: auto
@@ -94,7 +94,7 @@ footer
     padding: 0
     position: relative
     p
-        @include font-mask( normal, em( 9, 16 ), em( 13, 9 ), $font, $footer-text )
+        @include font-mask( normal, em( 9, 16 ), em( 13, 9 ), $asap-regular, $footer-text )
 .desktop
     display: none
 .mobile
@@ -102,13 +102,6 @@ footer
 .wrapper
 .central
     width: 95%
-.icon
-    display: inline-block
-    width: 45px
-    height: 45px
-    fill: currentColor
-.icon-menu
-    /*fill: #fff210*/
 .cell
     color: #fff210
     float: right
@@ -117,4 +110,10 @@ footer
     position: relative
     width: 45px
     z-index: 5
-    
+.icon
+    display: inline-block
+    width: 45px
+    height: 45px
+    fill: currentColor
+.icon-menu
+    /*fill: #fff210*/
