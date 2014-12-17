@@ -13,14 +13,14 @@ html,body
         position: relative
         transition: all 0.5s ease
         z-index: 1
-        h2
+        p
             display: inline-block
             float: left
-            height: 100%
+            height: 52px
             margin: 0
             text-indent: -2000em
             transition: all 0.5s ease
-            width: 35%
+            width: 11.770833333%
             a
                 color: transparent
                 display: block
@@ -94,18 +94,24 @@ html,body
                             display: block
                             transition: all 1s ease 1s
         ul
-            height: 82px
+            display: inline-block
+            float: right
+            height: 100%
             margin: 0
             padding: 0
+            width: auto
             li
                 float: left
+                height: 100%
                 list-style: none inside
                 padding: 0
+                position: relative
                 width: 121px
                 &.current
                     &:after
-                        @include triangle ( transparent, none, 0, transparent, none, 0, $dark-green, solid, 30px, transparent, none, 0 )
+                        @include triangle ( transparent, solid, 10px, transparent, solid, 10px, $dark-green, solid, 10px, transparent, solid, 10px )
                         bottom: 0
+                        content: " "
                         left: 50%
                         margin: 0 0 0 ( -30px / 2 )
                         position: absolute
@@ -116,8 +122,24 @@ html,body
                     text-align: center
                     text-decoration: none
                     width: 100%
+.banner
+    img
+        margin: 20px auto 0
+    figcaption
+        p
+            @include font-mask( normal, em( 11, 16 ), 1.5em, $asap-regular, $text-normal )
+            margin: 20px auto
 footer
-    background: linear-gradient( top to bottom, $light-green, $dark-green )
+    background: rgb(150,196,0) /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2YzQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZWE4NGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+    background: -moz-linear-gradient(top, $light_green 0%, $dark_green 100%) /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$light_green), color-stop(100%,$dark_green)) /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, $light_green 0%,$dark_green 100%) /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $light_green 0%,$dark_green 100%) /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $light_green 0%,$dark_green 100%) /* IE10+ */
+    background: linear-gradient(to bottom, $light_green 0%,$dark_green 100%) /* W3C */
+
     bottom: 0
     box-sizing: border-box
     clear: both
@@ -128,6 +150,9 @@ footer
         @include font-mask( normal, em( 9, 16 ), em( 25, 9 ), $asap-bold, $white-color )
         margin: 0
         text-align: center
+.lt-ie9,.lt-ie8,.lt-ie7
+    .gradient
+        filter: none
 .desktop
 .mobile
     display: none
