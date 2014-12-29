@@ -13,7 +13,7 @@
 [[!getResources?
     &parents=`4`
     &depth=`1`
-    &where=`{"id:!=":[[*id]],"template:=":1}`
+    &where=`{"id:!=":[[*id]],"template:=":4}`
     &limit=`0`
     &showUnpublished=`1`
     &showHidden=`1`
@@ -24,8 +24,6 @@
     &sortby=`{"menuindex":"ASC","createdon":"ASC","publishedon":"ASC"}`
     &tplPath=`[[++assets_path]]../Code/chunks/`
     &tpl=`@FILE municipality-list-item.html`
-    &tplCondition=`id`
-    &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
  ]]
 
                         </ul>
@@ -58,6 +56,8 @@
     &includeContent=`0`
     &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
     &depth=`0`
+    &tplCondition=`id`
+    &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
  ]]
                     </ul>
                 </header>

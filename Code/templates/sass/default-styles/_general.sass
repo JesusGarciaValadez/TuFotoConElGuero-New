@@ -99,7 +99,7 @@ html,body
                 list-style: none inside
                 padding: 0
                 position: relative
-                width: 121px
+                width: 12.604166667vw
                 &.current
                     &:after
                         @include triangle ( transparent, solid, 10px, transparent, solid, 10px, $dark-green, solid, 10px, transparent, solid, 10px )
@@ -109,7 +109,7 @@ html,body
                         margin: 0 0 0 ( -30px / 2 )
                         position: absolute
                 a
-                    @include font-mask( normal, em( 14, 16 ), em( 82, 14 ), $asap-regular, $placeholder-color )
+                    @include font-mask( normal, 1.4583vw, 82px, $asap-regular, $placeholder-color )
                     display: block
                     height: 100%
                     text-align: center
@@ -123,6 +123,7 @@ html,body
         p
             @include font-mask( normal, em( 11, 16 ), 1.5em, $asap-regular, $text-normal )
             margin: 20px auto
+            text-align: center
 footer
     background: rgb(150,196,0) /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -140,8 +141,9 @@ footer
     height: 25px
     margin: 0
     padding: 0
+    width: 100%
     p
-        @include font-mask( normal, em( 9, 16 ), em( 25, 9 ), $asap-bold, $white-color )
+        @include font-mask( normal, 0.9375vw, em( 25, 9 ), $asap-bold, $white-color )
         margin: 0
         text-align: center
 .lt-ie9,.lt-ie8,.lt-ie7
@@ -153,7 +155,7 @@ footer
 .central
     display: block
     margin: 0 auto
-    width: 93.75%
+    width: 93.75vw
     .B_crumbBox
         @include font-mask( normal, em( 16, 16  ), 1.5em, $asap-regular, $text-normal )
         display: block
@@ -185,4 +187,3 @@ footer
 .wrapper
     display: table
     width: 100%
-

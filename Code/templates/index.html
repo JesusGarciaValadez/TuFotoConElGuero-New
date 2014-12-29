@@ -81,7 +81,7 @@
 [[!getResources?
     &parents=`4`
     &depth=`1`
-    &where=`{"id:!=":[[*id]],"template:=":1}`
+    &where=`{"id:!=":[[*id]],"template:=":4}`
     &limit=`0`
     &showUnpublished=`1`
     &showHidden=`1`
@@ -92,8 +92,6 @@
     &sortby=`{"menuindex":"ASC","createdon":"ASC","publishedon":"ASC"}`
     &tplPath=`[[++assets_path]]../Code/chunks/`
     &tpl=`@FILE municipality-list-item.html`
-    &tplCondition=`id`
-    &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
  ]]
 
                         </ul>
@@ -126,18 +124,35 @@
     &includeContent=`0`
     &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
     &depth=`0`
+    &tplCondition=`id`
+    &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
  ]]
                     </ul>
                 </header>
             </div>
             <section class="central clearfix">
 [[!getResources?
-    &parents=`1`
-    &depth=`0`
-    &where=`{"id:!=":[[*id]],"template:=":1}`
+    &parents=`4`
+    &depth=`1`
+    &where=`{"id:!=":[[*id]],"template:=":6}`
     &limit=`12`
-    &showUnpublished=`0`
-    &showHidden=`0`
+    &showUnpublished=`1`
+    &showHidden=`1`
+    &includeContent=`1`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &sortby=`{"menuindex":"ASC","createdon":"ASC","publishedon":"ASC"}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE municipality-list-item.html`
+ ]]
+[[!getResources?
+    &parents=`4`
+    &depth=`1`
+    &where=`{"id:!=":[[*id]],"template:=":6}`
+    &limit=`12`
+    &showUnpublished=`1`
+    &showHidden=`1`
     &includeContent=`0`
     &includeTVs=`1`
     &processTVs=`1`
@@ -145,6 +160,8 @@
     &sortby=`RAND()`
     &tplPath=`[[++assets_path]]../Code/chunks/`
     &tpl=`@FILE mosaic-figure-item.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
  ]]
             </section>
         <figure class="wrapper banner">
