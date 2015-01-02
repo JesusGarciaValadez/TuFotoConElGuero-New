@@ -1,6 +1,8 @@
+$font-size: 16px
 html,body
     background: url('../img/home/linen-yellow.jpg') repeat scroll 0 0 transparent
     display: table
+    font-size: $font-size
     height: 100%
     width: 100%
 .header
@@ -20,7 +22,7 @@ html,body
             float: left
             height: 52px
             margin: ( -52px / 2 ) auto 0
-            position: absolute
+            position: relative
             transition: all 0.5s ease
             text-indent: -2000em
             top: 50%
@@ -43,7 +45,7 @@ html,body
         .cell
             color: $dark_green
             float: right
-            font-size: em( 16, 16 )
+            font-size: em( 16, $font-size )
             overflow: hidden
             position: relative
             width: 45px
@@ -56,36 +58,56 @@ html,body
             .icon-menu
                 /*fill: #fff210*/
         nav
-            clear: right
-            float: right
-            margin: ( -23px / 2 ) auto 0
+            background-color: $white-color
+            box-sizing: border-box
+            display: inline-block
+            height: 46.341463415%
+            left: 25.104166667%
+            margin: ( -30px / 2 ) auto 0
+            overflow: hidden
             position: absolute
-            right: 0
             top: 50%
+            width: 23.75%
             ul
-                margin: 0 auto
-                padding: 0
+                box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.50)
+                box-sizing: border-box
+                float: left
+                height: 78.947368421%
+                margin: 4px 0 0 4px
+                padding: 0 13px
+                width: 76.754385965%
                 li
-                    border-right: 1px solid $text-normal
                     box-sizing: border-box
-                    float: left
-                    padding: 0 20px
+                    clear: both
+                    padding: 0
                     position: relative
-                    &:first-child
-                        padding: 0 20px 0 0
-                    &:last-child
-                        border-right: 0 none transparent
-                        padding: 0 0 0 20px
+                    width: 100%
                     a
-                        @include font-mask( normal, em( 12, 16 ), em( 15, 12 ), $asap-regular, $text-normal )
+                        @include font-mask( normal, em( 14, $font-size ), em( 30, 14 ), $asap-regular, $text-municipality )
                         text-align: center
                         text-decoration: none
-                        text-transform: uppercase
-                        &:hover,&.active
-                            color: $text-active
-                        &:hover ~ ul
-                            display: block
-                            transition: all 1s ease 1s
+                        text-transform: capitalize
+            button
+                background-color: $light-green
+                box-sizing: border-box
+                box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.50)
+                border: 0 none transparent
+                border-radius: 3px
+                display: inline-block
+                height: 78.947368421%
+                margin: 4px 0 0 15px
+                position: relative
+                width: 13.157894737%
+                .arrow-down
+                    bottom: 0
+                    display: inline-block
+                    height: 14px
+                    left: 0
+                    margin: auto
+                    position: absolute
+                    right: 0
+                    top: 0
+                    width: 18px
         ul
             display: inline-block
             float: right
@@ -99,7 +121,7 @@ html,body
                 list-style: none inside
                 padding: 0
                 position: relative
-                width: 12.604166667vw
+                width: 15.625vw
                 &.current
                     &:after
                         @include triangle ( transparent, solid, 10px, transparent, solid, 10px, $dark-green, solid, 10px, transparent, solid, 10px )
@@ -109,7 +131,7 @@ html,body
                         margin: 0 0 0 ( -30px / 2 )
                         position: absolute
                 a
-                    @include font-mask( normal, 1.4583vw, 82px, $asap-regular, $placeholder-color )
+                    @include font-mask( normal, 1.5625vw, 82px, $asap-regular, $placeholder-color )
                     display: block
                     height: 100%
                     text-align: center
@@ -119,11 +141,13 @@ html,body
     img
         display: block
         margin: 20px auto 0
+        width: 80.2734375%
     figcaption
         p
-            @include font-mask( normal, em( 11, 16 ), 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 1.07421875vw, 1.5em, $asap-regular, $text-normal )
             margin: 20px auto
             text-align: center
+            width: 93.75vw
 footer
     background: rgb(150,196,0) /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -141,6 +165,7 @@ footer
     height: 25px
     margin: 0
     padding: 0
+    position: relative
     width: 100%
     p
         @include font-mask( normal, 0.9375vw, em( 25, 9 ), $asap-bold, $white-color )
