@@ -26,23 +26,10 @@
     //  When DOM is loaded
     $( function ( ) {
 
-        window.navigator.userAgent = userAgent    = ( window.navigator.userAgent );
-        //( deviceWidth >= minDeviceWidth && deviceWidth <= maxDeviceWidth ) ? isPortable  = true : isPortable  = false;
-        ( userAgent.indexOf( 'iPhone ' ) || userAgent.indexOf( 'Android' ) ) ? isPortable  = true : isPortable  = false;
-
-        window.typeOfDevice = typeOfDevice  = ( isPortable ) ? "mobile" : "desktop";
-
-        window.isPortable   = isPortable;
-
-        if ( isPortable ) { //  Si es un móvil...
-
-
-        } //  Si es un móvil...
     } );
 
     //  When page is finished loaded
     $( 'document' ).ready( function ( e ) {
 
-        
     } );
 } ) ( jQuery, window, document );
