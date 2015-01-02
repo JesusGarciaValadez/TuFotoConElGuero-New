@@ -10,23 +10,18 @@
                     </p>
                     <nav class="clearfix desktop">
                         <ul class="clearfix">
-[[!getResources?
-    &parents=`4`
-    &depth=`1`
-    &where=`{"id:!=":[[*id]],"template:=":4}`
-    &limit=`0`
-    &showUnpublished=`1`
-    &showHidden=`1`
-    &includeContent=`1`
-    &includeTVs=`1`
-    &processTVs=`1`
-    &tvPrefix=``
-    &sortby=`{"menuindex":"ASC","createdon":"ASC","publishedon":"ASC"}`
-    &tplPath=`[[++assets_path]]../Code/chunks/`
-    &tpl=`@FILE municipality-list-item.html`
- ]]
-
+                            <li>
+                                <a title="Amatán" href="#">Amatán</a>
+                            </li>
+                            <li>
+                                <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
+                            </li>
                         </ul>
+                        <button type="button">
+                            <svg class="arrow-down" viewBox="7 1 9 14">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                        </button>
                     </nav>
                     <!--form action="" method="post" class="clearfix mobile">
                         <fieldset>
@@ -44,8 +39,8 @@
                     </a>
                     <ul class="clearfix">
 [[!getResources?
-    &parents=`1`
     &resources=`1,2,3,-4`
+    &limit=`3`
     &tplPath=`[[++assets_path]]../Code/chunks/`
     &tpl=`@FILE menu-list-item.html`
     &includeTVs=`1`
@@ -56,9 +51,8 @@
     &includeContent=`0`
     &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
     &depth=`0`
-    &tplCondition=`id`
-    &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
  ]]
+                        </li>
                     </ul>
                 </header>
             </div>
