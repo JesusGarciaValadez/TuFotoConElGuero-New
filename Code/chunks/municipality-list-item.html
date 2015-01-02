@@ -1,11 +1,10 @@
-                        <li>
-                            <a href="[[!getResources?
+[[!getResources?
     &parents=`4`
     &depth=`1`
-    &where=`{'id:!=':[[*id]],'template:=':1}`
+    &where=`{'id:!=':[[*id]],'template:=':4}`
     &limit=`0`
-    &showUnpublished=`1`
-    &showHidden=`1`
+    &showUnpublished=`0`
+    &showHidden=`0`
     &includeContent=`1`
     &includeTVs=`1`
     &processTVs=`1`
@@ -15,5 +14,9 @@
     &tpl=`@FILE municipality-list-item-url.html`
     &tplCondition=`id`
     &conditionalTpls=`{'20':'@FILE menu-list-item-conditional.html'}`
- ]]" title="[[+pagetitle]]">[[+pagetitle]]</a>
+    &toPlaceholder=`urlParent`
+ ]]
+ <p>[[+urlParent]][[+idx]]</p>
+                        <li>
+                            <a href="[[+urlParent]][[+idx]]" title="[[+pagetitle]]">[[+pagetitle]]</a>
                         </li>
