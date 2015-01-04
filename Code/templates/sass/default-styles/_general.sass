@@ -209,6 +209,71 @@ footer
             @include font-mask( normal, em( 12, 16  ), 1.5em, $asap-regular, $text-normal )
             text-transform: uppercase
 .page
+    h1
+        @include font-mask( normal, 2.34375vw, 2.63671875vw, $asap-bold, $dark-green )
+    section
+        p
+            @include font-mask( normal, 1.26953125vw, 1.85546875vw, $asap-regular, $text-normal )
+input[type="text"]
+    @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
+    background: $white-color
+    border: 0 none transparent
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    box-sizing: border-box
+.button
+    @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $white-color )
+    background: $light_green
+    border: 0 none transparent
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    box-sizing: border-box
+    padding: 0.9765625vw 1.953125vw
+    &:hover
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2YzQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MWEzMzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+        background: -moz-linear-gradient(top,  $light-green 0%, $shadow-button 100%) /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$light-green), color-stop(100%,$shadow-button)) /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* IE10+ */
+        background: linear-gradient(to bottom,  $light-green 0%,$shadow-button 100%) /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-green', endColorstr='$shadow-button',GradientType=0 ) /* IE6-8 */
+    &:active, &:visited
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2YzQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MWEzMzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+        background: -moz-linear-gradient(top,  $light-green 0%, $shadow-button-active 100%) /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$light-green), color-stop(100%,$shadow-button-active)) /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* IE10+ */
+        background: linear-gradient(to bottom,  $light-green 0%,$shadow-button-active 100%) /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-green', endColorstr='$shadow-button-active',GradientType=0 ) /* IE6-8 */
+        box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50)
+    &:disabled
+        @include font-mask( normal, 1.26953125vw, 1.46484375vw, $asap-regular, $placeholder-color )
+        background: #D8D8D8
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+.alert
+    @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $white-color )
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    box-sizing: border-box
+    float: right
+    margin: 1.95313vw 9.9609375vw 0 0
+    padding: 1.5625vw 1.953125vw
+    width: 31.25vw
+    .info
+        display: inline-block
+        float: left
+        height: 2.34375vw
+        margin-right: 1.171875vw
+        width: 2.34375vw
+    p
+        @include font-mask( normal, 1.953125vw !important, 2.24609375vw !important, $asap-regular !important, $white-color !important )
+        float: left
+        margin: 0
+    &.success
+        background: $success-alert
+    &.fail
+        background: $fail-alert
+    &.info
+        background: $info-alert
 .wrapper
     display: table
     width: 100%
