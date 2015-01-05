@@ -7,14 +7,112 @@
 
             <section class="central clearfix">
                 <h1>[[*pagetitle]]</h1>
+                <div class="year-picker-wrapper clearfix">
+                    <p>Selecciona un año</p>
+                    <ul class="year-picker clearfix">
+                        <li>
+                            <a href="#">2013 | </a>
+                        </li>
+                        <li class="current">
+                            <a href="#">2014</a>
+                        </li>
+                    </ul>
+                </div>
 <!--@import breadcrumbs-->
-                [[!siblingNav]]
-                [[+sn.prev]]
-                <figure class="clearfix">
-                    <img src="[[++site_url]][[*photo]]" alt="[[+pagetitle]]" />
-                    <div class="display"></div>
-                </figure>
-                [[+sn.next]]
+                [[!getPage?
+                    &element=`getResources`
+                    &parents=`[[*id]]`
+                    &depth=`2`
+                    &limit=`12`
+                    &pageVarKey=`page`
+                    &includeTVs=`1`
+                    &includeContent=`1`
+                    &tpl=`events-figure-item`
+                ]]
+                <div class="paging clearfix">
+                    <!--ul class="pageList">[[!+page.nav]]</ul-->
+                    <ul class="pageList clearfix">
+                        <li>
+                            <a href="#" class="clearfix">&lt;</a>
+                        </li>
+                        <li class="current">
+                            <a href="#" class="clearfix">1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="button return">Regresar</button>
+                <div class="principal-photography">
+                    [[!siblingNav]]
+                    [[+sn.prev]]
+                    <figure class="clearfix">
+                        <img src="[[++site_url]][[*photo]]" alt="[[*pagetitle]]" />
+                        <div class="display">
+                            <p>[[*description]]</p>
+                        </div>
+                    </figure>
+                    [[+sn.next]]
+                </div>
+                <aside class="clearfix">
+                    <h2>Comparte tu foto</h2>
+                    <ul class="clearfix">
+                        <li class="social-button clearfix">
+                            <a href="#" title="Facebook">
+                                <img src="[[++site_url]]assets/home/facebook.png" alt="Facebook" with="34" height="34" />
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="social-button clearfix">
+                            <a href="#" title="Google +">
+                                <img src="[[++site_url]]assets/home/google.png" alt="Google +" with="34" height="34" />
+                                <span>Google +</span>
+                            </a>
+                        </li>
+                        <li class="social-button clearfix">
+                            <a href="#" title="Twitter">
+                                <img src="[[++site_url]]assets/home/twitter.png" alt="Twitter" with="34" height="34" />
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                        <li class="social-button clearfix">
+                            <a href="#" title="Descarga tu foto">
+                                <img src="[[++site_url]]assets/home/download.png" alt="Descarga tu foto" with="34" height="34" />
+                                <span>Descarga tu foto</span>
+                            </a>
+                        </li>
+                        <li class="social-button clearfix">
+                            <a href="#" title="Envía tu foto por correo">
+                                <img src="[[++site_url]]assets/home/share.png" alt="Envía tu foto por correo" with="34" height="34" />
+                                <span>Envía tu foto por correo</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form method="post" action="[[++site_url]]Code/snippets/controller.php?action=share">
+                        <fieldset class="clearfix">
+                            <div class="input email clearfix" validate="validate">
+                                <input type="email" name="email" required="required" placeholder="Correo Electrónico"  class="input" />
+                                <input type="hidden" name="image" value="[[++site_url]][[*photo]]" />
+                            </div>
+                            <div class="input submit clearfix">
+                                <input type="submit" class="button" value="Enviar" />
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="alert success clearfix">
+                        <svg class="info" viewBox="23 27 20 26">
+                            <use xlink:href="#info-icon"></use>
+                        </svg>
+                        <p>Éxito</p>
+                    </div>
+                </aside>
             </section>
         </div>
 

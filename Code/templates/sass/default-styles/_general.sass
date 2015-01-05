@@ -183,10 +183,15 @@ footer
     width: 93.75vw
     .B_crumbBox
         @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
+        clear: left
         display: block
+        float: left
         margin: 0 0 15px
+        overflow: hidden
         padding: 0
-        width: 100%
+        text-overflow: ellipsis
+        width: 66%
+        white-space: nowrap
         li
             display: inline-block
             list-style: none inside
@@ -213,12 +218,22 @@ footer
     section
         p
             @include font-mask( normal, 1.26953125vw, 1.85546875vw, $asap-regular, $text-normal )
-input[type="text"]
+label
+    @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $dark_green )
+    clear: both
+    display: block
+input[type="text"], input[type="email"]
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
-    background: $white-color
-    border: 0 none transparent
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
     box-sizing: border-box
+    float: left
+    display: block
+    padding: 0 1.5625vw
+input[placeholder],
+::-moz-placeholder,/* firefox 19+ */
+input:-moz-placeholder
+    @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
+    text-overflow: ellipsis
 .button
     @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $white-color )
     background: $light_green
@@ -253,10 +268,15 @@ input[type="text"]
     @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $white-color )
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
     box-sizing: border-box
+    display: none
     float: right
     margin: 1.95313vw 9.9609375vw 0 0
     padding: 1.5625vw 1.953125vw
+    transition: all 0.5s ease
     width: 31.25vw
+    &.visible
+        display: block
+        transition: all 0.5s ease
     .info
         display: inline-block
         float: left
@@ -273,6 +293,59 @@ input[type="text"]
         background: $fail-alert
     &.info
         background: $info-alert
+.year-picker-wrapper
+    display: inline-block
+    float: right
+    margin: 1.953125vw 0
+    p, .year-picker
+        @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $text-municipality )
+        float: left
+    p
+        margin: 0 0.87890625vw 0 0
+    .year-picker
+        margin: 0
+        padding: 0
+        li
+            float: left
+            padding: 0
+            list-style: none inside
+            a
+                color: $text-municipality
+                text-decoration: none
+            &.current
+                a
+                    color: $dark_green
+.paging
+    float: right
+    margin: 0
+    width: 34%
+    .pageList
+        float: right
+        margin: 0
+        padding: 0
+        li
+            background: #F5F5F5
+            box-sizing: border-box
+            display: inline-block
+            float: left
+            height: 3.3203125vw
+            margin: 0 0.390625vw 0
+            width: 3.3203125vw
+            a
+                @include font-mask( normal, 1.3671875vw, 3.3203125vw, $asap-bold, $placeholder-color )
+                display: block
+                height: 100%
+                text-align: center
+                text-decoration: none
+                width: 100%
+            &.current
+                background: $light-green
+                a
+                    color: $white-color
+.return
+    clear: both
+    display: block
+    margin: 1.953125vw 0 0
 .wrapper
     display: table
     width: 100%
