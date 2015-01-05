@@ -182,7 +182,7 @@ footer
     margin: 0 auto
     width: 93.75vw
     .B_crumbBox
-        @include font-mask( normal, em( 16, 16  ), 1.5em, $asap-regular, $text-normal )
+        @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
         display: block
         margin: 0 0 15px
         padding: 0
@@ -191,11 +191,11 @@ footer
             display: inline-block
             list-style: none inside
             a
+                color: $text-normal
                 text-decoration: none
                 span
-                    @include font-mask( normal, em( 12, 16  ), 1.5em, $asap-regular, $text-normal )
-                    text-transform: uppercase
         .slash_crumb
+            @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -206,8 +206,7 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, em( 12, 16  ), 1.5em, $asap-regular, $text-normal )
-            text-transform: uppercase
+            @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
 .page
     h1
         @include font-mask( normal, 2.34375vw, 2.63671875vw, $asap-bold, $dark-green )

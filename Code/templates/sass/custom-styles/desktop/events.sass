@@ -1,0 +1,95 @@
+.events
+    .wrapper
+        .central
+            h1
+                display: inline-block
+                float: left
+                width: 50%
+            .year-picker-wrapper
+                display: inline-block
+                float: right
+                margin: 1.953125vw 0
+                p, .year-picker
+                    @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $text-municipality )
+                    float: left
+                p
+                    margin: 0 0.87890625vw 0 0
+                .year-picker
+                    margin: 0
+                    padding: 0
+                    li
+                        float: left
+                        padding: 0
+                        list-style: none inside
+            .B_crumbBox
+                clear: left
+                float: left
+                width: 50%
+                li
+                    .B_crumb
+                        span
+                .B_firstCrumb
+                .slash_crumb
+                .B_crumb
+                .B_lastCrumb
+                .B_currentCrumb
+            .paging
+                float: right
+                margin: 0
+                width: 50%
+                .pageList
+                    float: right
+                    margin: 0
+                    padding: 0
+                    li
+                        background: #F5F5F5
+                        box-sizing: border-box
+                        display: inline-block
+                        float: left
+                        height: 3.3203125vw
+                        margin: 0 0.390625vw 0
+                        width: 3.3203125vw
+                        a
+                            @include font-mask( normal, 1.3671875vw, 3.3203125vw, $asap-bold, $placeholder-color )
+                            display: block
+                            height: 100%
+                            text-align: center
+                            text-decoration: none
+                            width: 100%
+                        &.current
+                            background: $light-green
+                            a
+                                color: $white-color
+            .return
+                clear: both
+                display: block
+                margin: 1.953125vw 0 0
+            div.clearfix
+                margin: 1.953125vw 0 0
+                .item
+                    display: inline-block
+                    float: left
+                    height: auto
+                    margin: 0 2.34375vw 2.44140625vw
+                    width: 20.5078125vw
+                    &:nth-child( 1n ), &:nth-child( 5n ), &:nth-child( 9n )
+                        margin: 0 2.34375vw 2.44140625vw 0
+                    &:nth-child( 4n ), &:nth-child( 8n ), &:nth-child( 12n )
+                        margin: 0 0 2.44140625vw 2.34375vw
+                    a
+                        text-decoration: none
+                        img
+                            border: 0.48828125vw solid $white-color
+                            box-sizing: border-box
+                            display: block
+                            height: 13.57421875vw
+                            width: 20.5078125vw
+                        figcaption
+                            p
+                                @include font-mask( normal, 1.26953125vw, 1.46484375vw, $asap-regular, $text_normal )
+                                text-align: center
+                                &.event
+                                    color: $dark_green
+                                    margin: 0.5859375vw 0 0.390625vw
+                                &.date
+                                    margin: 0
