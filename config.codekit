@@ -7194,22 +7194,6 @@
 		"shouldRunBless": 1,
 		"useLibsass": false
 		},
-	"\/Code\/templates\/sass\/custom-styles\/desktop\/event.sass": {
-		"createSourceMap": 1,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 2,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/desktop\/event.sass",
-		"outputAbbreviatedPath": "\/assets\/css\/event.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
-		"useLibsass": false
-		},
 	"\/Code\/templates\/sass\/custom-styles\/desktop\/events.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
