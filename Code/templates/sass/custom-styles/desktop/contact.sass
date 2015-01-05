@@ -8,9 +8,6 @@
                     width: 50%
                     .input
                         label
-                            @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $dark_green )
-                            clear: both
-                            display: block
                             margin: 1.66015625vw 0 1.7578125vw 8.7890625vw
                         sup
                             @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $placeholder-color )
@@ -19,18 +16,8 @@
                             height: 1.26953125vw
                             margin: 1.66015625vw 0.48828125vw 0 7.71484375vw
                         input[type="text"]
-                            @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
-                            box-sizing: border-box
-                            float: left
-                            display: block
                             height: 2.9296875vw
-                            padding: 0 1.5625vw
                             width: 35.64453125vw
-                        input[placeholder],
-                        ::-moz-placeholder,/* firefox 19+ */
-                        input:-moz-placeholder
-                            @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
-                            text-overflow: ellipsis
                         textarea
                             @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
                             background: $white-color
