@@ -1,4 +1,4 @@
-.events
+.events, .event
     .wrapper
         .central
             h1
@@ -21,6 +21,12 @@
                         float: left
                         padding: 0
                         list-style: none inside
+                        a
+                            color: $text-municipality
+                            text-decoration: none
+                        &.current
+                            a
+                                color: $dark_green
             .B_crumbBox
                 clear: left
                 float: left
@@ -70,12 +76,16 @@
                     display: inline-block
                     float: left
                     height: auto
-                    margin: 0 2.34375vw 2.44140625vw
+                    margin: 0 1.953125vw 2.44140625vw
                     width: 20.5078125vw
-                    &:nth-child( 1n ), &:nth-child( 5n ), &:nth-child( 9n )
-                        margin: 0 2.34375vw 2.44140625vw 0
-                    &:nth-child( 4n ), &:nth-child( 8n ), &:nth-child( 12n )
-                        margin: 0 0 2.44140625vw 2.34375vw
+                    &:nth-child( 10n )
+                        margin: 0 1.953125vw 2.44140625vw !important
+                    &:nth-child( 9n ), &:nth-child( 10n ), &:nth-child( 11n ), &:nth-child( 12n )
+                        margin-bottom: 0 !important
+                    &:first-child, &:nth-child( 5n ), &:nth-child( 9n )
+                        margin: 0 1.953125vw 2.44140625vw 0
+                    &:nth-child( 4n ), &:nth-child( 8n ), &:last-child
+                        margin: 0 0 2.44140625vw 1.953125vw
                     a
                         text-decoration: none
                         img

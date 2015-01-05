@@ -185,32 +185,125 @@
             </div>
             <section class="central">
                 <h1>[[*pagetitle]]</h1>
+                <div class="year-picker-wrapper clearfix">
+                    <p>Selecciona un año</p>
+                    <ul class="year-picker clearfix">
+                        <li>
+                            <a href="#">2013 | </a>
+                        </li>
+                        <li class="current">
+                            <a href="#">2014</a>
+                        </li>
+                    </ul>
+                </div>
 [[!breadcrumbs?
     &showHomeCrumb=`0`
-    &showCurrentCrumb=`0`
+    &showCurrentCrumb=`1`
     &currentAsLink=`0`
-    &crumbSeparator=`<span class="slash_crumb"> / </span>`
+    &crumbSeparator=`<span class="slash_crumb"> - </span>`
     &homeCrumbTitle=``
     &homeCrumbDescription=``
     &respectHidemenu=`0`
-]]
+]]                [[!getPage?
+                    &element=`getResources`
+                    &parents=`[[*id]]`
+                    &depth=`2`
+                    &limit=`12`
+                    &pageVarKey=`page`
+                    &includeTVs=`1`
+                    &includeContent=`1`
+                    &tpl=`events-figure-item`
+                ]]
+                <div class="paging clearfix">
+                    <!--ul class="pageList">[[!+page.nav]]</ul-->
+                    <ul class="pageList clearfix">
+                        <li>
+                            <a href="#" class="clearfix">&lt;</a>
+                        </li>
+                        <li class="current">
+                            <a href="#" class="clearfix">1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="button return">Regresar</button>
                 <div class="clearfix">
-[[!getResources?
-    &parents=`[[*id]]`
-    &tplPath=`[[++assets_path]]../Code/chunks/`
-    &tpl=`@FILE event-figure-item.html`
-    &includeTVs=`1`
-    &processTVs=`1`
-    &tvPrefix=``
-    &showUnpublished=`0`
-    &showHidden=`0`
-    &includeContent=`1`
-    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
-    &depth=`0`
-    &limit='0'
- ]]
+                    <figure class="item">
+                        <a href="#" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
+                    <figure class="item">
+                        <a href="[[++site_url]][[~[[+id]]]]" title="[[+menutitle]]" target="_self" class="clearfix">
+                            <img src="[[++site_url]]assets/img/municipios/amatan/2014/visita-a-peluqueria/3_3.jpg" alt="[[+pagetitle]]" width="226" height="150" />
+                        </a>
+                    </figure>
                 </div>
             </section>
+        <figure class="wrapper banner">
+            <img src="[[++site_url]][[*banner]]" alt="" width="" height="" />
+            <figcaption>
+                <p>El contenido de la información publicada en este portal, es exclusiva responsabilidad de quién la emite, en el ejercicio de su libertad de expresión y de la libre manifestación de ideas. Se deslinda de toda responsabilidad a los anunciantes, por ser ajenos a este proceso.</p>
+            </figcation>
+        </figure>
         <footer class="wrapper clearfix gradient">
             <p>Tu Foto con el Güero &copy; 2014 - Todos los derechos reservados.</p>
         </footer>
