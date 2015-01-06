@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="43px" height="42px" viewBox="0 0 43 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Fotografia" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fotografia-desktop" sketch:type="MSArtboardGroup" transform="translate(-677.000000, -363.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(-2.000000, 54.000000)">
+                <g id="Compartir" transform="translate(682.500000, 272.000000)" sketch:type="MSShapeGroup">
+                    <g id="Facebook" transform="translate(1.000000, 41.000000)">
+                        <g id="facebook-button">
+                            <rect id="Rectangle-127" fill="#3D5A99" filter="url(#filter-1)" x="0" y="0" width="34" height="34" rx="3"></rect>
+                            <path d="M18.996875,28.918365 L14.20025,28.918365 L14.20025,16.9591825 L11,16.9591825 L11,12.8376058 L14.20025,12.8362044 L14.194875,10.408292 C14.194875,7.04583942 15.1706875,5 19.4099375,5 L22.93925,5 L22.93925,9.12227737 L20.7334375,9.12227737 C19.0828125,9.12227737 19.0034375,9.69821898 19.0034375,10.7732555 L18.996875,12.8362044 L22.964125,12.8362044 L22.496375,16.957781 L19,16.9591825 L18.996875,28.918365 Z" id="facebook" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

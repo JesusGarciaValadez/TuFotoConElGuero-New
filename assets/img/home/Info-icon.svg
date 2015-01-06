@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Info icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MockUp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="desktop" sketch:type="MSArtboardGroup" transform="translate(-62.000000, -1276.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(-2.000000, 45.000000)">
+                <g id="Validación" transform="translate(44.500000, 1203.000000)" sketch:type="MSShapeGroup">
+                    <g id="Info-icon" transform="translate(20.000000, 28.000000)">
+                        <circle id="Oval-1" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+                        <path d="M7.99621582,11.9035645 C9.20959473,9.91503906 15.4300537,6.18359375 13.15271,11.9552002 C11.8598633,15.0146484 9.2644043,17.5367432 13.9866943,16.0834961 C14.2160645,17.1862793 6.02111816,22.1643066 9.04431152,15.0308838 C13.0616455,8.875 7.71887207,12.1617432 7.99621582,11.9035645 Z" id="Path-4" fill="#767676"></path>
+                        <circle id="Oval-2" fill="#767676" cx="13.5" cy="6.5" r="1.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
