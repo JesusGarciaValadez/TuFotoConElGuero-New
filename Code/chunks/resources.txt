@@ -133,3 +133,15 @@
     &limit='0'
  ]]
  -->
+ <!-- Photography
+                [[!getPage?
+                    &element=`getResources`
+                    &parents=`[[*id]]`
+                    &depth=`2`
+                    &limit=`12`
+                    &pageVarKey=`page`
+                    &includeTVs=`1`
+                    &includeContent=`1`
+                    &tpl=`events-figure-item`
+                ]]
+ -->

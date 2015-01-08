@@ -22,6 +22,18 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+<<<<<<< Updated upstream
+=======
+	"\/assets\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+>>>>>>> Stashed changes
 	"\/assets\/img\/home\/imgo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -438,6 +450,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
+<<<<<<< Updated upstream
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/bootstrap\/less\/alerts.less",
@@ -460,6 +473,30 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
+=======
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap\/less\/alerts.less",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap\/css\/alerts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/bower_components\/bootstrap\/less\/badges.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+>>>>>>> Stashed changes
 		"inputAbbreviatedPath": "\/bower_components\/bootstrap\/less\/badges.less",
 		"outputAbbreviatedPath": "\/bower_components\/bootstrap\/css\/badges.css",
 		"outputPathIsOutsideProject": 0,
@@ -7097,6 +7134,18 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< Updated upstream
+=======
+	"\/Code\/templates\/kit\/photography.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/photography.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/photography.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+>>>>>>> Stashed changes
 	"\/Code\/templates\/kit\/privacy-policy.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -7115,6 +7164,18 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< Updated upstream
+=======
+	"\/Code\/templates\/photography.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/photography.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+>>>>>>> Stashed changes
 	"\/Code\/templates\/privacy-policy.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -7140,6 +7201,25 @@
 		"shouldRunBless": 1,
 		"useLibsass": false
 		},
+<<<<<<< Updated upstream
+=======
+	"\/Code\/templates\/sass\/custom-styles\/desktop\/events.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/desktop\/events.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/events.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+>>>>>>> Stashed changes
 	"\/Code\/templates\/sass\/custom-styles\/desktop\/home.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
