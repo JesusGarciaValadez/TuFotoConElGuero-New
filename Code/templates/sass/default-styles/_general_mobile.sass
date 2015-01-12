@@ -43,7 +43,7 @@ html,body
                 /*fill: #fff210*/
         form
             display: block
-            height: 6.875vw
+            height: auto
             margin: 4.6875vw auto
             position: static
             width: 72.8125vw
@@ -52,6 +52,7 @@ html,body
                 height: 100%
                 width: 100%
                 select
+                    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $text-municipality )
                     display: block
                     width: 100%
         .desktop
@@ -102,7 +103,7 @@ html,body
             margin: 6.25vw auto
             width: 99.25vw
 footer
-    height: 5cw
+    height: 5vw
     width: 100%
     p
         @include font-mask( normal, 2.5vw, em( 25, 8 ), $asap-bold, $white-color )
@@ -113,16 +114,17 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
+        @include font-mask( normal, 4.375vw, 1em, $asap-regular, $text-normal )
+        box-sizing: border-box
         clear: left
         display: block
         float: left
-        margin: 0 0 15px
+        margin: 0 0 6.25vw
         overflow: hidden
-        padding: 0
+        padding: 0 8.75vw
         text-overflow: ellipsis
-        width: 66%
-        white-space: nowrap
+        width: 100%
+        white-space: normal
         li
             display: inline-block
             list-style: none inside
@@ -131,7 +133,7 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
+            @include font-mask( normal, 4.375vw, 1em, $asap-regular, $text-normal )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -142,82 +144,59 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
+            @include font-mask( normal, 4.375vw, 1em, $asap-regular, $text-normal )
 .page
     h1
-        @include font-mask( normal, 6.25vw, 10.78125vw, $asap-bold, $dark-green )
+        @include font-mask( normal, 6.25vw, 7.5vw, $asap-bold, $dark-green )
+        box-sizing: border-box
+        margin: 6.25vw 0 6.25vw 9.0625vw
+        padding: 0
+        width: 100%
     section
-        p
+        > p
             @include font-mask( normal, 3.4375vw, 5.15625vw, $asap-regular, $text-normal )
+            padding: 0 9.0625vw
 label
-    @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $dark_green )
-    clear: both
-    display: block
-input[type="text"], input[type="email"]
-    @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    @include font-mask( normal, 6.25vw, 7.1875vw, $asap-regular, $dark_green )
     box-sizing: border-box
-    float: left
-    display: block
-    padding: 0 1.5625vw
+    width: 100%
+input[type="text"], input[type="email"], textarea
+    @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
+    border-radius: 0
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50) !important
+    float: none
+    margin: 0 auto
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
-    @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
-    text-overflow: ellipsis
+    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
 .button
-    @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $white-color )
-    background: $light_green
-    border: 0 none transparent
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
-    box-sizing: border-box
-    padding: 0.9765625vw 1.953125vw
+    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
+    padding: 3.125vw 6.25vw
+    -moz-appearance: button
     &:hover
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2YzQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MWEzMzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
-        background: -moz-linear-gradient(top,  $light-green 0%, $shadow-button 100%) /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$light-green), color-stop(100%,$shadow-button)) /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* IE10+ */
-        background: linear-gradient(to bottom,  $light-green 0%,$shadow-button 100%) /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-green', endColorstr='$shadow-button',GradientType=0 ) /* IE6-8 */
     &:active, &:visited
-        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2YzQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MWEzMzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
-        background: -moz-linear-gradient(top,  $light-green 0%, $shadow-button-active 100%) /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$light-green), color-stop(100%,$shadow-button-active)) /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* IE10+ */
-        background: linear-gradient(to bottom,  $light-green 0%,$shadow-button-active 100%) /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-green', endColorstr='$shadow-button-active',GradientType=0 ) /* IE6-8 */
-        box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50)
+        box-shadow: inset 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
     &:disabled
-        @include font-mask( normal, 1.26953125vw, 1.46484375vw, $asap-regular, $placeholder-color )
-        background: #D8D8D8
-        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+        @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
+        box-shadow: 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
 .alert
-    @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $white-color )
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
-    box-sizing: border-box
-    display: none
-    float: right
-    margin: 1.95313vw 9.9609375vw 0 0
-    padding: 1.5625vw 1.953125vw
-    transition: all 0.5s ease
-    width: 31.25vw
-    &.visible
-        display: block
-        transition: all 0.5s ease
+    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
+    display: block
+    margin: 6.25vw 0 0
+    min-width: 44.375vw
+    padding: 2.8125vw 3.125vw
+    width: auto
     .info
-        display: inline-block
-        float: left
-        height: 2.34375vw
-        margin-right: 1.171875vw
-        width: 2.34375vw
+        height: 5vw
+        margin-right: 3.4375vw
+        width: 5vw
     p
-        @include font-mask( normal, 1.953125vw !important, 2.24609375vw !important, $asap-regular !important, $white-color !important )
+        @include font-mask( normal, 5vw !important, 5.625vw !important, $asap-regular !important, $white-color !important )
         float: left
         margin: 0
+        width: auto
     &.success
         background: $success-alert
     &.fail
@@ -225,63 +204,39 @@ input:-moz-placeholder
     &.info
         background: $info-alert
 .year-picker-wrapper
-    display: inline-block
+    display: block
     float: right
-    margin: 1.953125vw 0
-    p, .year-picker
-        @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $text-municipality )
-        float: left
-    p
-        margin: 0 0.87890625vw 0 0
-    .year-picker
-        margin: 0
-        padding: 0
-        li
-            float: left
-            padding: 0
-            list-style: none inside
-            a
-                color: $text-municipality
-                text-decoration: none
-            &.current
-                margin: 0 0 0 0.29296875vw
-                a
-                    color: $dark_green
+    margin: 6.25vw 1.25vw 6.25vw 0
+    width: auto
+    form
+        fieldset
+            select
+                @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $text-municipality )
+                option
 .paging
-    float: right
-    margin: 0
-    width: 34%
+    display: block
+    margin: 0 0 6.25vw
+    width: 100%
     .pageList
-        float: right
-        margin: 0
-        padding: 0
+        display: block
+        float: none
+        margin: 0 auto
+        width: 78.125vw
         li
-            background: #F5F5F5
-            box-sizing: border-box
-            display: inline-block
-            float: left
-            height: 3.3203125vw
-            margin: 0 0.390625vw 0
-            width: 3.3203125vw
+            height: 12.5vw
+            margin: 0 1.875vw 0
+            width: 12.5vw
+            &:first-child
+                margin: 0 1.875vw 0 0
+            &:last-child
+                margin: 0 0 0 1.875vw
             a
-                @include font-mask( normal, 1.3671875vw, 3.3203125vw, $asap-bold, $placeholder-color )
-                display: block
+                @include font-mask( normal, 6.25vw, 12.5vw, $asap-bold, $placeholder-color )
                 height: 100%
-                text-align: center
-                text-decoration: none
                 width: 100%
                 .arrow
-                    height: 100%
-                    fill: $placeholder-color
-                    width: 100%
-            &.current
-                background: $light-green
-                a
-                    color: $white-color
 .return
-    clear: both
-    display: block
-    margin: 1.953125vw 0 0
+    margin: 6.25vw 0 0 8.125vw
 .wrapper
     display: table
     width: 100%

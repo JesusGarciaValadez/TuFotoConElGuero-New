@@ -4,38 +4,37 @@
             h1
                 display: inline-block
                 float: left
-                width: 50%
+                width: 52.8125vw
+            button
+                margin-bottom: 6.25vw
             > div.clearfix
                 &:last-child
                     margin: 1.953125vw 0 0
                     .item
+                        box-sizing: border-box
                         display: inline-block
                         float: left
                         height: auto
-                        margin: 0 1.953125vw 2.44140625vw
-                        width: 20.5078125vw
-                        &:nth-child( 10n )
-                            margin: 0 1.953125vw 2.44140625vw !important
-                        &:nth-child( 9n ), &:nth-child( 10n ), &:nth-child( 11n ), &:nth-child( 12n )
-                            margin-bottom: 0 !important
-                        &:first-child, &:nth-child( 5n ), &:nth-child( 9n )
-                            margin: 0 1.953125vw 2.44140625vw 0
-                        &:nth-child( 4n ), &:nth-child( 8n ), &:last-child
-                            margin: 0 0 2.44140625vw 1.953125vw
+                        margin: 0 0.3125vw 0.3125vw !important
+                        width: 32.3125vw
+                        &:first-child, &:nth-child( 4n ),
+                        &:nth-child( 7n ), &:nth-child( 10n )
+                            margin: 0 0.3125vw 0.3125vw 0.625vw !important
+                        &:nth-child( 3n ), &:nth-child( 6n ),
+                        &:nth-child( 9n ), &:last-child
+                            margin: 0 0 0.3125vw 0.625vw !important
                         a
-                            text-decoration: none
                             img
                                 border: 0.48828125vw solid $white-color
                                 box-sizing: border-box
                                 display: block
-                                height: 13.57421875vw
-                                width: 20.5078125vw
+                                height: 21.6875vw
+                                width: 32.3125vw
                             figcaption
                                 p
-                                    @include font-mask( normal, 1.26953125vw, 1.46484375vw, $asap-regular, $text_normal )
-                                    text-align: center
+                                    @include font-mask( normal, 2.8125vw, 3.125vw, $asap-regular, $text_normal )
                                     &.event
                                         color: $dark_green
-                                        margin: 0.5859375vw 0 0.390625vw
+                                        margin: 0 auto
                                     &.date
-                                        margin: 0
+                                        margin: 0 auto
