@@ -41,7 +41,7 @@
 /* ==========================================================================
    iPhone 3GS/4/4S Portrait Orientation
    ========================================================================== */
-@media only screen and (min-width: 35em)
+@media only screen and (min-width: em( 560 ))
     /* Style adjustments for viewports that meet the condition */
 
 /* ==========================================================================
@@ -49,8 +49,13 @@
    ========================================================================== */
 @media only screen and (max-width: em( 568, 16 ))
     /* Style adjustments for viewports that meet the condition */
-    //@import "default-styles/_general_mobile"
-    //@import "custom-styles/mobile/home_mobile"
+    @import "default-styles/_general_mobile"
+
+    @import "custom-styles/mobile/home_mobile"
+    @import "custom-styles/mobile/contact-mobile"
+    @import "custom-styles/mobile/privacy-policy-mobile"
+    @import "custom-styles/mobile/events-mobile"
+    @import "custom-styles/mobile/photography-mobile"
 
 /* ==========================================================================
    iPhone 5/5S Landscape Orientation
@@ -63,17 +68,17 @@
    iPad
    ========================================================================== */
 @media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1024, 16 ))
-
+    @import "default-styles/_general_mobile"
 
 /* ==========================================================================
    iPad Portrait Orientation
    ========================================================================== */
-@media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1024, 16 )) and (orientation:portrait)
+@media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1023, 16 )) and (orientation:portrait)
 
 /* ==========================================================================
    iPad Landscape Orientation
    ========================================================================== */
-@media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1024, 16 )) and (orientation:landscape)
+@media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1023, 16 )) and (orientation:landscape)
 
 /* ==========================================================================
    Desktop High Resolution

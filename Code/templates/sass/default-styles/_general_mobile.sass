@@ -1,119 +1,287 @@
+$font-size: 16px
 html,body
-    -webkit-overflow-scrolling: touch
-    ::-webkit-scrollbar,:-webkit-scrollbar
-        -webkit-appearance: none
-        width: 8px
-header
-    height: 60px
-    margin: 0 auto 13px
-    transition: all 0.5s ease
-    z-index: 0
-    h2
-        transition: all 0.5s ease
-        width: 70%
-        a
-            span
-            img
-                height: auto
-                left: 0
-                position: absolute
-                top: 0
-                width: 100%
-nav
-    background: #141414
-    clear: none
-    display: none
-    float: right
-    height: 100%
-    margin: 0
-    min-height: 575px
-    overflow: hidden
-    position: absolute
-    right: 0
-    transition: width 0.5s ease 0s
-    top: 0
-    width: 0
-    z-index: 6
-    &.active
-        display: block
-        transition: width 0.5s ease 0s
-        width: 215px
-    p
-        @include font-mask( bold, em( 18, 16 ), 1.5em, $asap-regular, #333333 )
-        position: relative
-        text-indent: 20px
-        text-transform: uppercase
-        &:after
-            content: "x"
-            cursor: pointer
-            font-size: em( 20, 15 )
-            line-height: 1em
-            position: absolute
-            right: 5%
-            text-transform: lowercase
-    ul
+.header
+    border-bottom: 0 none transparent
+    header
+        border-bottom: $dark-green solid 3px
+        height: auto
         margin: 0 auto
-        padding: 0
-        li
-            border-right: 0 none transparent !important
-            box-sizing: border-box
+        position: relative
+        p
             clear: both
-            float: auto
-            padding: 15px 20px !important
+            display: block
+            float: none
+            height: 18.75vw
+            margin: 5vw auto 0
+            position: static
+            width: 39.375vw
+            .logo
+                height: 100%
+                width: 100%
+                span
+                    display: none
+                .logo-vector
+                    display: inline-block
+                    fill: red
+                    height: 100%
+                    width: 100%
+        .cell
+            color: $dark_green
+            float: none
+            height: 8.125vw
+            position: absolute
+            right: 3.75vw
+            top: 5.9375vw
+            width: 9.375vw
+            z-index: 5
+            .icon
+                display: inline-block
+                width: 100%
+                height: 100%
+                fill: $dark_green
+            .icon-menu
+                /*fill: #fff210*/
+        form
+            display: block
+            height: 6.875vw
+            margin: 4.6875vw auto
+            position: static
+            width: 72.8125vw
+            fieldset
+                display: block
+                height: 100%
+                width: 100%
+                select
+                    display: block
+                    width: 100%
+        .desktop
+            display: none
+    ul
+        display: block
+        float: none
+        height: auto
+        margin: 0
+        padding: 0
+        position: relative
+        transition: all 0.5s ease
+        width: 100%
+        &.active
+            &:before
+                @include triangle ( $dark-green, solid, 10px, transparent, solid, 10px, transparent, solid, 10px, transparent, solid, 10px )
+                bottom: auto
+                content: " "
+                left: auto
+                margin: 0
+                position: absolute
+                right: 3.75vw
+                top: 0
+            li
+                display: list-item
+                height: 14.375vw
+                transition: all 0.5s ease
+        li
+            display: none
+            float: none
+            height: 0
+            transition: all 0.5s ease
             width: 100%
             a
-                @include font-mask( normal, em( 15, 16 ), 1.5em, $asap-regular, $text-normal )
-                &:hover,&.active
-                    color: $text-active !important
-            a[title="Mariano Dominguez Minvielle"]
-                color: $text-normal
-            ul
-                background-color: transparent
+                @include font-mask( normal, 5vw, 14.375vw, $asap-regular, $placeholder-color )
                 display: block
-                padding: 20px 0 0
-                position: static
+                height: 100%
+                text-align: center
+                text-decoration: none
                 width: 100%
-                li
-                    border-bottom: 1px solid $submenu-separator
-                    border-right: 0 none transparent
-                    clear: both
-                    display: block
-                    float: auto
-                    padding: 5px 0 5px 15px !important
-                    width: 100%
-                    &:nth-child( 2n )
-                        padding: 0 0 5px 15px !important
-                    &.triangle
-                        display: none
-                    a
-                        @include font-mask( normal, em( 14, 16 ), 1.5em, $asap-regular, $text-normal )
+.banner
+    img
+        margin: 6.25vw auto 0
+        width: 97.5vw
+    figcaption
+        p
+            @include font-mask( normal, 3.4375vw, 1.5em, $asap-regular, $text-normal )
+            margin: 6.25vw auto
+            width: 99.25vw
 footer
-    height: auto
-    left: auto
-    margin: 0 auto !important
-    padding: 0
-    position: relative
+    height: 5cw
+    width: 100%
     p
-        @include font-mask( normal, em( 9, 16 ), em( 13, 9 ), $asap-regular, $white-color )
+        @include font-mask( normal, 2.5vw, em( 25, 8 ), $asap-bold, $white-color )
 .desktop
     display: none
 .mobile
     display: block
-.wrapper
 .central
-    width: 95%
-.cell
-    color: #fff210
+    width: 100%
+    .B_crumbBox
+        @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
+        clear: left
+        display: block
+        float: left
+        margin: 0 0 15px
+        overflow: hidden
+        padding: 0
+        text-overflow: ellipsis
+        width: 66%
+        white-space: nowrap
+        li
+            display: inline-block
+            list-style: none inside
+            a
+                color: $text-normal
+                text-decoration: none
+                span
+        .slash_crumb
+            @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
+            &:nth-child( 1n )
+                display: none
+            &:nth-child( 1n + 3 )
+                display: inline
+        .B_firstCrumb
+            display: none
+        .B_homeCrumb
+        .B_crumb
+        .B_lastCrumb
+        .B_currentCrumb
+            @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
+.page
+    h1
+        @include font-mask( normal, 2.34375vw, 2.63671875vw, $asap-bold, $dark-green )
+    section
+        p
+            @include font-mask( normal, 1.26953125vw, 1.85546875vw, $asap-regular, $text-normal )
+label
+    @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $dark_green )
+    clear: both
+    display: block
+input[type="text"], input[type="email"]
+    @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    box-sizing: border-box
+    float: left
+    display: block
+    padding: 0 1.5625vw
+input[placeholder],
+::-moz-placeholder,/* firefox 19+ */
+input:-moz-placeholder
+    @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
+    text-overflow: ellipsis
+.button
+    @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $white-color )
+    background: $light_green
+    border: 0 none transparent
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    box-sizing: border-box
+    padding: 0.9765625vw 1.953125vw
+    &:hover
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2YzQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MWEzMzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+        background: -moz-linear-gradient(top,  $light-green 0%, $shadow-button 100%) /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$light-green), color-stop(100%,$shadow-button)) /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  $light-green 0%,$shadow-button 100%) /* IE10+ */
+        background: linear-gradient(to bottom,  $light-green 0%,$shadow-button 100%) /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-green', endColorstr='$shadow-button',GradientType=0 ) /* IE6-8 */
+    &:active, &:visited
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk2YzQwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3MWEzMzgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+        background: -moz-linear-gradient(top,  $light-green 0%, $shadow-button-active 100%) /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$light-green), color-stop(100%,$shadow-button-active)) /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  $light-green 0%,$shadow-button-active 100%) /* IE10+ */
+        background: linear-gradient(to bottom,  $light-green 0%,$shadow-button-active 100%) /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-green', endColorstr='$shadow-button-active',GradientType=0 ) /* IE6-8 */
+        box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50)
+    &:disabled
+        @include font-mask( normal, 1.26953125vw, 1.46484375vw, $asap-regular, $placeholder-color )
+        background: #D8D8D8
+        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+.alert
+    @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $white-color )
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    box-sizing: border-box
+    display: none
     float: right
-    font-size: em( 16, 16 )
-    overflow: hidden
-    position: relative
-    width: 45px
-    z-index: 5
-.icon
+    margin: 1.95313vw 9.9609375vw 0 0
+    padding: 1.5625vw 1.953125vw
+    transition: all 0.5s ease
+    width: 31.25vw
+    &.visible
+        display: block
+        transition: all 0.5s ease
+    .info
+        display: inline-block
+        float: left
+        height: 2.34375vw
+        margin-right: 1.171875vw
+        width: 2.34375vw
+    p
+        @include font-mask( normal, 1.953125vw !important, 2.24609375vw !important, $asap-regular !important, $white-color !important )
+        float: left
+        margin: 0
+    &.success
+        background: $success-alert
+    &.fail
+        background: $fail-alert
+    &.info
+        background: $info-alert
+.year-picker-wrapper
     display: inline-block
-    width: 45px
-    height: 45px
-    fill: currentColor
-.icon-menu
-    /*fill: #fff210*/
+    float: right
+    margin: 1.953125vw 0
+    p, .year-picker
+        @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $text-municipality )
+        float: left
+    p
+        margin: 0 0.87890625vw 0 0
+    .year-picker
+        margin: 0
+        padding: 0
+        li
+            float: left
+            padding: 0
+            list-style: none inside
+            a
+                color: $text-municipality
+                text-decoration: none
+            &.current
+                margin: 0 0 0 0.29296875vw
+                a
+                    color: $dark_green
+.paging
+    float: right
+    margin: 0
+    width: 34%
+    .pageList
+        float: right
+        margin: 0
+        padding: 0
+        li
+            background: #F5F5F5
+            box-sizing: border-box
+            display: inline-block
+            float: left
+            height: 3.3203125vw
+            margin: 0 0.390625vw 0
+            width: 3.3203125vw
+            a
+                @include font-mask( normal, 1.3671875vw, 3.3203125vw, $asap-bold, $placeholder-color )
+                display: block
+                height: 100%
+                text-align: center
+                text-decoration: none
+                width: 100%
+                .arrow
+                    height: 100%
+                    fill: $placeholder-color
+                    width: 100%
+            &.current
+                background: $light-green
+                a
+                    color: $white-color
+.return
+    clear: both
+    display: block
+    margin: 1.953125vw 0 0
+.wrapper
+    display: table
+    width: 100%

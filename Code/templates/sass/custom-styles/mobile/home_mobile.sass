@@ -1,67 +1,38 @@
 .home
     .wrapper
-        section.central
-            .scrollable_main_photography
-                //max-height: 141px
-                margin: 0 auto 35px
-                .items_glympse
-                    figure
-                        float: left
-                        position: relative
-                        width: 305px
-                        img
-                            box-sizing: border-box
-                            height: 100%
-                            width: 99%
-                .watermark
-                    bottom: auto
-                    top: 3px
-                .navigation
-                    bottom: 3px
-                    margin: 0 0 0 ( -36px / 2 )
-                    a
-                        height: 8px
-                        margin: 0 3px 0 0
-                        width: 8px
-            .wrapper_categories
-                width: 100% !important
-                a
-                .browser
-                    display: none
-                .prev
-                .next
-                .disabled
-                .scrollable_categories
-                    margin: 0 0 0 -50%
-                    width: 100%
-                    .items_categories
-                        position: static
-                        width: 100%
-                        figure
-                            //height: 78px
-                            height: auto
-                            width: 46% !important
-                            &:first-child
-                                margin: 0
-                            &:last-child
-                                margin: 0
-                            &:nth-child( even )
-                                clear: right
-                                margin: 0 0 3% 2.5% !important
-                            &:nth-child( odd )
-                                clear: left
-                                margin: 0 2.5% 3% 0 !important
-                            &:hover
-                                figcaption
-                                    display: block
-                            a
-                                display: block
-                                img
-                                    height: 100%
-                                    width: 100%
-                            figcaption
-                                bottom: 5px
-                                height: 24px
-                                left: 0
-                                p
-                                    @include font-mask( normal, em( 10, 16 ), em( 24, 10 ), $asap-regular, $white-color )
+    section.central
+        box-sizing: border-box
+        margin: 6.25% auto 0
+        padding-left: 0.625vw
+        width: 100%
+        figure
+            height: auto
+            margin: 0 0.3125vw 0.625vw
+            width: 32.3125vw
+            img
+                display: block
+                height: 100%
+                width: 100%
+            .white-logo
+                box-shadow: inset 0px 1px 10px 5px rgba(0,0,0,0.50)
+                background-color: $light-green
+                height: 100%
+                left: 100%
+                position: absolute
+                transition: all 0.5s ease
+                top: 0
+                width: 100%
+                .white-vector
+                    bottom: 0
+                    height: 35.333333333%
+                    left: 0
+                    margin: auto
+                    position: absolute
+                    right: 0
+                    top: 0
+                    width: 50%
+                .logo-white
+            &:hover
+                .white-logo
+                    left: 0
+                    transition: all 0.5s ease
