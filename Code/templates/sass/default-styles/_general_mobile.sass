@@ -114,7 +114,7 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 4.375vw, 1em, $asap-regular, $text-normal )
+        @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
         box-sizing: border-box
         clear: left
         display: block
@@ -133,7 +133,7 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 4.375vw, 1em, $asap-regular, $text-normal )
+            @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -144,7 +144,7 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 4.375vw, 1em, $asap-regular, $text-normal )
+            @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
 .page
     h1
         @include font-mask( normal, 6.25vw, 7.5vw, $asap-bold, $dark-green )
@@ -162,8 +162,9 @@ label
     width: 100%
 input[type="text"], input[type="email"], textarea
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
+    border: 1px solid $placeholder-color
     border-radius: 0
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50) !important
+    box-shadow: 0 0 2px 0px rgba(0,0,0,0.5) !important
     float: none
     margin: 0 auto
 input[placeholder],
@@ -172,6 +173,7 @@ input:-moz-placeholder
     @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
 .button
     @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
+    border-radius: 3px
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
     padding: 3.125vw 6.25vw
     -moz-appearance: button
@@ -183,7 +185,6 @@ input:-moz-placeholder
         box-shadow: 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
 .alert
     @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
-    display: block
     margin: 6.25vw 0 0
     min-width: 44.375vw
     padding: 2.8125vw 3.125vw

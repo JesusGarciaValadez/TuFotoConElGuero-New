@@ -41,7 +41,7 @@
 /* ==========================================================================
    iPhone 3GS/4/4S Portrait Orientation
    ========================================================================== */
-@media only screen and (min-width: em( 560 ))
+@media only screen and (max-width: em( 480 ))
     /* Style adjustments for viewports that meet the condition */
 
 /* ==========================================================================
@@ -49,6 +49,22 @@
    ========================================================================== */
 @media only screen and (max-width: em( 568, 16 ))
     /* Style adjustments for viewports that meet the condition */
+
+/* ==========================================================================
+   iPhone 5/5S Landscape Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
+    /* Style adjustments for viewports that meet the condition */
+
+/* ==========================================================================
+   iPhone 6 Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 667, 16 ))
+
+/* ==========================================================================
+   iPhone 6 Plus Landscape Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 736, 16 ))
     @import "default-styles/_general_mobile"
 
     @import "custom-styles/mobile/home_mobile"
@@ -58,27 +74,26 @@
     @import "custom-styles/mobile/photography-mobile"
 
 /* ==========================================================================
-   iPhone 5/5S Landscape Orientation
-   ========================================================================== */
-@media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
-    /* Style adjustments for viewports that meet the condition */
-    //@import "default-styles/_general_mobile_lanscape"
-
-/* ==========================================================================
    iPad
    ========================================================================== */
-@media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1024, 16 ))
-    @import "default-styles/_general_mobile"
+@media only screen and (max-width: em( 1023, 16 ))
 
 /* ==========================================================================
    iPad Portrait Orientation
    ========================================================================== */
-@media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1023, 16 )) and (orientation:portrait)
+@media only screen and (max-width: em( 1023, 16 )) and (orientation:portrait)
+    @import "default-styles/_general_mobile"
+
+    @import "custom-styles/mobile/home_mobile"
+    @import "custom-styles/mobile/contact-mobile"
+    @import "custom-styles/mobile/privacy-policy-mobile"
+    @import "custom-styles/mobile/events-mobile"
+    @import "custom-styles/mobile/photography-mobile"
 
 /* ==========================================================================
    iPad Landscape Orientation
    ========================================================================== */
-@media only screen and (min-width: em( 539, 16 )) and (max-width: em( 1023, 16 )) and (orientation:landscape)
+@media only screen and (max-width: em( 1023, 16 )) and (orientation:landscape)
 
 /* ==========================================================================
    Desktop High Resolution
