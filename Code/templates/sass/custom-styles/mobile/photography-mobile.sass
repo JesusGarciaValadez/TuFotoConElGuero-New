@@ -90,7 +90,6 @@
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
-                    display: block
                     margin-top: 0
                     fieldset
                         .input
@@ -99,6 +98,9 @@
                             width: 100% !important
                             input
                                 height: auto !important
+                                &.error
+                                    border: 1px solid red
+                                    box-shadow: 0 0 2px 0 red
                         .email
                             margin: 6.25vw 0
                             width: 75vw

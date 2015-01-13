@@ -231,6 +231,9 @@ input[type="text"], input[type="email"]
     float: left
     display: block
     padding: 0 1.5625vw
+input[type="text"], input[type="email"], textarea
+    &:invalid, &.error
+        box-shadow: 0 0 3px 0 red
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
@@ -334,6 +337,10 @@ input:-moz-placeholder
             height: 3.3203125vw
             margin: 0 0.390625vw 0
             width: 3.3203125vw
+            &:first-child
+                margin: 0 0.390625vw 0 0
+            &:last-child
+                margin: 0 0 0 0.390625vw
             a
                 @include font-mask( normal, 1.3671875vw, 3.3203125vw, $asap-bold, $placeholder-color )
                 display: block

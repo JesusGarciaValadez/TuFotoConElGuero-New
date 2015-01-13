@@ -7,7 +7,7 @@
 
             <section class="central clearfix">
                 <h1>[[*pagetitle]]</h1>
-                <form action="[[++site_url]]assets/snippets/controller.php?action=contact" method="post" class="clearfix">
+                <form action="[[++site_url]]Code/snippets/controller.php?action=contact" method="post" class="clearfix" name="contact-form">
                     <fieldset>
                         <div class="input clearfix">
                             <label for="name">Nombre</label>
@@ -15,7 +15,7 @@
                         </div>
                         <div class="input clearfix">
                             <label for="email">Correo Electrónico</label>
-                            <sup>*</sup><input type="text" name="email" placeholder="* Correo Electrónico" validate="validate" />
+                            <sup>*</sup><input type="email" name="email" placeholder="* Correo Electrónico" validate="validate" />
                         </div>
                     </fieldset>
                     <fieldset>

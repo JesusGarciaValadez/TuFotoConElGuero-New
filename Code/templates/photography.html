@@ -236,7 +236,7 @@
                             </select>
                         </fieldset>
                     </form>
-                    <a href="" title="Menu" class="cell mobile">
+                    <a href="#" title="Menu" class="cell mobile">
                         <svg class="icon icon-menu" viewBox="0 7 44 37">
                             <use xlink:href="#icon-menu"></use>
                         </svg>
@@ -306,35 +306,7 @@
     &homeCrumbTitle=``
     &homeCrumbDescription=``
     &respectHidemenu=`1`
-]]                <div class="paging clearfix">
-                    <!--ul class="pageList">[[!+page.nav]]</ul-->
-                    <ul class="pageList clearfix">
-                        <li>
-                            <a href="#" class="clearfix">
-                                <svg class="arrow arrow-left-small" viewBox="5 4 26 26">
-                                    <use xlink:href="#arrow-left-small"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="current">
-                            <a href="#" class="clearfix">1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">2</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">
-                                <svg class="arrow arrow-right-small" viewBox="5 4 26 26">
-                                    <use xlink:href="#arrow-right-small"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" class="button return">Regresar</button>
+]]                <button type="button" class="button return">Regresar</button>
                 <div class="principal-photography">
                     [[!siblingNav]]
                     [[+sn.prev]]
@@ -390,7 +362,7 @@
                             </a>
                         </li>
                     </ul>
-                    <form method="post" action="[[++site_url]]Code/snippets/controller.php?action=share">
+                    <form method="post" action="[[++site_url]]Code/snippets/controller.php?action=share" name="share-form">
                         <fieldset class="clearfix">
                             <div class="input email clearfix" validate="validate">
                                 <input type="email" name="email" required="required" placeholder="Correo Electrónico"  class="input" />

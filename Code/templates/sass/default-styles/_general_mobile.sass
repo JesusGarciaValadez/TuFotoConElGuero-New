@@ -57,33 +57,29 @@ html,body
                     width: 100%
         .desktop
             display: none
-    ul
+    > ul
         display: block
         float: none
-        height: auto
+        height: 0
         margin: 0
+        overflow: hidden
         padding: 0
         position: relative
         transition: all 0.5s ease
         width: 100%
-        &.active
-            &:before
-                @include triangle ( $dark-green, solid, 10px, transparent, solid, 10px, transparent, solid, 10px, transparent, solid, 10px )
-                bottom: auto
-                content: " "
-                left: auto
-                margin: 0
-                position: absolute
-                right: 3.75vw
-                top: 0
-            li
-                display: list-item
-                height: 14.375vw
-                transition: all 0.5s ease
+        &:before
+            @include triangle ( $dark-green, solid, 10px, transparent, solid, 10px, transparent, solid, 10px, transparent, solid, 10px )
+            bottom: auto
+            content: " "
+            left: auto
+            margin: 0
+            position: absolute
+            right: 3.75vw
+            top: 0
         li
-            display: none
+            display: list-item
             float: none
-            height: 0
+            height: 14.375vw
             transition: all 0.5s ease
             width: 100%
             a
@@ -93,6 +89,15 @@ html,body
                 text-align: center
                 text-decoration: none
                 width: 100%
+        &.active
+            height: 43.125vw
+            transition: all 0.5s ease
+            li
+                transition: all 0.5s ease
+                &:hover
+                    background: #F5F5F5
+                    a
+                        color: $dark-green
 .banner
     img
         margin: 6.25vw auto 0
@@ -167,6 +172,9 @@ input[type="text"], input[type="email"], textarea
     box-shadow: 0 0 2px 0px rgba(0,0,0,0.5) !important
     float: none
     margin: 0 auto
+    -webkit-appearance: none
+    &:invalid, &.error
+        box-shadow: 0 0 2px 0 red
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
@@ -222,7 +230,6 @@ input:-moz-placeholder
         display: block
         float: none
         margin: 0 auto
-        width: 78.125vw
         li
             height: 12.5vw
             margin: 0 1.875vw 0

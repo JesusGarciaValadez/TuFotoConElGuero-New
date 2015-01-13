@@ -6826,7 +6826,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/main.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
 	"\/Code\/templates\/javascript\/plugins.js": {
@@ -6919,7 +6919,7 @@
 		},
 	"\/Code\/templates\/javascript\/vendor\/jquery.form.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.form.js",
 		"outputAbbreviatedPath": "\/assets\/js\/jquery.form.min.js",
@@ -6974,7 +6974,7 @@
 		},
 	"\/Code\/templates\/javascript\/vendor\/jquery.validate.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.validate.js",
 		"outputAbbreviatedPath": "\/assets\/js\/jquery.validate.min.js",
@@ -7005,12 +7005,12 @@
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
-	"\/Code\/templates\/javascript\/youPhoto.js": {
+	"\/Code\/templates\/javascript\/yourPhoto.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/youPhoto.js",
-		"outputAbbreviatedPath": "\/assets\/js\/youPhoto.min.js",
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/yourPhoto.js",
+		"outputAbbreviatedPath": "\/assets\/js\/yourPhoto.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -10451,7 +10451,7 @@
 			"flagValue": -1
 			},
 		"devel": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeq": {
