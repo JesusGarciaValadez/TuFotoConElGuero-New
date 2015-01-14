@@ -214,6 +214,20 @@
             //  Make the calcule to translate in viewport width
             _paginatorWidthVW       = _paginatorWidthPX / ( window.innerWidth * 0.01 );
             $( '.pageList' ).width( _paginatorWidthVW + 'vw' );
+        },
+        showAlert:          function ( _class, _text ) {
+            $( '.alert' ).addClass( _class );
+            $( '.alert p' ).text( _text );
+            $( '.alert' ).fadeIn( 300 );
+        },
+        hideAlert:          function ( _class ) {
+            $( '.alert' ).fadeOut( 300, function ( ) {
+                $( '.alert' ).removeClass( _class )
+                             .removeAttr( 'style' );
+                $( '.alert p' ).empty( );
+                $( 'input[text],input[text],textarea' ).val();
+            } );
+
         }
     };
 

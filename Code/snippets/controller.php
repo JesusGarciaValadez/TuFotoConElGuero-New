@@ -32,6 +32,7 @@ if ( ! empty( $_GET['action'] ) ) {
 
         switch ( $action ) {
             case 'contact':
+            case 'share':
 
                 /*
                 session_start();
@@ -46,12 +47,11 @@ if ( ! empty( $_GET['action'] ) ) {
                 $doInsert   = new Review( $dbh, 'mdminvielle_contact_form' );
                 $doInsert   = $doInsert->insertInit(
                     $toPass,
-                    "email.tpl",
-                    "There's a new contact message from MDMinvielle!!!",
+                    "email.tpl", "There's a new contact message from MDMinvielle!!!",
                     "contact@mdminvielle.com, contact@mdminvielle.com", $cc );
                 */
                 //$data       = json_encode ( $doInsert );
-                $data       = json_encode ( array( 'code' => 1, 'message' => 'Éxito' ) );
+                $data       = json_encode ( array( 'success' => true, 'message' => 'Éxito' ) );
 
                 break;
         }

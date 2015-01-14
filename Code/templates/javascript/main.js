@@ -100,26 +100,38 @@
                 }
 
                 var errorFunction   = function () {
-
+                    yourPhoto.showAlert( 'fail', 'Error al hacer el envío' );
                 };
 
                 var successFunction = function ( responseText ) {
                     //console.log(responseText.success);
 
-                    var _title, _markup;
+                    var _title, _markup, _timer, _class, _message;
 
-                    if ( $.parseJSON( responseText ) ) {
+                    try {
+                        if ( $.parseJSON( responseText ) ) {
 
-                        responseText    = $.parseJSON( responseText );
+                            responseText    = $.parseJSON( responseText );
 
-                        if( responseText && ( responseText.success === 'true' || responseText.success === true ) ) {
-
-                            alert( 'good' );
+                            if( responseText && ( responseText.success === 'true' || responseText.success === true ) ) {
+                                _class  = 'success';
+                                _message= 'Éxito';
+                            } else {
+                                _class  = 'fail';
+                                _message= 'Error al hacer el envío';
+                            }
                         } else {
-                            alert( 'bad' );
+                            throw new Error( 'No es un JSON' );
                         }
-                    } else {
-                        alert( 'very bad' );
+                    } catch ( e ) {
+                        _class  = 'info';
+                        _message= 'Intenta más tarde.'
+                    } finally {
+                        yourPhoto.showAlert( _class, _message );
+                        _timer  = setTimeout( function ( ) {
+                            yourPhoto.hideAlert( _class );
+                            clearTimeout( _timer );
+                        }, 5000 );
                     }
                 };
 
@@ -163,26 +175,38 @@
                 }
 
                 var errorFunction   = function () {
-
+                    yourPhoto.showAlert( 'fail', 'Error al hacer el envío' );
                 };
 
                 var successFunction = function ( responseText ) {
                     //console.log(responseText.success);
 
-                    var _title, _markup;
+                    var _title, _markup, _timer, _class, _message;
 
-                    if ( $.parseJSON( responseText ) ) {
+                    try {
+                        if ( $.parseJSON( responseText ) ) {
 
-                        responseText    = $.parseJSON( responseText );
+                            responseText    = $.parseJSON( responseText );
 
-                        if( responseText && ( responseText.success === 'true' || responseText.success === true ) ) {
-
-                            $( 'form[name="share-form"]' ).fadeOut( 150 );
+                            if( responseText && ( responseText.success === 'true' || responseText.success === true ) ) {
+                                _class  = 'success';
+                                _message= 'Éxito';
+                            } else {
+                                _class  = 'fail';
+                                _message= 'Error al hacer el envío';
+                            }
                         } else {
-                            alert( 'bad' );
+                            throw new Error( 'No es un JSON' );
                         }
-                    } else {
-                        alert( 'very bad' );
+                    } catch ( e ) {
+                        _class  = 'info';
+                        _message= 'Intenta más tarde.'
+                    } finally {
+                        yourPhoto.showAlert( _class, _message );
+                        _timer  = setTimeout( function ( ) {
+                            yourPhoto.hideAlert( _class );
+                            clearTimeout( _timer );
+                        }, 5000 );
                     }
                 };
 
