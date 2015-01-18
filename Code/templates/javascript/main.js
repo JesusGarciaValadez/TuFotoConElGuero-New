@@ -25,7 +25,7 @@
 
     //  When DOM is loaded
     $( function ( ) {
-
+        yourPhoto.init();
         //  Click behavior for Menu button in mobile version
         $( '.cell' ).on( 'click', function( e ) {
             e.preventDefault();
@@ -37,6 +37,13 @@
 
     //  When page is finished loaded
     $( 'document' ).ready( function ( e ) {
+        $( window ).on( 'resize', function ( e ) {
+            if ( !$( '.jspScrollable' ).exists() ) {
+                //  Crea las instancias de jScrollPane para los elementos que simulan
+                //  ser select tags
+                yourPhoto.makeScrollBar( $( '.select_municipality .mask' ) );
+            }
+        } );
 
         //  Calculate paginator's width
         if ( $( '.pageList' ).exists() ) {
