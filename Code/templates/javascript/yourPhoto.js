@@ -50,60 +50,25 @@
          */
         //  !Método inicializador
         init:   function ( ) {
-            if ( window.matchMedia( "(min-width: 400px)" ).matches ) {
-                /* the view port is at least 400 pixels wide */
-                if ( '.header nav ul li a' ) {
-                    //  Crea las instancias de jScrollPane para los elementos que simulan
-                    //  ser select tags
-                    yourPhoto.makeScrollBar( $( '.select_inventories_options .mask' ) );
+            if ( !$( '.jspScrollable' ).exists() ) {
+                //  Crea las instancias de jScrollPane para los elementos que simulan
+                //  ser select tags
+                yourPhoto.makeScrollBar( $( '.select_municipality .mask' ) );
+            }
+            if ( 'header .select' ) {
+                //  Trigger para emular el comportamiento de combo box
+                $( '.select' ).on( 'click', 'button', function ( e ) {
+                    e.preventDefault();
+                    e.stopPropagation();
 
-                    //  Trigger para emular el comportamiento de combo box
-                    $( '.selected' ).on( 'click', function ( e ) {
-
-                        e.preventDefault();
-                        e.stopPropagation();
-                        if ( $( e.currentTarget ).siblings( '.select_inventories_options' ).css( 'opacity' ) == '0' ) {
-
-                            $( e.currentTarget ).siblings( '.select_inventories_options' ).css( {
-                                display: 'none',
-                                opacity: '1',
-                                filter: ''
-                            } );
-                        }
-                        $( e.currentTarget ).siblings( '.select_inventories_options' ).slideToggle( 'fast' );
-                    } );
-
-                    $( 'body' ).on( 'click', function ( e ) {
-
-                        e.stopPropagation();
-                        $( '.select_inventories_options' ).slideUp( 'fast' );
-                    } );
-
-                    //  Almacena la opción escogida y la almacena en un input hidden
-                    $( '.jspPane ul li' ).on( 'click', function ( e ) {
-
-                        $( e.currentTarget ).parents( '.select_inventories' ).children( 'input' ).val( '' );
-
-                        var _text   = $( e.currentTarget ).text();
-                        var _rel   = $( e.currentTarget ).attr( 'rel' );
-
-                        $( e.currentTarget ).parents( '.select_inventories' ).children( 'input' ).val( _rel );
-
-                        if ( $( e.currentTarget ).parents( '#inventories_date_range_to_wrapper' ).length != 0 ) {
-
-                            yourPhoto.dateTo     = _text;
-                        } else if ( $( e.currentTarget ).parents( '#inventories_date_range_from_wrapper' ).length != 0 ) {
-
-                            yourPhoto.dateFrom   = _text;
-                        }
-
-                        $( e.currentTarget ).parents( '.select_inventories' ).children( '.selected' ).text( _text );
-
-                        $( e.currentTarget ).parents( '.select_inventories' ).children( '.selected' ).click();
-                    } );
-                }
-            } else {
-                /* the view port is less than 400 pixels wide */
+                    $( '.jspScrollable' ).toggleClass( 'active' );
+                } );
+                $( 'body' ).on( 'click', function ( e ) {
+                    e.stopPropagation();
+                    if ( $( '.jspScrollable' ).hasClass( 'active' ) ) {
+                        $( '.jspScrollable' ).removeClass( 'active' );
+                    }
+                } );
             }
         },
         /**
