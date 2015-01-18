@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <title>[[++site_name]] - [[+pagetitle]]</title>
+        <title>[[++site_name]] - [[*pagetitle]]</title>
         <meta charset="[[++modx_charset]]">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="[[*description]]">
@@ -18,6 +18,19 @@
         <meta http-equiv="expires" content="0" />
         <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
         <meta http-equiv="pragma" content="no-cache" />
+
+        <meta property="og:site_name" content="[[++site_name]]">
+        <meta property="og:url" content="[[++site_url]][[~[[*id]]]]">
+        <meta property="og:title" content="[[++site_name]]">
+        <meta property="og:image" content="[[++site_url]][[*photo]]">
+        <meta property="og:description" content="[[*description]]">
+
+        <meta name="twitter:card" content="player">
+        <meta name="twitter:site" content="@tufotoconelguero.com">
+        <meta name="twitter:url" content="[[++site_url]][[~[[*id]]]]">
+        <meta name="twitter:title" content="[[*pagetitle]]">
+        <meta name="twitter:description" content="[[*description]]">
+        <meta name="twitter:image" content="[[++site_url]][[*photo]]">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -381,7 +394,7 @@
                     <h2>Comparte tu foto</h2>
                     <ul class="clearfix">
                         <li class="social-button clearfix">
-                            <a href="#" title="Facebook" class="clearfix">
+                            <a href="#" onclick="window.open('http://www.facebook.com/sharer.php?s=100&p[title]=[[++site_name]]&p[summary]=[[*description]].&p[url]=[[++site_url]][[~[[*id]]]]&p[images][0]=[[++site_url]][[*photo]]', 'Ventana abierta', 'height=306,width=650,scrollbars=true');return false;" title="Facebook" class="clearfix">
                                 <svg class="facebook-button" viewBox="0 0 34 34">
                                     <use xlink:href="#facebook-button"></use>
                                 </svg>
@@ -389,7 +402,7 @@
                             </a>
                         </li>
                         <li class="social-button clearfix">
-                            <a href="#" title="Google +" class="clearfix">
+                            <a href="#" onclick="window.open('https:\/\/plus.google.com\/u\/0\/share?url=[[++site_url]][[~[[*id]]]]\u0026hl=es-419\u0026soc-platform=1\u0026soc-app=130', 'Ventana Abierta', 'height=620,width=620,scrollbars=true');return false;" title="Google +" class="clearfix">
                                 <svg class="google-button" viewBox="0 0 34 34">
                                     <use xlink:href="#google-button"></use>
                                 </svg>
@@ -397,7 +410,7 @@
                             </a>
                         </li>
                         <li class="social-button clearfix">
-                            <a href="#" title="Twitter" class="clearfix">
+                            <a href="#" onclick="window.open('http:\/\/twitter.com\/intent\/tweet?url=[[++site_url]][[~[[*id]]]]\u0026via=tufotoconelguero\u0026related=Tu%20Foto%20con%20el%20Güero,Manuel%20Velazco,Chiapas', 'Ventana Abierta', 'height=420,width=550,scrollbars=true');return false;" title="Twitter" class="clearfix">
                                 <svg class="twitter-button" viewBox="0 0 34 34">
                                     <use xlink:href="#twitter-button"></use>
                                 </svg>
