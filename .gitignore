@@ -399,3 +399,6 @@ assets/components/tinymce/tinymce.panel.js
 assets/components/tinymce/xconfig.js
 bower_components
 setup
+assets/css/main.css
+assets/css/main.css.map
+assets/js/main.min.js
