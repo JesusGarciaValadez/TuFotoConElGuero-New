@@ -1,0 +1,35 @@
+                <div class="year-picker-wrapper clearfix">
+                    <p class="desktop">Selecciona un año</p>
+                    <ul class="year-picker clearfix desktop">
+                        [[!getResources?
+                            &parents=`[[+id]]`
+                            &limit=`12`
+                            &tplPath=`[[++assets_path]]../Code/chunks/`
+                            &tpl=`@FILE year-picker-desktop-item.html`
+                            &includeTVs=`1`
+                            &processTVs=`1`
+                            &tvPrefix=``
+                            &showUnpublished=`0`
+                            &showHidden=`0`
+                            &includeContent=`0`
+                            &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                            &depth=`5`
+                            &where=`{"template:=":4}`
+                            &hideContainers=`1`
+                         ]]
+                        <li>
+                            <a href="#">2013 | </a>
+                        </li>
+                        <li class="current">
+                            <a href="#">2014</a>
+                        </li>
+                    </ul>
+                    <form method="post" action="" name="year-picker" class="year-picker clearfix mobile">
+                        <fieldset>
+                            <select name="year-picker-select">
+                               <option value="2013">2013</option>
+                               <option value="2014">2014</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                </div>

@@ -220,5 +220,15 @@
                 yourPhoto.validateForm( 'form[name="share-form"]', share, errorFunction, successFunction );
             } );
         }
+
+        //  Funcionamiento del botón Regresar
+        if ( $( '.return' ).exists() ) {
+            $( 'section.central' ).on( 'click', '.return', function ( e ) {
+                e.stopPropagation();
+                e.preventDefault();
+
+                window.history.back();
+            } );
+        }
     } );
 } ) ( jQuery, window, document );

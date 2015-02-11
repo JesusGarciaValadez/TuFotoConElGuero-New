@@ -230,66 +230,22 @@
                             <span class="choose-an-option selected">Seleccionar un municipio</span>
                             <nav class="clearfix mask">
                                 <ul class="clearfix">
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
-                                    <li>
-                                        <a title="Amatán" href="#">Amatán</a>
-                                    </li>
-                                    <li>
-                                        <a title="Comitán de Domínguez" href="#">Comitán de Domínguez</a>
-                                    </li>
+                                    [[!getResources?
+                                        &parents=`4`
+                                        &limit=`0`
+                                        &tplPath=`[[++assets_path]]../Code/chunks/`
+                                        &tpl=`@FILE menu-list-item.html`
+                                        &includeTVs=`1`
+                                        &processTVs=`1`
+                                        &tvPrefix=``
+                                        &showUnpublished=`0`
+                                        &showHidden=`0`
+                                        &includeContent=`0`
+                                        &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                                        &depth=`0`
+                                        &where=`{"template:=":4}`
+                                        &hideContainers=`0`
+                                     ]]
                                 </ul>
                             </nav>
                         </div>
@@ -354,6 +310,22 @@
                 <div class="year-picker-wrapper clearfix">
                     <p class="desktop">Selecciona un año</p>
                     <ul class="year-picker clearfix desktop">
+                        [[!getResources?
+                            &parents=`[[+id]]`
+                            &limit=`12`
+                            &tplPath=`[[++assets_path]]../Code/chunks/`
+                            &tpl=`@FILE year-picker-desktop-item.html`
+                            &includeTVs=`1`
+                            &processTVs=`1`
+                            &tvPrefix=``
+                            &showUnpublished=`0`
+                            &showHidden=`0`
+                            &includeContent=`0`
+                            &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                            &depth=`5`
+                            &where=`{"template:=":4}`
+                            &hideContainers=`1`
+                         ]]
                         <li>
                             <a href="#">2013 | </a>
                         </li>
@@ -369,8 +341,7 @@
                             </select>
                         </fieldset>
                     </form>
-                </div>
-[[!breadcrumbs?
+                </div>[[!breadcrumbs?
     &showHomeCrumb=`0`
     &showCurrentCrumb=`1`
     &currentAsLink=`0`

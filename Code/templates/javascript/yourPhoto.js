@@ -61,12 +61,12 @@
                     e.preventDefault();
                     e.stopPropagation();
 
-                    $( '.jspScrollable' ).toggleClass( 'active' );
+                    $( 'nav.mask' ).toggleClass( 'active' );
                 } );
                 $( 'body' ).on( 'click', function ( e ) {
                     e.stopPropagation();
-                    if ( $( '.jspScrollable' ).hasClass( 'active' ) ) {
-                        $( '.jspScrollable' ).removeClass( 'active' );
+                    if ( $( 'nav.mask' ).hasClass( 'active' ) ) {
+                        $( 'nav.mask' ).removeClass( 'active' );
                     }
                 } );
             }
