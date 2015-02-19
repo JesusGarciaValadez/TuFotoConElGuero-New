@@ -51,6 +51,9 @@ if ( ! empty( $_GET['action'] ) )
 
                 break;
             case 'share':
+                break;
+            case 'download':
+                break;
         }
         echo $data;
 
