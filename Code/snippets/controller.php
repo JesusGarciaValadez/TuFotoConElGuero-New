@@ -15,26 +15,23 @@ else
 
 function __autoload( $className )
 {
-
     require_once LIBS_PATH . "{$className}.php";
 }
 
 require_once SNIPPETS_PATH . 'db/connection.php';
 
-error_reporting(E_ALL | E_STRICT);
-ini_set('display_errors', 1);
+error_reporting( E_ALL | E_STRICT );
+ini_set( 'display_errors', 1 );
 
 if ( ! empty( $_GET['action'] ) )
 {
-    $action = strip_tags( trim( $_GET[ 'action' ] ) );
-    $data = array();
+    $action    = strip_tags( trim( $_GET[ 'action' ] ) );
+    $data      = array();
     try
     {
         switch ( $action )
         {
             case 'contact':
-                session_start();
-
                 $toPass[ 'name' ]       = trim( $_POST[ 'name' ] );
                 $toPass[ 'email' ]      = trim( $_POST[ 'email' ] );
                 $toPass[ 'comments' ]   = trim( $_POST[ 'comments' ] );
@@ -50,9 +47,51 @@ if ( ! empty( $_GET['action'] ) )
                 $data       = json_encode ( array( 'success' => true, 'message' => 'Éxito' ) );
 
                 break;
-            case 'share':
-                break;
             case 'download':
+                $_image = SITE_URL . trim( $_GET[ 'image' ] );
+
+                if ( fopen( $_image, 'r' ) )
+                {
+                    try
+                    {
+                        $file   = imagecreatefromjpeg( $_image );
+                        header( "Pragma: public" );
+                        header( "Expires: 0" );
+                        header( "Cache-Control: must-revalidate, post-check=0, pre-check=0" );
+                        //header("Content-Type: application/force-download");
+                        //header("Content-Type: application/octet-stream");
+                        //header("Content-Type: application/download");
+                        header( "Content-Disposition: attachment;filename=mi-foto-con-el-guero.jpg" );
+                        header( "Content-Transfer-Encoding: binary" );
+                        header( 'Content-Type: image/jpeg' );
+                        imagejpeg( $file );
+                    }
+                    catch ( Exception $e )
+                    {
+                        $data       = json_encode ( $doInsert );
+                        $data       = json_encode ( array( 'success' => false, 'message' => 'Error con la imagen' ) );
+                    }
+                }
+                break;
+            case 'share':
+                $toPass[ 'email' ]      = trim( $_POST[ 'email' ] );
+                $toPass[ 'image' ]      = SITE_URL . trim( $_POST[ 'image' ] );
+
+                if ( fopen( $toPass[ 'image' ], 'r' ) )
+                {
+                    $data       = json_encode ( $doInsert );
+                    $data       = json_encode ( array( 'success' => false, 'message' => 'No existe la imagen' ) );
+                }
+                else
+                {
+                    $doInsert   = new Review( $dbh, 'tufoto_contact_form' );
+                    $doInsert   = $doInsert->shareImage(
+                        $toPass,
+                        "share.tpl", "Descarga tu foto con el Güero Velazco",
+                        "contact@tufotoconelguero.com, contact@tufotoconelguero.com", $cc );
+                    $data       = json_encode ( $doInsert );
+                    $data       = json_encode ( array( 'success' => true, 'message' => 'Éxito' ) );
+                }
                 break;
         }
         echo $data;
