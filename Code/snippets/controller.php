@@ -35,8 +35,12 @@ if ( ! empty( $_GET['action'] ) )
                 $toPass[ 'name' ]       = trim( $_POST[ 'name' ] );
                 $toPass[ 'email' ]      = trim( $_POST[ 'email' ] );
                 $toPass[ 'comments' ]   = trim( $_POST[ 'comments' ] );
-
-                //$cc = array( );
+                $cc = array(
+                            array(
+                                  'mail'  => 'jesus.garciav@me.com',
+                                  'name'  => 'Jesús'
+                                  )
+                );
 
                 $doInsert   = new Review( $dbh, 'tufoto_contact_form' );
                 $doInsert   = $doInsert->insertInit(
@@ -74,23 +78,27 @@ if ( ! empty( $_GET['action'] ) )
                 }
                 break;
             case 'share':
-                $toPass[ 'email' ]      = trim( $_POST[ 'email' ] );
-                $toPass[ 'image' ]      = SITE_URL . trim( $_POST[ 'image' ] );
+                $toPass[ 'email' ]      = strip_tags( trim( $_POST[ 'correo' ] ) );
+                $toPass[ 'image' ]      = trim( SITE_URL . trim( $_POST[ 'image' ] ) );
+                $cc = array(
+                            array(
+                                  'mail'  => 'jesus.garciav@me.com',
+                                  'name'  => 'Jesús'
+                                  )
+                );
 
                 if ( fopen( $toPass[ 'image' ], 'r' ) )
-                {
-                    $data       = json_encode ( $doInsert );
-                    $data       = json_encode ( array( 'success' => false, 'message' => 'No existe la imagen' ) );
-                }
-                else
                 {
                     $doInsert   = new Review( $dbh, 'tufoto_contact_form' );
                     $doInsert   = $doInsert->shareImage(
                         $toPass,
                         "share.tpl", "Descarga tu foto con el Güero Velazco",
                         "contact@tufotoconelguero.com, contact@tufotoconelguero.com", $cc );
-                    $data       = json_encode ( $doInsert );
-                    $data       = json_encode ( array( 'success' => true, 'message' => 'Éxito' ) );
+                    $data       = json_encode ( array( 'success' => true, 'message' => 'Exito' ) );
+                }
+                else
+                {
+                    $data       = json_encode ( array( 'success' => false, 'message' => 'No existe la imagen' ) );
                 }
                 break;
         }
