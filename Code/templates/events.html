@@ -367,15 +367,21 @@
                     &element=`getResources`
                     &parents=`[[*id]]`
                     &depth=`2`
-                    &limit=`1`
+                    &limit=`12`
                     &pageVarKey=`page`
                     &includeTVs=`1`
                     &includeContent=`1`
                     &tpl=`events-figure-item`
+                    &pageNavOuterTpl=`[[+prev]][[+pages]][[+next]]`
+                    &pagePrevTpl=`<li class="control"><a[[+classes]][[+title]] href="[[+href]]"><svg class="arrow arrow-left-small" viewBox="5 4 26 26"><use xlink:href="#arrow-left-small"></use></svg></a></li>`
+                    &pageNextTpl=`<li class="control"><a[[+classes]][[+title]] href="[[+href]]"><svg class="arrow arrow-right-small" viewBox="5 4 26 26"><use xlink:href="#arrow-right-small"></use></svg></a></li>`
+                    &pageActiveTpl=`<li[[+activeClasses]][[+activeClasses:default=` class="current"`]]><a[[+title]] href="[[+href]]">[[+pageNo]]</a></li>`
+                    &sortby=`pagetitle`
+                    &sortdir=`ASC`
                 ]]
                 <div class="paging clearfix">
-                    <!--ul class="pageList">[[!+page.nav]]</ul-->
-                    <ul class="pageList clearfix">
+                    <ul class="pageList clearfix">[[!+page.nav]]</ul>
+                    <!--ul class="pageList clearfix">
                         <li>
                             <a href="#" class="clearfix">
                                 <svg class="arrow arrow-left-small" viewBox="5 4 26 26">
@@ -399,9 +405,8 @@
                                 </svg>
                             </a>
                         </li>
-                    </ul>
-                </div>
-                <a href="[[++site_url]][[~[[*parent]]]]" title="Regresar" class="button return">Regresar</a>
+                    </ul-->
+                </div>                <a href="[[++site_url]][[~[[*parent]]]]" title="Regresar" class="button return">Regresar</a>
                 <div class="clearfix">
                     [[!getResources?
                         &parents=`[[+id]]`

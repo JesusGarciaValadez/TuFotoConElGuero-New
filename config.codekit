@@ -7137,6 +7137,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/Code\/templates\/kit\/pagination.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/pagination.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/pagination.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/Code\/templates\/kit\/photography.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -7152,6 +7161,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/kit\/privacy-policy.kit",
 		"outputAbbreviatedPath": "\/Code\/templates\/privacy-policy.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/returnButton.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/returnButton.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/returnButton.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},

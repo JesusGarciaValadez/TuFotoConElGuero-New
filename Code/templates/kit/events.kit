@@ -9,45 +9,9 @@
                 <h1>[[*pagetitle]]</h1>
 <!--@import yearpicker-->
 <!--@import breadcrumbs-->
-                [[!getPage?
-                    &element=`getResources`
-                    &parents=`[[*id]]`
-                    &depth=`2`
-                    &limit=`1`
-                    &pageVarKey=`page`
-                    &includeTVs=`1`
-                    &includeContent=`1`
-                    &tpl=`events-figure-item`
-                ]]
-                <div class="paging clearfix">
-                    <!--ul class="pageList">[[!+page.nav]]</ul-->
-                    <ul class="pageList clearfix">
-                        <li>
-                            <a href="#" class="clearfix">
-                                <svg class="arrow arrow-left-small" viewBox="5 4 26 26">
-                                    <use xlink:href="#arrow-left-small"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="current">
-                            <a href="#" class="clearfix">1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">2</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">
-                                <svg class="arrow arrow-right-small" viewBox="5 4 26 26">
-                                    <use xlink:href="#arrow-right-small"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="[[++site_url]][[~[[*parent]]]]" title="Regresar" class="button return">Regresar</a>
+<!--@import pagination-->
+<!--@import returnButton-->
+
                 <div class="clearfix">
                     [[!getResources?
                         &parents=`[[+id]]`
