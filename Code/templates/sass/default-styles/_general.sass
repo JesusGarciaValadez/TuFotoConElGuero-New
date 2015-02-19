@@ -442,7 +442,12 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 .return
     clear: both
     display: block
+    float: left
     margin: 1.953125vw 0 0
+    text-decoration: none
+    width: auto
+    & ~ div,& ~ section,& ~ article
+        clear: left
 .wrapper
     display: table
     width: 100%
