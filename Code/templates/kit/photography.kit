@@ -16,9 +16,9 @@
                     [[+sn.prev]]
                     <figure class="clearfix">
                         <img src="[[++site_url]][[*photo]]" alt="[[*pagetitle]]" />
-                        <div class="display">
+                        <figcaption class="display">
                             <p>[[*description]]</p>
-                        </div>
+                        </figcaption>
                     </figure>
                     [[+sn.next]]
                 </div>
@@ -66,11 +66,11 @@
                             </a>
                         </li>
                     </ul>
-                    <form method="post" action="[[++site_url]]Code/snippets/controller.php?action=share" name="share-form">
+                    <form method="post" action="[[++site_url]]Code/snippets/controller.php?action=share" name="share-form" enctype="application/x-www-form-urlencoded">
                         <fieldset class="clearfix">
-                            <div class="input email clearfix" validate="validate">
-                                <input type="email" name="email" required="required" placeholder="Correo Electrónico"  class="input" />
-                                <input type="hidden" name="image" value="[[++site_url]][[*photo]]" />
+                            <div class="input email clearfix">
+                                <input type="hidden" name="image" value="[[*photo]]" />
+                                <input type="email" name="email" required="required" placeholder="Correo Electrónico" class="input" />
                             </div>
                             <div class="input submit clearfix">
                                 <input type="submit" class="button" value="Enviar" />
