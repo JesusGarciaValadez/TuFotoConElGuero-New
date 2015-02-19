@@ -168,6 +168,7 @@
 
                 var share         = {};
                 share.correo      = $.trim( $( 'input[name="email"]' ).val() );
+                share.image       = $.trim( $( 'input[name="image"]' ).val() );
                 var flag          = true;
 
                 $( 'input.error' ).removeClass( 'error' );
