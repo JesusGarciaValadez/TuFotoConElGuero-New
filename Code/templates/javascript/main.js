@@ -45,6 +45,11 @@
             }
         } );
 
+        $( 'header form.mobile fieldset').on( 'change', 'select', function ( e ) {
+            var _value  = $( e.currentTarget ).val();
+            window.location.href = _value;
+        } );
+
         //  Calculate paginator's width
         if ( $( '.pageList' ).exists() ) {
             yourPhoto.resizePaginator();
