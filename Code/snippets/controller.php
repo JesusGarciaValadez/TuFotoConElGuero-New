@@ -93,7 +93,7 @@ if ( ! empty( $_GET['action'] ) )
                     $doInsert   = $doInsert->shareImage(
                         $toPass,
                         "share.tpl", "Descarga tu foto con el Güero Velazco",
-                        "contact@tufotoconelguero.com, contact@tufotoconelguero.com", $cc );
+                        "tufotoconelguero@gmail.com, tufotoconelguero@gmail.com", $cc );
                     $data       = json_encode ( array( 'success' => true, 'message' => 'Exito' ) );
                 }
                 else
