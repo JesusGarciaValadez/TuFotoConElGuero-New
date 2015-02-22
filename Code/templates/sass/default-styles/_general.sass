@@ -222,12 +222,12 @@ html,body
 .banner
     img
         display: block
-        margin: 20px auto 0
+        margin: 0 auto
         width: 80.2734375%
     figcaption
         p
             @include font-mask( normal, 1.07421875vw, 1.5em, $asap-regular, $text-normal )
-            margin: 20px auto
+            margin: 1.953125vw auto
             text-align: center
             width: 93.75vw
 footer
@@ -404,6 +404,8 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
                 margin: 0 0 0 0.29296875vw
                 a
                     color: $dark_green
+            &.separator
+                margin: 0 0.29296875vw
 .paging
     float: right
     margin: 0
@@ -443,7 +445,7 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
     clear: both
     display: block
     float: left
-    margin: 1.953125vw 0 0
+    margin: 0
     text-decoration: none
     width: auto
     & ~ div,& ~ section,& ~ article

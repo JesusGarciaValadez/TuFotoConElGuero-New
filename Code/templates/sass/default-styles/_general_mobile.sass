@@ -224,12 +224,12 @@ input:-moz-placeholder
                 option
 .paging
     display: block
-    margin: 0 0 6.25vw
+    margin: 0 auto
     width: 100%
     .pageList
         display: block
         float: none
-        margin: 0 auto
+        margin: 0 auto 6.25vw
         li
             height: 12.5vw
             margin: 0 1.875vw 0
@@ -243,6 +243,8 @@ input:-moz-placeholder
                 height: 100%
                 width: 100%
                 .arrow
+        &:empty
+            margin: 0 auto
 .return
     margin: 0 0 6.25vw 8.125vw
 .wrapper
