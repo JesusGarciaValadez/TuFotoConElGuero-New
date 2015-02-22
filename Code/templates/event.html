@@ -323,33 +323,50 @@
                     <p class="desktop">Selecciona un año</p>
                     <ul class="year-picker clearfix desktop">
                         [[!getResources?
-                            &parents=`[[+id]]`
-                            &limit=`12`
+                            &parents=`[[!UltimateParent? &top=`4` &topLevel=`3`]]`
+                            &limit=`0`
                             &tplPath=`[[++assets_path]]../Code/chunks/`
                             &tpl=`@FILE year-picker-desktop-item.html`
+                            &tplCondition=`id`
+                            &conditionalTpls=`{"[[!UltimateParent? &topLevel=`4` &top=`4`]]":"@FILE year-picker-current-desktop-item.html"}`
+                            &outputSeparator=`<li class="separator"> | </li>`
                             &includeTVs=`1`
                             &processTVs=`1`
                             &tvPrefix=``
-                            &showUnpublished=`0`
-                            &showHidden=`0`
-                            &includeContent=`0`
+                            &showUnpublished=`1`
+                            &showHidden=`1`
+                            &includeContent=`1`
+                            &wrapIfEmpty=`false`
                             &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
-                            &depth=`5`
+                            &depth=`7`
                             &where=`{"template:=":4}`
-                            &hideContainers=`1`
+                            &hideContainers=`0`
+                            &debug=`false`
                          ]]
-                        <li>
-                            <a href="#">2013 | </a>
-                        </li>
-                        <li class="current">
-                            <a href="#">2014</a>
-                        </li>
                     </ul>
                     <form method="post" action="" name="year-picker" class="year-picker clearfix mobile">
                         <fieldset>
                             <select name="year-picker-select">
-                               <option value="2013">2013</option>
-                               <option value="2014">2014</option>
+                                [[!getResources?
+                                    &parents=`[[!UltimateParent? &top=`4` &topLevel=`3`]]`
+                                    &limit=`0`
+                                    &tplPath=`[[++assets_path]]../Code/chunks/`
+                                    &tpl=`@FILE year-picker-mobile-item.html`
+                                    &tplCondition=`id`
+                                    &conditionalTpls=`{"[[!UltimateParent? &topLevel=`4` &top=`4`]]":"@FILE year-picker-current-mobile-item.html"}`
+                                    &includeTVs=`1`
+                                    &processTVs=`1`
+                                    &tvPrefix=``
+                                    &showUnpublished=`1`
+                                    &showHidden=`1`
+                                    &includeContent=`1`
+                                    &wrapIfEmpty=`false`
+                                    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                                    &depth=`7`
+                                    &where=`{"template:=":4}`
+                                    &hideContainers=`0`
+                                    &debug=`false`
+                                ]]
                             </select>
                         </fieldset>
                     </form>
