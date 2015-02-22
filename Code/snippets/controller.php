@@ -32,9 +32,9 @@ if ( ! empty( $_GET['action'] ) )
         switch ( $action )
         {
             case 'contact':
-                $toPass[ 'name' ]       = trim( $_POST[ 'name' ] );
-                $toPass[ 'email' ]      = trim( $_POST[ 'email' ] );
-                $toPass[ 'comments' ]   = trim( $_POST[ 'comments' ] );
+                $toPass[ 'name' ]       = trim( $_POST[ 'nombre' ] );
+                $toPass[ 'email' ]      = trim( $_POST[ 'correo' ] );
+                $toPass[ 'comments' ]   = trim( $_POST[ 'mensaje' ] );
                 $cc = array(
                             array(
                                   'mail'  => 'jesus.garciav@me.com',
