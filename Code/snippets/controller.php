@@ -46,10 +46,8 @@ if ( ! empty( $_GET['action'] ) )
                 $doInsert   = $doInsert->insertInit(
                     $toPass,
                     "email.tpl", "Hay un nuevo mensaje del sitio tu Foto con el Güero",
-                    "contact@tufotoconelguero.com, contact@tufotoconelguero.com", $cc );
+                    "contactos@tufotoconelguero.com;", $cc );
                 $data       = json_encode ( $doInsert );
-                $data       = json_encode ( array( 'success' => true, 'message' => 'Éxito' ) );
-
                 break;
             case 'download':
                 $_image = SITE_URL . trim( $_GET[ 'image' ] );
@@ -72,7 +70,6 @@ if ( ! empty( $_GET['action'] ) )
                     }
                     catch ( Exception $e )
                     {
-                        $data       = json_encode ( $doInsert );
                         $data       = json_encode ( array( 'success' => false, 'message' => 'Error con la imagen' ) );
                     }
                 }
@@ -93,8 +90,8 @@ if ( ! empty( $_GET['action'] ) )
                     $doInsert   = $doInsert->shareImage(
                         $toPass,
                         "share.tpl", "Descarga tu foto con el Güero Velazco",
-                        "tufotoconelguero@gmail.com, tufotoconelguero@gmail.com", $cc );
-                    $data       = json_encode ( array( 'success' => true, 'message' => 'Exito' ) );
+                        "contactos@tufotoconelguero.com", $cc );
+                    $data       = json_encode ( $doInsert );
                 }
                 else
                 {
