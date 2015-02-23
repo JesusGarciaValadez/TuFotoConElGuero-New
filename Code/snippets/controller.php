@@ -46,7 +46,7 @@ if ( ! empty( $_GET['action'] ) )
                 $doInsert   = $doInsert->insertInit(
                     $toPass,
                     "email.tpl", "Hay un nuevo mensaje del sitio tu Foto con el Güero",
-                    "contactos@tufotoconelguero.com;", $cc );
+                    "contactos@tufotoconelguero.com", $cc );
                 $data       = json_encode ( $doInsert );
                 break;
             case 'download':
