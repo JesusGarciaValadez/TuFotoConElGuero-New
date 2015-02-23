@@ -129,12 +129,7 @@ class Review extends Model {
                              'requerido' => 1,
                              'validador' => 'esEmail',
                              'mensaje' => utf8_encode( 'La segunda pregunta es obligatoria.' )
-                            ),
-            'image' => array(
-                             'requerido' => 1,
-                             'validador' => 'esAlfaNumerico',
-                             'mensaje' => utf8_encode( 'La imagen es obligatoria.' )
-                            ),
+                            )
         );
 
         $form = new Validator( $info, $parameters );
@@ -142,20 +137,21 @@ class Review extends Model {
         // Si el formulario no es válido
         if ( !$form->validate() )
         {
-            return false;
+            return array (
+                          'success'=>'false',
+                          'message'=>utf8_encode( 'Un campo no es válido.' )
+                          );
         }
         else
         {
             try
             {
-                $success    = $this->insert( $info );
-                if ( $success )
-                {
                     $emails = explode( ',' , $correo );
                     $to     = array();
 
                     foreach ( $emails as $email )
                     {
+
                         $params = array(
                             'mail' => array(
                                             'requerido' => 1 ,
@@ -165,9 +161,9 @@ class Review extends Model {
                         );
 
                         $destinatario = array(
-                                              'mail' => $email,
-                                              'image' => $image
-                                              );
+                            'name' => $email,
+                            'mail' => $email
+                        );
 
                         $form   = new Validator( $destinatario, $params );
                         if ( ( $form->validate() ) === false )
@@ -178,9 +174,9 @@ class Review extends Model {
                     }
 
                     $vars   = array(
-                                    'email' => $info[ 'email' ],
-                                    'image' => $info[ 'image' ]
-                                    );
+                            'email' => $info[ 'email' ],
+                            'image' => $info[ 'image' ]
+                    );
 
                     $tpl    = ParserTemplate::parseTemplate( $template, $vars );
 
@@ -188,32 +184,18 @@ class Review extends Model {
 
                     if ( Mailer::sendMail( $subject, $tpl, $to , '' , $_cc ) )
                     {
-                        $response   = array (
-                                             'success' => 'true',
-                                             'message' => utf8_encode( 'Muchas gracias por contestar esta encuesta.' )
-                                             );
+                        $response       = array (
+                            'success' => 'true',
+                            'message' => utf8_encode( 'Muchas gracias por contestar esta encuesta.' )
+                        );
                     }
                     else
                     {
-                        $response   = array (
-                                             'success'=>'false',
-                                             'message'=>utf8_encode( 'El servicio de correo no esta disponible' )
-                                             );
+                        $response = array (
+                            'success'=>'false',
+                            'message'=>utf8_encode( 'El servicio de correo no esta disponible' )
+                        );
                     }
-                }
-                else
-                {
-                    $response = array(
-                                      'success' => 'false',
-                                      'message' => utf8_encode('No fue posible guardar la información.')
-                                      );
-                }
-                $this->_PDOConn->commit();
-            }
-            catch ( PDOException $e )
-            {
-                $this->_PDOConn->rollBack();
-                $response   = array ( 'success'=>'false', 'msg'=>'el servicio de DB no esta disponible' );
             }
             catch ( phpmailerException $e )
             {
