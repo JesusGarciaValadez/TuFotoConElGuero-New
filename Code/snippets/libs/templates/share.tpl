@@ -55,7 +55,7 @@
         <table width="600" border="0" align="center" cellpadding="1" cellspacing="1">
             <tr>
                 <td align="center">
-                    <img src="[+image+]" alt="Tu foto con El Güero.Com">
+                    <img src="http://www.tufotoconelguero.com/css/img/logotipo.png" alt="Tu foto con El Güero.Com">
                 </td>
             </tr>
             <tr>
@@ -67,13 +67,13 @@
             </tr>
             <tr>
                 <td align="center">
-                    <img src="" alt="Tu foto con El Güero.Com" />
+                    <img src="[+image+]" alt="Tu foto con El Güero.Com" />
                 </td>
             </tr>
             <tr>
                 <td bgcolor="#5A5959" align="center" valign="middle">
                     <p class="text_footer">Para asegurar la entrega de nuestros emails en su correo, <br />por favor agregue <a href="mailto:contactos@tufotoconelguero.com" title="contactos@tufotoconelguero.com">contactos@tufotoconelguero.com</a>; <br />a su libreta de direcci&oacute;n de E-mail.</p>
-                    <p class="text_footer">Este correo electr&oacute;nico a sido enviado a: <span>#email#</span></p>
+                    <p class="text_footer">Este correo electr&oacute;nico a sido enviado a: <span>[+email+]</span></p>
                 </td>
             </tr>
         </table>
