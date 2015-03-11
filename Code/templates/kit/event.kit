@@ -13,7 +13,8 @@
 <!--@import returnButton-->
 
                 <div class="clearfix">
-                    [[!getResources?
+                    [[!getPage?
+                        &element=`getResources`
                         &parents=`[[*id]]`
                         &limit=`12`
                         &tplPath=`[[++assets_path]]../Code/chunks/`
@@ -24,11 +25,18 @@
                         &showUnpublished=`0`
                         &showHidden=`0`
                         &includeContent=`0`
-                        &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
-                        &depth=`5`
                         &where=`{"template:=":6}`
                         &hideContainers=`1`
-                     ]]
+                        &depth=`5`
+                        &pageVarKey=`page`
+                        &sortby=`menuindex`
+                        &sortdir=`ASC`
+                        &pageNavOuterTpl=`[[+prev]][[+pages]][[+next]]`
+                        &pagePrevTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-left-small" viewBox="5 4 26 26"><use xlink:href="#arrow-left-small"></use></svg></a></li>`
+                        &pageNextTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-right-small" viewBox="5 4 26 26"><use xlink:href="#arrow-right-small"></use></svg></a></li>`
+                        &pageNavTpl=`<li[[+classes]]><a[[+classes]][[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
+                        &pageActiveTpl=`<li[[+activeClasses]][[+activeClasses:default=` class="current"`]]><a[[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
+                    ]]
                 </div>
             </section>
 <!--@import banner-->
