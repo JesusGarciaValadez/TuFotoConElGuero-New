@@ -8,37 +8,13 @@
                     &includeContent=`1`
                     &tpl=`events-figure-item`
                     &pageNavOuterTpl=`[[+prev]][[+pages]][[+next]]`
-                    &pagePrevTpl=`<li class="control"><a[[+classes]][[+title]] href="[[+href]]"><svg class="arrow arrow-left-small" viewBox="5 4 26 26"><use xlink:href="#arrow-left-small"></use></svg></a></li>`
-                    &pageNextTpl=`<li class="control"><a[[+classes]][[+title]] href="[[+href]]"><svg class="arrow arrow-right-small" viewBox="5 4 26 26"><use xlink:href="#arrow-right-small"></use></svg></a></li>`
-                    &pageActiveTpl=`<li[[+activeClasses]][[+activeClasses:default=` class="current"`]]><a[[+title]] href="[[+href]]">[[+pageNo]]</a></li>`
+                    &pagePrevTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-left-small" viewBox="5 4 26 26"><use xlink:href="#arrow-left-small"></use></svg></a></li>`
+                    &pageNextTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-right-small" viewBox="5 4 26 26"><use xlink:href="#arrow-right-small"></use></svg></a></li>`
+                    &pageNavTpl=`<li[[+classes]]><a[[+classes]][[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
+                    &pageActiveTpl=`<li[[+activeClasses]][[+activeClasses:default=` class="current"`]]><a[[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
                     &sortby=`pagetitle`
                     &sortdir=`ASC`
                 ]]
                 <div class="paging clearfix">
                     <ul class="pageList clearfix">[[!+page.nav]]</ul>
-                    <!--ul class="pageList clearfix">
-                        <li>
-                            <a href="#" class="clearfix">
-                                <svg class="arrow arrow-left-small" viewBox="5 4 26 26">
-                                    <use xlink:href="#arrow-left-small"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="current">
-                            <a href="#" class="clearfix">1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">2</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">3</a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">
-                                <svg class="arrow arrow-right-small" viewBox="5 4 26 26">
-                                    <use xlink:href="#arrow-right-small"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul-->
                 </div>
