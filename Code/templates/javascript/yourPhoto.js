@@ -170,7 +170,7 @@
 
             //  Obtain a sample of the margin used for the items in paginator
             //  And parse like an integer to strip px measurements
-            _childrensMargin        = Math.seil( parseFloat( _childrens.eq( 0 ).css( 'margin-right' ) ) );
+            _childrensMargin        = Math.ceil( parseFloat( _childrens.eq( 0 ).css( 'margin-right' ) ) );
             //  Calculate the total of the margin used for all the items in paginator
             _childrensMarginTotal   = _childrensMargin * ( ( _childrensLength * 2 ) - 2 );
 
@@ -179,7 +179,7 @@
 
             //  Make the calcule to translate in viewport width
             _paginatorWidthVW       = _paginatorWidthPX / ( window.innerWidth * 0.01 );
-            $( '.pageList' ).width( _paginatorWidthVW + 'vw' );
+            $( '.paging, .pageList' ).width( _paginatorWidthVW + 'vw' );
         },
         showAlert:          function ( _class, _text ) {
             $( '.alert' ).addClass( _class );

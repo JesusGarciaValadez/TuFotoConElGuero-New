@@ -37,7 +37,10 @@
 
     //  When page is finished loaded
     $( 'document' ).ready( function ( ) {
-        yourPhoto.resizePaginator();
+        //  Calculate paginator's width
+        if ( $( '.pageList' ).exists() ) {
+            yourPhoto.resizePaginator();
+        }
         $( window ).on( 'resize', function ( e ) {
             e.preventDefault();
             e.stopPropagation();
