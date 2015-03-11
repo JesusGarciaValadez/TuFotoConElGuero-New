@@ -10,7 +10,7 @@
  */
 ( function ( $, window, document, undefined ) {
     //  Revisa la disponibilidad de localStorage
-    var storage, deviceWidth, isPortable, typeOfDevice, minDeviceWidth  = 320, maxDeviceWidth = 568, timeLapseOfCarrousel    = 6000;
+    var storage;
     if( 'localStorage' in window && window.localStorage !== null ) {
         storage = localStorage;
     } else {
@@ -36,12 +36,19 @@
     } );
 
     //  When page is finished loaded
-    $( 'document' ).ready( function ( e ) {
+    $( 'document' ).ready( function ( ) {
+        yourPhoto.resizePaginator();
         $( window ).on( 'resize', function ( e ) {
+            e.preventDefault();
+            e.stopPropagation();
+            //  Crea las instancias de jScrollPane para los elementos que simulan
+            //  ser select tags
             if ( !$( '.jspScrollable' ).exists() ) {
-                //  Crea las instancias de jScrollPane para los elementos que simulan
-                //  ser select tags
                 yourPhoto.makeScrollBar( $( '.select_municipality .mask' ) );
+            }
+            //  Calculate paginator's width
+            if ( $( '.pageList' ).exists() ) {
+                yourPhoto.resizePaginator();
             }
         } );
 
@@ -49,18 +56,6 @@
             var _value  = $( e.currentTarget ).val();
             window.location.href = _value;
         } );
-
-        //  Calculate paginator's width
-        if ( $( '.pageList' ).exists() ) {
-            yourPhoto.resizePaginator();
-
-            $( window ).on( 'resize', function ( e ) {
-                e.preventDefault();
-                e.stopPropagation();
-
-                yourPhoto.resizePaginator();
-            } );
-        }
 
         if ( $( 'form[name="contact-form"]' ).exists() ) {
 
@@ -118,7 +113,7 @@
                 var successFunction = function ( responseText ) {
                     //console.log(responseText.success);
 
-                    var _title, _markup, _timer, _class, _message;
+                    var _timer, _class, _message;
 
                     try {
                         if ( $.parseJSON( responseText ) ) {
@@ -137,7 +132,7 @@
                         }
                     } catch ( e ) {
                         _class  = 'info';
-                        _message= 'Intenta más tarde.'
+                        _message= 'Intenta más tarde.';
                     } finally {
                         yourPhoto.showAlert( _class, _message );
                         _timer  = setTimeout( function ( ) {
@@ -194,7 +189,7 @@
                 var successFunction = function ( responseText ) {
                     //console.log(responseText.success);
 
-                    var _title, _markup, _timer, _class, _message;
+                    var _timer, _class, _message;
 
                     try {
                         if ( $.parseJSON( responseText ) ) {
@@ -213,7 +208,7 @@
                         }
                     } catch ( e ) {
                         _class  = 'info';
-                        _message= 'Intenta más tarde.'
+                        _message= 'Intenta más tarde.';
                     } finally {
                         yourPhoto.showAlert( _class, _message );
                         _timer  = setTimeout( function ( ) {
@@ -228,13 +223,13 @@
         }
 
         //  Funcionamiento del botón Regresar
-        if ( $( '.return' ).exists() ) {
+        /*if ( $( '.return' ).exists() ) {
             $( 'section.central' ).on( 'click', '.return', function ( e ) {
                 e.stopPropagation();
                 e.preventDefault();
 
                 window.history.back();
             } );
-        }
+        }*/
     } );
 } ) ( jQuery, window, document );

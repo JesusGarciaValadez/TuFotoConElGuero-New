@@ -10,12 +10,11 @@
 ( function( $, window, undefined ) {
 
     var _yourPhoto    = window._yourPhoto,
-
+    yourPhoto,
     // Use the correct document accordingly with window argument (sandbox)
     document    = window.document,
     location    = window.location,
-    navigator   = window.navigator,
-    formActive;
+    navigator   = window.navigator;
 
     // Map over yourPhoto in case of overwrite
     _yourPhoto    = window.yourPhoto;
@@ -99,7 +98,7 @@
         //  !Crea un elemento jScrollPane.
         makeScrollBar:  function ( selector, options ) {
 
-            var _options    = ( options == undefined ) ? {} : options;
+            var _options    = ( options === undefined ) ? {} : options;
 
             // the element we want to apply the jScrollPane
             selector.jScrollPane( _options );
@@ -163,13 +162,15 @@
         resizePaginator:    function () {
             var _childrensLength, _childrensWidth,
                 _childrensMargin, _childrensMarginTotal,
-                _paginatorWidthPX, _paginatorWidthVW;
-            _childrensLength        = $( '.pageList li' ).length;
-            _childrensWidth         = $( '.pageList li' ).width();
+                _paginatorWidthPX, _paginatorWidthVW,
+                _childrens;
+            _childrens              = $( '.pageList li' );
+            _childrensLength        = _childrens.length;
+            _childrensWidth         = _childrens.width();
 
             //  Obtain a sample of the margin used for the items in paginator
             //  And parse like an integer to strip px measurements
-            _childrensMargin        = parseFloat( $( '.pageList li' ).eq( 0 ).css( 'margin-right' ) );
+            _childrensMargin        = Math.seil( parseFloat( _childrens.eq( 0 ).css( 'margin-right' ) ) );
             //  Calculate the total of the margin used for all the items in paginator
             _childrensMarginTotal   = _childrensMargin * ( ( _childrensLength * 2 ) - 2 );
 
@@ -192,7 +193,6 @@
                 $( '.alert p' ).empty( );
                 $( 'input[text],input[text],textarea' ).val();
             } );
-
         }
     };
 
