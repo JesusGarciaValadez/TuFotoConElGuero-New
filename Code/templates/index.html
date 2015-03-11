@@ -283,12 +283,11 @@
                     </a>
                     <ul class="clearfix desktop">
 [[!getResources?
-    &resources=`1,2,3,-4`
+    &parents=`162`
+    &resources=`1,2,3`
     &limit=`3`
-    &tplPath=`[[++assets_path]]../Code/chunks/`
-    &tpl=`@FILE menu-list-item.html`
-    &tplCondition=`id`
-    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
+    &where=`{"template:=":1,"OR:template:=":2,"OR:template:=":3}`
+    &depth=`0`
     &includeTVs=`1`
     &processTVs=`1`
     &tvPrefix=``
@@ -296,18 +295,20 @@
     &showHidden=`0`
     &includeContent=`0`
     &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
-    &depth=`0`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE menu-list-item.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
  ]]
                     </ul>
                 </header>
                 <ul class="clearfix mobile">
 [[!getResources?
-    &resources=`1,2,3,-4`
+    &parents=`162`
+    &resources=`1,2,3`
     &limit=`3`
-    &tplPath=`[[++assets_path]]../Code/chunks/`
-    &tpl=`@FILE menu-list-item.html`
-    &tplCondition=`id`
-    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
+    &where=`{"template:=":1,"OR:template:=":2,"OR:template:=":3}`
+    &depth=`0`
     &includeTVs=`1`
     &processTVs=`1`
     &tvPrefix=``
@@ -315,7 +316,10 @@
     &showHidden=`0`
     &includeContent=`0`
     &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
-    &depth=`0`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE menu-list-item.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
  ]]
                 </ul>
             </div>
