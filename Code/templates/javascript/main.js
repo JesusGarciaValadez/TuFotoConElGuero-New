@@ -45,7 +45,7 @@
             }
         } );
 
-        $( 'header form.mobile fieldset').on( 'change', 'select', function ( e ) {
+        $( 'header form.mobile fieldset, .year-picker.mobile fieldset').on( 'change', 'select', function ( e ) {
             var _value  = $( e.currentTarget ).val();
             window.location.href = _value;
         } );
