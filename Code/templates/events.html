@@ -285,12 +285,11 @@
                     </a>
                     <ul class="clearfix desktop">
 [[!getResources?
-    &resources=`1,2,3,-4`
+    &parents=`162`
+    &resources=`1,2,3`
     &limit=`3`
-    &tplPath=`[[++assets_path]]../Code/chunks/`
-    &tpl=`@FILE menu-list-item.html`
-    &tplCondition=`id`
-    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
+    &where=`{"template:=":1,"OR:template:=":2,"OR:template:=":3}`
+    &depth=`0`
     &includeTVs=`1`
     &processTVs=`1`
     &tvPrefix=``
@@ -298,18 +297,20 @@
     &showHidden=`0`
     &includeContent=`0`
     &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
-    &depth=`0`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE menu-list-item.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
  ]]
                     </ul>
                 </header>
                 <ul class="clearfix mobile">
 [[!getResources?
-    &resources=`1,2,3,-4`
+    &parents=`162`
+    &resources=`1,2,3`
     &limit=`3`
-    &tplPath=`[[++assets_path]]../Code/chunks/`
-    &tpl=`@FILE menu-list-item.html`
-    &tplCondition=`id`
-    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
+    &where=`{"template:=":1,"OR:template:=":2,"OR:template:=":3}`
+    &depth=`0`
     &includeTVs=`1`
     &processTVs=`1`
     &tvPrefix=``
@@ -317,7 +318,10 @@
     &showHidden=`0`
     &includeContent=`0`
     &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
-    &depth=`0`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE menu-list-item.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
  ]]
                 </ul>
             </div>
@@ -382,54 +386,34 @@
     &homeCrumbTitle=``
     &homeCrumbDescription=``
     &respectHidemenu=`1`
-]]
-                <div class="paging clearfix">
+]]                <div class="paging clearfix">
                     <ul class="pageList clearfix">[[!+page.nav]]</ul>
-                </div>
-                <a href="[[++site_url]][[~[[*parent]]]]" title="Regresar" class="button return">Regresar</a>
+                </div>                <a href="[[++site_url]][[~[[*parent]]]]" title="Regresar" class="button return">Regresar</a>
                 <div class="clearfix">
-                    <div class="clearfix">
                     [[!getPage?
                         &element=`getResources`
                         &parents=`[[*id]]`
-                        &depth=`1`
                         &limit=`12`
-                        &pageVarKey=`page`
-                        &includeTVs=`1`
-                        &includeContent=`0`
                         &tplPath=`[[++assets_path]]../Code/chunks/`
                         &tpl=`@FILE events-figure-item.html`
+                        &includeTVs=`1`
+                        &processTVs=`1`
+                        &tvPrefix=``
+                        &showUnpublished=`0`
+                        &showHidden=`0`
+                        &includeContent=`0`
+                        &depth=`4`
+                        &where=`{"template:=":5}`
+                        &hideContainers=`0`
+                        &pageVarKey=`page`
                         &sortby=`menuindex`
                         &sortdir=`ASC`
                         &pageNavOuterTpl=`[[+prev]][[+pages]][[+next]]`
                         &pagePrevTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-left-small" viewBox="5 4 26 26"><use xlink:href="#arrow-left-small"></use></svg></a></li>`
                         &pageNextTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-right-small" viewBox="5 4 26 26"><use xlink:href="#arrow-right-small"></use></svg></a></li>`
                         &pageNavTpl=`<li[[+classes]]><a[[+classes]][[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
-                        &pageActiveTpl=`<li[[+activeClasses]][[+activeClasses:default=` class="current"`]]><a[[+title]] href="#">[[+pageNo]]</a></li>`
-                        &processTVs=`1`
-                        &tvPrefix=``
-                        &showUnpublished=`0`
-                        &showHidden=`0`
-                        &where=`{"template:=":5}`
-                        &hideContainers=`1`
+                        &pageActiveTpl=`<li[[+activeClasses]][[+activeClasses:default=` class="current"`]]><a[[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
                     ]]
-                    [[!getResources?
-                        &parents=`[[*id]]`
-                        &limit=`12`
-                        &tplPath=`[[++assets_path]]../Code/chunks/`
-                        &tpl=`@FILE events-figure-item.html`
-                        &includeTVs=`1`
-                        &processTVs=`1`
-                        &tvPrefix=``
-                        &showUnpublished=`0`
-                        &showHidden=`0`
-                        &includeContent=`0`
-                        &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
-                        &depth=`4`
-                        &where=`{"template:=":5}`
-                        &hideContainers=`0`
-                     ]]
-                     </div>
                 </div>
             </section>
         <figure class="wrapper banner">
