@@ -21,6 +21,7 @@
                         &:first-child, &:nth-child( 5n ), &:nth-child( 9n )
                             margin: 0 1.953125vw 2.44140625vw 0
                         &:nth-child( 4n ), &:nth-child( 8n ), &:last-child
+                            clear: right
                             margin: 0 0 2.44140625vw 1.953125vw
                         a
                             text-decoration: none
@@ -31,11 +32,27 @@
                                 height: 13.57421875vw
                                 width: 20.5078125vw
                             figcaption
+                                max-height: 5.2734375vw
+                                min-height: 4.8828125vw
                                 p
                                     @include font-mask( normal, 1.26953125vw, 1.46484375vw, $asap-regular, $text_normal )
+                                    display: block
+                                    overflow: hidden
                                     text-align: center
+                                    text-overflow: ellipsis
+                                    width: 100%
+                                    white-space: nowrap
                                     &.event
                                         color: $dark_green
                                         margin: 0.5859375vw 0 0.390625vw
                                     &.date
                                         margin: 0
+.event
+    .wrapper
+        .central
+            > div.clearfix
+                &:last-child
+                    .item
+                        a
+                            figcaption
+                                display: flex
