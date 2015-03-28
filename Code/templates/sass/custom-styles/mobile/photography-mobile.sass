@@ -8,7 +8,7 @@
                 border: 0 none transparent
                 display: block
                 float: none
-                margin: 6.25vw auto 0
+                margin: 6.25vw auto 62.5vw
                 position: relative
                 .navigator
                     display: inline-block
@@ -56,36 +56,55 @@
                             margin: 1.25vw
                             width: auto
             aside
-                border: 3.125vw solid $white-color
+                border: 0
                 box-sizing: border-box
-                display: block
+                display: none
                 float: none
-                margin: 6.25vw auto 0
+                margin: 0
                 padding: 0
-                position: relative
-                width: 78.75vw
+                position: fixed
+                bottom: 0
+                width: 100vw
+                &.share
+                    display: flex
                 h2
-                    @include font-mask( normal, 5.625vw, 6.5625vw, $asap-bold, $text-normal )
-                    margin: 0 auto 6.25vw
-                    width: 100%
+                    display: none
                 ul
+                    align-content: space-between
+                    height: 50px
                     margin: 0
                     padding: 0
                     width: 100%
+                    z-index: 10
                     .social-button
-                        margin: 6.25vw 0
-                        &:first-child
-                            margin: 0 0 6.25vw
-                        &:last-child
-                            margin: 6.25vw 0 0
+                        align-self: center
+                        display: block
+                        float: left
+                        height: 100%
+                        margin: 0 !important
+                        width: 25%
+                        &:nth-child( 1 )
+                            background: #405A97
+                        &:nth-child( 2 )
+                            background: #D83735
+                        &:nth-child( 3 )
+                            background: #55A3DF
+                        &:nth-child( 5 )
+                            background: #757575
                         a
                             color: $dark_green
-                            display: block
+                            display: flex
+                            height: 100%
                             img, svg
-                                box-shadow: 0px 0px 0.625vw 0px rgba(0,0,0,0.50)
+                                align-self: center
+                                box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
+                                display: block
+                                float: none
                                 height: 9.375vw
+                                margin: 0 auto
                                 width: 9.375vw
                             span
+                                display: none
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form

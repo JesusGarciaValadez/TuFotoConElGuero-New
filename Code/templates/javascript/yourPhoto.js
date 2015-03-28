@@ -7,21 +7,21 @@
  *  @author: @_Chucho_
  *
  */
-( function( $, window, undefined ) {
+(function($, window, undefined) {
 
     var _yourPhoto    = window._yourPhoto,
     yourPhoto,
-    // Use the correct document accordingly with window argument (sandbox)
+    // Use the correct document accordingly with window argument(sandbox)
     document    = window.document,
     location    = window.location,
     navigator   = window.navigator;
 
     // Map over yourPhoto in case of overwrite
-    _yourPhoto    = window.yourPhoto;
+    _yourPhoto  = window.yourPhoto;
 
     // Define a local copy of yourPhoto
     yourPhoto = function() {
-        if ( !( this instanceof yourPhoto ) ) {
+        if(!(this instanceof yourPhoto)) {
 
             // The yourPhoto object is actually just the init constructor 'enhanced'
             return new yourPhoto.fn.init();
@@ -48,26 +48,26 @@
          *
          */
         //  !Método inicializador
-        init:   function ( ) {
-            if ( !$( '.jspScrollable' ).exists() ) {
+        init:   function() {
+            if(!$('.jspScrollable').exists()) {
                 //  Crea las instancias de jScrollPane para los elementos que simulan
                 //  ser select tags
-                yourPhoto.makeScrollBar( $( '.select_municipality .mask' ) );
+                yourPhoto.makeScrollBar($('.select_municipality .mask'));
             }
-            if ( 'header .select' ) {
+            if('header .select') {
                 //  Trigger para emular el comportamiento de combo box
-                $( '.select' ).on( 'click', 'button', function ( e ) {
+                $('.select').on('click', 'button', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
 
-                    $( 'nav.mask' ).toggleClass( 'active' );
-                } );
-                $( 'body' ).on( 'click', function ( e ) {
+                    $('nav.mask').toggleClass('active');
+                });
+                $('body').on('click', function(e) {
                     e.stopPropagation();
-                    if ( $( 'nav.mask' ).hasClass( 'active' ) ) {
-                        $( 'nav.mask' ).removeClass( 'active' );
+                    if($('nav.mask').hasClass('active')) {
+                        $('nav.mask').removeClass('active');
                     }
-                } );
+                });
             }
         },
         /**
@@ -81,7 +81,7 @@
          */
         //  !Crea un efecto para poder dar estilos a los elementos checkbox,
         //  radio, file y select
-        makesUniform:   function ( selector ) {
+        makesUniform:   function(selector) {
             selector.uniform();
         },
         /**
@@ -96,12 +96,12 @@
          *
          */
         //  !Crea un elemento jScrollPane.
-        makeScrollBar:  function ( selector, options ) {
+        makeScrollBar:  function(selector, options) {
 
-            var _options    = ( options === undefined ) ? {} : options;
+            var _options    =(options === undefined) ? {} : options;
 
             // the element we want to apply the jScrollPane
-            selector.jScrollPane( _options );
+            selector.jScrollPane(_options);
         },
         /**
          *
@@ -116,18 +116,17 @@
          *  @author: @_Chucho_
          *
          */
-        validateForm:   function ( _jSelector, _dataPass, _errorFunction, _successFunction ) {
-            var action  = $( _jSelector ).attr( 'action' );
-            $.ajax ( action, {
-                beforeSend: function ( ) {
+        validateForm:   function(_jSelector, _dataPass, _errorFunction, _successFunction) {
+            var action  = $(_jSelector).attr('action');
+            $.ajax(action, {
+                beforeSend: function() {
                     $('.error').remove();
-                    if ( $('textarea' ).val() === "" ) {
-
-                        $('textarea' ).val( 'Ninguno' );
+                    if($('textarea').val() === "") {
+                        $('textarea').val('Ninguno');
                     }
                 },
                 cache: false,
-                complete: function ( ) {},
+                complete: function() {},
                 contentType: "application/x-www-form-urlencoded",
                 converters: {
                     "* text":       window.String,
@@ -139,61 +138,79 @@
                 error:  _errorFunction,
                 success: _successFunction,
                 type: "POST"
-            } );
+            });
         },
-        _validateMail:          function ( mail ) {
-            return ( /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test( mail ) ) ? true : false;
+        _validateMail:          function(mail) {
+            return(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(mail)) ? true : false;
         },
-        _validateNumber:        function ( numberToCheck ) {
-            return /^\d+[^a-zA-Z]+$/.test( parseInt( numberToCheck ) );
+        _validateNumber:        function(numberToCheck) {
+            return /^\d+[^a-zA-Z]+$/.test(parseInt(numberToCheck));
         },
-        _validateRange:         function ( rangeTo, rangeFrom, valueToCheck ) {
-            return ( rangeTo >= valueToCheck && rangeFrom <= valueToCheck ) ? true : false;
+        _validateRange:         function(rangeTo, rangeFrom, valueToCheck) {
+            return(rangeTo >= valueToCheck && rangeFrom <= valueToCheck) ? true : false;
         },
-        _validateMinLength:     function ( minLength, valueToCheck ) {
-            return ( minLength < valueToCheck ) ? true : false;
+        _validateMinLength:     function(minLength, valueToCheck) {
+            return(minLength < valueToCheck) ? true : false;
         },
-        _validateMaxLength:     function ( maxLength, valueToCheck ) {
-            return ( valueToCheck <= maxLength ) ? true : false;
+        _validateMaxLength:     function(maxLength, valueToCheck) {
+            return(valueToCheck <= maxLength) ? true : false;
         },
-        _validateDate:          function ( dateToCheck ) {
-            return ( !/Invalid|NaN/.test(new Date(dateToCheck).toUTCString() ) ) ? true : false;
+        _validateDate:          function(dateToCheck) {
+            return(!/Invalid|NaN/.test(new Date(dateToCheck).toUTCString())) ? true : false;
         },
-        resizePaginator:    function () {
+        resizePaginator:    function() {
             var _childrensLength, _childrensWidth,
                 _childrensMargin, _childrensMarginTotal,
                 _paginatorWidthPX, _paginatorWidthVW,
                 _childrens;
-            _childrens              = $( '.pageList li' );
+            _childrens              = $('.pageList li');
             _childrensLength        = _childrens.length;
             _childrensWidth         = _childrens.width();
 
             //  Obtain a sample of the margin used for the items in paginator
             //  And parse like an integer to strip px measurements
-            _childrensMargin        = Math.ceil( parseFloat( _childrens.eq( 0 ).css( 'margin-right' ) ) );
+            _childrensMargin        = Math.ceil(parseFloat(_childrens.eq(0).css('margin-right')));
             //  Calculate the total of the margin used for all the items in paginator
-            _childrensMarginTotal   = _childrensMargin * ( ( _childrensLength * 2 ) - 2 );
+            _childrensMarginTotal   = _childrensMargin *((_childrensLength * 2) - 2);
 
             //  Calculate the width in px
-            _paginatorWidthPX       = ( _childrensLength * _childrensWidth ) + ( _childrensMarginTotal );
+            _paginatorWidthPX       =(_childrensLength * _childrensWidth) +(_childrensMarginTotal);
 
             //  Make the calcule to translate in viewport width
-            _paginatorWidthVW       = _paginatorWidthPX / ( window.innerWidth * 0.01 );
-            $( '.paging, .pageList' ).width( _paginatorWidthVW + 'vw' );
+            _paginatorWidthVW       = _paginatorWidthPX /(window.innerWidth * 0.01);
+            $('.paging, .pageList').width(_paginatorWidthVW + 'vw');
         },
-        showAlert:          function ( _class, _text ) {
-            $( '.alert' ).addClass( _class );
-            $( '.alert p' ).text( _text );
-            $( '.alert' ).fadeIn( 300 );
+        showAlert:          function(_class, _text) {
+            $('.alert').addClass(_class);
+            $('.alert p').text(_text);
+            $('.alert').fadeIn(300);
         },
-        hideAlert:          function ( _class ) {
-            $( '.alert' ).fadeOut( 300, function ( ) {
-                $( '.alert' ).removeClass( _class )
-                             .removeAttr( 'style' );
-                $( '.alert p' ).empty( );
-                $( 'input[text],input[text],textarea' ).val();
-            } );
-        }
+        hideAlert:          function(_class) {
+            $('.alert').fadeOut(300, function() {
+                $('.alert').removeClass(_class)
+                             .removeAttr('style');
+                $('.alert p').empty();
+                $('input[text],input[text],textarea').val();
+            });
+        },
+        anchorMenu: function(selectorToApply, offsetTop, classToFix) {
+            var _tool,_selector,_offsetTop,_classToFix;
+            _tool           =(window.pageYOffset !== undefined) ? window.pageYOffset :(document.documentElement || document.body.parentNode || document.body).scrollTop;
+            _selector       =(typeof(selectorToApply) == "undefined") ? "*" : selectorToApply;
+            _selector       =(typeof(_selector) == "object") ? _selector : $(_selector);
+            _offsetTop      =(offsetTop == "") ? 0 : offsetTop;
+            _offsetTop      =(typeof(_offsetTop) == "string") ? parseInt(_offsetTop) :(typeof(_offsetTop) == "number") ? _offsetTop : parseInt(_offsetTop);
+            _classToFix     =(typeof(classToFix) == "string") ? classToFix : '';
+            console.log(_tool);
+            console.log(_selector);
+            console.log(_offsetTop);
+            console.log(_classToFix);
+            if(_tool >= _offsetTop) {
+                _selector.addClass(_classToFix);
+            } else {
+                _selector.removeClass(_classToFix);
+            }
+        },
     };
 
     // Give the init function the yourPhoto prototype for later instantiation
@@ -205,4 +222,4 @@
 
     window.yourPhoto  = yourPhoto;
 
-} )( jQuery, window );
+})(jQuery, window);
