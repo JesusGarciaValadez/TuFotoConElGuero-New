@@ -305,6 +305,59 @@
                             </fieldset>
                         </form>
                     </li>
+                    <li>
+                                        <div class="year-picker-wrapper clearfix">
+                    <p class="desktop">Selecciona un año</p>
+                    <ul class="year-picker clearfix desktop">
+                        [[!getResources?
+                            &parents=`[[!UltimateParent? &top=`4` &topLevel=`3`]]`
+                            &limit=`0`
+                            &tplPath=`[[++assets_path]]../Code/chunks/`
+                            &tpl=`@FILE year-picker-desktop-item.html`
+                            &tplCondition=`id`
+                            &conditionalTpls=`{"[[!UltimateParent? &topLevel=`4` &top=`4`]]":"@FILE year-picker-current-desktop-item.html"}`
+                            &outputSeparator=`<li class="separator"> | </li>`
+                            &includeTVs=`1`
+                            &processTVs=`1`
+                            &tvPrefix=``
+                            &showUnpublished=`1`
+                            &showHidden=`1`
+                            &includeContent=`1`
+                            &wrapIfEmpty=`false`
+                            &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                            &depth=`7`
+                            &where=`{"template:=":4}`
+                            &hideContainers=`0`
+                            &debug=`false`
+                         ]]
+                    </ul>
+                    <form method="post" action="" name="year-picker" class="year-picker clearfix mobile">
+                        <fieldset>
+                            <select name="year-picker-select">
+                                [[!getResources?
+                                    &parents=`[[!UltimateParent? &top=`4` &topLevel=`3`]]`
+                                    &limit=`0`
+                                    &tplPath=`[[++assets_path]]../Code/chunks/`
+                                    &tpl=`@FILE year-picker-mobile-item.html`
+                                    &tplCondition=`id`
+                                    &conditionalTpls=`{"[[!UltimateParent? &topLevel=`4` &top=`4`]]":"@FILE year-picker-current-mobile-item.html"}`
+                                    &includeTVs=`1`
+                                    &processTVs=`1`
+                                    &tvPrefix=``
+                                    &showUnpublished=`1`
+                                    &showHidden=`1`
+                                    &includeContent=`1`
+                                    &wrapIfEmpty=`false`
+                                    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                                    &depth=`7`
+                                    &where=`{"template:=":4}`
+                                    &hideContainers=`0`
+                                    &debug=`false`
+                                ]]
+                            </select>
+                        </fieldset>
+                    </form>
+                </div>                    </li>
 [[!getResources?
     &parents=`162`
     &resources=`1,2,3`

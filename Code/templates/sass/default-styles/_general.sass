@@ -1,6 +1,7 @@
 $font-size: 16px
-html,body
+html,body, .banner
     background: url('../img/home/linen-yellow.jpg') repeat scroll 0 0 transparent
+html,body
     display: table
     font-size: $font-size
     height: 100%
@@ -221,9 +222,11 @@ html,body
                     text-decoration: none
                     width: 100%
 .banner
+    bottom: 7.8125vw
+    position: fixed
     img
         display: block
-        margin: 1.9512195122vw auto 0
+        margin: 0 auto
         width: 80.2734375%
     figcaption
         p
@@ -248,7 +251,7 @@ footer
     height: 25px
     margin: 0
     padding: 0
-    position: relative
+    position: fixed
     width: 100%
     p
         @include font-mask( normal, 0.9375vw, em( 25, 9 ), $asap-bold, $white-color )
