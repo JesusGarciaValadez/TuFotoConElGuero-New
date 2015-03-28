@@ -201,10 +201,6 @@
             _offsetTop      =(offsetTop == "") ? 0 : offsetTop;
             _offsetTop      =(typeof(_offsetTop) == "string") ? parseInt(_offsetTop) :(typeof(_offsetTop) == "number") ? _offsetTop : parseInt(_offsetTop);
             _classToFix     =(typeof(classToFix) == "string") ? classToFix : '';
-            console.log(_tool);
-            console.log(_selector);
-            console.log(_offsetTop);
-            console.log(_classToFix);
             if(_tool >= _offsetTop) {
                 _selector.addClass(_classToFix);
             } else {
