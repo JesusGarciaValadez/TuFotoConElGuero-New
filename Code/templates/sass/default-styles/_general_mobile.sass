@@ -12,7 +12,7 @@ html,body
             display: block
             float: none
             height: 18.75vw
-            margin: 5vw auto 0
+            margin: 5vw auto
             position: static
             width: 39.375vw
             .logo
@@ -41,20 +41,6 @@ html,body
                 fill: $dark_green
             .icon-menu
                 /*fill: #fff210*/
-        form
-            display: block
-            height: auto
-            margin: 4.6875vw auto
-            position: static
-            width: 72.8125vw
-            fieldset
-                display: block
-                height: 100%
-                width: 100%
-                select
-                    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $text-municipality )
-                    display: block
-                    width: 100%
         .desktop
             display: none
     > ul
@@ -77,11 +63,25 @@ html,body
             right: 3.75vw
             top: 0
         li
-            display: list-item
+            display: flex
             float: none
             height: 14.375vw
             transition: all 0.5s ease
             width: 100%
+            form
+                display: block
+                height: auto
+                margin: 4.6875vw auto
+                position: static
+                width: 72.8125vw
+                fieldset
+                    display: block
+                    height: 100%
+                    width: 100%
+                    select
+                        @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $text-municipality )
+                        display: block
+                        width: 100%
             a
                 @include font-mask( normal, 5vw, 14.375vw, $asap-regular, $placeholder-color )
                 display: block

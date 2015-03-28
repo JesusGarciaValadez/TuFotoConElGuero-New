@@ -204,7 +204,8 @@ html,body
                 padding: 0
                 position: relative
                 width: 15.625vw
-                &.current
+                &.current, &:hover
+                    background-color: #F5F5F5
                     &:after
                         @include triangle ( transparent, solid, 10px, transparent, solid, 10px, $dark-green, solid, 10px, transparent, solid, 10px )
                         bottom: 0
