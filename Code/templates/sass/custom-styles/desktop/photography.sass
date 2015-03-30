@@ -52,17 +52,21 @@
                         height: 38.28125vw
                         width: 57.421875vw
                     .display
-                        background: $figcaption-background
                         bottom: 0
-                        height: 6.640625vw
-                        left: 0
+                        left: -0.09765625vw
+                        max-height: 6.640625vw
                         position: absolute
                         width: 100%
                         p
                             @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $dark_green )
+                            background: $figcaption-background
                             display: block
-                            margin: 0.5859375vw 0.68359375vw
-                            width: 54.39453125vw
+                            margin: 0 auto
+                            padding: 0.5859375vw 0.68359375vw
+                            height: 6.640625vw
+                            width: 56.15234375vw
+                            &:empty
+                                display: none
             aside
                 background: $white-color
                 border: 1.46484375vw solid $white-color
