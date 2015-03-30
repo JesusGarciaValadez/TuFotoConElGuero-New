@@ -242,7 +242,7 @@
          */
         //  !Ancla el menú cuando pasa de cierta coordenada Y al hacer scroll
         if ($('.photo aside').exists()) {
-            $(window).on('scroll', function(e) {
+            $(window).on('scroll', function() {
                 yourPhoto.anchorMenu('.photo aside', '30', 'share');
             });
         }
