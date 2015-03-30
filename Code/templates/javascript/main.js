@@ -289,5 +289,18 @@
                 }
             }, true );
         }
+
+        //  Mostrar el logo del sitio al azar entre la grilla de imágenes del home
+        if ($('.home').exists()) {
+            var _images = $('.central figure'), choosenOne;
+            setInterval( function () {
+                _images.removeClass('displayed');
+                choosenOne = Math.random() * 100;
+                while (choosenOne > 12 ) {
+                    choosenOne = Math.floor(Math.random() * 100);
+                }
+                _images.eq(choosenOne).addClass('displayed');
+            }, 3000 );
+        }
     });
 })(jQuery, window, document);
