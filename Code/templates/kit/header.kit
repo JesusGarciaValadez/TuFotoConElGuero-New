@@ -44,10 +44,13 @@
                         </svg>
                     </a>
                     <ul class="clearfix desktop">
+                        <li>
+                            <a href="[[++site_url]]" title="Home" target="_self">Home</a>
+                        </li>
 [[!getResources?
     &parents=`162`
-    &resources=`1,2,3`
-    &limit=`3`
+    &resources=`-1,2,3`
+    &limit=`2`
     &where=`{"template:=":1,"OR:template:=":2,"OR:template:=":3}`
     &depth=`0`
     &includeTVs=`1`
