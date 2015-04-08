@@ -1,0 +1,22 @@
+[[!getResources?
+    &parents=`4`
+    &depth=`1`
+    &where=`{'id:!=':[[*id]],'template:=':4}`
+    &limit=`0`
+    &showUnpublished=`0`
+    &showHidden=`0`
+    &includeContent=`1`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &sortby=`{'menuindex':'ASC','createdon':'ASC','publishedon':'ASC'}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE municipality-list-item-url.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{'20':'@FILE menu-list-item-conditional.html'}`
+    &toPlaceholder=`urlParent`
+ ]]
+ <p>[[+urlParent]][[+idx]]</p>
+                        <li>
+                            <a href="[[+urlParent]][[+idx]]" title="[[+pagetitle]]">[[+pagetitle]]</a>
+                        </li>

@@ -1,0 +1,147 @@
+<!-- menú
+[[!getResources?
+    &parents=`1`
+    &resources=`1,2,3,-4`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE menu-list-item.html`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &showUnpublished=`0`
+    &showHidden=`0`
+    &includeContent=`0`
+    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+    &depth=`0`
+    &tplCondition=`id`
+    &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
+ ]]
+-->
+<!-- Municipio
+[[!getResources?
+    &parents=`4`
+    &depth=`0`
+    &where=`{"id:!=":[[*id]],"template:=":4}`
+    &limit=`0`
+    &showUnpublished=`0`
+    &showHidden=`0`
+    &includeContent=`1`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &sortby=`{"menuindex":"ASC","createdon":"ASC","publishedon":"ASC"}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE municipality-list-item.html`
+ ]]
+-->
+<!-- URL Municipio
+[[!getResources?
+    &parents=`4`
+    &depth=`1`
+    &where=`{'id:!=':[[*id]],'template:=':1}`
+    &limit=`0`
+    &showUnpublished=`1`
+    &showHidden=`1`
+    &includeContent=`1`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &sortby=`{'menuindex':'ASC','createdon':'ASC','publishedon':'ASC'}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE municipality-list-item-url.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{'20':'@FILE menu-list-item-conditional.html'}`
+ ]]
+-->
+<!-- Index
+[[!getResources?
+    &parents=`4`
+    &depth=`0`
+    &where=`{"id:!=":[[*id]],"template:=":5}`
+    &limit=`12`
+    &showUnpublished=`0`
+    &showHidden=`0`
+    &includeContent=`1`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &sortby=`{"menuindex":"ASC","createdon":"ASC","publishedon":"ASC"}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE events-figure-item.html`
+ ]]
+[[!getResources?
+    &parents=`4`
+    &depth=`1`
+    &where=`{"id:!=":[[*id]],"template:=":6}`
+    &limit=`12`
+    &showUnpublished=`1`
+    &showHidden=`1`
+    &includeContent=`1`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &sortby=`{"menuindex":"ASC","createdon":"ASC","publishedon":"ASC"}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE municipality-list-item.html`
+ ]]
+[[!getResources?
+    &parents=`4`
+    &depth=`1`
+    &where=`{"id:!=":[[*id]],"template:=":6}`
+    &limit=`12`
+    &showUnpublished=`1`
+    &showHidden=`1`
+    &includeContent=`0`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &sortby=`RAND()`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE mosaic-figure-item.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{"20":"@FILE menu-list-item-conditional.html"}`
+ ]]
+ -->
+ <!-- Events
+[[!getResources?
+    &parents=`[[*id]]`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE events-figure-item.html`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &showUnpublished=`0`
+    &showHidden=`0`
+    &includeContent=`1`
+    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+    &depth=`0`
+    &limit='0'
+ ]]
+ -->
+ <!-- Event
+ [[!getResources?
+    &parents=`[[*id]]`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE event-figure-item.html`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &showUnpublished=`0`
+    &showHidden=`0`
+    &includeContent=`1`
+    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+    &depth=`0`
+    &limit='0'
+ ]]
+ -->
+ <!-- Photography
+                [[!getPage?
+                    &element=`getResources`
+                    &parents=`[[*id]]`
+                    &depth=`2`
+                    &limit=`12`
+                    &pageVarKey=`page`
+                    &includeTVs=`1`
+                    &includeContent=`1`
+                    &tpl=`events-figure-item`
+                ]]
+ -->

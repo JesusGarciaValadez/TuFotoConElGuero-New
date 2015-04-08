@@ -1,0 +1,28 @@
+<!--@import head-->
+    <body class="page home">
+<!--@import svgMenu-->
+<!--@import header-->
+
+            <section class="central clearfix">
+                [[!getResources?
+                    &parents=`4`
+                    &limit=`12`
+                    &tplPath=`[[++assets_path]]../Code/chunks/`
+                    &tpl=`@FILE mosaic-figure-item.html`
+                    &includeTVs=`1`
+                    &processTVs=`1`
+                    &tvPrefix=``
+                    &showUnpublished=`0`
+                    &showHidden=`0`
+                    &includeContent=`1`
+                    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                    &depth=`4`
+                    &where=`{"template:=":6}`
+                    &hideContainers=`1`
+                 ]]
+            </section>
+<!--@import banner-->
+
+<!--@import footer-->
+
+<!--@import html_end-->

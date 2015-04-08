@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Fotografia" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fotografia-desktop" sketch:type="MSArtboardGroup" transform="translate(-686.000000, -568.000000)" stroke="#FFFFFF">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(-2.000000, 54.000000)">
+                <g id="Compartir" transform="translate(682.500000, 272.000000)" sketch:type="MSShapeGroup">
+                    <g id="Enviar-por-correo" transform="translate(1.000000, 237.000000)">
+                        <g id="Share-button">
+                            <g id="icon" transform="translate(6.000000, 6.000000)">
+                                <path d="M21.3374023,6.43798828 L13.2900366,6.43798828 L13.2900366,14.6196372 L21.3573101,14.6196372" id="Path-36"></path>
+                                <path d="M4.81640625,9.5 L11.2164238,9.5" id="Path-38"></path>
+                                <path d="M7.515625,11.5 L11.0444336,11.5" id="Path-39"></path>
+                                <path d="M6.48388672,6.5 L11.0097348,6.5" id="Path-39"></path>
+                                <polygon id="Star-1" points="18 11 14.5358984 11 16.2679492 8 18 5 19.7320508 8 21.4641016 11 "></polygon>
+                                <circle id="Oval-28" stroke-width="2" cx="11" cy="11" r="11"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,5 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
+<<<<<<< HEAD
 "creatorBuild": "17682",
 "files": {
 	"\/admin.php": {
@@ -7,19 +8,48 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin.php",
+=======
+"creatorBuild": "18493",
+"files": {
+	"\/404.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/404.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/admin.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/admin.php",
+=======
+	"\/apple-touch-icon-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1226,
+		"inputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
+		"outputAbbreviatedPath": "\/apple-touch-icon-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/main.css",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/admin_edita.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -34,100 +64,298 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/admin_principal.php",
+=======
+	"\/assets\/img\/home\/imgo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35360,
+		"inputAbbreviatedPath": "\/assets\/img\/home\/imgo.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home\/imgo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/home\/linen-yellow.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1622,
+		"inputAbbreviatedPath": "\/assets\/img\/home\/linen-yellow.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/home\/linen-yellow.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/home\/linen-yellow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2653,
+		"inputAbbreviatedPath": "\/assets\/img\/home\/linen-yellow.png",
+		"outputAbbreviatedPath": "\/assets\/img\/home\/linen-yellow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/municipios\/amatan\/2014\/visita-a-peluqueria\/3_3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36423,
+		"inputAbbreviatedPath": "\/assets\/img\/municipios\/amatan\/2014\/visita-a-peluqueria\/3_3.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/municipios\/amatan\/2014\/visita-a-peluqueria\/3_3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_185.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 128640,
+		"inputAbbreviatedPath": "\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_185.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_185.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_186.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110319,
+		"inputAbbreviatedPath": "\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_186.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_186.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_187.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65241,
+		"inputAbbreviatedPath": "\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_187.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_187.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_188.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 64737,
+		"inputAbbreviatedPath": "\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_188.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/municipios\/comitan-de-dominguez\/2014\/recorrido-durante-campana\/30_188.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/js\/main.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/main.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/main.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/vendor\/modernizr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/vendor\/modernizr.js",
+		"outputAbbreviatedPath": "\/assets\/js\/modernizr.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/chunks\/event-figure-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/event-figure-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/alta-back.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/alta-back.php",
+=======
+	"\/Code\/chunks\/events-figure-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/events-figure-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/alta.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/alta.php",
+=======
+	"\/Code\/chunks\/menu-list-current-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/menu-list-current-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/borra_evento.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/borra_evento.php",
+=======
+	"\/Code\/chunks\/menu-list-item-mobile.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/menu-list-item-mobile.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/cerrarSesion.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/cerrarSesion.php",
+=======
+	"\/Code\/chunks\/menu-list-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/menu-list-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/core\/_global.php": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/core\/_global.php",
+=======
+	"\/Code\/chunks\/mosaic-figure-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/mosaic-figure-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/core\/config.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/core\/config.php",
+=======
+	"\/Code\/chunks\/municipality-list-item-url.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/municipality-list-item-url.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/core\/Model.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/core\/Model.php",
+=======
+	"\/Code\/chunks\/municipality-list-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/municipality-list-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/core\/Mysql.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/core\/Mysql.php",
+=======
+	"\/Code\/chunks\/year-picker-current-desktop-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/year-picker-current-desktop-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/css\/admin.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/css\/admin.css",
+=======
+	"\/Code\/chunks\/year-picker-current-mobile-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/year-picker-current-mobile-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/css\/jquery.alerts.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/css\/jquery.alerts.css",
+=======
+	"\/Code\/chunks\/year-picker-desktop-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/year-picker-desktop-item.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/css\/le-frog\/images\/ui-bg_diagonals-small_0_aaaaaa_40x40.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -276,46 +504,203 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/css\/le-frog\/jquery-ui-1.10.4.custom.css",
+=======
+	"\/Code\/chunks\/year-picker-mobile-item.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/chunks\/year-picker-mobile-item.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/Code\/snippets\/config\/config.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/config\/config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/controller.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/controller.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/db\/connection.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/db\/connection.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/Common.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/Common.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/FilterInput.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/FilterInput.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/Mailer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/Mailer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/Model.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/Model.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/ParserTemplate.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/ParserTemplate.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/phpmailer\/class.phpmailer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/phpmailer\/class.phpmailer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/phpmailer\/class.pop3.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/phpmailer\/class.pop3.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/phpmailer\/class.smtp.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/phpmailer\/class.smtp.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/Review.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/Review.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/snippets\/libs\/Validator.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/snippets\/libs\/Validator.php",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+<<<<<<< HEAD
 	"\/admin\/css\/le-frog\/jquery-ui-1.10.4.custom.min.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/css\/le-frog\/jquery-ui-1.10.4.custom.min.css",
+=======
+	"\/Code\/templates\/contact.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/contact.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/edita.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/edita.php",
+=======
+	"\/Code\/templates\/event.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/event.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/edita_evento.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/edita_evento.php",
+=======
+	"\/Code\/templates\/events.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/events.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/eliminaEvento.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/eliminaEvento.php",
+=======
+	"\/Code\/templates\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/index.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/admin\/img\/dashboard\/bg_dashboard.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -388,99 +773,246 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/jquery-1.10.2.js",
 		"outputAbbreviatedPath": "\/admin\/js\/jquery-1.10.2.min.js",
+=======
+	"\/Code\/templates\/javascript\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/main.js",
+		"outputAbbreviatedPath": "\/assets\/js\/main.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/plugins.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/plugins.js",
+		"outputAbbreviatedPath": "\/assets\/js\/plugins.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+	"\/Code\/templates\/javascript\/vendor\/additional-methods.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/additional-methods.js",
+		"outputAbbreviatedPath": "\/assets\/js\/additional-methods.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/vendor\/isotope.pkgd.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/isotope.pkgd.js",
+		"outputAbbreviatedPath": "\/assets\/js\/isotope.pkgd.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/vendor\/jquery-1.10.2.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery-1.10.2.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery-1.10.2.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/vendor\/jquery-1.8.3.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery-1.8.3.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery-1.8.3.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/vendor\/jquery-1.9.0.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery-1.9.0.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery-1.9.0.min.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+<<<<<<< HEAD
 	"\/admin\/js\/jquery-1.11.0.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/jquery-1.11.0.min.js",
 		"outputAbbreviatedPath": "\/admin\/js\/jquery-1.11.0.min.min.js",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery-2.1.1.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery-2.1.1.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery-2.1.1.min.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/admin\/js\/jquery-ui-1.10.4.custom.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/jquery-ui-1.10.4.custom.js",
 		"outputAbbreviatedPath": "\/admin\/js\/jquery-ui-1.10.4.custom.min.js",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery-2.1.3.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery-2.1.3.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery-2.1.3.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/admin\/js\/jquery-ui-1.10.4.custom.min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/jquery-ui-1.10.4.custom.min.js",
 		"outputAbbreviatedPath": "\/admin\/js\/jquery-ui-1.10.4.custom.min.min.js",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery.form.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.form.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery.form.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/admin\/js\/jquery.alerts.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/jquery.alerts.js",
 		"outputAbbreviatedPath": "\/admin\/js\/jquery.alerts.min.js",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery.jscrollpane.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.jscrollpane.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery.jscrollpane.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/admin\/js\/jquery.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/jquery.min.js",
 		"outputAbbreviatedPath": "\/admin\/js\/jquery.min.min.js",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery.magnific-popup.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.magnific-popup.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery.magnific-popup.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/admin\/js\/jquery.validate.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/jquery.validate.js",
 		"outputAbbreviatedPath": "\/admin\/js\/jquery.validate.min.js",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery.magnific-popup.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.magnific-popup.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery.magnific-popup.min.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/admin\/js\/jquery.validate.min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/jquery.validate.min.js",
 		"outputAbbreviatedPath": "\/admin\/js\/jquery.validate.min.min.js",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery.mousewheel.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.mousewheel.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery.mousewheel.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/admin\/js\/principal.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/js\/principal.js",
 		"outputAbbreviatedPath": "\/admin\/js\/principal.min.js",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery.tools.custom.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.tools.custom.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery.tools.custom.min.min.js",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/admin\/main.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -717,10 +1249,217 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/event.css",
+=======
+	"\/Code\/templates\/javascript\/vendor\/jquery.tools.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.tools.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery.tools.min.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/vendor\/jquery.validate.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.validate.js",
+		"outputAbbreviatedPath": "\/assets\/js\/jquery.validate.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/vendor\/masonry.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/masonry.js",
+		"outputAbbreviatedPath": "\/assets\/js\/masonry.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/vendor\/modernizr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/modernizr.js",
+		"outputAbbreviatedPath": "\/assets\/js\/modernizr.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/javascript\/yourPhoto.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/yourPhoto.js",
+		"outputAbbreviatedPath": "\/assets\/js\/yourPhoto.min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 2,
+		"syntaxCheckerStyle": 1
+		},
+	"\/Code\/templates\/kit\/banner.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/banner.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/banner.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/breadcrumbs.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/breadcrumbs.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/breadcrumbs.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/contact.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/contact.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/contact.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/event.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/event.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/event.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/events.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/events.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/events.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/footer.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/footer.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/footer.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/head.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/head.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/head.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/header.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/header.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/header.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/html_end.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/html_end.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/html_end.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/index.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/index.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/index.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/pagination.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/pagination.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/pagination.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/photography.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/photography.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/photography.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/privacy-policy.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/privacy-policy.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/privacy-policy.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/returnButton.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/returnButton.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/returnButton.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/svgMenu.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/svgMenu.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/svgMenu.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/kit\/yearpicker.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/kit\/yearpicker.kit",
+		"outputAbbreviatedPath": "\/Code\/templates\/yearpicker.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Code\/templates\/photography.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/photography.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/css\/eventos.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -1021,10 +1760,18 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/img\/contact_controls.css",
+=======
+	"\/Code\/templates\/privacy-policy.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/privacy-policy.html",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/css\/img\/contact_controls.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -22731,15 +23478,366 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/seccion\/top-new.bak2.php",
+=======
+	"\/Code\/templates\/sass\/custom-styles\/desktop\/contact.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/desktop\/contact.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/contact.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/desktop\/events.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/desktop\/events.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/events.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/desktop\/home.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/desktop\/home.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/home.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/desktop\/photography.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/desktop\/photography.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/photography.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/desktop\/privacy-policy.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/desktop\/privacy-policy.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/privacy-policy.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/contact-mobile.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/contact-mobile.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/contact-mobile.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/events-mobile.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/events-mobile.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/events-mobile.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/home_mobile.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/home_mobile.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/home_mobile.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/photography-mobile.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/photography-mobile.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/photography-mobile.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/privacy-policy-mobile.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/privacy-policy-mobile.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/privacy-policy-mobile.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_boilerplate_styles.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_boilerplate_styles.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_boilerplate_styles.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_colors.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_colors.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_colors.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_general.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_general.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_general.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_general_mobile.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_general_mobile.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_general_mobile.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_helper_classes.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_helper_classes.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_helper_classes.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_mixins.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_mixins.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_mixins.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_normalize.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_normalize.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_normalize.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_print_stylesheet.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_print_stylesheet.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_print_stylesheet.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_typographys.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_typographys.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_typographys.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": 0
+		},
+	"\/Code\/templates\/sass\/default-styles\/_variables.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_variables.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/_variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 1,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/main.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/main.sass",
+		"outputAbbreviatedPath": "\/assets\/css\/main.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/config.core.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/config.core.php",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/seccion\/top-new.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/seccion\/top-new.php",
+=======
+	"\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.php",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -22752,14 +23850,21 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
+<<<<<<< HEAD
 	"displayValue": "Tu Foto con el Güero",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-lotr"
+=======
+	"displayValue": "Tu Foto con el Güero New",
+	"displayValueWasSetByUser": 1,
+	"iconImageName": "meme-grumpy"
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
+<<<<<<< HEAD
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
 	"autoSyncProjectSettingsFile": 1,
 	"browserRefreshDelay": 0,
@@ -22770,6 +23875,18 @@
 	"coffeeAutoOutputPathReplace2": "",
 	"coffeeAutoOutputPathStyle": 0,
 	"coffeeCreateSourceMap": 0,
+=======
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoSyncProjectSettingsFile": 1,
+	"browserRefreshDelay": 0,
+	"coffeeAutoOutputPathEnabled": 1,
+	"coffeeAutoOutputPathFilenamePattern": "*.min.js",
+	"coffeeAutoOutputPathRelativePath": "assets\/js",
+	"coffeeAutoOutputPathReplace1": "",
+	"coffeeAutoOutputPathReplace2": "",
+	"coffeeAutoOutputPathStyle": 1,
+	"coffeeCreateSourceMap": 1,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
 			"active": 0,
@@ -22788,13 +23905,24 @@
 			"flagValue": 10
 			},
 		"duplicate_key": {
+<<<<<<< HEAD
 			"active": 0,
+=======
+			"active": 1,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 			"flagValue": -1
 			},
 		"empty_constructor_needs_parens": {
 			"active": 0,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"indentation": {
 			"active": 1,
 			"flagValue": 2
@@ -22879,15 +24007,33 @@
 			"active": 0,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
+=======
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 			}
 		},
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
+<<<<<<< HEAD
 	"externalServerAddress": "http:\/\/localhost:80\/tufotoconelguero\/",
+=======
+	"externalServerAddress": "http:\/\/localhost\/tufotoconelguero-new",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
@@ -22905,6 +24051,7 @@
 	"hamlUseUnixNewlines": 0,
 	"jadeAutoOutputPathEnabled": 1,
 	"jadeAutoOutputPathFilenamePattern": "*.html",
+<<<<<<< HEAD
 	"jadeAutoOutputPathRelativePath": "",
 	"jadeAutoOutputPathReplace1": "",
 	"jadeAutoOutputPathReplace2": "",
@@ -22921,6 +24068,24 @@
 	"javascriptOutputStyle": 2,
 	"javascriptSyntaxCheckerStyle": 1,
 	"jsCheckerReservedNamesString": "$,jQuery,_,TFG:write,_TFG:write",
+=======
+	"jadeAutoOutputPathRelativePath": "..\/",
+	"jadeAutoOutputPathReplace1": "",
+	"jadeAutoOutputPathReplace2": "",
+	"jadeAutoOutputPathStyle": 2,
+	"jadeCompileDebug": 1,
+	"jadeOutputStyle": 1,
+	"javascriptAutoOutputPathEnabled": 1,
+	"javascriptAutoOutputPathFilenamePattern": "*.min.js",
+	"javascriptAutoOutputPathRelativePath": "assets\/js",
+	"javascriptAutoOutputPathReplace1": "",
+	"javascriptAutoOutputPathReplace2": "",
+	"javascriptAutoOutputPathStyle": 1,
+	"javascriptCreateSourceMap": 1,
+	"javascriptOutputStyle": 2,
+	"javascriptSyntaxCheckerStyle": 1,
+	"jsCheckerReservedNamesString": "yourPhoto",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
@@ -22938,6 +24103,13 @@
 			"active": 1,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"camelcase": {
 			"active": 0,
 			"flagValue": -1
@@ -22962,6 +24134,13 @@
 			"active": 0,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"eqeqeq": {
 			"active": 1,
 			"flagValue": -1
@@ -23014,6 +24193,13 @@
 			"active": 0,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"jquery": {
 			"active": 1,
 			"flagValue": -1
@@ -23058,6 +24244,13 @@
 			"active": 0,
 			"flagValue": 4
 			},
+<<<<<<< HEAD
+=======
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"mootools": {
 			"active": 0,
 			"flagValue": -1
@@ -23126,6 +24319,13 @@
 			"active": 0,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"regexp": {
 			"active": 1,
 			"flagValue": -1
@@ -23146,6 +24346,13 @@
 			"active": 0,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"strict": {
 			"active": 0,
 			"flagValue": -1
@@ -23189,7 +24396,11 @@
 		},
 	"jsLintFlags2": {
 		"ass": {
+<<<<<<< HEAD
 			"active": 0,
+=======
+			"active": 1,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 			"flagValue": -1
 			},
 		"bitwise": {
@@ -23205,7 +24416,11 @@
 			"flagValue": -1
 			},
 		"continue": {
+<<<<<<< HEAD
 			"active": 0,
+=======
+			"active": 1,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 			"flagValue": -1
 			},
 		"debug": {
@@ -23229,7 +24444,11 @@
 			"flagValue": -1
 			},
 		"indent": {
+<<<<<<< HEAD
 			"active": 0,
+=======
+			"active": 1,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 			"flagValue": 4
 			},
 		"maxlen": {
@@ -23249,7 +24468,11 @@
 			"flagValue": -1
 			},
 		"plusplus": {
+<<<<<<< HEAD
 			"active": 0,
+=======
+			"active": 1,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 			"flagValue": -1
 			},
 		"properties": {
@@ -23281,7 +24504,11 @@
 			"flagValue": -1
 			},
 		"unparam": {
+<<<<<<< HEAD
 			"active": 1,
+=======
+			"active": 0,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 			"flagValue": -1
 			},
 		"vars": {
@@ -23295,10 +24522,17 @@
 		},
 	"kitAutoOutputPathEnabled": 1,
 	"kitAutoOutputPathFilenamePattern": "*.html",
+<<<<<<< HEAD
 	"kitAutoOutputPathRelativePath": "",
 	"kitAutoOutputPathReplace1": "",
 	"kitAutoOutputPathReplace2": "",
 	"kitAutoOutputPathStyle": 0,
+=======
+	"kitAutoOutputPathRelativePath": "..\/",
+	"kitAutoOutputPathReplace1": "",
+	"kitAutoOutputPathReplace2": "",
+	"kitAutoOutputPathStyle": 2,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	"lessAllowInsecureImports": 0,
 	"lessAutoOutputPathEnabled": 1,
 	"lessAutoOutputPathFilenamePattern": "*.css",
@@ -23326,6 +24560,7 @@
 	"reloadFileURLs": 1,
 	"sassAutoOutputPathEnabled": 1,
 	"sassAutoOutputPathFilenamePattern": "*.css",
+<<<<<<< HEAD
 	"sassAutoOutputPathRelativePath": "..\/",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
@@ -23338,6 +24573,20 @@
 	"shouldRunAutoprefixer": 1,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
+=======
+	"sassAutoOutputPathRelativePath": "assets\/css\/",
+	"sassAutoOutputPathReplace1": "sass",
+	"sassAutoOutputPathReplace2": "css",
+	"sassAutoOutputPathStyle": 1,
+	"sassCreateSourceMap": 1,
+	"sassDebugStyle": 0,
+	"sassDecimalPrecision": 10,
+	"sassOutputStyle": 3,
+	"sassUseLibsass": 0,
+	"shouldRunAutoprefixer": 1,
+	"shouldRunBless": 1,
+	"skippedItemsString": "node_modules, _logs, \/core, .hg, _cache, \/setup_, log, \/manager, logs, cache, .svn, \/Code\/BD, .git, \/connectors, \/assets\/components",
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",
@@ -23346,6 +24595,10 @@
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
+<<<<<<< HEAD
+=======
+	"slimOutputFormat": 0,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
 	"stylusAutoOutputPathEnabled": 1,
@@ -23354,6 +24607,10 @@
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
 	"stylusAutoOutputPathStyle": 2,
+<<<<<<< HEAD
+=======
+	"stylusCreateSourceMap": 0,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	"stylusDebugStyle": 0,
 	"stylusImportCSS": 0,
 	"stylusOutputStyle": 0,
@@ -23369,8 +24626,14 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
+<<<<<<< HEAD
 	"typescriptNoResolve": 0,
 	"typescriptRemoveComments": 0,
+=======
+	"typescriptPreserveConstEnums": 0,
+	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
@@ -23410,6 +24673,13 @@
 			"active": 0,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"drop_debugger": {
 			"active": 1,
 			"flagValue": -1
@@ -23450,6 +24720,13 @@
 			"active": 1,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -23462,10 +24739,24 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+<<<<<<< HEAD
+=======
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"properties": {
 			"active": 1,
 			"flagValue": -1
 			},
+<<<<<<< HEAD
+=======
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+>>>>>>> 8882fc26daae69ca4a0961a08cc182a332257feb
 		"quote-keys": {
 			"active": 0,
 			"flagValue": -1

@@ -1,0 +1,110 @@
+            <div class="wrapper header">
+                <header class="central clearfix">
+                    <p>
+                        <a href="[[++site_url]]" title="[[++site_name]]" class="clearfix logo">
+                            <span>[[++site_name]]</span>
+                            <svg class="logo-vector guero-logo" viewBox="0 0 535 245">
+                                <use xlink:href="#guero-logo"></use>
+                            </svg>
+                        </a>
+                    </p>
+                    <div class="select desktop">
+                        <div class="select_municipality">
+                            <span class="choose-an-option selected">Seleccionar un municipio</span>
+                            <nav class="clearfix mask">
+                                <ul class="clearfix">
+                                    [[!getResources?
+                                        &parents=`4`
+                                        &limit=`0`
+                                        &tplPath=`[[++assets_path]]../Code/chunks/`
+                                        &tpl=`@FILE menu-list-item.html`
+                                        &includeTVs=`1`
+                                        &processTVs=`1`
+                                        &tvPrefix=``
+                                        &showUnpublished=`0`
+                                        &showHidden=`0`
+                                        &includeContent=`0`
+                                        &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                                        &depth=`0`
+                                        &where=`{"template:=":7}`
+                                        &hideContainers=`0`
+                                     ]]
+                                </ul>
+                            </nav>
+                        </div>
+                        <button type="button">
+                            <svg class="arrow-down" viewBox="7 1 9 14">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <form action="" method="post" class="clearfix mobile">
+                        <fieldset>
+                            <select class="clearfix">
+                                <option value="">Elige un municipio</option>
+                                [[!getResources?
+                                    &parents=`4`
+                                    &limit=`0`
+                                    &tplPath=`[[++assets_path]]../Code/chunks/`
+                                    &tpl=`@FILE menu-list-item-mobile.html`
+                                    &includeTVs=`1`
+                                    &processTVs=`1`
+                                    &tvPrefix=``
+                                    &showUnpublished=`0`
+                                    &showHidden=`0`
+                                    &includeContent=`0`
+                                    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+                                    &depth=`0`
+                                    &where=`{"template:=":7}`
+                                    &hideContainers=`0`
+                                 ]]
+                            </select>
+                        </fieldset>
+                    </form>
+                    <a href="#" title="Menu" class="cell mobile">
+                        <svg class="icon icon-menu" viewBox="0 7 44 37">
+                            <use xlink:href="#icon-menu"></use>
+                        </svg>
+                    </a>
+                    <ul class="clearfix desktop">
+[[!getResources?
+    &parents=`162`
+    &resources=`1,2,3`
+    &limit=`3`
+    &where=`{"template:=":1,"OR:template:=":2,"OR:template:=":3}`
+    &depth=`0`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &showUnpublished=`0`
+    &showHidden=`0`
+    &includeContent=`0`
+    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE menu-list-item.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
+ ]]
+                    </ul>
+                </header>
+                <ul class="clearfix mobile">
+[[!getResources?
+    &parents=`162`
+    &resources=`1,2,3`
+    &limit=`3`
+    &where=`{"template:=":1,"OR:template:=":2,"OR:template:=":3}`
+    &depth=`0`
+    &includeTVs=`1`
+    &processTVs=`1`
+    &tvPrefix=``
+    &showUnpublished=`0`
+    &showHidden=`0`
+    &includeContent=`0`
+    &sortby=`{"menuindex":"ASC","publishedon":"ASC","createdon":"ASC"}`
+    &tplPath=`[[++assets_path]]../Code/chunks/`
+    &tpl=`@FILE menu-list-item.html`
+    &tplCondition=`id`
+    &conditionalTpls=`{"[[*id]]":"@FILE menu-list-current-item.html"}`
+ ]]
+                </ul>
+            </div>
