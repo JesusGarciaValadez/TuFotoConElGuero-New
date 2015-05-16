@@ -43,8 +43,13 @@
     <body class="page contact-form">
         <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="55" viewBox="0 0 45 55">
             <defs>
-                <g id="icon-menu">
+                <!--g id="icon-menu">
                     <path class="path1" d="M2.813 8.438h39.375v8.438h-39.375zM2.813 19.688h39.375v8.438h-39.375zM2.813 30.938h39.375v8.438h-39.375z"></path>
+                </g-->
+                <g id="icon-menu">
+                    <rect id="Rectangle-52" x="0" y="14.0309115" width="20" height="2"></rect>
+                    <rect id="Rectangle-53" x="0" y="7.01545574" width="20" height="2"></rect>
+                    <rect id="Rectangle-51" x="0" y="0" width="20" height="2"></rect>
                 </g>
                 <title>guero-logo</title>
                 <desc>Logotipo Tu Foto con el Gúero.</desc>
@@ -256,7 +261,7 @@
                         </button>
                     </div>
                     <a href="#" title="Menu" class="cell mobile">
-                        <svg class="icon icon-menu" viewBox="0 7 44 37">
+                        <svg class="icon icon-menu" viewBox="0 -2 20 20">
                             <use xlink:href="#icon-menu"></use>
                         </svg>
                     </a>
@@ -362,13 +367,16 @@
             </section>
         </div>
 
+        <footer class="wrapper clearfix gradient mobile">
+            <p>Tu Foto con el Güero &copy; 2014 - Todos los derechos reservados.</p>
+        </footer>
         <figure class="wrapper banner">
             <img src="[[++site_url]][[*banner]]" alt="" width="" height="" />
-            <figcaption>
+            <figcaption class="desktop">
                 <p>El contenido de la información publicada en este portal, es exclusiva responsabilidad de quién la emite, en el ejercicio de su libertad de expresión y de la libre manifestación de ideas. Se deslinda de toda responsabilidad a los anunciantes, por ser ajenos a este proceso.</p>
             </figcaption>
         </figure>
-        <footer class="wrapper clearfix gradient">
+        <footer class="wrapper clearfix gradient desktop">
             <p>Tu Foto con el Güero &copy; 2014 - Todos los derechos reservados.</p>
         </footer>
         <script src="[[++site_url]]assets/js/main.min.js" async></script>

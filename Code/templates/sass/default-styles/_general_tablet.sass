@@ -12,7 +12,7 @@ html,body, .banner
             clear: both
             display: block
             float: none
-            height: 18.75vw
+            height: 9.375vw
             margin: 1.5625vw auto
             position: static
             width: 39.375vw
@@ -29,11 +29,11 @@ html,body, .banner
         .cell
             color: $dark_green
             float: none
-            height: 6.25vw
+            height: 3.125vw
             position: absolute
-            right: 8.4375vw
-            top: 8.4375vw
-            width: 6.25vw
+            right: 4.21875vw
+            top: 4.6875vw
+            width: 3.125vw
             z-index: 5
             .icon
                 display: inline-block
@@ -66,13 +66,13 @@ html,body, .banner
         li
             display: flex
             float: none
-            height: 14.375vw
+            height: 7.1875vw
             transition: all 0.5s ease
             width: 100%
             form
                 display: block
                 height: auto
-                margin: 4.6875vw auto
+                margin: 2.34375vw auto
                 position: static
                 width: 72.8125vw
                 fieldset
@@ -80,11 +80,11 @@ html,body, .banner
                     height: 100%
                     width: 100%
                     select
-                        @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $text-municipality )
+                        @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $text-municipality )
                         display: block
                         width: 100%
             a
-                @include font-mask( normal, 5vw, 14.375vw, $asap-regular, $placeholder-color )
+                @include font-mask( normal, 2.5vw, 7.1875vw, $asap-regular, $placeholder-color )
                 display: block
                 height: 100%
                 text-align: center
@@ -126,14 +126,14 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
+        @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-normal )
         box-sizing: border-box
         clear: left
         display: block
         float: left
         margin: 0 0 3.125vw
         overflow: hidden
-        padding: 0 8.75vw
+        padding: 0 4.375vw
         text-overflow: ellipsis
         width: 100vw
         white-space: nowrap
@@ -145,7 +145,7 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-normal )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -156,24 +156,25 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-normal )
 .page
     h1
-        @include font-mask( normal, 6.25vw, 7.5vw, $asap-bold, $dark-green )
+        @include font-mask( normal, 3.125vw, 3.75vw, $asap-bold, $dark-green )
         box-sizing: border-box
-        margin: 3.125vw 9.0625vw
+        margin: 1.5625vw 4.53125vw
         overflow: hidden
         padding: 0
         text-overflow: ellipsis
         white-space: nowrap
-        width: 81.875vw
+        width: 40.9375vw
     section
         > p
-            @include font-mask( normal, 3.4375vw, 5.15625vw, $asap-regular, $text-normal )
-            padding: 0 9.0625vw
+            @include font-mask( normal, 1.71875vw, 2.578125vw, $asap-regular, $text-normal )
+            padding: 0 4.53125vw
 label
-    @include font-mask( normal, 6.25vw, 7.1875vw, $asap-regular, $dark_green )
+    @include font-mask( normal, 3.125vw, 3.59375vw, $asap-regular, $dark_green )
     box-sizing: border-box
+    margin: 3.125vw 4.84375vw !important
     width: 100%
 input[type="text"], input[type="email"], textarea
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
@@ -188,9 +189,9 @@ input[type="text"], input[type="email"], textarea
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
-    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
+    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $placeholder-color )
 .button
-    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
+    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
     background: $light_green !important
     border-radius: 3px
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
@@ -203,17 +204,17 @@ input:-moz-placeholder
         @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
         box-shadow: 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
 .alert
-    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
-    margin: 6.25vw 0 0
-    min-width: 44.375vw
-    padding: 2.8125vw 3.125vw
+    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
+    margin: 3.125vw 0 0
+    min-width: 22.1875vw
+    padding: 1.40625vw 3.125vw !important
     width: auto
     .info
-        height: 5vw
-        margin-right: 3.4375vw
-        width: 5vw
+        height: 2.5vw
+        margin-right: 1.71875vw
+        width: 2.5vw
     p
-        @include font-mask( normal, 5vw !important, 5.625vw !important, $asap-regular !important, $white-color !important )
+        @include font-mask( normal, 2.5vw !important, 2.8125vw !important, $asap-regular !important, $white-color !important )
         float: left
         margin: 0
         width: auto
@@ -226,12 +227,12 @@ input:-moz-placeholder
 .year-picker-wrapper
     display: block
     float: right
-    margin: 6.25vw 1.25vw 6.25vw 0
+    margin: 3.125vw 1.25vw 3.125vw 0
     width: auto
     form
         fieldset
             select
-                @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $text-municipality )
+                @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $text-municipality )
                 padding: 0
                 option
 .paging
@@ -244,22 +245,22 @@ input:-moz-placeholder
         float: none
         margin: 0 auto 3.125vw
         li
-            height: 12.5vw
-            margin: 0 1.875vw 0
-            width: 12.5vw
+            height: 6.25vw
+            margin: 0 0.9375vw 0
+            width: 6.25vw
             &:first-child
                 margin: 0 1.875vw 0 0
             &:last-child
                 margin: 0 0 0 1.875vw
             a
-                @include font-mask( normal, 6.25vw, 12.5vw, $asap-bold, $placeholder-color )
+                @include font-mask( normal, 3.125vw, 6.25vw, $asap-bold, $placeholder-color )
                 height: 100%
                 width: 100%
                 .arrow
         &:empty
             margin: 0 auto
 .return
-    margin: 0 0 3.125vw 8.125vw
+    margin: 0 0 4.0625vw 4.0625vw
 .wrapper
     display: table
     width: 100%

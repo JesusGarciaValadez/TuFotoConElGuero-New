@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="30px" height="26px" viewBox="0 0 30 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
     <title>Hamburguer</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Fotografia" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="fotografia-mobile" sketch:type="MSArtboardGroup" transform="translate(-277.000000, -81.000000)" fill="#96C400">
-            <g id="Group" sketch:type="MSLayerGroup" transform="translate(-1.000000, 60.000000)">
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="home-mobile" sketch:type="MSArtboardGroup" transform="translate(-273.000000, -83.000000)" fill="#96C400">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(0.000000, 56.000000)">
                 <g id="Header-Mobile" sketch:type="MSShapeGroup">
-                    <g id="Hamburguer" transform="translate(278.000000, 21.000000)">
-                        <rect id="Rectangle-52" x="0" y="18.8164861" width="29.8675946" height="6.27216204"></rect>
-                        <rect id="Rectangle-53" x="0" y="9.40824306" width="29.8675946" height="6.27216204"></rect>
-                        <rect id="Rectangle-51" x="0" y="0" width="29.8675946" height="6.27216204"></rect>
+                    <g id="Hamburguer" transform="translate(273.000000, 27.000000)">
+                        <rect id="Rectangle-52" x="0" y="14.0309115" width="20" height="2"></rect>
+                        <rect id="Rectangle-53" x="0" y="7.01545574" width="20" height="2"></rect>
+                        <rect id="Rectangle-51" x="0" y="0" width="20" height="2"></rect>
                     </g>
                 </g>
             </g>

@@ -1,11 +1,12 @@
 .contact-form
     .wrapper
         >section.central
-            margin-bottom: 25vw
+            margin-bottom: 26.041666667vw
             h1
             form
                 fieldset
                     float: none
+                    position: relative
                     width: 100%
                     &:first-child
                         .input
@@ -15,7 +16,7 @@
                     .input
 
                         label
-                            margin: 6.25vw 9.6875vw !important
+                            margin: 3.125vw 4.84375vw !important
                         sup
                             display: none
                         input[type="text"], input[type="email"], textarea
@@ -23,17 +24,19 @@
                             &.error
                                 border: 1px solid red
                         input[type="text"], input[type="email"]
-                            @include font-mask( normal, 4.375vw, 5vw, $asap-regular, $placeholder-color )
-                            height: 9.375vw
+                            @include font-mask( normal, 2.6041666667vw, 2.5vw, $asap-regular, $placeholder-color )
+                            height: 4.6875vw
                             width: 81.875vw
                         textarea
-                            @include font-mask( normal, 4.375vw, 5vw, $asap-regular, $placeholder-color )
+                            @include font-mask( normal, 2.6041666667vw, 2.5vw, $asap-regular, $placeholder-color )
                             display: block
                             float: none
                             height: 59.375vw
                             width: 81.875vw
                         input[type="submit"]
                             float: right
-                            margin: 6.25vw 9.9609375vw 0 6.25vw !important
+                            margin: 3.125vw 9.9609375vw 0 3.125vw !important
                     .alert
-                        margin-right: 9.9609375vw !important
+                        bottom: 0
+                        left: 9.9609375vw !important
+                        position: absolute

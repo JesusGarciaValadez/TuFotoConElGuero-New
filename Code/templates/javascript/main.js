@@ -13,8 +13,8 @@
     var storage;
     if ('localStorage' in window && window.localStorage !== null) {
         storage = localStorage;
-    } else{
-        try{
+    } else {
+        try {
             if (localStorage.getItem) {
                 storage = localStorage;
             }
@@ -37,6 +37,7 @@
 
     //  When page is finished loaded
     $('document').ready(function() {
+
         //  Calculate paginator's width
         if ($('.pageList').exists()) {
             yourPhoto.resizePaginator();
@@ -55,7 +56,7 @@
             }
         });
 
-        $('header form.mobile fieldset, .year-picker.mobile fieldset').on('change', 'select', function(e) {
+        $('header ~ ul.mobile li form.mobile fieldset, .year-picker.mobile fieldset').on('change', 'select', function(e) {
             var _value  = $(e.currentTarget).val();
             window.location.href = _value;
         });
@@ -226,14 +227,14 @@
         }
 
         //  Funcionamiento del botón Regresar
-        if ($('.return').exists()) {
+        /*if ($('.return').exists()) {
             $('section.central').on('click', '.return', function(e) {
                 e.stopPropagation();
                 e.preventDefault();
 
                 window.history.back();
             });
-        }
+        }*/
 
         /**
          *
@@ -269,19 +270,28 @@
                 }
 
                 switch ( _key ) {
+                    case 'ArrowLeft':
                     case 'Left':
                     case '37':
-                        _url = $('.navigator.prev li a').attr( 'href' );
-                        location.href = _url;
+                        if ( $('.navigator.prev').exists() ) {
+                            _url = $('.navigator.prev li a').attr( 'href' );
+                        } else {
+                            return false;
+                        }
                         break;
+                    case 'ArrowRight':
                     case 'Right':
                     case '39':
-                        _url = $('.navigator.next li a').attr( 'href' );
-                        location.href = _url;
+                        if ( $('.navigator.next').exists() ) {
+                            _url = $('.navigator.next li a').attr( 'href' );
+                        } else {
+                            return false;
+                        }
                         break;
                     default:
                         break;
                 }
+                location.href = _url;
 
                 if ( handled ) {
                     // Suppress "double action" if event handled
