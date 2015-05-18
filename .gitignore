@@ -18,5 +18,10 @@ setup_
 .DS_Store
 pp.config.ini
 config.core.php
-index.php
+core/index.php
+connectors/index.php
+core/index.php
+manager/index.php
+setup_/index.php
+setup/index.php
 config.codekit
