@@ -126,14 +126,14 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
+        @include font-mask( normal, 4.375vw !important, 1.5em, $asap-regular, $text-normal )
         box-sizing: border-box
         clear: left
         display: block
         float: left
         margin: 0 0 3.125vw
         overflow: hidden
-        padding: 0 8.75vw
+        padding: 0 7.8125vw
         text-overflow: ellipsis
         width: 100vw
         white-space: nowrap
@@ -145,7 +145,7 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 4.375vw !important, 1.5em, $asap-regular, $text-normal )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -156,7 +156,7 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 4.375vw, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 4.375vw !important, 1.5em, $asap-regular, $text-normal )
 .page
     h1
         @include font-mask( normal, 6.25vw, 7.5vw, $asap-bold, $dark-green )
@@ -224,7 +224,7 @@ input:-moz-placeholder
     &.info
         background: $info-alert
 .year-picker-wrapper
-    display: block
+    display: none
     float: right
     margin: 6.25vw 1.25vw 6.25vw 0
     width: auto

@@ -365,7 +365,15 @@
             </div>
             <section class="central clearfix">
                 <h1>[[*pagetitle]]</h1>
-                <div class="year-picker-wrapper clearfix">
+[[!breadcrumbs?
+    &showHomeCrumb=`0`
+    &showCurrentCrumb=`1`
+    &currentAsLink=`0`
+    &crumbSeparator=`<span class="slash_crumb"> - </span>`
+    &homeCrumbTitle=``
+    &homeCrumbDescription=``
+    &respectHidemenu=`1`
+]]                <div class="year-picker-wrapper clearfix">
                     <p class="desktop">Selecciona un año</p>
                     <ul class="year-picker clearfix desktop">
                         [[!getResources?
@@ -390,17 +398,10 @@
                             &debug=`false`
                          ]]
                     </ul>
-                </div>[[!breadcrumbs?
-    &showHomeCrumb=`0`
-    &showCurrentCrumb=`1`
-    &currentAsLink=`0`
-    &crumbSeparator=`<span class="slash_crumb"> - </span>`
-    &homeCrumbTitle=``
-    &homeCrumbDescription=``
-    &respectHidemenu=`1`
-]]                <div class="paging clearfix">
+                </div>                <div class="paging clearfix">
                     <ul class="pageList clearfix">[[!+page.nav]]</ul>
-                </div>                <a href="[[++site_url]][[~[[*parent]]]]" title="Regresar" class="button return">Regresar</a>
+                </div>                <h2>[[*longtitle]]</h2>
+
                 <div class="clearfix">
                     [[!getPage?
                         &element=`getResources`

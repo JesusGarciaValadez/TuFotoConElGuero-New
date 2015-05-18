@@ -37,6 +37,7 @@
 
     //  When page is finished loaded
     $('document').ready(function() {
+        //alert( $( window ).innerWidth() );
 
         //  Calculate paginator's width
         if ($('.pageList').exists()) {
@@ -291,7 +292,11 @@
                     default:
                         break;
                 }
-                location.href = _url;
+                if ( _url !== undefined && _url !== null ) {
+                    location.href = _url;
+                } else {
+                    return false;
+                }
 
                 if ( handled ) {
                     // Suppress "double action" if event handled

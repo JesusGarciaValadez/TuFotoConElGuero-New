@@ -57,13 +57,15 @@
                             margin: 1.25vw
                             width: auto
             aside
+                background-color: transparent
                 border: 0
                 bottom: 0
                 box-sizing: border-box
                 display: flex
                 float: none
+                height: 15.625vw !important
                 margin: 0
-                opacity: 0
+                opacity: 1
                 padding: 0
                 position: fixed
                 transition: all 0.3s ease 0.3s
@@ -72,11 +74,9 @@
                 &.share
                     opacity: 1
                     transition: all 0.3s ease 0.3s
-                h2
-                    display: none
                 ul
                     align-content: space-between
-                    height: 50px
+                    height: 15.625vw
                     margin: 0
                     padding: 0
                     width: 100%
@@ -113,6 +113,7 @@
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
+                    display: none
                     margin-top: 0
                     fieldset
                         .input
@@ -139,3 +140,5 @@
                     position: absolute
                     right: 0
                     width: 44.375vw
+    footer
+        bottom: 15.625vw !important

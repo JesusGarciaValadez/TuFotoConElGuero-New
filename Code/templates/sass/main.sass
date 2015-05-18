@@ -59,7 +59,7 @@
     @import "custom-styles/mobile/home_mobile"
     @import "custom-styles/tablet/contact-tablet"
     @import "custom-styles/mobile/privacy-policy-mobile"
-    @import "custom-styles/mobile/events-mobile"
+    @import "custom-styles/tablet/events-tablet"
     @import "custom-styles/tablet/photography-tablet"
 
 /* ==========================================================================
@@ -68,12 +68,11 @@
 @media only screen and (max-width: em( 1023, 16 ))
 
 @media only screen and (max-width: em( 736, 16 )) and (orientation:landscape)
-    @import "default-styles/_general_mobile_landscape"
 
     @import "custom-styles/mobile/photography-mobile_landscape"
 
 /* ==========================================================================
-   iPhone 6 Plus Landscape Orientation
+   iPhone 6 Plus Portait Orientation
    ========================================================================== */
 @media only screen and (max-width: em( 736, 16 ))
     @import "default-styles/_general_mobile"
@@ -81,8 +80,18 @@
     @import "custom-styles/mobile/home_mobile"
     @import "custom-styles/mobile/contact-mobile"
     @import "custom-styles/mobile/privacy-policy-mobile"
-    @import "custom-styles/mobile/events-mobile"
-    @import "custom-styles/mobile/photography-mobile"
+    @import "custom-styles/mobile/events-phablet"
+    @import "custom-styles/mobile/photography-phablet"
+
+/* ==========================================================================
+   iPhone 6 Plus Landscape Orientation
+   ========================================================================== */
+@media only screen and (max-width: em( 736, 16 )) and (orientation:landscape)
+    @import "default-styles/_general_mobile_landscape"
+
+    @import "custom-styles/mobile/home_phablet_landscape"
+    @import "custom-styles/mobile/events-phablet_landscape"
+    @import "custom-styles/mobile/photography-phablet_landscape"
 
 /* ==========================================================================
    iPhone 6 Orientation

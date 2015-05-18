@@ -68,33 +68,46 @@
                             &:empty
                                 display: none
             aside
-                background: $white-color
-                border: 1.46484375vw solid $white-color
+                background: rgba( 218, 218, 218, 0.75)
+                border: 1.46484375vw solid $share-background
                 box-sizing: border-box
                 float: left
-                height: auto //38.18359375vw
-                margin: 1.953125vw 0 0 3.515625vw
+                height: 44.82421875vw
+                margin: 1.953125vw 0 0
                 position: relative
                 width: 27.83203125vw
-                h2
-                    @include font-mask( normal, 1.7578125vw, 2.05078125vw, $asap-bold, $text-normal )
+                .guero-logo-share
                     display: block
-                    margin: 0 auto 1.953125vw
+                    fill: $text-normal
+                    margin: 0 auto 0.9765625vw
+                    width: 9.765625vw
+                h2
+                    @include font-mask( normal, 1.953125vw, 1.2em, $asap-bold, $text-normal )
+                    display: block
+                    margin: 0 auto 0.48828125vw
                     text-align: center
+                    text-transform: uppercase
                     width: 100%
+                hr
+                    border-top: 2px solid $text-normal
+                    display: block
+                    height: 0
+                    margin: 0 auto 0.9765625vw
+                    padding: 0
+                    width: 90%
                 ul
                     margin: 0
                     padding: 0
                     width: 100%
                     .social-button
                         list-style: none inside
-                        margin: 1.46484375vw 0
+                        margin: 0.68359375vw 0
                         &:first-child
-                            margin: 0 0 1.46484375vw
+                            margin: 0 0 0.68359375vw
                         &:last-child
-                            margin: 1.46484375vw 0 0
+                            margin: 0.68359375vw 0 0
                         a
-                            color: $dark_green
+                            color: $text-normal
                             img, svg
                                 box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.50)
                                 border-radius: 3px
@@ -113,7 +126,7 @@
                                 &.share-button
                                     background: #757575
                             span
-                                @include font-mask( normal, 1.5625vw, 3.3203125vw, $asap-regular, $dark_green )
+                                @include font-mask( normal, 1.5625vw, 3.3203125vw, $asap-regular, $text-normal )
                                 cursor: pointer
                                 float: left
                                 margin: 0 0 0 0.87890625vw
@@ -141,5 +154,6 @@
                             .button
                                 height: 100%
                 .alert
+                    float: left
                     margin: 1.953125vw auto 0
-                    width: 100%
+                    width: 90%

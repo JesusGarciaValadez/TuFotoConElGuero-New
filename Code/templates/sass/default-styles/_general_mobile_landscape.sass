@@ -1,21 +1,39 @@
 $font-size: 16px
 html,body
+    position: relative
 .header
     header
         p
             clear: both
-            display: bloc
+            display: block
             float: left
-            height: 18.75vw
-            margin: 0vw auto 0vw 2.0833333333vw
+            height: 9.375vw
+            margin: 0.6793478261vw auto 0.6793478261vw 2.0833333333vw
             position: static
             width: 20.833333333vw
             .logo
                 span
                 .logo-vector
+                    width: 70%
+        .cell
+            height: 3.125vw
+            right: 4.0760869565vw
+            top: 4.0760869565vw
+            width: 3.125vw
+            .icon
+                //width: 60%
     > ul
         li
-            height: 9.375vw
+            height: 4.6875vw
+            form
+                margin: 0.5434782609vw auto
+                fieldset
+                    select
+                        font-size: 2.5vw
+                        line-height: 2.8125vw
+            a
+                font-size: 2.55vw
+                line-height: 4.6875vw
 .banner
     position: static
     img
@@ -30,8 +48,9 @@ html,body
             padding: 0 4.6875vw
             width: 99.25vw
 footer
-    height: 5vw
-    position: static
+    bottom: 14.538043478vw !important
+    height: 7.88043vw
+    position: absolute !important
     width: 100%
     p
         @include font-mask( normal, 2.5vw, em( 25, 8 ), $asap-bold, $white-color )
@@ -41,19 +60,28 @@ footer
     display: block
 .central
     .B_crumbBox
-        margin: 0px 0px 3.125vw
+        font-size: 2.1875vw
+        line-height: 0.75em
+        margin: 0 0 1.5625vw
+        padding: 0 4.375vw
         li
             a
                 span
         .slash_crumb
+            font-size: 2.1875vw
+            line-height: 0.75em
         .B_firstCrumb
         .B_homeCrumb
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
+            font-size: 2.1875vw
+            line-height: 0.75em
 .page
     h1
-        margin: 2.0833333333vw 9.0625vw
+        font-size: 3.125vw
+        line-height: 3.75vw
+        margin: 1.0416666667vw 4.53125vw
     section
         > p
 label
@@ -62,8 +90,9 @@ input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
 .button
-    font-size: 3.3333333333vw
-    padding: 2.0833333333vw 3.125vw
+    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
+    padding: 1.5625vw 3.125vw
     &:hover
     &:active, &:visited
     &:disabled
@@ -79,13 +108,25 @@ input:-moz-placeholder
             select
                 option
 .paging
+    clear: both
+    height: 6.25vw
     .pageList
+        clear: both
+        height: 6.25vw
+        margin: 0 auto 1.5625vw
         li
+            height: 6.25vw
+            margin: 0 0.9375vw 0
+            width: 6.25vw
             &:first-child
+                margin: 0 0.9375vw 0 0
             &:last-child
+                margin: 0 0 0 0.9375vw
             a
+                @include font-mask( normal, 4.4014084507vw, 1.5em, $asap-bold, $placeholder-color )
                 .arrow
         &:empty
 .return
-    margin: 0 0 4.1666666667vw 8.125vw
+    margin: 0 0 0 4.0625vw
 .wrapper
+    position: relative
