@@ -1,0 +1,181 @@
+$font-size: 16px
+html,body
+    position: relative
+.header
+    header
+        p
+            clear: both
+            display: block
+            float: left
+            height: 9.375vw
+            margin: 0.6793478261vw auto 0.6793478261vw 2.0833333333vw
+            position: static
+            width: 20.833333333vw
+            .logo
+                span
+                .logo-vector
+                    width: 70%
+        .cell
+            height: 3.125vw
+            right: 4.0760869565vw
+            top: 4.0760869565vw
+            width: 3.125vw
+            .icon
+                //width: 60%
+    > ul
+        li
+            height: 4.6875vw
+            form
+                margin: 0.5434782609vw auto
+                fieldset
+                    select
+                        font-size: 2.5vw
+                        line-height: 2.8125vw
+            a
+                font-size: 2.55vw
+                line-height: 4.6875vw
+.banner
+    position: static
+    img
+        margin: 0 auto
+        width: 97.5vw
+        z-index: 10
+    figcaption
+        p
+            @include font-mask( normal, 1.875vw, 1.5em, $asap-regular, $text-normal )
+            box-sizing: border-box
+            margin: 3.125vw auto
+            padding: 0 4.6875vw
+            width: 99.25vw
+footer
+    bottom: 14.538043478vw !important
+    height: 7.88043vw
+    position: absolute !important
+    width: 100%
+    p
+        @include font-mask( normal, 2.5vw, em( 25, 8 ), $asap-bold, $white-color )
+.desktop
+    display: none !important
+.mobile
+    display: block
+.page
+    h1
+        @include font-mask( normal, 2.1739130435vw, 1.5em, $asap-bold, $dark-green )
+        box-sizing: border-box
+        margin: 2.1739130435vw 0 2.1739130435vw 2.1739130435vw
+        overflow: hidden
+        padding: 0
+        text-overflow: ellipsis
+        white-space: nowrap
+        width: auto
+    h2
+        display: none
+    section
+        > p
+            @include font-mask( normal, 3.4375vw, 5.15625vw, $asap-regular, $text-normal )
+            padding: 0 9.0625vw
+.central
+    width: 100%
+    .B_crumbBox
+        @include font-mask( normal, 2.1739130435vw !important, 1.5em, $asap-regular, $text-normal )
+        box-sizing: border-box
+        clear: none
+        display: block
+        float: left
+        margin: 2.1739130435vw 0 2.1739130435vw !important
+        overflow: hidden
+        padding: 0 2.1739130435vw !important
+        text-overflow: ellipsis
+        width: auto !important
+        white-space: nowrap
+        li
+            display: inline-block
+            list-style: none inside
+            a
+                color: $text-normal
+                text-decoration: none
+                span
+        .slash_crumb
+            @include font-mask( normal, 2.1739130435vw !important, 1.5em, $asap-regular, $text-normal )
+            &:nth-child( 1 )
+                display: none
+            &:nth-child( 1n + 3 )
+                display: inline
+            &:nth-child( 2 ), &:nth-child( 3 ), &:nth-child( 4 )
+                display: none !important
+        .B_firstCrumb
+            display: none
+        .B_homeCrumb
+        .B_crumb
+        .B_lastCrumb
+        .B_currentCrumb
+            @include font-mask( normal, 2.1739130435vw !important, 1.5em, $asap-regular, $text-normal )
+            display: none
+.year-picker-wrapper
+    display: none
+    float: right
+    margin: 6.25vw 1.25vw 6.25vw 0
+    width: auto
+    form
+        fieldset
+            select
+                @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $text-municipality )
+                padding: 0
+                option
+.paging
+    clear: none !important
+    float: right !important
+    height: 6.25vw
+    margin: 0 1.3586956522vw
+    .pageList
+        clear: both
+        height: 6.25vw
+        margin: 0 auto 1.5625vw
+        li
+            height: 6.25vw
+            margin: 0 0.9375vw 0
+            width: 6.25vw
+            &:first-child
+                margin: 0 0.9375vw 0 0
+            &:last-child
+                margin: 0 0 0 0.9375vw
+            a
+                @include font-mask( normal, 4.4014084507vw, 1.5em, $asap-bold, $placeholder-color )
+                .arrow
+        &:empty
+label
+    @include font-mask( normal, 6.25vw, 7.1875vw, $asap-regular, $dark_green )
+    box-sizing: border-box
+    width: 100%
+input[type="text"], input[type="email"], textarea
+    @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
+    border: 1px solid $placeholder-color
+    border-radius: 0
+    box-shadow: 0 0 2px 0px rgba(0,0,0,0.5) !important
+    float: none
+    margin: 0 auto
+    -webkit-appearance: none
+    &:invalid, &.error
+        box-shadow: 0 0 2px 0 red
+input[placeholder],
+::-moz-placeholder,/* firefox 19+ */
+input:-moz-placeholder
+    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
+.button
+    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
+    padding: 1.5625vw 3.125vw
+    &:hover
+    &:active, &:visited
+    &:disabled
+.alert
+    .info
+    p
+    &.success
+    &.fail
+    &.info
+.return
+    margin: 0 0 3.125vw 1.3586956522vw
+.wrapper
+    display: table
+    width: 100%
