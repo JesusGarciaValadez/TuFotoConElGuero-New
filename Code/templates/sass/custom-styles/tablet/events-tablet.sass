@@ -15,13 +15,13 @@
                         display: inline-block
                         float: left
                         height: auto
-                        margin: 0 0.3125vw 0.3125vw !important
+                        margin: 0 0.15625vw 0.3125vw !important
                         width: 32.3125vw
                         &:first-child, &:nth-child( 4n ),
-                        &:nth-child( 7n ), &:nth-child( 10n )
-                            margin: 0 0.3125vw 0.3125vw 0.625vw !important
+                        &:nth-child( 7n ), &:nth-child( 10n ) // pares
+                            margin: 0 0.625vw 0.3125vw 0 !important
                         &:nth-child( 3n ), &:nth-child( 6n ),
-                        &:nth-child( 9n ), &:last-child
+                        &:nth-child( 9n ), &:last-child // nones
                             margin: 0 0 0.3125vw 0.625vw !important
                         a
                             img

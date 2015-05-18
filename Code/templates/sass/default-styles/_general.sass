@@ -262,20 +262,37 @@ footer
 .desktop
 .mobile
     display: none !important
+.page
+    h1
+        @include font-mask( normal, 2.34375vw, 2.63671875vw, $asap-bold, $dark-green )
+        display: inline-block
+        float: left
+        margin-right: 0.9765625vw
+        width: auto
+    h2
+        @include font-mask( normal, 3.41796875vw, 3.61328125vw, $asap-bold, $text-normal )
+        clear: both
+        display: block
+        margin: 1.5625vw auto
+        text-align: center
+        width: 100%
+    section
+        p
+            @include font-mask( normal, 1.26953125vw, 1.85546875vw, $asap-regular, $text-normal )
 .central
     display: block
     margin: 0 auto
     width: 93.75vw
     .B_crumbBox
-        @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
-        clear: left
+        @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $text-normal )
+        clear: none
         display: block
         float: left
-        margin: 0 0 15px
+        margin: 1.5625vw auto
         overflow: hidden
         padding: 0
         text-overflow: ellipsis
-        width: 66%
+        width: auto
         white-space: nowrap
         li
             display: inline-block
@@ -296,13 +313,32 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $text-normal )
-.page
-    h1
-        @include font-mask( normal, 2.34375vw, 2.63671875vw, $asap-bold, $dark-green )
-    section
-        p
-            @include font-mask( normal, 1.26953125vw, 1.85546875vw, $asap-regular, $text-normal )
+            @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $text-normal )
+.year-picker-wrapper
+    display: inline-block
+    float: right
+    margin: 1.953125vw 0
+    p, .year-picker
+        @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $text-municipality )
+        float: left
+    p
+        margin: 0 0.87890625vw 0 0
+    .year-picker
+        margin: 0
+        padding: 0
+        li
+            float: left
+            padding: 0
+            list-style: none inside
+            a
+                color: $text-municipality
+                text-decoration: none
+            &.current
+                margin: 0 0 0 0.29296875vw
+                a
+                    color: $dark_green
+            &.separator
+                margin: 0 0.29296875vw
 label
     @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $dark_green )
     clear: both
@@ -386,31 +422,6 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
         background: $fail-alert
     &.info
         background: $info-alert
-.year-picker-wrapper
-    display: inline-block
-    float: right
-    margin: 1.953125vw 0
-    p, .year-picker
-        @include font-mask( normal, 1.5625vw, 1.7578125vw, $asap-regular, $text-municipality )
-        float: left
-    p
-        margin: 0 0.87890625vw 0 0
-    .year-picker
-        margin: 0
-        padding: 0
-        li
-            float: left
-            padding: 0
-            list-style: none inside
-            a
-                color: $text-municipality
-                text-decoration: none
-            &.current
-                margin: 0 0 0 0.29296875vw
-                a
-                    color: $dark_green
-            &.separator
-                margin: 0 0.29296875vw
 .paging
     float: right
     margin: 0
@@ -447,15 +458,15 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
                 a
                     color: $white-color
 .return
-    clear: both
+    clear: left
     display: block
     float: left
     margin: 0
     text-decoration: none
     width: auto
     & ~ div,& ~ section,& ~ article
-        clear: left
-        float: left
+        clear: right
+        float: right
 .wrapper
     display: table
     width: 100%

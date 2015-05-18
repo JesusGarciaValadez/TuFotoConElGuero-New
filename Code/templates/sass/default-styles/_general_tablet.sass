@@ -128,16 +128,16 @@ section.central
     margin-bottom: 24.739583333vw !important
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-normal )
+        @include font-mask( normal, 2.1875vw, 4.6875vw, $asap-regular, $text-normal )
         box-sizing: border-box
-        clear: left
+        clear: none
         display: block
         float: left
-        margin: 0 0 3.125vw
+        margin: 1.5625vw 0
         overflow: hidden
-        padding: 0 4.375vw
+        padding: 0 4.375vw 0 0
         text-overflow: ellipsis
-        width: 100vw
+        width: auto
         white-space: nowrap
         li
             display: inline-block
@@ -161,17 +161,20 @@ section.central
             @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-normal )
 .page
     h1
-        @include font-mask( normal, 3.125vw, 3.75vw, $asap-bold, $dark-green )
+        @include font-mask( normal, 3.125vw, 4.6875vw, $asap-bold, $dark-green )
         box-sizing: border-box
-        margin: 1.5625vw 4.53125vw
+        float: left
+        margin: 1.5625vw 1.3020833333vw 1.5625vw 4.53125vw
         overflow: hidden
         padding: 0
         text-overflow: ellipsis
         white-space: nowrap
-        width: 40.9375vw
+        width: auto
+    h2
+        margin-top: 0 !important
     section
         > p
-            @include font-mask( normal, 1.71875vw, 2.578125vw, $asap-regular, $text-normal )
+            @include font-mask( normal, 2.0833333333vw, 2.0833333333vw, $asap-regular, $text-normal )
             padding: 0 4.53125vw
 label
     @include font-mask( normal, 3.125vw, 3.59375vw, $asap-regular, $dark_green )
@@ -229,8 +232,12 @@ input:-moz-placeholder
 .year-picker-wrapper
     display: block
     float: right
-    margin: 3.125vw 1.25vw 3.125vw 0
+    margin: 1.5625vw 1.25vw 1.5625vw 0
     width: auto
+    p.desktop, .year-picker
+        display: block !important
+        font-size: 2.0833333333vw
+        line-height: 4.6875vw
     form
         fieldset
             select
@@ -245,7 +252,7 @@ input:-moz-placeholder
     .pageList
         display: block
         float: none
-        margin: 0 auto 3.125vw
+        margin: 0 auto
         li
             height: 6.25vw
             margin: 0 0.9375vw 0
