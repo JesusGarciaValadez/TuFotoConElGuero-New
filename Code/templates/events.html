@@ -413,14 +413,12 @@
                         &processTVs=`1`
                         &tvPrefix=``
                         &showUnpublished=`0`
-                        &showHidden=`0`
-                        &includeContent=`0`
-                        &depth=`4`
-                        &where=`{"template:=":5}`
+                        &showHidden=`1`
+                        &includeContent=`1`
                         &hideContainers=`0`
                         &pageVarKey=`page`
-                        &sortby=`menuindex`
-                        &sortdir=`ASC`
+                        &where=`{"template:=":5}`
+                        &sortby=`{"publishedon":"ASC","menuindex":"ASC","createdon":"ASC"}`
                         &pageNavOuterTpl=`[[+prev]][[+pages]][[+next]]`
                         &pagePrevTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-left-small" viewBox="5 4 26 26"><use xlink:href="#arrow-left-small"></use></svg></a></li>`
                         &pageNextTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-right-small" viewBox="5 4 26 26"><use xlink:href="#arrow-right-small"></use></svg></a></li>`
