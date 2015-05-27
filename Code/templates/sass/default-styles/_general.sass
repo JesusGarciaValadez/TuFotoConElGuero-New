@@ -270,14 +270,21 @@ footer
         margin-right: 0.9765625vw
         width: auto
     h2
-        @include font-mask( normal, 3.41796875vw, 3.61328125vw, $asap-bold, $text-normal )
+        @include font-mask( normal, 2.1484375vw, 2.44140625vw, $asap-bold, $text-normal )
         clear: both
         display: block
         margin: 1.5625vw auto
-        text-align: center
+        text-align: left
+        width: 100%
+    h3
+        @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-bold, $text-normal )
+        clear: both
+        display: block
+        margin: 1.5625vw auto
+        text-align: left
         width: 100%
     section
-        p
+        p, ul li, ol li
             @include font-mask( normal, 1.26953125vw, 1.85546875vw, $asap-regular, $text-normal )
 .central
     display: block
