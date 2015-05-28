@@ -2,6 +2,7 @@
     .wrapper
         .central
             h1
-            p
+            p, ul li, ol li
+                @include font-mask( normal, 1.26953125vw, 1.85546875vw, $asap-regular, $text-normal )
                 &:empty
                     display: none

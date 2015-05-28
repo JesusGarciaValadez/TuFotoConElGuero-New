@@ -123,6 +123,22 @@ footer
     display: none !important
 .mobile
     display: block !important
+.page
+    h1
+        @include font-mask( normal, 6.25vw, 7.5vw, $asap-bold, $dark-green )
+        box-sizing: border-box
+        margin: 3.125vw 9.0625vw 0
+        overflow: hidden
+        padding: 0
+        text-overflow: ellipsis
+        white-space: nowrap
+        width: 81.875vw
+    h2
+        display: none
+    section
+        > p
+            @include font-mask( normal, 3.4375vw, 5.15625vw, $asap-regular, $text-normal )
+            padding: 0 9.0625vw
 .central
     width: 100%
     .B_crumbBox
@@ -138,6 +154,7 @@ footer
         width: 100vw
         white-space: nowrap
         li
+            @include font-mask( normal, 4.375vw !important, 1.5em, $asap-regular, $text-normal )
             display: inline-block
             list-style: none inside
             a
@@ -157,22 +174,6 @@ footer
         .B_lastCrumb
         .B_currentCrumb
             @include font-mask( normal, 4.375vw !important, 1.5em, $asap-regular, $text-normal )
-.page
-    h1
-        @include font-mask( normal, 6.25vw, 7.5vw, $asap-bold, $dark-green )
-        box-sizing: border-box
-        margin: 3.125vw 9.0625vw 0
-        overflow: hidden
-        padding: 0
-        text-overflow: ellipsis
-        white-space: nowrap
-        width: 81.875vw
-    h2
-        display: none
-    section
-        > p
-            @include font-mask( normal, 3.4375vw, 5.15625vw, $asap-regular, $text-normal )
-            padding: 0 9.0625vw
 label
     @include font-mask( normal, 6.25vw, 7.1875vw, $asap-regular, $dark_green )
     box-sizing: border-box
