@@ -185,12 +185,12 @@ input[type="text"], input[type="email"], textarea
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
     border: 1px solid $placeholder-color
     border-radius: 0
-    box-shadow: 0 0 2px 0px rgba(0,0,0,0.5) !important
+    //box-shadow: 0 0 2px 0px rgba(0,0,0,0.5) !important
     float: none
     margin: 0 auto
     -webkit-appearance: none
     &:invalid, &.error
-        box-shadow: 0 0 2px 0 red
+        //box-shadow: 0 0 2px 0 red
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
@@ -199,15 +199,15 @@ input:-moz-placeholder
     @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
     background: $light_green !important
     border-radius: 3px
-    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
+    //box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
     padding: 1.5625vw 3.125vw
     -moz-appearance: button
     &:hover
     &:active, &:visited
-        box-shadow: inset 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
+        //box-shadow: inset 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
     &:disabled
         @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
-        box-shadow: 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
+        //box-shadow: 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
 .alert
     @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
     margin: 3.125vw 0 0

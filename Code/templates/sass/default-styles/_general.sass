@@ -1,6 +1,6 @@
 $font-size: 16px
 html,body
-    background: url('../img/home/linen-yellow.jpg') repeat scroll 0 0 transparent
+    background-color: #E5E3D6
     display: table
     font-size: $font-size
     height: 100%
@@ -96,7 +96,7 @@ html,body
                     z-index: 5
                 .mask
                     background-color: $white-color
-                    box-shadow: 0px 5px 3px 1px rgba(0,0,0,0.5)
+                    //box-shadow: 0px 5px 3px 1px rgba(0,0,0,0.5)
                     box-sizing: border-box
                     display: inline-block
                     height: 350px
@@ -171,7 +171,7 @@ html,body
             button
                 background-color: $light-green
                 box-sizing: border-box
-                box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.50)
+                //box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.50)
                 border: 0 none transparent
                 border-radius: 3px
                 display: inline-block
@@ -350,7 +350,7 @@ label
 input[type="text"], input[type="email"]
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
     border: 0 none transparent
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    //box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
     box-sizing: border-box
     display: block
     float: left
@@ -358,7 +358,7 @@ input[type="text"], input[type="email"]
     padding: 0 1.5625vw
 input[type="text"], input[type="email"], textarea
     &:invalid, &.error
-        box-shadow: 0 0 3px 0 red !important
+        //box-shadow: 0 0 3px 0 red !important
 *[placeholder], input[placeholder], input::-moz-placeholder,
 input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeholder
     //@include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
@@ -369,7 +369,7 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
     @include font-mask( normal, 1.3671875vw, 1.7578125vw, $asap-regular, $white-color )
     background: $light_green
     border: 0 none transparent
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    //box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
     box-sizing: border-box
     padding: 0.48828125vw 0.9765625vw
     &:hover
@@ -392,14 +392,14 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
         // background: linear-gradient(to bottom,  $light-green 0%,$shadow-button-active 100%) /* W3C */
         // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-green', endColorstr='$shadow-button-active',GradientType=0 ) /* IE6-8 */
         background-color: $shadow-button-active
-        box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50)
+        //box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.50)
     &:disabled
         @include font-mask( normal, 1.26953125vw, 1.46484375vw, $asap-regular, $placeholder-color )
         background: #D8D8D8
-        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+        //box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
 .alert
     @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $white-color )
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
+    //box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
     box-sizing: border-box
     display: none
     float: right
