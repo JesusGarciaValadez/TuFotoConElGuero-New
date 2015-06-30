@@ -5,6 +5,12 @@
             h1
                 display: inline-block
                 float: left
+            .B_crumbBox
+                margin: 1.5625vw 0 1.5625vw 4.6875vw !important
+                white-space: normal
+                width: 89.0625vw !important
+            .return
+                margin-left: 4.6875vw
             .principal-photography
                 border: 0 none transparent
                 display: block
@@ -26,7 +32,9 @@
                         padding: 0
                         width: 100%
                         a
+                            font-size: 15.625vw
                             height: 100%
+                            line-height: 12.5vw
                             width: 100%
                             .arrow-big
                 .prev
@@ -38,19 +46,19 @@
                     display: block
                     height: auto
                     margin: 0 auto
-                    width: 79.6875vw
+                    width: 90.625vw
                     img
                         border: 1.5625vw solid $white-color
                         box-sizing: border-box
-                        height: 60.546875vw
-                        width: 79.6875vw
+                        height: auto
+                        width: 100%
                     .display
                         box-sizing: border-box
                         display: block
                         height: auto
                         margin: 6.25vw auto 0
                         position: relative
-                        width: 78.75vw
+                        width: 100%
                         p
                             @include font-mask( normal, 4.375vw, 6.25vw, $asap-regular, $dark_green )
                             box-sizing: border-box
@@ -83,18 +91,17 @@
                     z-index: 10
                     .social-button
                         align-self: center
-                        display: block
                         float: left
                         height: 100%
                         margin: 0 !important
                         width: 25%
                         &:nth-child( 1 )
                             background: #405A97
-                        &:nth-child( 2 )
-                            background: #D83735
                         &:nth-child( 3 )
+                            background: #2CB203
+                        &:nth-child( 4 )
                             background: #55A3DF
-                        &:nth-child( 5 )
+                        &:nth-child( 6 )
                             background: #757575
                         a
                             color: $dark_green
@@ -102,7 +109,7 @@
                             height: 100%
                             img, svg
                                 align-self: center
-                                box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
+                                //box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
                                 display: block
                                 float: none
                                 height: 9.375vw

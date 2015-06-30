@@ -10,7 +10,9 @@
 <!--@import breadcrumbs-->
 <!--@import yearpicker-->
 <!--@import returnButton-->
+                <div class="desktop">
 <!--@import pagination-->
+                </div>
                 <h2>[[*longtitle]]</h2>
 
                 <div class="clearfix">
@@ -38,6 +40,9 @@
                         &pageNavTpl=`<li[[+classes]]><a[[+classes]][[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
                         &pageActiveTpl=`<li[[+activeClasses]][[+activeClasses:default=` class="current"`]]><a[[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
                     ]]
+                </div>
+                <div class="mobile">
+<!--@import pagination-->
                 </div>
             </section>
 <!--@import footer-mobile-->

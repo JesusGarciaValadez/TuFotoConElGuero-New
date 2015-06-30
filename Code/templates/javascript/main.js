@@ -57,10 +57,12 @@
             }
         });
 
-        $('header ~ ul.mobile li form.mobile fieldset, .year-picker.mobile fieldset').on('change', 'select', function(e) {
-            var _value  = $(e.currentTarget).val();
-            window.location.href = _value;
-        });
+        if ( $('ul.mobile li form.mobile fieldset, .year-picker.mobile fieldset').exists() ) {
+            $('ul.mobile li form.mobile fieldset, .year-picker.mobile fieldset').on('change', 'select', function(e) {
+                var _value  = $(e.currentTarget).val();
+                window.location.href = _value;
+            });
+        }
 
         if ($('form[name="contact-form"]').exists()) {
 

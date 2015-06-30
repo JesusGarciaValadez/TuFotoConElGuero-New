@@ -16,12 +16,14 @@ html,body
                 .logo-vector
                     width: 70%
         .cell
+            display: block !important
             height: 3.125vw
             right: 4.0760869565vw
             top: 4.0760869565vw
             width: 3.125vw
             .icon
-                //width: 60%
+                height: 100%
+                width: 100%
     > ul
         li
             height: 4.6875vw
@@ -57,23 +59,26 @@ footer
 .desktop
     display: none !important
 .mobile
-    display: block
+    display: block !important
 .page
     h1
-        @include font-mask( normal, 2.1739130435vw, 1.5em, $asap-bold, $dark-green )
+        @include font-mask( normal, 5.4347826087vw !important, 1.2em, $asap-bold, $dark-green )
         box-sizing: border-box
-        margin: 2.1739130435vw 0 2.1739130435vw 2.1739130435vw
+        float: none
+        margin: 2.1739130435vw 0 0 2.1739130435vw
         overflow: hidden
         padding: 0
         text-overflow: ellipsis
         white-space: nowrap
-        width: auto
+        width: 98%
+        &:after
+            content: ''
     h2
         display: none
     section
         > p
-            @include font-mask( normal, 3.4375vw, 5.15625vw, $asap-regular, $text-normal )
-            padding: 0 9.0625vw
+            @include font-mask( normal, 3.4375vw !important, 1.2em !important, $asap-regular, $text-normal )
+            padding: 0 2.0380434783vw !important
 .central
     width: 100%
     .B_crumbBox
@@ -146,11 +151,11 @@ footer
 label
     @include font-mask( normal, 6.25vw, 7.1875vw, $asap-regular, $dark_green )
     box-sizing: border-box
-    width: 100%
+    width: 80%
 input[type="text"], input[type="email"], textarea
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
     border: 1px solid $placeholder-color
-    border-radius: 0
+    //border-radius: 0
     //box-shadow: 0 0 2px 0px rgba(0,0,0,0.5) !important
     float: none
     margin: 0 auto

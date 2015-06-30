@@ -6,8 +6,8 @@
 <!--@import header-->
 
             <section class="central clearfix">
-                <h1>[[*pagetitle]]</h1>
 <!--@import breadcrumbs-->
+                <!--h1>[[*pagetitle]]</h1-->
 <!--@import returnButton-->
 
                 <div class="principal-photography">
@@ -36,12 +36,17 @@
                                 <span>Facebook</span>
                             </a>
                         </li>
-                        <li class="social-button clearfix">
+                        <li class="social-button clearfix desktop">
                             <a href="#" onclick="window.open('https:\/\/plus.google.com\/u\/0\/share?url=[[++site_url]][[~[[*id]]]]\u0026hl=es-419\u0026soc-platform=1\u0026soc-app=130', 'Ventana Abierta', 'height=620,width=620,scrollbars=true');return false;" title="Google +" class="clearfix">
                                 <svg class="google-button" viewBox="0 0 34 34">
                                     <use xlink:href="#google-button"></use>
                                 </svg>
                                 <span>Google +</span>
+                            </a>
+                        </li>
+                        <li class="social-button clearfix mobile">
+                            <a href="whatsapp://send?text=[[*pagetitle]]: [[++site_url]][[~[[*id]]]]" title="" class="clearfix">
+                                <img src="[[++site_url]]assets/img/home/whatsapp-button.png" alt="WhatsApp">
                             </a>
                         </li>
                         <li class="social-button clearfix">

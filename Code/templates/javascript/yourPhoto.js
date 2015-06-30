@@ -164,7 +164,7 @@
                 _paginatorWidthPX, _paginatorWidthVW,
                 _childrens;
             _childrens              = $('.pageList li');
-            _childrensLength        = _childrens.length;
+            _childrensLength        = _childrens.length / 2;
             _childrensWidth         = _childrens.width();
 
             //  Obtain a sample of the margin used for the items in paginator
