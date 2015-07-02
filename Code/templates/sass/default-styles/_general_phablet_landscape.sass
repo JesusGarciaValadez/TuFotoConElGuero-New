@@ -13,53 +13,51 @@ html,body
                 .logo-vector
                     width: 70%
         .cell
-            display: block !important
             height: 3.125vw !important
             right: 4.0760869565vw !important
             top: 4.0760869565vw !important
             width: 3.125vw !important
             .icon
-                height: 100%
-                width: 100%
+                //width: 60%
     > ul
         li
-            height: 4.6875vw !important
+            height: 4.6875vw
             form
-                margin: 0.5434782609vw auto !important
+                margin: 0.5434782609vw auto
                 fieldset
                     select
-                        font-size: 2.5vw !important
-                        line-height: 2.8125vw !important
+                        font-size: 2.5vw
+                        line-height: 2.8125vw
             a
-                font-size: 2.55vw !important
-                line-height: 4.6875vw !important
+                font-size: 2.55vw
+                line-height: 4.6875vw
 .banner
     position: static
     img
-        margin: 0 auto !important
-        width: 97.5vw !important
+        margin: 0 auto
+        width: 97.5vw
         z-index: 10
     figcaption
         p
-            @include font-mask( normal, 1.875vw !important, 1.5em !important, $asap-regular, $text-normal )
+            @include font-mask( normal, 1.875vw, 1.5em, $asap-regular, $text-normal )
             box-sizing: border-box
-            margin: 3.125vw auto !important
-            padding: 0 4.6875vw !important
-            width: 99.25vw !important
+            margin: 3.125vw auto
+            padding: 0 4.6875vw
+            width: 99.25vw
 footer
-    bottom: 14.538043478vw !important
+    bottom: 14.538043478vw
     height: 7.88043vw
-    position: absolute !important
+    position: absolute
     width: 100%
     p
-        @include font-mask( normal, 2.5vw !important, em( 25, 8 ) !important, $asap-bold, $white-color )
+        @include font-mask( normal, 2.5vw, em( 25, 8 ), $asap-bold, $white-color )
 .desktop
-    display: none !important
+    display: none
 .mobile
-    display: block !important
+    display: block
 .page
     h1
-        @include font-mask( normal, 5.4347826087vw !important, 1.2em !important, $asap-bold, $dark-green )
+        @include font-mask( normal, 5.4347826087vw, 1.2em, $asap-bold, $dark-green )
         box-sizing: border-box
         float: none
         margin: 2.1739130435vw 0 0 2.1739130435vw
@@ -74,21 +72,21 @@ footer
         display: none
     section
         > p
-            @include font-mask( normal, 3.4375vw !important, 1.2em !important, $asap-regular, $text-normal )
-            padding: 0 2.0380434783vw !important
+            @include font-mask( normal, 3.4375vw, 1.2em, $asap-regular, $text-normal )
+            padding: 0 2.0380434783vw
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 2.1739130435vw !important, 1.5em, $asap-regular, $text-normal )
+        @include font-mask( normal, 2.1739130435vw, 1.5em, $asap-regular, $text-normal )
         box-sizing: border-box
         clear: none
         display: block
         float: left
-        margin: 2.1739130435vw 0 2.1739130435vw !important
+        margin: 2.1739130435vw 0 2.1739130435vw
         overflow: hidden
-        padding: 0 2.1739130435vw !important
+        padding: 0 2.1739130435vw
         text-overflow: ellipsis
-        width: auto !important
+        width: auto
         white-space: nowrap
         li
             display: inline-block
@@ -98,20 +96,20 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 2.1739130435vw !important, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 2.1739130435vw, 1.5em, $asap-regular, $text-normal )
             &:nth-child( 1 )
                 display: none
             &:nth-child( 1n + 3 )
                 display: inline
             &:nth-child( 2 ), &:nth-child( 3 ), &:nth-child( 4 )
-                display: none !important
+                display: none
         .B_firstCrumb
             display: none
         .B_homeCrumb
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 2.1739130435vw !important, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 2.1739130435vw, 1.5em, $asap-regular, $text-normal )
             display: none
 .year-picker-wrapper
     display: none
@@ -125,8 +123,8 @@ footer
                 padding: 0
                 option
 .paging
-    clear: none !important
-    float: right !important
+    clear: none
+    float: right
     height: 6.25vw
     margin: 0 1.3586956522vw
     .pageList
@@ -153,7 +151,7 @@ input[type="text"], input[type="email"], textarea
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
     border: 1px solid $placeholder-color
     //border-radius: 0
-    //box-shadow: 0 0 2px 0px rgba(0,0,0,0.5) !important
+    //box-shadow: 0 0 2px 0px rgba(0,0,0,0.5)
     float: none
     margin: 0 auto
     -webkit-appearance: none

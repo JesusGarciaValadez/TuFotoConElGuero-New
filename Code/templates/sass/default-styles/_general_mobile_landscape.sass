@@ -61,31 +61,52 @@ footer
     display: block
 .page
     h1
+        float: left !important
         font-size: 3.125vw !important
-        line-height: 3.75vw !important
-        margin: 1.0416666667vw 4.53125vw !important
+        line-height: 1.2em !important
+        margin: 1.04167vw 0.7496251874vw 0 4.53125vw !important
+        width: auto !important
+    h2
+        box-sizing: border-box
+        padding: 0 5.4347826087vw
     section
-        > p
+        > p, ul li, ol li, ul li p, ol li p, ul li h3, ol li h3
+            box-sizing: border-box !important
+            font-size: 2.3988005997vw !important
+            line-height: 1.2em !important
+        > ul li p, ol li p, ul li h3, ol li h3
+            width: 97% !important
 .central
     .B_crumbBox
-        font-size: 5vw !important
-        line-height: 5.625vw !important
-        margin: 0 0 1.5625vw !important
-        padding: 0 4.375vw !important
+        clear: none
+        color: $text-municipality !important
+        float: left
+        font-size: 3.125vw !important
+        line-height: 1.2em !important
+        margin: 1.04167vw 0 0 !important
+        padding: 0px !important
+        width: auto !important
         li
+            font-size: 3.125vw !important
+            line-height: 1.2em !important
             a
+                color: $text-municipality !important
                 span
         .slash_crumb
-            font-size: 2.1875vw !important
-            line-height: 0.75em !important
+            color: $text-municipality !important
+            font-size: 3.125vw !important
+            line-height: 1.2em !important
         .B_firstCrumb
         .B_homeCrumb
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            font-size: 2.1875vw !important
-            line-height: 0.75em !important
+            color: $text-municipality !important
+            font-size: 3.125vw !important
+            line-height: 1.2em !important
 label
+    font-size: 3.5211267606vw
+    margin: 3.5211267606vw 2.2887323944vw
 input[type="text"], input[type="email"], textarea
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
