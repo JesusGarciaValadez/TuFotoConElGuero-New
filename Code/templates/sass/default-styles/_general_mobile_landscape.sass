@@ -1,0 +1,154 @@
+$font-size: 16px
+html,body
+    position: relative
+.header
+    header
+        p
+            float: left !important
+            height: 9.375vw !important
+            margin: 0.6793478261vw auto 0.6793478261vw 2.0833333333vw !important
+            width: 20.833333333vw !important
+            .logo
+                span
+                .logo-vector
+                    width: 70%
+        .cell
+            height: 3.125vw !important
+            right: 4.0760869565vw !important
+            top: 4.0760869565vw !important
+            width: 3.125vw !important
+            .icon
+                //width: 60%
+    > ul
+        li
+            height: 4.6875vw !important
+            form
+                height: 3.87324vw !important
+                left: 45% !important
+                margin: 0.543478vw auto !important
+                top: 0px !important
+                position: static !important
+                fieldset
+                    select
+                        font-size: 2.5vw !important
+                        line-height: 2.8125vw !important
+            a
+                font-size: 2.55vw !important
+                line-height: 4.6875vw !important
+.banner
+    position: static
+    img
+        margin: 0 auto
+        width: 97.5vw !important
+        z-index: 10
+    figcaption
+        p
+            @include font-mask( normal, 1.875vw !important, 1.5em !important, $asap-regular, $text-normal )
+            box-sizing: border-box
+            margin: 3.125vw auto !important
+            padding: 0 4.6875vw !important
+            width: 99.25vw !important
+footer
+    bottom: 14.538043478vw !important
+    height: 7.88043vw !important
+    position: absolute !important
+    width: 100%
+    p
+        @include font-mask( normal, 2.5vw !important, em( 25, 8 ) !important, $asap-bold, $white-color )
+.desktop
+    display: none !important
+.mobile
+    display: block
+.page
+    h1
+        float: left !important
+        font-size: 3.125vw !important
+        line-height: 1.2em !important
+        margin: 1.04167vw 0.7496251874vw 0 4.53125vw !important
+        width: auto !important
+    h2
+        box-sizing: border-box
+        padding: 0 5.4347826087vw
+    section
+        > p, ul li, ol li, ul li p, ol li p, ul li h3, ol li h3
+            box-sizing: border-box !important
+            font-size: 2.3988005997vw !important
+            line-height: 1.2em !important
+        > ul li p, ol li p, ul li h3, ol li h3
+            width: 97% !important
+.central
+    .B_crumbBox
+        clear: none
+        color: $text-municipality !important
+        float: left
+        font-size: 3.125vw !important
+        line-height: 1.2em !important
+        margin: 1.04167vw 0 0 !important
+        padding: 0px !important
+        width: auto !important
+        li
+            font-size: 3.125vw !important
+            line-height: 1.2em !important
+            a
+                color: $text-municipality !important
+                span
+        .slash_crumb
+            color: $text-municipality !important
+            font-size: 3.125vw !important
+            line-height: 1.2em !important
+        .B_firstCrumb
+        .B_homeCrumb
+        .B_crumb
+        .B_lastCrumb
+        .B_currentCrumb
+            color: $text-municipality !important
+            font-size: 3.125vw !important
+            line-height: 1.2em !important
+label
+    font-size: 3.5211267606vw
+    margin: 3.5211267606vw 2.2887323944vw
+input[type="text"], input[type="email"], textarea
+input[placeholder],
+::-moz-placeholder,/* firefox 19+ */
+input:-moz-placeholder
+.button
+    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
+    //box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
+    padding: 1.5625vw 3.125vw
+    &:hover
+    &:active, &:visited
+    &:disabled
+.alert
+    .info
+    p
+    &.success
+    &.fail
+    &.info
+.year-picker-wrapper
+    form
+        fieldset
+            select
+                option
+.paging
+    clear: both
+    height: 6.25vw
+    .pageList
+        clear: both
+        height: 6.25vw
+        margin: 0 auto 1.5625vw
+        li
+            height: 6.25vw
+            margin: 0 0.9375vw 0
+            width: 6.25vw
+            &:first-child
+                margin: 0 0.9375vw 0 0
+            &:last-child
+                margin: 0 0 0 0.9375vw
+            a
+                @include font-mask( normal, 4.4014084507vw, 1.5em, $asap-bold, $placeholder-color )
+                .arrow
+        &:empty
+.return
+    margin: 0 0 0 4.0625vw
+.wrapper
+    position: relative
