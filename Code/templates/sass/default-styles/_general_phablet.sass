@@ -125,7 +125,7 @@ footer
     display: block !important
 .page
     h1
-        @include font-mask( normal, 4.5893719807vw, 1.5em, $asap-bold, $dark-green )
+        @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-bold, $dark-green )
         box-sizing: border-box
         margin: 3.8647342995vw 0 3.8647342995vw 9.0625vw
         overflow: hidden
@@ -141,18 +141,19 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 3.8647342995vw !important, 1.5em, $asap-regular, $text-normal )
+        @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-regular, $text-normal )
         box-sizing: border-box
-        clear: left
+        clear: none
         display: block
         float: left
-        margin: 0 0 3.8647342995vw !important
+        margin: 3.8647342995vw 0vw
         overflow: hidden
-        padding: 0 9.0625vw !important
+        padding: 0 9.0625vw
         text-overflow: ellipsis
-        width: 100vw !important
+        width: 100vw
         white-space: nowrap
         li
+            @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-regular, $text-normal )
             display: inline-block
             list-style: none inside
             a
@@ -160,7 +161,7 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 4.375vw !important, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-regular, $text-normal )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -171,7 +172,7 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 4.375vw !important, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-regular, $text-normal )
 .year-picker-wrapper
     display: none
     float: right
@@ -227,7 +228,7 @@ input[placeholder],
 input:-moz-placeholder
     @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
 .button
-    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
+    @include font-mask( normal, 2.92969vw, 1em, $asap-regular, $white-color )
     background: $light_green !important
     //border-radius: 3px
     //box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
@@ -237,10 +238,10 @@ input:-moz-placeholder
     &:active, &:visited
         //box-shadow: inset 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
     &:disabled
-        @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
+        @include font-mask( normal, 2.92969vw, 1em, $asap-regular, $placeholder-color )
         //box-shadow: 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
 .alert
-    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
+    @include font-mask( normal, 2.92969vw, 1em, $asap-regular, $white-color )
     margin: 6.25vw 0 0
     min-width: 44.375vw
     padding: 2.8125vw 3.125vw
@@ -250,7 +251,7 @@ input:-moz-placeholder
         margin-right: 3.4375vw
         width: 5vw
     p
-        @include font-mask( normal, 5vw !important, 5.625vw !important, $asap-regular !important, $white-color !important )
+        @include font-mask( normal, 2.92969vw !important, 1em !important, $asap-regular !important, $white-color !important )
         float: left
         margin: 0
         width: auto
@@ -261,7 +262,7 @@ input:-moz-placeholder
     &.info
         background: $info-alert
 .return
-    margin: 0 0 3.125vw 8.125vw
+    margin: 1.4992503748vw 0 1.4992503748vw 4.4977511244vw
 .wrapper
     display: table
     width: 100%
