@@ -1,33 +1,158 @@
 .photo
     .wrapper
+        z-index: 1
         .central
             h1
+                display: inline-block
+                float: left
             .principal-photography
-                margin-bottom: 0
+                border: 0 none transparent
+                display: block
+                float: none
+                margin: 6.25vw auto 26.5625vw
+                position: relative
                 .navigator
+                    display: inline-block
+                    height: 8.6956521739vw
+                    margin: ( -15.625vw / 2 ) 0 0
+                    padding: 0
+                    position: absolute
+                    top: 32.206119162vw
+                    width: 8.6956521739vw
+                    z-index: 2
                     li
+                        height: 100%
+                        list-style: none inside
+                        padding: 0
+                        width: 100%
                         a
+                            height: 100%
+                            line-height: 15.742128936vw !important
+                            width: 100%
                             .arrow-big
                 .prev
+                    left: 9.375vw
                 .next
+                    right: 9.375vw
                 figure
+                    border: 0 none transparent
+                    display: block
+                    height: auto
+                    margin: 0 0 0 4.4977511244vw !important
+                    width: 85.457271364vw !important
                     img
+                        border: 1.5625vw solid $white-color
+                        box-sizing: border-box
+                        height: 60.546875vw
+                        width: 79.6875vw
                     .display
+                        box-sizing: border-box
+                        display: block
+                        height: auto
+                        margin: 6.25vw auto 0
+                        position: relative
+                        width: 78.75vw
                         p
+                            @include font-mask( normal, 4.375vw, 6.25vw, $asap-regular, $dark_green )
+                            box-sizing: border-box
+                            margin: 1.25vw
+                            width: auto
             aside
+                background-color: transparent
+                border: 0
+                bottom: 0
+                box-sizing: border-box
+                display: inline-flex
+                float: none
+                height: 29.985007496vw !important
+                margin: 0
+                opacity: 1
+                padding: 0
+                position: fixed
+                right: 0
+                transition: all 0.3s ease 0.3s
+                top: 21%
+                width: 7.4962518741vw !important
+                z-index: 9
                 &.share
-                h2
+                    opacity: 1
+                    transition: all 0.3s ease 0.3s
                 ul
+                    align-content: space-between
+                    display: flex
+                    flex-flow: column nowrap !important
+                    height: 100% !important
+                    margin: 0
+                    padding: 0
+                    width: 100% !important
+                    z-index: 10
                     .social-button
+                        align-self: center
+                        clear: both
+                        display: block
+                        float: none
+                        height: 25% !important
+                        margin: 0 !important
+                        width: 100% !important
+                        &:nth-child( 1 )
+                            background: #405A97
+                        &:nth-child( 3 )
+                            background: #2CB203
+                            img
+                                display: block !important
+                                height: auto !important
+                                width: auto !important
+                        &:nth-child( 4 )
+                            background: #55A3DF
+                        &:nth-child( 6 )
+                            background: #757575
                         a
+                            color: $dark_green
+                            display: flex
+                            height: 100%
                             img, svg
+                                align-self: center
+                                box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
+                                display: block
+                                float: none
+                                height: 100% !important
+                                margin: 0 auto
+                                width: 100% !important
                             span
+                                display: none
+                                @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
+                                margin: 0 0 0 6.25vw
                 form
+                    display: none
+                    margin-top: 0
                     fieldset
                         .input
+                            @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $placeholder-color )
+                            height: auto !important
+                            width: 100% !important
                             input
+                                height: auto !important
                                 &.error
+                                    border: 1px solid red
+                                    box-shadow: 0 0 2px 0 red
                         .email
+                            margin: 6.25vw 0
+                            width: 75vw
                         .submit
+                            width: 26.5625vw
                             .button
+                                height: auto
+                                margin: 0
+                                padding: 3.125vw 6.25vw
                 .alert
+                    bottom: 0.625vw
+                    margin: 0
+                    position: absolute
+                    right: 0
+                    width: 44.375vw
+            .return
+                margin-bottom: 2.9985007496vw
+    footer
+        bottom: 9.5108695652vw !important
+    .banner
+        z-index: 0

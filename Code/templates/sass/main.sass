@@ -50,9 +50,6 @@
    ========================================================================== */
 @media only screen and (max-width: em( 1023, 16 )) and (orientation:landscape)
 
-/* ==========================================================================
-   iPad Portrait Orientation
-   ========================================================================== */
 @media only screen and (max-width: em( 1023, 16 )) and (orientation:portrait)
     @import "default-styles/_general_tablet"
 
@@ -74,10 +71,7 @@
     @import "custom-styles/mobile/events-phablet_landscape"
     @import "custom-styles/mobile/photography-phablet_landscape"
 
-/* ==========================================================================
-   iPhone 6 Plus Portait Orientation
-   ========================================================================== */
-@media only screen and (max-width: em( 736, 16 ))
+@media only screen and (max-width: em( 736, 16 )) and (orientation:portrait)
     @import "default-styles/_general_phablet"
 
     @import "custom-styles/mobile/home_mobile"
@@ -95,10 +89,7 @@
 
     @import "custom-styles/mobile/photography-phablet_landscape"
 
-/* ==========================================================================
-   iPhone 6 Portrait Orientation
-   ========================================================================== */
-@media only screen and (max-width: em( 667, 16 ))
+@media only screen and (max-width: em( 667, 16 )) and (orientation:portrait)
     @import "default-styles/_general_phablet"
 
     @import "custom-styles/mobile/photography-mobile"
@@ -107,11 +98,10 @@
    iPhone 5/5S Landscape Orientation
    ========================================================================== */
 @media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
-    /* Style adjustments for viewports that meet the condition */
+    @import "default-styles/_general_mobile_landscape"
 
-/* ==========================================================================
-   iPhone 5/5S Portrait Orientation
-   ========================================================================== */
+    @import "custom-styles/mobile/photography-mobile_landscape"
+
 @media only screen and (max-width: em( 568, 16 ))
     @import "default-styles/_general_mobile"
 
@@ -123,4 +113,5 @@
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-@import "default-styles/_print_stylesheet"
+@media only print
+    @import "default-styles/_print_stylesheet"

@@ -69,7 +69,7 @@
                 border: 0
                 bottom: 0
                 box-sizing: border-box
-                display: flex
+                display: block
                 float: none
                 height: 15.625vw
                 margin: 0
@@ -84,16 +84,19 @@
                     transition: all 0.3s ease 0.3s
                 ul
                     align-content: space-between
+                    display: flex
+                    flex-flow: row nowrap
                     height: 15.625vw
                     margin: 0
                     padding: 0
                     width: 100%
                     z-index: 10
                     .social-button
-                        align-self: center
-                        float: left
+                        align-self: stretch
+                        float: none
                         height: 100%
                         margin: 0 !important
+                        padding: 0
                         width: 25%
                         &:nth-child( 1 )
                             background: #405A97
@@ -109,7 +112,6 @@
                             height: 100%
                             img, svg
                                 align-self: center
-                                //box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
                                 display: block
                                 float: none
                                 height: 9.375vw
@@ -120,8 +122,13 @@
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
+                    bottom: 62.5vw
+                    box-sizing: border-box
                     display: none
                     margin-top: 0
+                    padding: 0px 4.6875vw
+                    position: relative
+                    width: 100%
                     fieldset
                         .input
                             @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $placeholder-color )
@@ -142,10 +149,16 @@
                                 margin: 0
                                 padding: 3.125vw 6.25vw
                 .alert
-                    bottom: 0.625vw
+                    display: none
+                    flex-flow: row nowrap
+                    bottom: 31.5625vw
                     margin: 0
                     position: absolute
-                    right: 0
-                    width: 44.375vw
+                    right: 4.6875vw
+                    width: 62.5vw
+                    &.success, &.fail
+                        display: flex
+                    svg
+                        align-self: center
     footer
         bottom: 15.625vw !important
