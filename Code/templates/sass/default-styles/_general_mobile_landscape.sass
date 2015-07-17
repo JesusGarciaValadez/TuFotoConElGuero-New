@@ -36,7 +36,7 @@ html,body
                 font-size: 2.55vw !important
                 line-height: 4.6875vw !important
 .banner
-    position: static
+    position: static !important
     img
         margin: 0 auto
         width: 97.5vw !important
@@ -77,24 +77,24 @@ footer
         > ul li p, ol li p, ul li h3, ol li h3
             width: 97% !important
 .central
-    .B_crumbBox
+    /*.B_crumbBox
         clear: none
         color: $text-municipality !important
         float: left
-        font-size: 3.125vw !important
+        font-size: 18px !important
         line-height: 1.2em !important
         margin: 1.04167vw 0 0 !important
         padding: 0px !important
         width: auto !important
         li
-            font-size: 3.125vw !important
+            font-size: 18px !important
             line-height: 1.2em !important
             a
                 color: $text-municipality !important
                 span
         .slash_crumb
             color: $text-municipality !important
-            font-size: 3.125vw !important
+            font-size: 18px !important
             line-height: 1.2em !important
         .B_firstCrumb
         .B_homeCrumb
@@ -102,8 +102,8 @@ footer
         .B_lastCrumb
         .B_currentCrumb
             color: $text-municipality !important
-            font-size: 3.125vw !important
-            line-height: 1.2em !important
+            font-size: 18px !important
+            line-height: 1.2em !important*/
 label
     font-size: 3.5211267606vw
     margin: 3.5211267606vw 2.2887323944vw
@@ -112,9 +112,6 @@ input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
 .button
-    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
-    //box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
-    padding: 1.5625vw 3.125vw
     &:hover
     &:active, &:visited
     &:disabled

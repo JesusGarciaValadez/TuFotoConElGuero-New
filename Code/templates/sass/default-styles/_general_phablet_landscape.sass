@@ -32,7 +32,7 @@ html,body
                 font-size: 2.55vw
                 line-height: 4.6875vw
 .banner
-    position: static
+    position: static !important
     img
         margin: 0 auto
         width: 97.5vw
@@ -77,39 +77,36 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 2.1739130435vw, 1.5em, $asap-regular, $text-normal )
+        @include font-mask( normal, 18px, 1.2em, $asap-regular, $text-municipality )
         box-sizing: border-box
         clear: none
         display: block
         float: left
-        margin: 2.1739130435vw 0 2.1739130435vw
-        overflow: hidden
-        padding: 0 2.1739130435vw
+        margin: 0 0 10px 30px !important
+        overflow: visible !important
+        padding: 0 !important
         text-overflow: ellipsis
-        width: auto
-        white-space: nowrap
+        width: 80% !important
+        white-space: normal
         li
+            @include font-mask( normal, 18px, 1.2em, $asap-regular, $text-municipality )
             display: inline-block
             list-style: none inside
             a
-                color: $text-normal
+                @include font-mask( normal, 18px, 1.2em, $asap-regular, $text-municipality )
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 2.1739130435vw, 1.5em, $asap-regular, $text-normal )
-            &:nth-child( 1 )
+            &:nth-child( 1 ), &:nth-child( 2 ), &:nth-child( 3 ), &:nth-child( 4 )
                 display: none
             &:nth-child( 1n + 3 )
                 display: inline
-            &:nth-child( 2 ), &:nth-child( 3 ), &:nth-child( 4 )
-                display: none
         .B_firstCrumb
             display: none
         .B_homeCrumb
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 2.1739130435vw, 1.5em, $asap-regular, $text-normal )
             display: none
 .year-picker-wrapper
     display: none
@@ -150,21 +147,17 @@ label
 input[type="text"], input[type="email"], textarea
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
     border: 1px solid $placeholder-color
-    //border-radius: 0
-    //box-shadow: 0 0 2px 0px rgba(0,0,0,0.5)
     float: none
     margin: 0 auto
     -webkit-appearance: none
     &:invalid, &.error
-        //box-shadow: 0 0 2px 0 red
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
     @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
 .button
-    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
-    //box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
-    padding: 1.5625vw 3.125vw
+    @include font-mask( normal, 18px !important, 1.2em !important, $asap-regular, $white-color )
+    padding: 10px 20px !important
     &:hover
     &:active, &:visited
     &:disabled
