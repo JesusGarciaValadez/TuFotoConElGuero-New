@@ -141,7 +141,7 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-regular, $text-normal )
+        @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-normal )
         box-sizing: border-box
         clear: none
         display: block
@@ -153,7 +153,7 @@ footer
         width: 100vw
         white-space: nowrap
         li
-            @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-normal )
             display: inline-block
             list-style: none inside
             a
@@ -161,7 +161,7 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-normal )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -172,7 +172,7 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-regular, $text-normal )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-normal )
 .year-picker-wrapper
     display: none
     float: right
@@ -222,26 +222,20 @@ input[type="text"], input[type="email"], textarea
     margin: 0 auto
     -webkit-appearance: none
     &:invalid, &.error
-        //box-shadow: 0 0 2px 0 red
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
     @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
 .button
-    @include font-mask( normal, 2.92969vw, 1em, $asap-regular, $white-color )
+    @include font-mask( normal, 18px, 1em, $asap-regular, $white-color )
     background: $light_green !important
-    //border-radius: 3px
-    //box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
     padding: 1.5625vw 3.125vw
     -moz-appearance: button
     &:hover
     &:active, &:visited
-        //box-shadow: inset 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
     &:disabled
-        @include font-mask( normal, 2.92969vw, 1em, $asap-regular, $placeholder-color )
-        //box-shadow: 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
 .alert
-    @include font-mask( normal, 2.92969vw, 1em, $asap-regular, $white-color )
+    @include font-mask( normal, 15px, 1em, $asap-regular, $white-color )
     margin: 6.25vw 0 0
     min-width: 44.375vw
     padding: 2.8125vw 3.125vw
@@ -251,7 +245,7 @@ input:-moz-placeholder
         margin-right: 3.4375vw
         width: 5vw
     p
-        @include font-mask( normal, 2.92969vw !important, 1em !important, $asap-regular !important, $white-color !important )
+        @include font-mask( normal, 15px !important, 1em !important, $asap-regular !important, $white-color !important )
         float: left
         margin: 0
         width: auto

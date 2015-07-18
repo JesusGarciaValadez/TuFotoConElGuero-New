@@ -60,7 +60,7 @@ footer
         @include font-mask( normal, 5.4347826087vw, 1.2em, $asap-bold, $dark-green )
         box-sizing: border-box
         float: none
-        margin: 2.1739130435vw 0 0 2.1739130435vw
+        margin: 2.1739130435vw 0 0 1.3587vw
         overflow: hidden
         padding: 0
         text-overflow: ellipsis
@@ -77,23 +77,23 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 18px, 1.2em, $asap-regular, $text-municipality )
+        @include font-mask( normal, 15px, 1.2em, $asap-regular, $text-municipality )
         box-sizing: border-box
         clear: none
         display: block
         float: left
-        margin: 0 0 10px 30px !important
+        margin: 0 0 1.4992503748vw 1.3587vw !important
         overflow: visible !important
         padding: 0 !important
         text-overflow: ellipsis
         width: 80% !important
         white-space: normal
         li
-            @include font-mask( normal, 18px, 1.2em, $asap-regular, $text-municipality )
+            @include font-mask( normal, 15px, 1.2em, $asap-regular, $text-municipality )
             display: inline-block
             list-style: none inside
             a
-                @include font-mask( normal, 18px, 1.2em, $asap-regular, $text-municipality )
+                @include font-mask( normal, 15px, 1.2em, $asap-regular, $text-municipality )
                 text-decoration: none
                 span
         .slash_crumb
@@ -156,8 +156,6 @@ input[placeholder],
 input:-moz-placeholder
     @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
 .button
-    @include font-mask( normal, 18px !important, 1.2em !important, $asap-regular, $white-color )
-    padding: 10px 20px !important
     &:hover
     &:active, &:visited
     &:disabled
@@ -169,6 +167,9 @@ input:-moz-placeholder
     &.info
 .return
     margin: 0 0 3.125vw 1.3586956522vw
+    ~ div.clearfix
+        clear: both
+        display: block
 .wrapper
     display: table
     width: 100%

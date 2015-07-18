@@ -129,7 +129,7 @@ footer
     display: block
 .page
     h1
-        @include font-mask( normal, 4.6875vw, 1.2em, $asap-bold, $dark-green )
+        @include font-mask( normal, 15px, 1.2em, $asap-bold, $dark-green )
         box-sizing: border-box
         float: left
         margin: 1.5625vw 0.9375vw 1.5625vw 1.5625vw !important
@@ -156,7 +156,7 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 4.6875vw !important, 1.2em, $asap-regular, $text-municipality !important )
+        @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality !important )
         box-sizing: border-box
         clear: left
         display: block
@@ -168,7 +168,7 @@ footer
         width: auto !important
         white-space: nowrap
         li
-            @include font-mask( normal, 4.6875vw !important, 1.2em, $asap-regular, $text-municipality !important )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality !important )
             display: inline-block
             list-style: none inside
             padding: 0 !important
@@ -177,7 +177,7 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 4.6875vw !important, 1.2em, $asap-regular, $text-municipality !important )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality !important )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -188,7 +188,7 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 4.6875vw !important, 1.2em, $asap-regular, $text-municipality !important )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality !important )
 label
     @include font-mask( normal, 5vw !important, 1em, $asap-regular, $dark_green )
     box-sizing: border-box
@@ -208,18 +208,13 @@ input[placeholder],
 input:-moz-placeholder
     @include font-mask( normal, 5vw, 1em, $asap-regular, $placeholder-color )
 .button
-    @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
+    @include font-mask( normal, 18px, 1em, $asap-regular, $white-color )
     background: $light_green !important
-    //border-radius: 3px
-    //box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.50)
-    padding: 1.5625vw 3.125vw
+    padding: 10px 20px
     -moz-appearance: button
     &:hover
     &:active, &:visited
-        //box-shadow: inset 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
     &:disabled
-        @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
-        //box-shadow: 0px 0px 0.9375vw 0px rgba(0,0,0,0.50)
 .alert
     @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $white-color )
     margin: 6.25vw 0 0

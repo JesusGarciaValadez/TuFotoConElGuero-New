@@ -8,8 +8,6 @@ core
 manager
 bower_components
 setup
-assets/css/*
-assets/js/*
 assets/components
 assets/components/*
 setup_
