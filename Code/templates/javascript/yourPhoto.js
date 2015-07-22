@@ -56,13 +56,13 @@
             }
             if('header .select') {
                 //  Trigger para emular el comportamiento de combo box
-                $('.select').on('click', 'button', function(e) {
+                $('.select').on('click', 'button, button svg', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
 
                     $('nav.mask').toggleClass('active');
                 });
-                $('body').on('click', function(e) {
+                $('body').on('click', '*', function(e) {
                     e.stopPropagation();
                     if($('nav.mask').hasClass('active')) {
                         $('nav.mask').removeClass('active');

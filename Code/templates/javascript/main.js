@@ -38,25 +38,42 @@
     //  When page is finished loaded
     $('document').ready(function() {
         //alert( $( window ).innerWidth() );
+        var throttleTimeout,api;
 
         //  Calculate paginator's width
         if ($('.pageList').exists()) {
             yourPhoto.resizePaginator();
         }
+        //  Crea las instancias de jScrollPane para los elementos que simulan
+        //  ser select tags
+        if (!$('.jspScrollable').exists()) {
+            yourPhoto.makeScrollBar($('.select_municipality .mask'), { autoReinitialise: true } );
+
+            $('.select_municipality .mask').each( function(){
+                api = $(this).data('jsp');
+            } );
+        }
+
         $(window).on('resize', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            //  Crea las instancias de jScrollPane para los elementos que simulan
-            //  ser select tags
-            if (!$('.jspScrollable').exists()) {
-                yourPhoto.makeScrollBar($('.select_municipality .mask'));
+
+            // Cada que redimensiona la ventana, se reinicializa el jScrollPane para recalcular el ancho de la lista
+            // de municipios.
+            if (!throttleTimeout) {
+                throttleTimeout = setTimeout( function() {
+                    api.reinitialise();
+                    throttleTimeout = null;
+                }, 50 );
             }
+
             //  Calculate paginator's width
             if ($('.pageList').exists()) {
                 yourPhoto.resizePaginator();
             }
         });
 
+        //  Hace el cambio de página mediante el Combo box de la versión mobile
         if ( $('ul.mobile li form.mobile fieldset, .year-picker.mobile fieldset').exists() ) {
             $('ul.mobile li form.mobile fieldset, .year-picker.mobile fieldset').on('change', 'select', function(e) {
                 var _value  = $(e.currentTarget).val();
@@ -64,8 +81,8 @@
             });
         }
 
+        //  Validación de formulario de contacto
         if ($('form[name="contact-form"]').exists()) {
-
             //  Validation of the contact form
             $('input[type="submit"]').on('click', function(e) {
                 e.preventDefault();
@@ -153,6 +170,7 @@
             });
         }
 
+        //  Validación de formulario de envio de imagen
         if ($('form[name="share-form"]').exists()) {
 
             // Show the form to share the image.
