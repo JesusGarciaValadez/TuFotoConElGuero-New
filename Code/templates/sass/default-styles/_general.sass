@@ -96,14 +96,13 @@ html,body
                     z-index: 5
                 .mask
                     background-color: $white-color
-                    //box-shadow: 0px 5px 3px 1px rgba(0,0,0,0.5)
                     box-sizing: border-box
-                    display: inline-block
+                    display: none
                     height: 350px
                     left: 0%
                     margin: 0 auto
                     overflow: auto
-                    opacity: 0
+                    //opacity: 0
                     position: absolute
                     transition: all 0.1s ease
                     top: 36px
@@ -111,7 +110,7 @@ html,body
                     &.active
                         display: block !important
                         transition: all 0.1s ease
-                        opacity: 1 !important
+                        //opacity: 1 !important
                     .jspContainer
                         @extend .clearfix
                         overflow: hidden
@@ -128,9 +127,9 @@ html,body
                                 width: 100%
                                 z-index: 4
                                 li
-                                    border-color: transparent transparent #F6F6F6 transparent
+                                    border-color: transparent #F6F6F6 #F6F6F6
                                     border-style: solid
-                                    border-width: 0 0 1px 0
+                                    border-width: 0 1px 1px
                                     box-sizing: border-box
                                     cursor: pointer
                                     height: 35px
@@ -140,7 +139,7 @@ html,body
                                         background-color: #FCFCFC
                                         color: #F89829
                                     a
-                                        @include font-mask( normal, em( 14, $font-size ), em( 30, 14 ), $asap-regular, $text-municipality )
+                                        @include font-mask( normal, 14px !important, 2.9296875vw !important, $asap-regular, $text-municipality )
                                         text-align: center
                                         text-decoration: none
                                         text-transform: capitalize
@@ -351,6 +350,8 @@ label
     @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $dark_green )
     clear: both
     display: block
+fieldset
+    position: relative
 input[type="text"], input[type="email"]
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
     border: 0 none transparent
@@ -362,7 +363,7 @@ input[type="text"], input[type="email"]
     padding: 0 1.5625vw
 input[type="text"], input[type="email"], textarea
     &:invalid, &.error
-        //box-shadow: 0 0 3px 0 red !important
+        border: 1px solid red !important
 *[placeholder], input[placeholder], input::-moz-placeholder,
 input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeholder
     //@include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
@@ -405,12 +406,14 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
     @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $white-color )
     //box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50)
     box-sizing: border-box
+    bottom: 3.515625vw
     display: none
-    float: right
-    margin: 1.95313vw 9.9609375vw 0 0
+    left: 8.7890625vw
+    margin: 1.95313vw 0 0 0
     padding: 0.9765625vw 1.953125vw
+    position: absolute
     transition: all 0.5s ease
-    width: 31.25vw
+    width: 29.296875vw
     &.visible
         display: block
         transition: all 0.5s ease
