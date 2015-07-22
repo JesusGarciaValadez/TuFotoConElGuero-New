@@ -125,15 +125,20 @@ footer
     display: block !important
 .page
     h1
-        @include font-mask( normal, 4.5893719807vw !important, 1.5em, $asap-bold, $dark-green )
+        @include font-mask( normal, 15px, 1.2em, $asap-bold, $dark-green )
         box-sizing: border-box
-        margin: 3.8647342995vw 0 3.8647342995vw 9.0625vw
+        margin: 10px 5px 10px 10px
         overflow: hidden
         padding: 0
         text-overflow: ellipsis
         white-space: nowrap
         width: 81.875vw
+        &:after
+            content: ' /'
     h2
+        font-size: 15px
+    h3
+        font-size: 15px
     section
         > p
             @include font-mask( normal, 3.4375vw, 5.15625vw, $asap-regular, $text-normal )
@@ -141,27 +146,27 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-normal )
+        @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality )
         box-sizing: border-box
         clear: none
         display: block
         float: left
-        margin: 3.8647342995vw 0vw
+        margin: 10px 0 !important
         overflow: hidden
         padding: 0 9.0625vw
         text-overflow: ellipsis
         width: 100vw
         white-space: nowrap
         li
-            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-normal )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality )
             display: inline-block
             list-style: none inside
             a
-                color: $text-normal
+                color: $text-municipality
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-normal )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -172,7 +177,7 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-normal )
+            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality )
 .year-picker-wrapper
     display: none
     float: right
@@ -188,22 +193,28 @@ footer
     clear: both !important
     display: block
     float: none !important
+    height: 40px
     margin: 0px auto
     width: 100%
     .pageList
         display: block
         float: none
-        margin: 0 auto
+        margin: 0 auto 10px
         li
-            height: 12.5vw
-            margin: 0 1.875vw 0
-            width: 12.5vw
+            box-sizing: border-box
+            height: 40px
+            margin: 0 6px 0
+            padding: 0
+            width: 40px !important
             &:first-child
-                margin: 0 1.875vw 0 0
+                margin: 0 6px 0 0
             &:last-child
-                margin: 0 0 0 1.875vw
+                margin: 0 0 0 6px
             a
-                @include font-mask( normal, 6.25vw, 12.5vw, $asap-bold, $placeholder-color )
+                @include font-mask( normal, 20px, 40px, $asap-bold, $placeholder-color )
+                clear: both
+                display: block
+                float: left
                 height: 100%
                 width: 100%
                 .arrow
@@ -231,6 +242,7 @@ input:-moz-placeholder
     background: $light_green !important
     padding: 1.5625vw 3.125vw
     -moz-appearance: button
+    -webkit-appearance: button
     &:hover
     &:active, &:visited
     &:disabled

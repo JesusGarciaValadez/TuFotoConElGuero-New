@@ -57,17 +57,17 @@ footer
     display: block
 .page
     h1
-        @include font-mask( normal, 5.4347826087vw, 1.2em, $asap-bold, $dark-green )
+        @include font-mask( normal, 15px, 1.2em, $asap-bold, $dark-green )
         box-sizing: border-box
         float: none
-        margin: 2.1739130435vw 0 0 1.3587vw
+        margin: 10px 5px 10px 10px
         overflow: hidden
         padding: 0
         text-overflow: ellipsis
         white-space: nowrap
         width: 98%
         &:after
-            content: ''
+            content: ' /'
     h2
         display: none
     section
@@ -82,7 +82,7 @@ footer
         clear: none
         display: block
         float: left
-        margin: 0 0 1.4992503748vw 1.3587vw !important
+        margin: 10px 0
         overflow: visible !important
         padding: 0 !important
         text-overflow: ellipsis
@@ -120,24 +120,9 @@ footer
                 padding: 0
                 option
 .paging
-    clear: none
-    float: right
-    height: 6.25vw
-    margin: 0 1.3586956522vw
     .pageList
-        clear: both
-        height: 6.25vw
-        margin: 0 auto 1.5625vw
         li
-            height: 6.25vw
-            margin: 0 0.9375vw 0
-            width: 6.25vw
-            &:first-child
-                margin: 0 0.9375vw 0 0
-            &:last-child
-                margin: 0 0 0 0.9375vw
             a
-                @include font-mask( normal, 4.4014084507vw, 1.5em, $asap-bold, $placeholder-color )
                 .arrow
         &:empty
 label

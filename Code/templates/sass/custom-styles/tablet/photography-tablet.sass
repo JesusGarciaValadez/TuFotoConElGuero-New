@@ -93,11 +93,11 @@
                         width: 25%
                         &:nth-child( 1 )
                             background: #405A97
-                        &:nth-child( 2 )
-                            background: #D83735
                         &:nth-child( 3 )
+                            background: #2CB203
+                        &:nth-child( 4 )
                             background: #55A3DF
-                        &:nth-child( 5 )
+                        &:nth-child( 6 )
                             background: #757575
                         a
                             color: $dark_green
@@ -108,15 +108,26 @@
                                 box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
                                 display: block
                                 float: none
-                                height: 9.375vw
                                 margin: 0 auto
+                            svg
+                                height: 9.375vw
                                 width: 9.375vw
+                            img
+                                height: auto
+                                width: 30%
                             span
                                 display: none
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
-                    margin-top: 0
+                    background-color: rgb(255, 255, 255)
+                    bottom: 140px
+                    box-sizing: border-box
+                    display: none
+                    left: 140px
+                    margin-top: 0px
+                    padding: 20px
+                    position: absolute
                     fieldset
                         .input
                             @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $placeholder-color )
@@ -128,19 +139,19 @@
                                     border: 1px solid red
                                     box-shadow: 0 0 2px 0 red
                         .email
-                            margin: 6.25vw 0
+                            margin: 0
                             width: 75vw
                         .submit
                             width: 26.5625vw
                             .button
                                 height: auto
                                 margin: 0
-                                padding: 3.125vw 6.25vw
+                                padding: 10px 20px
                 .alert
-                    bottom: 0.625vw
+                    bottom: 22.135416667vw // 170px
                     margin: 0
                     position: absolute
-                    right: 0
+                    right: 18.5546875vw // 190px
                     width: 44.375vw
     .banner
         display: none

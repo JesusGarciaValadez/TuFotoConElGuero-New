@@ -115,11 +115,12 @@ html,body, .banner
             width: 99.25vw
 footer
     bottom: 14.583333333vw
-    height: 7.8125vw
+    height: auto
+    padding: 5px
     position: fixed
     width: 100%
     p
-        @include font-mask( normal, 2.5vw, em( 25, 8 ), $asap-bold, $white-color )
+        @include font-mask( normal, 2.5vw, 1em, $asap-bold, $white-color )
 .desktop
     display: none !important
 .mobile
@@ -128,7 +129,7 @@ section.central
     margin-bottom: 24.739583333vw !important
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 2.1875vw, 4.6875vw, $asap-regular, $text-normal )
+        @include font-mask( normal, 2.1875vw, 4.6875vw, $asap-regular, $text-municipality )
         box-sizing: border-box
         clear: none
         display: block
@@ -143,11 +144,11 @@ section.central
             display: inline-block
             list-style: none inside
             a
-                color: $text-normal
+                color: $text-municipality
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-normal )
+            @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-municipality )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -158,7 +159,7 @@ section.central
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-normal )
+            @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-municipality )
 .page
     h1
         @include font-mask( normal, 3.125vw, 4.6875vw, $asap-bold, $dark-green )
@@ -171,10 +172,12 @@ section.central
         white-space: nowrap
         width: auto
     h2
+        box-sizing: border-box
         margin-top: 0 !important
+        padding: 0 20px
     section
         > p
-            @include font-mask( normal, 2.0833333333vw, 2.0833333333vw, $asap-regular, $text-normal )
+            @include font-mask( normal, 13px !important, 1.2em, $asap-regular, $text-normal )
             padding: 0 4.53125vw
 label
     @include font-mask( normal, 3.125vw, 3.59375vw, $asap-regular, $dark_green )
@@ -230,12 +233,10 @@ input:-moz-placeholder
     &.info
         background: $info-alert
 .year-picker-wrapper
-    display: block
     float: right
     margin: 1.5625vw 1.25vw 1.5625vw 0
     width: auto
     p.desktop, .year-picker
-        display: block !important
         font-size: 2.0833333333vw
         line-height: 4.6875vw
     form
