@@ -6838,7 +6838,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 406448,
+		"initialSize": 0,
 		"inputAbbreviatedPath": "\/assets\/img\/municipios\/arriaga\/2015\/08-08\/3.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/municipios\/arriaga\/2015\/08-08\/3.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -72196,7 +72196,7 @@
 		},
 	"\/Code\/templates\/kit\/footer.kit": {
 		"fileType": 2048,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/kit\/footer.kit",
 		"outputAbbreviatedPath": "\/Code\/templates\/kit\/footer.html",

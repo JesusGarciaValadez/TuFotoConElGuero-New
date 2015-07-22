@@ -1701,7 +1701,7 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
   .page h2 {
     box-sizing: border-box;
     margin-top: 0 !important;
-    padding: 0 20px; }
+    padding: 0 35px; }
   .page section > p {
     color: #5C5C5C;
     font-family: "asap-regular",Helvetica, Arial, sans-serif;
@@ -1925,16 +1925,15 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   .privacy-policy .wrapper > section.central {
     margin-bottom: 10vw; }
-  .privacy-policy h1 {
-    clear: both;
-    display: block;
-    float: none !important; }
-    .privacy-policy h1:after {
-      content: "" !important; }
-  .privacy-policy p, .privacy-policy ul li, .privacy-policy ol li, .privacy-policy ul li p, .privacy-policy ol li p, .privacy-policy ul li h3, .privacy-policy ol li h3 {
-    font-size: 13px;
-    line-height: 1.2em; }
-    .privacy-policy p:empty, .privacy-policy ul li:empty, .privacy-policy ol li:empty, .privacy-policy ul li p:empty, .privacy-policy ol li p:empty, .privacy-policy ul li h3:empty, .privacy-policy ol li h3:empty {
+    .privacy-policy .wrapper > section.central h1 {
+      clear: both;
+      display: block;
+      float: none !important; }
+      .privacy-policy .wrapper > section.central h1:after {
+        content: "" !important; }
+    .privacy-policy .wrapper > section.central h2 {
+      display: block !important; }
+    .privacy-policy .wrapper > section.central p:empty, .privacy-policy .wrapper > section.central ul li:empty, .privacy-policy .wrapper > section.central ol li:empty, .privacy-policy .wrapper > section.central ul li p:empty, .privacy-policy .wrapper > section.central ol li p:empty, .privacy-policy .wrapper > section.central ul li h3:empty, .privacy-policy .wrapper > section.central ol li h3:empty {
       display: none; }
 
   .events .wrapper > section.central, .event .wrapper > section.central {
@@ -2308,13 +2307,11 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
   footer {
     bottom: 14.6875vw;
     height: 7.8125vw;
+    padding: 0;
     position: fixed;
     width: 100%; }
     footer p {
-      color: #FFFFFF;
-      font-family: "asap-bold",Helvetica, Arial, sans-serif;
-      font-size: 2.5vw;
-      font-weight: normal;
+      font-size: 3.4375vw;
       line-height: 7.8125vw !important; }
 
   .desktop {
@@ -2333,15 +2330,15 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
     width: auto; }
     .page h1:after {
       content: " /"; }
-  .page h2 {
+  .page h2, .page h3 {
     box-sizing: border-box;
     display: block;
-    font-size: 20px !important;
-    padding: 0; }
+    font-size: 15px !important;
+    padding: 0 10px; }
   .page section > p, .page section ul li, .page section ol li, .page section ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
     color: #5C5C5C;
     font-family: "asap-regular",Helvetica, Arial, sans-serif;
-    font-size: 3.4375vw !important;
+    font-size: 12px !important;
     font-weight: normal;
     line-height: 1.2em !important; }
   .page section ul li, .page section ol li {
@@ -2539,15 +2536,10 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   footer {
     bottom: 14.538043478vw !important;
-    height: 7.88043vw !important;
-    position: absolute !important;
-    width: 100%; }
+    position: absolute !important; }
     footer p {
-      color: #FFFFFF;
-      font-family: "asap-bold",Helvetica, Arial, sans-serif;
       font-size: 2.5vw !important;
-      font-weight: normal;
-      line-height: 3.125em !important; }
+      line-height: 7.88043vw !important; }
 
   .desktop {
     display: none !important; }
@@ -2557,13 +2549,6 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   .page h1 {
     width: auto !important; }
-  .page h2 {
-    box-sizing: border-box;
-    padding: 0; }
-  .page section > p, .page section ul li, .page section ol li, .page section ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
-    box-sizing: border-box !important;
-    font-size: 2.3988005997vw !important;
-    line-height: 1.2em !important; }
   .page section > ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
     width: 97% !important; }
 
@@ -3229,16 +3214,15 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   .privacy-policy .wrapper > section.central {
     margin-bottom: 10vw; }
-  .privacy-policy h1 {
-    clear: both;
-    display: block;
-    float: none !important; }
-    .privacy-policy h1:after {
-      content: "" !important; }
-  .privacy-policy p, .privacy-policy ul li, .privacy-policy ol li, .privacy-policy ul li p, .privacy-policy ol li p, .privacy-policy ul li h3, .privacy-policy ol li h3 {
-    font-size: 13px;
-    line-height: 1.2em; }
-    .privacy-policy p:empty, .privacy-policy ul li:empty, .privacy-policy ol li:empty, .privacy-policy ul li p:empty, .privacy-policy ol li p:empty, .privacy-policy ul li h3:empty, .privacy-policy ol li h3:empty {
+    .privacy-policy .wrapper > section.central h1 {
+      clear: both;
+      display: block;
+      float: none !important; }
+      .privacy-policy .wrapper > section.central h1:after {
+        content: "" !important; }
+    .privacy-policy .wrapper > section.central h2 {
+      display: block !important; }
+    .privacy-policy .wrapper > section.central p:empty, .privacy-policy .wrapper > section.central ul li:empty, .privacy-policy .wrapper > section.central ol li:empty, .privacy-policy .wrapper > section.central ul li p:empty, .privacy-policy .wrapper > section.central ol li p:empty, .privacy-policy .wrapper > section.central ul li h3:empty, .privacy-policy .wrapper > section.central ol li h3:empty {
       display: none; }
 
   .events .wrapper > section.central, .event .wrapper > section.central {
@@ -3912,16 +3896,15 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   .privacy-policy .wrapper > section.central {
     margin-bottom: 10vw; }
-  .privacy-policy h1 {
-    clear: both;
-    display: block;
-    float: none !important; }
-    .privacy-policy h1:after {
-      content: "" !important; }
-  .privacy-policy p, .privacy-policy ul li, .privacy-policy ol li, .privacy-policy ul li p, .privacy-policy ol li p, .privacy-policy ul li h3, .privacy-policy ol li h3 {
-    font-size: 13px;
-    line-height: 1.2em; }
-    .privacy-policy p:empty, .privacy-policy ul li:empty, .privacy-policy ol li:empty, .privacy-policy ul li p:empty, .privacy-policy ol li p:empty, .privacy-policy ul li h3:empty, .privacy-policy ol li h3:empty {
+    .privacy-policy .wrapper > section.central h1 {
+      clear: both;
+      display: block;
+      float: none !important; }
+      .privacy-policy .wrapper > section.central h1:after {
+        content: "" !important; }
+    .privacy-policy .wrapper > section.central h2 {
+      display: block !important; }
+    .privacy-policy .wrapper > section.central p:empty, .privacy-policy .wrapper > section.central ul li:empty, .privacy-policy .wrapper > section.central ol li:empty, .privacy-policy .wrapper > section.central ul li p:empty, .privacy-policy .wrapper > section.central ol li p:empty, .privacy-policy .wrapper > section.central ul li h3:empty, .privacy-policy .wrapper > section.central ol li h3:empty {
       display: none; }
 
   .events .wrapper > section.central, .event .wrapper > section.central {
@@ -4282,13 +4265,11 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
   footer {
     bottom: 14.6875vw;
     height: 7.8125vw;
+    padding: 0;
     position: fixed;
     width: 100%; }
     footer p {
-      color: #FFFFFF;
-      font-family: "asap-bold",Helvetica, Arial, sans-serif;
-      font-size: 2.5vw;
-      font-weight: normal;
+      font-size: 3.4375vw;
       line-height: 7.8125vw !important; }
 
   .desktop {
@@ -4307,15 +4288,15 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
     width: auto; }
     .page h1:after {
       content: " /"; }
-  .page h2 {
+  .page h2, .page h3 {
     box-sizing: border-box;
     display: block;
-    font-size: 20px !important;
-    padding: 0; }
+    font-size: 15px !important;
+    padding: 0 10px; }
   .page section > p, .page section ul li, .page section ol li, .page section ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
     color: #5C5C5C;
     font-family: "asap-regular",Helvetica, Arial, sans-serif;
-    font-size: 3.4375vw !important;
+    font-size: 12px !important;
     font-weight: normal;
     line-height: 1.2em !important; }
   .page section ul li, .page section ol li {
@@ -4513,15 +4494,10 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   footer {
     bottom: 14.538043478vw !important;
-    height: 7.88043vw !important;
-    position: absolute !important;
-    width: 100%; }
+    position: absolute !important; }
     footer p {
-      color: #FFFFFF;
-      font-family: "asap-bold",Helvetica, Arial, sans-serif;
       font-size: 2.5vw !important;
-      font-weight: normal;
-      line-height: 3.125em !important; }
+      line-height: 7.88043vw !important; }
 
   .desktop {
     display: none !important; }
@@ -4531,13 +4507,6 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   .page h1 {
     width: auto !important; }
-  .page h2 {
-    box-sizing: border-box;
-    padding: 0; }
-  .page section > p, .page section ul li, .page section ol li, .page section ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
-    box-sizing: border-box !important;
-    font-size: 2.3988005997vw !important;
-    line-height: 1.2em !important; }
   .page section > ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
     width: 97% !important; }
 
@@ -5550,15 +5519,10 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   footer {
     bottom: 14.538043478vw !important;
-    height: 7.88043vw !important;
-    position: absolute !important;
-    width: 100%; }
+    position: absolute !important; }
     footer p {
-      color: #FFFFFF;
-      font-family: "asap-bold",Helvetica, Arial, sans-serif;
       font-size: 2.5vw !important;
-      font-weight: normal;
-      line-height: 3.125em !important; }
+      line-height: 7.88043vw !important; }
 
   .desktop {
     display: none !important; }
@@ -5568,13 +5532,6 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   .page h1 {
     width: auto !important; }
-  .page h2 {
-    box-sizing: border-box;
-    padding: 0; }
-  .page section > p, .page section ul li, .page section ol li, .page section ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
-    box-sizing: border-box !important;
-    font-size: 2.3988005997vw !important;
-    line-height: 1.2em !important; }
   .page section > ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
     width: 97% !important; }
 
@@ -5946,13 +5903,11 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
   footer {
     bottom: 14.6875vw;
     height: 7.8125vw;
+    padding: 0;
     position: fixed;
     width: 100%; }
     footer p {
-      color: #FFFFFF;
-      font-family: "asap-bold",Helvetica, Arial, sans-serif;
-      font-size: 2.5vw;
-      font-weight: normal;
+      font-size: 3.4375vw;
       line-height: 7.8125vw !important; }
 
   .desktop {
@@ -5971,15 +5926,15 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
     width: auto; }
     .page h1:after {
       content: " /"; }
-  .page h2 {
+  .page h2, .page h3 {
     box-sizing: border-box;
     display: block;
-    font-size: 20px !important;
-    padding: 0; }
+    font-size: 15px !important;
+    padding: 0 10px; }
   .page section > p, .page section ul li, .page section ol li, .page section ul li p, .page section ol li p, .page section ul li h3, .page section ol li h3 {
     color: #5C5C5C;
     font-family: "asap-regular",Helvetica, Arial, sans-serif;
-    font-size: 3.4375vw !important;
+    font-size: 12px !important;
     font-weight: normal;
     line-height: 1.2em !important; }
   .page section ul li, .page section ol li {
@@ -6376,16 +6331,15 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
 
   .privacy-policy .wrapper > section.central {
     margin-bottom: 10vw; }
-  .privacy-policy h1 {
-    clear: both;
-    display: block;
-    float: none !important; }
-    .privacy-policy h1:after {
-      content: "" !important; }
-  .privacy-policy p, .privacy-policy ul li, .privacy-policy ol li, .privacy-policy ul li p, .privacy-policy ol li p, .privacy-policy ul li h3, .privacy-policy ol li h3 {
-    font-size: 13px;
-    line-height: 1.2em; }
-    .privacy-policy p:empty, .privacy-policy ul li:empty, .privacy-policy ol li:empty, .privacy-policy ul li p:empty, .privacy-policy ol li p:empty, .privacy-policy ul li h3:empty, .privacy-policy ol li h3:empty {
+    .privacy-policy .wrapper > section.central h1 {
+      clear: both;
+      display: block;
+      float: none !important; }
+      .privacy-policy .wrapper > section.central h1:after {
+        content: "" !important; }
+    .privacy-policy .wrapper > section.central h2 {
+      display: block !important; }
+    .privacy-policy .wrapper > section.central p:empty, .privacy-policy .wrapper > section.central ul li:empty, .privacy-policy .wrapper > section.central ol li:empty, .privacy-policy .wrapper > section.central ul li p:empty, .privacy-policy .wrapper > section.central ol li p:empty, .privacy-policy .wrapper > section.central ul li h3:empty, .privacy-policy .wrapper > section.central ol li h3:empty {
       display: none; } }
 /* ==========================================================================
  * Print styles.
