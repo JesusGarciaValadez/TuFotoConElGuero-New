@@ -121,9 +121,14 @@
 	[
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 47.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -159,7 +164,11 @@
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
 	},
 	"distraction_free":
 	{
@@ -170,8 +179,21 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/tuFotoConElGuero",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/kit",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/desktop",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/default-styles"
+	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/main.sass",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/kit/events.kit",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/kit/event.kit",
 		"/Applications/MAMP/htdocs/new_giovanni_bojanini_landing/Code/templates/index.jade",
 		"/Applications/MAMP/htdocs/new_giovanni_bojanini_landing/Code/templates/index_junio.jade",
 		"/Applications/MAMP/htdocs/new_giovanni_bojanini_landing/microinjertobojanini.sublime-workspace",
@@ -296,10 +318,7 @@
 		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_downloadable_bulletin_blue_themed.kit",
 		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/form-of-september-2014-bulletin.kit",
 		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_nav_menu_blue_themed.kit",
-		"/Applications/MAMP/htdocs/minvielle_photography/Code/templates/javascript/main.js",
-		"/Applications/MAMP/htdocs/equiver/Code/templates/javascript/Equiver.js",
-		"/Applications/MAMP/htdocs/equiver/Code/templates/sass/home.sass",
-		"/Applications/MAMP/htdocs/equiver/Code/templates/javascript/main.js"
+		"/Applications/MAMP/htdocs/minvielle_photography/Code/templates/javascript/main.js"
 	],
 	"find":
 	{
@@ -428,6 +447,16 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tufotoconelguero.sublime-project",
 	"replace":
 	{
 		"height": 64.0
@@ -436,6 +465,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -448,15 +478,36 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/MAMP/htdocs/boletin-axa-prevencion-360/source/sass/prevencion-360.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
 	},
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 166.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
