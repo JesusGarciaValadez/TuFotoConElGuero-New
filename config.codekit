@@ -72196,7 +72196,7 @@
 		},
 	"\/Code\/templates\/kit\/footer.kit": {
 		"fileType": 2048,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/kit\/footer.kit",
 		"outputAbbreviatedPath": "\/Code\/templates\/kit\/footer.html",
