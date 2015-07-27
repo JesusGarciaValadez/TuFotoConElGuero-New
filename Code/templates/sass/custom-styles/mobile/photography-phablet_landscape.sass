@@ -28,9 +28,8 @@
                         padding: 0
                         width: 100%
                         a
-                            height: 100%
-                            line-height: 15.742128936vw !important
-                            width: 100%
+                            font-size: 70px !important
+                            line-height: 45px !important
                             .arrow-big
                 .prev
                     left: 9.375vw
@@ -105,7 +104,6 @@
                             background: #55A3DF
                         &:nth-child( 6 )
                             background: #757575
-                            display: none
                         a
                             color: $dark_green
                             display: flex
@@ -115,16 +113,26 @@
                                 box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
                                 display: block
                                 float: none
-                                height: 80%
                                 margin: 0 auto
-                                width: 80%
+                            svg
+                                height: 80% !important
+                                width: 80% !important
+                            img
+                                height: 65% !important
+                                width: 65% !important
                             span
                                 display: none
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
-                    display: none !important
+                    background-color: #FFF
+                    bottom: unset !important
+                    left: -1040% !important
                     margin-top: 0
+                    padding: 0px 4.6875vw 40px !important
+                    position: absolute !important
+                    top: 0 !important
+                    width: 400px !important
                     fieldset
                         .input
                             @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $placeholder-color )
@@ -136,20 +144,23 @@
                                     border: 1px solid red
                                     box-shadow: 0 0 2px 0 red
                         .email
-                            margin: 6.25vw 0
+                            margin: 10px 0
                             width: 75vw
                         .submit
                             width: 26.5625vw
                             .button
                                 height: auto
                                 margin: 0
-                                padding: 3.125vw 6.25vw
+                                padding: 1.4992503748vw 2.9985007496vw !important
                 .alert
-                    bottom: 0.625vw
-                    margin: 0
-                    position: absolute
-                    right: 0
-                    width: 44.375vw
+                    bottom: unset !important
+                    left: -385px !important
+                    right: unset !important
+                    top: 84px !important
+                    position: absolute !important
+                    width: 250px !important
+                    p
+                        font-size: 20px !important
             .return
                 margin-bottom: 2.9985007496vw
                 margin-left: 4.4977511244vw

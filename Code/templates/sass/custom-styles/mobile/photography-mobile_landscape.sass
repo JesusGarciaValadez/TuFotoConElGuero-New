@@ -21,14 +21,8 @@
                     width: 8.6956521739vw
                     z-index: 2
                     li
-                        height: 100%
-                        list-style: none inside
-                        padding: 0
-                        width: 100%
                         a
-                            height: 100%
-                            line-height: 15.742128936vw !important
-                            width: 100%
+                            line-height: 75px !important
                             .arrow-big
                 .prev
                     left: 9.375vw
@@ -102,7 +96,6 @@
                             background: #55A3DF
                         &:nth-child( 6 )
                             background: #757575
-                            display: none !important
                         a
                             color: $dark_green
                             display: flex
@@ -124,8 +117,13 @@
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
-                    display: none !important
+                    bottom: unset !important
+                    left: -1040% !important
                     margin-top: 0
+                    padding: 0px 4.6875vw 30px !important
+                    position: absolute !important
+                    top: 0 !important
+                    width: 400px !important
                     fieldset
                         .input
                             @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $placeholder-color )
@@ -137,20 +135,23 @@
                                     border: 1px solid red
                                     box-shadow: 0 0 2px 0 red
                         .email
-                            margin: 6.25vw 0
+                            margin: 1.4992503748vw 0 !important
                             width: 75vw
                         .submit
                             width: 26.5625vw
                             .button
                                 height: auto
                                 margin: 0
-                                padding: 3.125vw 6.25vw
+                                padding: 1.4992503748vw 2.9985007496vw !important
                 .alert
-                    bottom: 0.625vw
-                    margin: 0
-                    position: absolute
-                    right: 0
-                    width: 44.375vw
+                    bottom: unset !important
+                    left: -325px !important
+                    right: unset !important
+                    top: 84px !important
+                    position: absolute !important
+                    width: 250px !important
+                    p
+                        font-size: 20px !important
             .return
                 margin-bottom: 2.9985007496vw
     footer

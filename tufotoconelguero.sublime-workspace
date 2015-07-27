@@ -184,13 +184,13 @@
 		"/Applications/MAMP/htdocs/tuFotoConElGuero",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates",
-		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/kit",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles",
-		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/desktop",
-		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/default-styles"
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/mobile"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/tablet/photography-tablet.sass",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/main.sass",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/kit/events.kit",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/kit/event.kit",
@@ -317,8 +317,7 @@
 		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_displayable_bulletin.kit",
 		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_downloadable_bulletin_blue_themed.kit",
 		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/form-of-september-2014-bulletin.kit",
-		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_nav_menu_blue_themed.kit",
-		"/Applications/MAMP/htdocs/minvielle_photography/Code/templates/javascript/main.js"
+		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_nav_menu_blue_themed.kit"
 	],
 	"find":
 	{
@@ -483,7 +482,7 @@
 		[
 			[
 				"",
-				"/Applications/MAMP/htdocs/boletin-axa-prevencion-360/source/sass/prevencion-360.sublime-project"
+				"/Applications/MAMP/htdocs/boletin_axa/boletin-axa.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -505,7 +504,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 166.0,
+	"side_bar_width": 225.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
