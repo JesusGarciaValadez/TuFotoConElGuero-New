@@ -5,13 +5,11 @@
             h1
                 display: inline-block
                 float: left
-            .B_crumbBox
-                margin-left: 4.4977511244vw !important
             .principal-photography
                 border: 0 none transparent
                 display: block
                 float: none
-                margin: 6.25vw auto 26.5625vw
+                margin: 6.161971831vw auto 0 // 35.5px auto 0
                 position: relative
                 .navigator
                     display: inline-block
@@ -23,13 +21,8 @@
                     width: 8.6956521739vw
                     z-index: 2
                     li
-                        height: 100%
-                        list-style: none inside
-                        padding: 0
-                        width: 100%
                         a
-                            font-size: 70px !important
-                            line-height: 45px !important
+                            line-height: 75px !important
                             .arrow-big
                 .prev
                     left: 9.375vw
@@ -39,13 +32,13 @@
                     border: 0 none transparent
                     display: block
                     height: auto
-                    margin: 0 0 0 4.4977511244vw !important
-                    width: 85.457271364vw !important
+                    margin: 0 0 0 2.8169014085vw // 0 0 0 16px
+                    width: 84.507042254vw // 480px
                     img
                         border: 1.5625vw solid $white-color
                         box-sizing: border-box
-                        height: 60.546875vw
-                        width: 79.6875vw
+                        height: auto
+                        width: 100%
                     .display
                         box-sizing: border-box
                         display: block
@@ -72,7 +65,7 @@
                 position: fixed
                 right: 0
                 transition: all 0.3s ease 0.3s
-                top: 20%
+                top: 26%
                 width: 7.4962518741vw !important
                 z-index: 9
                 &.share
@@ -81,7 +74,7 @@
                 ul
                     align-content: space-between
                     display: flex
-                    flex-flow: column nowrap
+                    flex-flow: column nowrap !important
                     height: 100% !important
                     margin: 0
                     padding: 0
@@ -125,17 +118,20 @@
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
-                    background-color: #FFF
+                    background-color: $white-color
                     bottom: unset !important
+                    box-shadow: 0 0 15px -3px #000
+                    height: auto
                     left: -1040% !important
                     margin-top: 0
-                    padding: 0px 4.6875vw 40px !important
+                    padding: 0px 10px 10px !important
                     position: absolute !important
-                    top: 0 !important
+                    top: 35% !important
                     width: 400px !important
                     fieldset
                         .input
-                            @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $placeholder-color )
+                            font-size: 16px !important
+                            line-height: 25px !important
                             height: auto !important
                             width: 100% !important
                             input
@@ -143,7 +139,7 @@
                                 &.error
                                     border: 1px solid red
                         .email
-                            margin: 10px 0
+                            margin: 1.4992503748vw 0 !important
                             width: 75vw
                         .submit
                             width: 26.5625vw
@@ -152,23 +148,15 @@
                                 margin: 0
                                 padding: 1.4992503748vw 2.9985007496vw !important
                 .alert
-                    float: none !important
-                    height: 10.494752624vw // 70px
-                    left: 34.482758621vw // 230px !important
-                    margin: 0 !important
-                    min-width: 0 !important
-                    position: fixed !important
-                    top: 25.487256372vw // 170px !important
-                    width: 37.48125937vw // 250px !important
+                    bottom: auto
+                    left: 180px
+                    right: auto
+                    top: 142px
+                    padding: 8.5px 4.5px
+                    position: fixed
+                    width: 312px
                     p
-                        line-height: 4.9475262369vw !important // 33px !important
-                        font-size: 2.3988005997vw !important // 16px !important
             .return
-                -moz-appearance: none
-                -webkit-appearance: none
                 margin-bottom: 2.9985007496vw
-                margin-left: 4.4977511244vw
-    footer
-        bottom: 14.542728636vw !important
-    .banner
-        z-index: 0
+    footer, .banner
+        z-index: 0 !important

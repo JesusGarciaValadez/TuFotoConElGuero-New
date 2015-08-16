@@ -2,39 +2,86 @@ $font-size: 16px
 html,body
     position: relative
 .header
+    border-bottom: 0 none transparent
     header
+        border-bottom: $dark-green solid 3px
+        height: 61px
+        width: 100%
         p
-            float: left !important
-            height: 9.375vw !important
-            margin: 0.6793478261vw auto 0.6793478261vw 2.0833333333vw !important
-            width: 20.833333333vw !important
+            float: left
+            height: 53px
+            margin: 4px auto 4px 12px
+            position: static
+            width: 118px
             .logo
                 span
                 .logo-vector
                     width: 70%
         .cell
-            height: 3.125vw !important
-            right: 4.0760869565vw !important
-            top: 4.0760869565vw !important
-            width: 3.125vw !important
+            height: 30px
+            right: 15px
+            top: 15px
+            width: 30px
             .icon
-                //width: 60%
+                height: 100%
+                width: 100%
     > ul
+        display: none !important
+        float: none
+        height: 0
+        margin: 0
+        overflow: hidden
+        padding: 0
+        position: relative
+        transition: all 0.5s ease
+        width: 100%
+        &:before
+            @include triangle ( $dark-green, solid, 10px, transparent, solid, 10px, transparent, solid, 10px, transparent, solid, 10px )
+            bottom: auto
+            content: " "
+            left: auto
+            margin: 0
+            position: absolute
+            right: 20px
+            top: 0
         li
-            height: 4.6875vw !important
+            display: flex
+            float: none
+            height: 40px
+            transition: all 0.5s ease
+            position: relative
+            width: 100%
             form
-                height: 3.87324vw !important
-                left: 45% !important
-                margin: 0.543478vw auto !important
-                top: 0px !important
-                position: static !important
+                display: block
+                height: 30px
+                margin: 5px auto
+                position: static
+                width: 72.8125vw
                 fieldset
+                    display: block
+                    height: 100%
+                    width: 100%
                     select
-                        font-size: 2.5vw !important
-                        line-height: 2.8125vw !important
+                        @include font-mask( normal, 16px, 1em, $asap-regular, $text-municipality )
+                        display: block
+                        width: 100%
             a
-                font-size: 2.55vw !important
-                line-height: 4.6875vw !important
+                @include font-mask( normal, 16px, 40px, $asap-regular, $placeholder-color )
+                display: block
+                height: 100%
+                text-align: center
+                text-decoration: none
+                width: 100%
+        &.active
+            display: block !important
+            height: auto
+            transition: all 0.5s ease
+            li
+                transition: all 0.5s ease
+                &:hover
+                    background: #F5F5F5
+                    a
+                        color: $dark-green
 .banner
     position: static !important
     img
@@ -49,11 +96,12 @@ html,body
             padding: 0 4.6875vw !important
             width: 99.25vw !important
 footer
-    bottom: 14.538043478vw !important
-    position: absolute !important
+    bottom: -11px
+    height: 25px
+    position: absolute
     p
-        font-size: 2.5vw !important
-        line-height: 7.88043vw !important
+        font-size: 16px
+        line-height: 25px !important
 .desktop
     display: none !important
 .mobile
@@ -61,57 +109,81 @@ footer
 .page
     h1
         width: auto !important
-    h2
+    h2, h3
+        font-size: 15px
     section
         > p, ul li, ol li, ul li p, ol li p, ul li h3, ol li h3
             //font-size: 2.3988005997vw !important
         > ul li p, ol li p, ul li h3, ol li h3
             width: 97% !important
 .central
-    /*.B_crumbBox
+    .B_crumbBox
         clear: none
-        color: $text-municipality !important
+        color: $text-municipality
         float: left
-        font-size: 18px !important
-        line-height: 1.2em !important
-        margin: 1.04167vw 0 0 !important
-        padding: 0px !important
-        width: auto !important
+        font-size: 14px
+        line-height: 1.2em
+        margin: 1.04167vw 0 0
+        padding: 0px
+        width: auto
         li
-            font-size: 18px !important
-            line-height: 1.2em !important
+            font-size: 14px
+            line-height: 1.2em
             a
-                color: $text-municipality !important
+                color: $text-municipality
                 span
         .slash_crumb
-            color: $text-municipality !important
-            font-size: 18px !important
-            line-height: 1.2em !important
+            color: $text-municipality
+            font-size: 14px
+            line-height: 1.2em
         .B_firstCrumb
         .B_homeCrumb
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            color: $text-municipality !important
-            font-size: 18px !important
-            line-height: 1.2em !important*/
+            color: $text-municipality
+            font-size: 14px
+            line-height: 1.2em
 label
     font-size: 3.5211267606vw
     margin: 3.5211267606vw 2.2887323944vw
 input[type="text"], input[type="email"], textarea
+    border-radius: 0
 input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
 .button
+    @include font-mask( normal, 16px, 1em, $asap-regular, $white-color )
+    background: $light_green
+    margin: 0 0 10px
+    padding: 10px 20px
+    -moz-appearance: none
+    -webkit-appearance: none
     &:hover
     &:active, &:visited
     &:disabled
+        color: $placeholder-color
 .alert
+    display: none
+    margin: 3.125vw 0 0
+    padding: 10px 4.5px
+    // min-width: 22.1875vw
+    width: auto
     .info
+        height: 16px
+        margin-right: 5px
+        width: 16px
     p
+        @include font-mask( normal, 16px, 1em, $asap-regular, $white-color )
+        float: left
+        margin: 0
+        width: auto
     &.success
+        background: $success-alert
     &.fail
+        background: $fail-alert
     &.info
+        background: $info-alert
 .year-picker-wrapper
     form
         fieldset

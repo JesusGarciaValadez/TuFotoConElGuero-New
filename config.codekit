@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19033",
+"creatorBuild": "19051",
 "files": {
 	"\/404.html": {
 		"fileType": 8192,
@@ -72340,6 +72340,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/Code\/templates\/sass\/custom-styles\/css\/photography-phablet-plus.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/photography-phablet-plus.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/Code\/templates\/sass\/custom-styles\/desktop\/contact.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -72452,6 +72461,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/events-phablet-landscape.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/events-phablet-landscape.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/events-phablet-landscape.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/Code\/templates\/sass\/custom-styles\/mobile\/events-phablet.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -72468,15 +72493,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/Code\/templates\/sass\/custom-styles\/mobile\/events-phablet_landscape.sass": {
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/home-mobile.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/events-phablet_landscape.sass",
-		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/events-phablet_landscape.css",
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/home-mobile.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/home-mobile.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -72484,31 +72509,31 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/Code\/templates\/sass\/custom-styles\/mobile\/home_mobile.sass": {
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/home-phablet-landscape.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/home_mobile.sass",
-		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/home_mobile.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": false
-		},
-	"\/Code\/templates\/sass\/custom-styles\/mobile\/home_phablet_landscape.sass": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 2,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/home_phablet_landscape.sass",
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/home-phablet-landscape.sass",
 		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/home_phablet_landscape.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/photography-mobile-landscape.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/photography-mobile-landscape.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/photography-mobile-landscape.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -72532,15 +72557,47 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/Code\/templates\/sass\/custom-styles\/mobile\/photography-mobile_landscape.sass": {
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet-landscape-plus.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/photography-mobile_landscape.sass",
-		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/photography-mobile_landscape.css",
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet-landscape-plus.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/photography-phablet-landscape-plus.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet-landscape.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet-landscape.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/photography-phablet-landscape.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet-plus.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet-plus.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/photography-phablet-plus.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -72557,22 +72614,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet.sass",
 		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/photography-phablet.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": false
-		},
-	"\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet_landscape.sass": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 2,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/photography-phablet_landscape.sass",
-		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/photography-phablet_landscape.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -72749,6 +72790,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_general_phablet_landscape.sass",
 		"outputAbbreviatedPath": "\/Code\/templates\/sass\/css\/_general_phablet_landscape.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_general_phablet_landscape_plus.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_general_phablet_landscape_plus.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/css\/_general_phablet_landscape_plus.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/Code\/templates\/sass\/default-styles\/_general_phablet_plus.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/default-styles\/_general_phablet_plus.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/css\/_general_phablet_plus.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -73394,10 +73467,6 @@
 			}
 		},
 	"jsLintFlags2": {
-		"ass": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -73406,15 +73475,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"closure": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"continue": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"debug": {
+		"couch": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -73422,75 +73483,27 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"eqeq": {
+		"es6": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"evil": {
+		"eval": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"forin": {
+		"for": {
 			"active": 0,
 			"flagValue": -1
-			},
-		"indent": {
-			"active": 0,
-			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
-		"newcap": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"nomen": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"plusplus": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"properties": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"regexp": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"rhino": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sloppy": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"stupid": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sub": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"todo": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unparam": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"vars": {
+		"this": {
 			"active": 0,
 			"flagValue": -1
 			},

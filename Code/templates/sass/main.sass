@@ -46,72 +46,77 @@
     //@import "custom-styles/desktop/home_hd"
 
 /* ==========================================================================
+   iPhone 5/5S Orientation
+   ========================================================================== */
+//@media only screen and (min-width: em( 320, 16 )) and (max-width: em( 568, 16 ))
+@media only screen and (min-width: em( 320, 16 )) and (orientation: portrait)
+    @import "default-styles/_general_mobile"
+    @import "custom-styles/mobile/photography-mobile"
+    @import "custom-styles/mobile/contact-mobile"
+    @import "custom-styles/mobile/privacy-policy-mobile"
+    .button
+        background-color: salmon
+
+//@media only screen and (min-width: em( 320, 16 )) and (max-width: em( 568, 16 )) and (orientation: landscape)
+@media only screen and (min-width: em( 568, 16 )) and (orientation: landscape)
+    @import "default-styles/_general_mobile_landscape"
+    @import "custom-styles/mobile/photography-mobile-landscape"
+    .button
+        background-color: silver
+
+/* ==========================================================================
+   iPhone 6 Orientations
+   ========================================================================== */
+//@media only screen and (min-width: em( 375, 16 )) and (max-width: em( 667, 16 ))
+@media only screen and (min-width: em( 375, 16 )) and (orientation: portrait)
+    @import "custom-styles/mobile/photography-phablet"
+    .button
+        background-color: black
+
+//@media only screen and (min-width: em( 375, 16 )) and (max-width: em( 667, 16 )) and (orientation: landscape)
+@media only screen and (min-width: em( 667, 16 )) and (orientation: landscape)
+    @import "default-styles/_general_phablet_landscape"
+    @import "custom-styles/mobile/photography-phablet-landscape"
+    .button
+        background-color: red
+
+/* ==========================================================================
+   iPhone 6 Plus Orientation
+   ========================================================================== */
+//@media only screen and (min-width: em( 414, 16 )) and (max-width: em( 736, 16 ))
+@media only screen and (min-width: em( 414, 16 )) and (orientation: portrait)
+    @import "custom-styles/mobile/home-mobile"
+    @import "custom-styles/mobile/contact-mobile"
+    @import "custom-styles/mobile/privacy-policy-mobile"
+    @import "custom-styles/mobile/events-phablet"
+    @import "custom-styles/mobile/photography-phablet-plus"
+    .button
+        background-color: goldenrod
+
+//@media only screen and (min-width: em( 414, 16 )) and (max-width: em( 736, 16 )) and (orientation: landscape)
+@media only screen and (min-width: em( 736, 16 )) and (orientation: landscape)
+    @import "default-styles/_general_phablet_landscape_plus"
+    @import "custom-styles/mobile/home-phablet-landscape"
+    @import "custom-styles/mobile/contact-mobile"
+    @import "custom-styles/mobile/privacy-policy-mobile"
+    @import "custom-styles/mobile/events-phablet-landscape"
+    @import "custom-styles/mobile/photography-phablet-landscape-plus"
+    .button
+        background-color: navy
+
+/* ==========================================================================
    iPad Landscape Orientation
    ========================================================================== */
-@media only screen and (max-width: em( 1023, 16 )) and (orientation:landscape)
-
-@media only screen and (max-width: em( 1023, 16 )) and (orientation:portrait)
+@media only screen and (min-width: em( 768, 16 )) and (max-width: em( 1023, 16 ))
     @import "default-styles/_general_tablet"
 
-    @import "custom-styles/mobile/home_mobile"
+    @import "custom-styles/mobile/home-mobile"
     @import "custom-styles/tablet/contact-tablet"
     @import "custom-styles/mobile/privacy-policy-mobile"
     @import "custom-styles/tablet/events-tablet"
     @import "custom-styles/tablet/photography-tablet"
 
-/* ==========================================================================
-   iPhone 6 Plus Landscape Orientation
-   ========================================================================== */
-@media only screen and (max-width: em( 736, 16 )) and (orientation:landscape)
-    @import "default-styles/_general_mobile"
-    @import "default-styles/_general_mobile_landscape"
-    @import "default-styles/_general_phablet"
-    @import "default-styles/_general_phablet_landscape"
-
-    @import "custom-styles/mobile/home_phablet_landscape"
-    @import "custom-styles/mobile/contact-mobile"
-    @import "custom-styles/mobile/privacy-policy-mobile"
-    @import "custom-styles/mobile/events-phablet_landscape"
-    @import "custom-styles/mobile/photography-phablet_landscape"
-
-@media only screen and (max-width: em( 736, 16 )) and (orientation:portrait)
-    @import "default-styles/_general_phablet"
-
-    @import "custom-styles/mobile/home_mobile"
-    @import "custom-styles/mobile/contact-mobile"
-    @import "custom-styles/mobile/privacy-policy-mobile"
-    @import "custom-styles/mobile/events-phablet"
-    @import "custom-styles/mobile/photography-phablet"
-
-/* ==========================================================================
-   iPhone 6 Landscape Orientation
-   ========================================================================== */
-@media only screen and (max-width: em( 667, 16 )) and (orientation:landscape)
-    @import "default-styles/_general_mobile"
-    @import "default-styles/_general_mobile_landscape"
-    @import "default-styles/_general_phablet_landscape"
-
-    @import "custom-styles/mobile/photography-phablet_landscape"
-
-@media only screen and (max-width: em( 667, 16 )) and (orientation:portrait)
-    @import "default-styles/_general_phablet"
-
-    @import "custom-styles/mobile/photography-mobile"
-
-/* ==========================================================================
-   iPhone 5/5S Landscape Orientation
-   ========================================================================== */
-@media only screen and (max-width: em( 568, 16 )) and (orientation:landscape)
-    @import "default-styles/_general_mobile_landscape"
-
-    @import "custom-styles/mobile/photography-mobile_landscape"
-
-@media only screen and (max-width: em( 568, 16 ))
-    @import "default-styles/_general_mobile"
-
-    @import "custom-styles/mobile/photography-mobile"
-    @import "custom-styles/mobile/contact-mobile"
-    @import "custom-styles/mobile/privacy-policy-mobile"
+@media only screen and (min-width: em( 768, 16 )) and (max-width: em( 1023, 16 )) and (orientation: landscape)
 
 /* ==========================================================================
    Print styles.

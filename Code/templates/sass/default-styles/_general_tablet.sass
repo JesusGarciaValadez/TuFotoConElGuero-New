@@ -195,36 +195,6 @@ input[placeholder],
 ::-moz-placeholder,/* firefox 19+ */
 input:-moz-placeholder
     @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $placeholder-color )
-.button
-    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
-    background: $light_green !important
-    padding: 1.5625vw 3.125vw
-    -moz-appearance: none
-    &:hover
-    &:active, &:visited
-    &:disabled
-        @include font-mask( normal, 5vw, 5.625vw, $asap-regular, $placeholder-color )
-.alert
-    @include font-mask( normal, 2.5vw, 2.8125vw, $asap-regular, $white-color )
-    margin: 3.125vw 0 0
-    min-width: 22.1875vw
-    padding: 1.40625vw 3.125vw !important
-    width: auto
-    .info
-        height: 2.5vw
-        margin-right: 1.71875vw
-        width: 2.5vw
-    p
-        @include font-mask( normal, 2.5vw !important, 2.8125vw !important, $asap-regular !important, $white-color !important )
-        float: left
-        margin: 0
-        width: auto
-    &.success
-        background: $success-alert
-    &.fail
-        background: $fail-alert
-    &.info
-        background: $info-alert
 .year-picker-wrapper
     float: right
     margin: 1.5625vw 1.25vw 1.5625vw 0

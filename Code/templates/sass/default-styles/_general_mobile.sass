@@ -129,7 +129,7 @@ footer
 .desktop
     display: none !important
 .mobile
-    display: block
+    display: block !important
 .page
     h1
         box-sizing: border-box
@@ -141,6 +141,8 @@ footer
         width: auto
         &:after
             content: " /"
+    h2
+        text-align: center
     h2, h3
         box-sizing: border-box
         display: block
@@ -159,7 +161,7 @@ footer
 .central
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality !important )
+        @include font-mask( normal, 14px !important, 1.2em, $asap-regular, $text-municipality !important )
         box-sizing: border-box
         display: block
         float: left !important
@@ -169,7 +171,7 @@ footer
         width: auto !important
         white-space: nowrap
         li
-            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality !important )
+            @include font-mask( normal, 14px !important, 1.2em, $asap-regular, $text-municipality !important )
             display: inline-block
             list-style: none inside
             padding: 0 !important
@@ -178,7 +180,7 @@ footer
                 text-decoration: none
                 span
         .slash_crumb
-            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality !important )
+            @include font-mask( normal, 14px !important, 1.2em, $asap-regular, $text-municipality !important )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -189,7 +191,7 @@ footer
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 15px !important, 1.2em, $asap-regular, $text-municipality !important )
+            @include font-mask( normal, 14px !important, 1.2em, $asap-regular, $text-municipality !important )
 label
     @include font-mask( normal, 5vw !important, 1em, $asap-regular, $dark_green )
     box-sizing: border-box
@@ -197,6 +199,7 @@ label
 input[type="text"], input[type="email"], textarea
     @include font-mask( normal, 1.3671875vw, 1.5625vw, $asap-regular, $placeholder-color )
     border: 1px solid $placeholder-color !important
+    border-radius: 0
     float: none
     margin: 0 auto
     -webkit-appearance: none
@@ -206,27 +209,28 @@ input[placeholder],
 input:-moz-placeholder
     @include font-mask( normal, 5vw, 1em, $asap-regular, $placeholder-color )
 .button
-    @include font-mask( normal, 18px, 1em, $asap-regular, $white-color )
-    background: $light_green !important
+    @include font-mask( normal, 16px, 1em, $asap-regular, $white-color )
+    background: $light_green
+    margin: 0 0 10px
     padding: 10px 20px
     -moz-appearance: none
     -webkit-appearance: none
     &:hover
     &:active, &:visited
     &:disabled
+        color: $placeholder-color
 .alert
-    @include font-mask( normal, 5.625vw, 1.2em, $asap-regular, $white-color )
-    margin: 6.25vw 0 0
-    min-width: 44.375vw
-    padding: 2.8125vw 3.125vw
-    position: relative
-    width: 82%
+    display: none
+    margin: 3.125vw 0 0
+    padding: 10px 4.5px
+    // min-width: 22.1875vw
+    width: auto
     .info
-        height: 5vw
-        margin-right: 3.4375vw
-        width: 5vw
+        height: 16px
+        margin-right: 5px
+        width: 16px
     p
-        @include font-mask( normal, 5vw !important, 5.625vw !important, $asap-regular !important, $white-color !important )
+        @include font-mask( normal, 16px, 1em, $asap-regular, $white-color )
         float: left
         margin: 0
         width: auto

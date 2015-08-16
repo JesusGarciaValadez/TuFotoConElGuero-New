@@ -5,19 +5,15 @@
             h1
                 display: inline-block
                 float: left
-            .B_crumbBox
-                margin: 1.5625vw 0 1.5625vw 4.6875vw !important
-                white-space: normal
-                width: 89.0625vw !important
-            .return
-                margin-left: 4.6875vw
             .principal-photography
-                border: 0 none transparent
+                border: 0px none transparent
+                box-sizing: border-box
+                clear: both
                 display: block
                 float: left
-                margin: 6.25vw auto 26.5625vw
+                margin: 0 auto 26.5625vw
                 position: relative
-                width: 100%
+                width: 100vw
                 .navigator
                     display: inline-block
                     height: 15.625vw
@@ -33,9 +29,7 @@
                         padding: 0
                         width: 100%
                         a
-                            font-size: 15.625vw
                             height: 100%
-                            line-height: 12.5vw
                             width: 100%
                             .arrow-big
                 .prev
@@ -47,19 +41,19 @@
                     display: block
                     height: auto
                     margin: 0 auto
-                    width: 90.625vw
+                    width: 79.6875vw
                     img
                         border: 1.5625vw solid $white-color
                         box-sizing: border-box
-                        height: auto
-                        width: 100%
+                        height: 60.546875vw
+                        width: 79.6875vw
                     .display
                         box-sizing: border-box
                         display: block
                         height: auto
                         margin: 6.25vw auto 0
                         position: relative
-                        width: 100%
+                        width: 78.75vw
                         p
                             @include font-mask( normal, 4.375vw, 6.25vw, $asap-regular, $dark_green )
                             box-sizing: border-box
@@ -70,9 +64,9 @@
                 border: 0
                 bottom: 0
                 box-sizing: border-box
-                display: block
+                display: flex
                 float: none
-                height: 15.625vw
+                height: 12.077294686vw
                 margin: 0
                 opacity: 1
                 padding: 0
@@ -85,19 +79,17 @@
                     transition: all 0.3s ease 0.3s
                 ul
                     align-content: space-between
-                    display: flex
-                    flex-flow: row nowrap
-                    height: 15.625vw
+                    height: 50px
                     margin: 0
                     padding: 0
                     width: 100%
                     z-index: 10
                     .social-button
-                        align-self: stretch
-                        float: none
+                        align-self: center
+                        display: block
+                        float: left
                         height: 100%
                         margin: 0 !important
-                        padding: 0
                         width: 25%
                         &:nth-child( 1 )
                             background: #405A97
@@ -113,29 +105,21 @@
                             height: 100%
                             img, svg
                                 align-self: center
+                                box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
                                 display: block
                                 float: none
-                                margin: 0 auto
-                            svg
-                                height: 14.0625vw
-                                width: 14.0625vw
-                            img
                                 height: 9.375vw
+                                margin: 0 auto
                                 width: 9.375vw
                             span
-                                @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 display: none
+                                @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
-                    background-color: #fff
-                    bottom: 62.5vw
-                    box-sizing: border-box
+                    bottom: 80px
                     display: none
-                    left: 0
                     margin-top: 0
-                    padding: 0px 4.6875vw 10px
-                    position: relative
-                    width: 100%
+                    position: absolute
                     fieldset
                         .input
                             @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $placeholder-color )
@@ -145,7 +129,6 @@
                                 height: auto !important
                                 &.error
                                     border: 1px solid red
-                                    box-shadow: 0 0 2px 0 red
                         .email
                             margin: 6.25vw 0
                             width: 75vw
@@ -155,13 +138,15 @@
                                 height: auto
                                 margin: 0
                 .alert
-                    bottom: 28.125vw // 90px
-                    left: 35.9375vw // 115px
-                    width: 59.375vw // 190px
-                    &.success, &.fail
-                        display: flex
-                    svg
-                        align-self: center
+                    display: none
+                    flex-flow: row nowrap
+                    float: none
+                    margin: 0
+                    position: absolute
+                    right: unset
+
+                    bottom: 129px
+                    left: 125px
+                    width: 270px
     footer
-        bottom: 15.625vw  // 45px
-        z-index: 10
+        bottom: 12.077294686vw !important
