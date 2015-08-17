@@ -11,7 +11,7 @@
                 border: 0 none transparent
                 display: block
                 float: none
-                margin: 6.25vw auto 26.5625vw
+                margin: 6.25vw auto 0
                 position: relative
                 .navigator
                     display: inline-block
@@ -125,15 +125,9 @@
                                 @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
                                 margin: 0 0 0 6.25vw
                 form
-                    background-color: $white-color
-                    bottom: unset !important
-                    box-shadow: 0 0 15px -3px #000
-                    left: -1040% !important
-                    margin-top: 0
-                    padding: 0px 10px 10px !important
-                    position: absolute !important
-                    top: 0 !important
-                    width: 400px !important
+                    left: 20%
+                    top: 9.9184782609vw // 73px
+                    width: 400px
                     fieldset
                         .input
                             @include font-mask( normal, 16px, 25px, $asap-regular, $placeholder-color )
@@ -153,11 +147,10 @@
                                 margin: 0
                                 padding: 1.4992503748vw 2.9985007496vw !important
                 .alert
-                    left: 220px
-                    margin: 0 !important
-                    position: fixed !important
-                    top: 130px
-                    width: 296px
+                    left: 256px
+                    padding: 11px 4.5px
+                    top: 16.576086957vw // 122px
+                    width: 300px
                     p
             .return
                 -moz-appearance: none
@@ -165,6 +158,6 @@
                 margin-bottom: 2.9985007496vw
                 margin-left: 4.4977511244vw
     footer
-        bottom: 14.542728636vw !important
+        //bottom: 14.542728636vw !important
     .banner
         z-index: 0

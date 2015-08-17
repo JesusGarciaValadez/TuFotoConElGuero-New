@@ -1,120 +1,19 @@
 .photo
     .wrapper
-        z-index: 1
         .central
-            h1
-                display: inline-block
-                float: left
-            .principal-photography
-                border: 0px none transparent
-                box-sizing: border-box
-                clear: both
-                display: block
-                float: left
-                margin: 0 auto 26.5625vw
-                position: relative
-                width: 100vw
-                .navigator
-                    display: inline-block
-                    height: 15.625vw
-                    margin: ( -15.625vw / 2 ) 0 0
-                    padding: 0
-                    position: absolute
-                    top: 28.125vw
-                    width: 15.625vw
-                    z-index: 2
-                    li
-                        height: 100%
-                        list-style: none inside
-                        padding: 0
-                        width: 100%
-                        a
-                            height: 100%
-                            width: 100%
-                            .arrow-big
-                .prev
-                    left: 9.375vw
-                .next
-                    right: 9.375vw
-                figure
-                    border: 0 none transparent
-                    display: block
-                    height: auto
-                    margin: 0 auto
-                    width: 79.6875vw
-                    img
-                        border: 1.5625vw solid $white-color
-                        box-sizing: border-box
-                        height: 60.546875vw
-                        width: 79.6875vw
-                    .display
-                        box-sizing: border-box
-                        display: block
-                        height: auto
-                        margin: 6.25vw auto 0
-                        position: relative
-                        width: 78.75vw
-                        p
-                            @include font-mask( normal, 4.375vw, 6.25vw, $asap-regular, $dark_green )
-                            box-sizing: border-box
-                            margin: 1.25vw
-                            width: auto
             aside
-                background-color: transparent
-                border: 0
-                bottom: 0
-                box-sizing: border-box
-                display: flex
-                float: none
                 height: 12.077294686vw
                 margin: 0
-                opacity: 1
-                padding: 0
-                position: fixed
-                transition: all 0.3s ease 0.3s
-                width: 100vw
                 z-index: 9
-                &.share
-                    opacity: 1
-                    transition: all 0.3s ease 0.3s
                 ul
-                    align-content: space-between
-                    height: 50px
-                    margin: 0
-                    padding: 0
-                    width: 100%
-                    z-index: 10
                     .social-button
-                        align-self: center
-                        display: block
-                        float: left
-                        height: 100%
-                        margin: 0 !important
-                        width: 25%
-                        &:nth-child( 1 )
-                            background: #405A97
-                        &:nth-child( 3 )
-                            background: #2CB203
-                        &:nth-child( 4 )
-                            background: #55A3DF
-                        &:nth-child( 6 )
-                            background: #757575
                         a
-                            color: $dark_green
-                            display: flex
-                            height: 100%
-                            img, svg
-                                align-self: center
-                                box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
-                                display: block
-                                float: none
-                                height: 9.375vw
-                                margin: 0 auto
-                                width: 9.375vw
-                            span
-                                display: none
-                                @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
-                                margin: 0 0 0 6.25vw
+                            svg
+                                height: 10.869565217vw // 45px / 4.14;
+                                width: 10.869565217vw // 45px / 4.14;
+                            img
+                                height: 7.2463768116vw // 30px / 4.14;
+                                width: 7.2463768116vw // 30px / 4.14;
                 form
                     bottom: 80px
                     display: none
@@ -138,14 +37,7 @@
                                 height: auto
                                 margin: 0
                 .alert
-                    display: none
-                    flex-flow: row nowrap
-                    float: none
-                    margin: 0
-                    position: absolute
-                    right: unset
-
-                    bottom: 129px
+                    bottom: 90px
                     left: 125px
                     width: 270px
     footer

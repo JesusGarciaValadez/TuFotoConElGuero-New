@@ -1,56 +1,21 @@
 .photo
     .wrapper
-        z-index: 1
         .central
-
             aside
-                bottom: 0
                 height: 12.077294686vw
                 margin: 0
-                padding: 0
-                width: 100vw
-                &.share
-                    opacity: 1
-                    transition: all 0.3s ease 0.3s
                 ul
-                    align-content: space-between
                     height: 50px
-                    margin: 0
-                    padding: 0
-                    width: 100%
-                    z-index: 10
                     .social-button
-                        align-self: center
-                        display: block
-                        float: left
-                        height: 100%
-                        margin: 0 !important
-                        width: 25%
-                        &:nth-child( 1 )
-                            background: #405A97
-                        &:nth-child( 3 )
-                            background: #2CB203
-                        &:nth-child( 4 )
-                            background: #55A3DF
-                        &:nth-child( 6 )
-                            background: #757575
                         a
-                            color: $dark_green
-                            display: flex
-                            height: 100%
-                            img, svg
-                                align-self: center
-                                box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
-                                display: block
-                                float: none
-                                height: 9.375vw
-                                margin: 0 auto
-                                width: 9.375vw
-                            span
-                                display: none
-                                @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
-                                margin: 0 0 0 6.25vw
+                            svg
+                                height: 12vw // 45px / 3.75;
+                                width: 12vw // 45px / 3.75;
+                            img
+                                height: 8vw // 30px / 3.75;
+                                width: 8vw // 30px / 3.75;
                 form
+                    bottom: 56vw // 210px
                     margin-top: 0
                     fieldset
                         .input
@@ -70,6 +35,9 @@
                                 height: auto
                                 margin: 0
                 .alert
-                    bottom: 112px
-                    left: 117px
-                    width: 240px
+                    bottom: 87px
+                    left: 112px
+                    width: 246px
+    footer
+        bottom: 12vw !important // 45px
+        z-index: 10 !important
