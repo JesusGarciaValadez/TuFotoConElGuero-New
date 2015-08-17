@@ -120,7 +120,7 @@ footer
     position: fixed
     width: 100%
     p
-        @include font-mask( normal, 2.5vw, 1em, $asap-bold, $white-color )
+        @include font-mask( normal, 2.5vw, 40px !important, $asap-bold, $white-color )
 .desktop
     display: none !important
 .mobile
@@ -129,7 +129,7 @@ section.central
     margin-bottom: 24.739583333vw !important
     width: 100%
     .B_crumbBox
-        @include font-mask( normal, 2.1875vw, 4.6875vw, $asap-regular, $text-municipality )
+        @include font-mask( normal, 18px !important, 1em !important, $asap-regular, $text-municipality )
         box-sizing: border-box
         clear: none
         display: block
@@ -147,8 +147,9 @@ section.central
                 color: $text-municipality
                 text-decoration: none
                 span
+                    font-size: 18px !important
         .slash_crumb
-            @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-municipality )
+            @include font-mask( normal, 18px !important, 1em !important, $asap-regular, $text-municipality )
             &:nth-child( 1n )
                 display: none
             &:nth-child( 1n + 3 )
@@ -159,13 +160,13 @@ section.central
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            @include font-mask( normal, 2.1875vw, 0.75em, $asap-regular, $text-municipality )
+            @include font-mask( normal, 18px !important, 1em !important, $asap-regular, $text-municipality )
 .page
     h1
-        @include font-mask( normal, 3.125vw, 4.6875vw, $asap-bold, $dark-green )
+        @include font-mask( normal, 18px !important, 1em !important, $asap-bold, $dark-green )
         box-sizing: border-box
         float: left
-        margin: 1.5625vw 1.3020833333vw 1.5625vw 4.53125vw
+        margin: 12px 5px 12px 35px
         overflow: hidden
         padding: 0
         text-overflow: ellipsis
@@ -175,6 +176,12 @@ section.central
         box-sizing: border-box
         margin-top: 0 !important
         padding: 0 35px
+        text-align: center
+    h2, h3
+        box-sizing: border-box
+        display: block
+        font-size: 18px !important
+        padding: 0 10px
     section
         > p
             @include font-mask( normal, 13px !important, 1.2em, $asap-regular, $text-normal )

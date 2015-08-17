@@ -5,13 +5,15 @@
             h1
                 display: inline-block
                 float: left
+            .B_crumbBox
+                margin: 12px 0 12px 25px !important
             .return
-                margin-bottom: 3.2552083333vw
+                margin: 0 0 24px 25px
             .principal-photography
                 border: 0 none transparent
                 display: block
                 float: none
-                margin: 6.25vw auto 26.5625vw
+                margin: 6.25vw auto 0
                 position: relative
                 .navigator
                     display: inline-block
@@ -124,22 +126,18 @@
                     bottom: 140px
                     box-sizing: border-box
                     display: none
-                    left: 140px
+                    left: 0
                     margin-top: 0px
                     padding: 20px
                     position: absolute
                     fieldset
                         .input
-                            @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $placeholder-color )
-                            height: auto !important
-                            width: 100% !important
+                            font-size: 16px
+                            line-height: 25px
                             input
-                                height: auto !important
                                 &.error
-                                    border: 1px solid red
-                                    box-shadow: 0 0 2px 0 red
                         .email
-                            margin: 0
+                            margin: 0 0 10px
                             width: 75vw
                         .submit
                             width: 26.5625vw
@@ -148,12 +146,11 @@
                                 margin: 0
                                 padding: 10px 20px
                 .alert
-                    bottom: 22.135416667vw // 170px
-                    margin: 0
-                    position: absolute
-                    left: 39.0625vw // 300px
-                    width: 44.375vw
+                    bottom: 20.833333333vw // 160px
+                    left: 634px
+                    width: 634px
     .banner
         display: none
     footer
-        bottom: 7.8125vw // 60px
+        bottom: 7.8125vw !important // 60px
+

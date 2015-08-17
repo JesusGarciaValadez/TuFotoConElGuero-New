@@ -20,7 +20,9 @@
                         margin: 0 auto
                         width: 90%
                         label
-                            margin: 4.6875vw 9.6875vw 4.6875vw 4.0625vw !important
+                            font-size: 16px !important
+                            line-height: 1em !important
+                            margin: 10px 40px 10px 16px !important
                         sup
                             display: none
                         input[type="text"], input[type="email"], textarea
@@ -28,17 +30,21 @@
                             &.error
                                 border: 1px solid red
                         input[type="text"], input[type="email"]
-                            @include font-mask( normal, 4.375vw, 5vw, $asap-regular, $placeholder-color )
-                            height: 9.375vw
+                            @include font-mask( normal, 16px, 25px, $asap-regular, $placeholder-color )
+                            height: 25px
                             width: 81.875vw
                         textarea
-                            @include font-mask( normal, 4.375vw, 5vw, $asap-regular, $placeholder-color )
+                            @include font-mask( normal, 16px, 25px, $asap-regular, $placeholder-color )
                             display: block
                             float: none
-                            height: 59.375vw
+                            height: 150px
                             width: 81.875vw
                         input[type="submit"]
                             display: block
-                            float: none
-                            margin: 3.75vw auto !important
+                            float: right
+                            margin: 3.75vw 17px 3.75vw auto !important
                     .alert
+                        bottom: 0
+                        margin-bottom: 16px
+                        padding: 10px 4.5px !important
+                        width: 246px

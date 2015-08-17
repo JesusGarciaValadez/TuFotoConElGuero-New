@@ -63,6 +63,29 @@
     @import "custom-styles/mobile/photography-mobile-landscape"
     .button
         background-color: silver
+    .contact-form
+        .wrapper
+            >section.central
+                margin-bottom: 0
+                h1
+                form
+                    fieldset
+                        width: 100% !important
+                        &:first-child
+                            .input
+                                &:first-child
+                                    label
+                                        margin-top: 0 !important
+                        .input
+                            width: 100% !important
+                            label
+                                margin: 10px 0 !important
+                            input[type="text"], input[type="email"], textarea
+                                margin: 0 auto
+                                &.error
+                                    border: 1px solid red
+                            input[type="text"], input[type="email"]
+                            textarea
 
 /* ==========================================================================
    iPhone 6 Orientations
@@ -76,6 +99,7 @@
 //@media only screen and (min-width: em( 375, 16 )) and (max-width: em( 667, 16 )) and (orientation: landscape)
 @media only screen and (min-width: em( 667, 16 )) and (orientation: landscape)
     @import "custom-styles/mobile/photography-phablet-landscape"
+    @import "custom-styles/mobile/contact-mobile"
     .button
         background-color: red
 
@@ -85,7 +109,6 @@
 //@media only screen and (min-width: em( 414, 16 )) and (max-width: em( 736, 16 ))
 @media only screen and (min-width: em( 414, 16 )) and (orientation: portrait)
     @import "custom-styles/mobile/home-mobile"
-    @import "custom-styles/mobile/contact-mobile"
     @import "custom-styles/mobile/privacy-policy-mobile"
     @import "custom-styles/mobile/events-phablet"
     @import "custom-styles/mobile/photography-phablet-plus"
@@ -95,7 +118,6 @@
 //@media only screen and (min-width: em( 414, 16 )) and (max-width: em( 736, 16 )) and (orientation: landscape)
 @media only screen and (min-width: em( 736, 16 )) and (orientation: landscape)
     @import "custom-styles/mobile/home-phablet-landscape"
-    @import "custom-styles/mobile/contact-mobile"
     @import "custom-styles/mobile/privacy-policy-mobile"
     @import "custom-styles/mobile/events-phablet-landscape"
     @import "custom-styles/mobile/photography-phablet-landscape-plus"
@@ -107,12 +129,13 @@
    ========================================================================== */
 @media only screen and (min-width: em( 768, 16 )) and (max-width: em( 1023, 16 ))
     @import "default-styles/_general_tablet"
-
     @import "custom-styles/mobile/home-mobile"
     @import "custom-styles/tablet/contact-tablet"
     @import "custom-styles/mobile/privacy-policy-mobile"
     @import "custom-styles/tablet/events-tablet"
     @import "custom-styles/tablet/photography-tablet"
+    .button
+        background-color: violet
 
 @media only screen and (min-width: em( 768, 16 )) and (max-width: em( 1023, 16 )) and (orientation: landscape)
 
