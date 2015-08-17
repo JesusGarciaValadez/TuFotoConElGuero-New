@@ -186,12 +186,15 @@
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles",
-		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/mobile"
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/mobile",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/tablet",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/default-styles"
 	],
 	"file_history":
 	[
-		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/tablet/photography-tablet.sass",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/main.sass",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/.gitignore",
+		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/sass/custom-styles/tablet/photography-tablet.sass",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/kit/events.kit",
 		"/Applications/MAMP/htdocs/tuFotoConElGuero/Code/templates/kit/event.kit",
 		"/Applications/MAMP/htdocs/new_giovanni_bojanini_landing/Code/templates/index.jade",
@@ -316,8 +319,7 @@
 		"/Applications/MAMP/htdocs/boletin_axa/Code/chunks/dt_displayable_bulletin.html",
 		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_displayable_bulletin.kit",
 		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_downloadable_bulletin_blue_themed.kit",
-		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/form-of-september-2014-bulletin.kit",
-		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/dt_nav_menu_blue_themed.kit"
+		"/Applications/MAMP/htdocs/boletin_axa/Code/templates/kit/form-of-september-2014-bulletin.kit"
 	],
 	"find":
 	{
@@ -482,7 +484,7 @@
 		[
 			[
 				"",
-				"/Applications/MAMP/htdocs/boletin_axa/boletin-axa.sublime-project"
+				"/Applications/MAMP/htdocs/tufotoconelguero-new/TuFotoConElGueroNew.sublime-workspace"
 			]
 		],
 		"width": 380.0
@@ -504,7 +506,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 225.0,
+	"side_bar_width": 268.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

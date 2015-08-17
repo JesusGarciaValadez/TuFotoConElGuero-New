@@ -34,3 +34,12 @@
         width: $widthTop $widthRight $widthBottom $widthLeft
     box-sizing: border-box
     display: block
+@mixin clearfix ()
+    .clearfix:before,
+    .clearfix:after
+        content: " " /* 1 */
+        display: table /* 2 */
+    .clearfix:after
+        clear: both
+    .clearfix
+        *zoom: 1
