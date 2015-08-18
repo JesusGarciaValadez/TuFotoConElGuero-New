@@ -3,11 +3,12 @@
         .central
             h1
                 display: block
+                margin-left: 10px !important
                 &:after
                     content: "" !important
             form
                 clear: both
-                display: flex
+                display: flex !important
                 flex-flow: row nowrap
                 fieldset
                     align-self: stretch
@@ -38,6 +39,10 @@
                         input[type="submit"]
                             float: right
                             margin: 1.953125vw 2.44140625vw 0 1.953125vw
+                    .alert
+                        bottom: 103px
+                        left: 10px
+                        width: 385px
                     &:nth-child( 2n )
                         img
                             display: block
@@ -52,3 +57,4 @@
                         .input
                             label
                                 margin-left: 0
+

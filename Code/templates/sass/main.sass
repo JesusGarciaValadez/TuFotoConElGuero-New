@@ -31,16 +31,8 @@
    Modify as content requires.
    ========================================================================== */
 
-/* ==========================================================================
-   Desktop High Resolution
-   ========================================================================== */
-@media only screen and (min-width: em( 1024, 16 ))
+@media only screen and (min-width: em( 320, 16 ))
     @import "default-styles/_general"
-    @import "custom-styles/desktop/home"
-    @import "custom-styles/desktop/contact"
-    @import "custom-styles/desktop/privacy-policy"
-    @import "custom-styles/desktop/events"
-    @import "custom-styles/desktop/photography"
 
 /* ==========================================================================
    iPhone 5/5S Orientation
@@ -48,6 +40,7 @@
 //@media only screen and (min-width: em( 320, 16 )) and (max-width: em( 568, 16 ))
 @media only screen and (min-width: em( 320, 16 )) and (orientation: portrait)
     @import "default-styles/_general_mobile"
+    @import "custom-styles/mobile/home-mobile"
     @import "custom-styles/mobile/photography-mobile"
     @import "custom-styles/mobile/contact-mobile"
     @import "custom-styles/mobile/privacy-policy-mobile"
@@ -57,31 +50,11 @@
 //@media only screen and (min-width: em( 320, 16 )) and (max-width: em( 568, 16 )) and (orientation: landscape)
 @media only screen and (min-width: em( 568, 16 )) and (orientation: landscape)
     @import "default-styles/_general_mobile_landscape"
+    @import "custom-styles/mobile/home-mobile-landscape"
     @import "custom-styles/mobile/photography-mobile-landscape"
+    @import "custom-styles/mobile/contact-mobile-landscape"
     .button
         background-color: silver
-    .contact-form
-        .wrapper
-            >section.central
-                margin-bottom: 0
-                h1
-                form
-                    fieldset
-                        width: 100% !important
-                        &:first-child
-                            .input
-                                &:first-child
-                                    label
-                                        margin-top: 0 !important
-                        .input
-                            width: 100% !important
-                            label
-                                margin: 10px 0 !important
-                            input[type="text"], input[type="email"], textarea
-                                margin: 0 auto
-                                &.error
-                            input[type="text"], input[type="email"]
-                            textarea
 
 /* ==========================================================================
    iPhone 6 Orientations
@@ -89,13 +62,14 @@
 //@media only screen and (min-width: em( 375, 16 )) and (max-width: em( 667, 16 ))
 @media only screen and (min-width: em( 375, 16 )) and (orientation: portrait)
     @import "custom-styles/mobile/photography-phablet"
+    @import "custom-styles/mobile/contact-phablet"
     .button
         background-color: black
 
 //@media only screen and (min-width: em( 375, 16 )) and (max-width: em( 667, 16 )) and (orientation: landscape)
 @media only screen and (min-width: em( 667, 16 )) and (orientation: landscape)
     @import "custom-styles/mobile/photography-phablet-landscape"
-    @import "custom-styles/mobile/contact-mobile"
+    @import "custom-styles/mobile/contact-phablet-landscape"
     .button
         background-color: red
 
@@ -105,6 +79,7 @@
 //@media only screen and (min-width: em( 414, 16 )) and (max-width: em( 736, 16 ))
 @media only screen and (min-width: em( 414, 16 )) and (orientation: portrait)
     @import "custom-styles/mobile/home-mobile"
+    @import "custom-styles/mobile/contact-phablet-plus"
     @import "custom-styles/mobile/privacy-policy-mobile"
     @import "custom-styles/mobile/events-phablet"
     @import "custom-styles/mobile/photography-phablet-plus"
@@ -114,6 +89,7 @@
 //@media only screen and (min-width: em( 414, 16 )) and (max-width: em( 736, 16 )) and (orientation: landscape)
 @media only screen and (min-width: em( 736, 16 )) and (orientation: landscape)
     @import "custom-styles/mobile/home-phablet-landscape"
+    @import "custom-styles/mobile/contact-phablet-landscape-plus"
     @import "custom-styles/mobile/privacy-policy-mobile"
     @import "custom-styles/mobile/events-phablet-landscape"
     @import "custom-styles/mobile/photography-phablet-landscape-plus"
@@ -134,6 +110,21 @@
         background-color: violet
 
 @media only screen and (min-width: em( 768, 16 )) and (max-width: em( 1023, 16 )) and (orientation: landscape)
+
+/* ==========================================================================
+   Desktop High Resolution
+   ========================================================================== */
+@media only screen and (min-width: em( 1024, 16 ))
+    .desktop
+        display: block !important
+    .mobile
+        display: none !important
+    @import "default-styles/_general"
+    @import "custom-styles/desktop/home"
+    @import "custom-styles/desktop/contact"
+    @import "custom-styles/desktop/privacy-policy"
+    @import "custom-styles/desktop/events"
+    @import "custom-styles/desktop/photography"
 
 /* ==========================================================================
    Print styles.

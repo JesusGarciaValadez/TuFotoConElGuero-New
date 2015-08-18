@@ -241,9 +241,6 @@ footer
 .lt-ie9,.lt-ie8,.lt-ie7
     .gradient
         filter: none
-.desktop
-.mobile
-    display: none !important
 .page
     h1
         @include font-mask( normal, 1.953125vw, 1.2em, $asap-bold, $dark-green )
@@ -351,7 +348,7 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
     display: none
     text-overflow: ellipsis
 .button
-    @include font-mask( normal, 1.3671875vw, 1.7578125vw, $asap-regular, $white-color )
+    @include font-mask( normal, 1.5625vw, 1em, $asap-regular, $white-color )
     background: $light_green
     border: 0 none transparent
     border-radius: 0
@@ -367,13 +364,12 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
         @include font-mask( normal, 1.26953125vw, 1.46484375vw, $asap-regular, $placeholder-color )
         background: #D8D8D8
 .alert
-    @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $white-color )
     box-sizing: border-box
     bottom: 3.515625vw
     display: none
     left: 8.7890625vw
     margin: 1.95313vw 0 0 0
-    padding: 0.9765625vw 1.953125vw
+    padding: 0.48828125vw 0.9765625vw
     position: absolute
     transition: all 0.5s ease
     width: 29.296875vw
@@ -383,11 +379,11 @@ input:-moz-placeholder, input::-webkit-input-placeholder, input:-ms-input-placeh
     .info
         display: inline-block
         float: left
-        height: 2.34375vw
+        height: 1.5625vw
         margin-right: 1.171875vw
-        width: 2.34375vw
+        width: 1.5625vw
     p
-        @include font-mask( normal, 1.953125vw, 2.24609375vw, $asap-regular, $white-color )
+        @include font-mask( normal, 1.5625vw, 1em, $asap-regular, $white-color )
         float: left
         margin: 0
     &.success

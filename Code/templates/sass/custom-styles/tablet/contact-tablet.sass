@@ -1,50 +1,17 @@
 .contact-form
     .wrapper
         >section.central
-            margin-bottom: 26.041666667vw
+            margin-bottom: 0 !important
             h1
-                &:after
-                    content: '' !important
             form
-                display: block
                 fieldset
-                    display: block
-                    float: none
-                    margin: 0 auto
-                    position: relative
-                    width: 100%
-                    &:first-child
-                        .input
-                            &:first-child
-                                label
-                                    margin-top: 0 !important
                     .input
-
                         label
-                            margin: 3.125vw 4.84375vw !important
-                        sup
-                            display: none
-                        input[type="text"], input[type="email"], textarea
-                            margin: 0 auto
-                            &.error
-                                border: 1px solid red
-                        input[type="text"], input[type="email"]
-                            @include font-mask( normal, 2.6041666667vw, 2.5vw, $asap-regular, $placeholder-color )
-                            height: 4.6875vw
-                            width: 81.875vw
+                            box-sizing: border-box
+                            margin: 2.6041666667vw 0 !important // 20px 0
                         textarea
-                            @include font-mask( normal, 2.6041666667vw, 2.5vw, $asap-regular, $placeholder-color )
-                            border: 1px solid $text-municipality
-                            display: block
-                            float: none
-                            height: 59.375vw
-                            width: 81.875vw
-                        input[type="submit"]
-                            float: right
-                            margin: 3.125vw 9.9609375vw 0 3.125vw !important
+                            height: 22.135416667vw // 170px
                     .alert
-                        bottom: 36px
-                        left: 70px !important
-                        margin: 0
-                        position: relative
-                        width: 63%
+                        bottom: 12px
+                        left: 67px
+                        width: 541px
