@@ -166,6 +166,9 @@
             _childrens              = $('.pageList li');
             _childrensLength        = _childrens.length / 2;
             _childrensWidth         = _childrens.width();
+            console.log( _childrens );
+            console.log( _childrensLength );
+            console.log( _childrensWidth );
 
             //  Obtain a sample of the margin used for the items in paginator
             //  And parse like an integer to strip px measurements

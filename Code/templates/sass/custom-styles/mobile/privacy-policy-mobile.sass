@@ -1,16 +1,24 @@
 .privacy-policy
     .wrapper
         >section.central
-            margin-bottom: 10vw
+            box-sizing: border-box
+            margin-bottom: 25vw
+            padding: 0 0.48828125vw
+            h1, h2, p, ul li, ol li, ul li p, ol li p, ul li h3, ol li h3
+                box-sizing: border-box
+                padding: 0 3.125vw !important
             h1
                 clear: both
                 display: block
                 float: none !important
+                margin-left: 0
+                margin-right: 0
                 &:after
                     content: '' !important
             h2
                 display: block !important
+                text-align: left
             p, ul li, ol li, ul li p, ol li p, ul li h3, ol li h3
-                //font-size: 3.4375vw
+                font-size: 12px
                 &:empty
                     display: none
