@@ -176,8 +176,6 @@
             //  Calculate the width in px
             _paginatorWidthPX       =(_childrensLength * _childrensWidth) +(_childrensMarginTotal);
 
-            console.log( 'Paginator width: ', ( _paginatorWidthPX * _childrensLength ) );
-            console.log( 'Margin total: ' + _childrensMarginTotal );
             //  Make the calcule to translate in viewport width
             _paginatorWidthVW       = _paginatorWidthPX /(window.innerWidth * 0.01);
             $('.pageList:visible').width( _paginatorWidthVW + 'vw');
