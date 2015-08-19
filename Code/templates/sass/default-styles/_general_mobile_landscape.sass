@@ -107,44 +107,66 @@ footer
 .mobile
     display: block !important
 .page
+    h1
+        box-sizing: border-box
+        float: left
+        margin: 7px 2px 7px 5px
+        overflow: hidden
+        padding: 0
+        text-overflow: ellipsis
+        white-space: nowrap
+        width: auto
+        &:after
+            content: " /"
+    h2
+        text-align: center
+    h2, h3
+        box-sizing: border-box
+        display: block
+        padding: 0 10px
     h1, h2, h3
         font-size: 16px
         line-height: 1em
-    h1
-        width: auto !important
     section
         > p, ul li, ol li, ul li p, ol li p, ul li h3, ol li h3
-            //font-size: 2.3988005997vw !important
+            @include font-mask( normal, 12px, 1.2em, $asap-regular, $text-normal )
         > ul li p, ol li p, ul li h3, ol li h3
             width: 97% !important
 .central
+    width: 100%
     .B_crumbBox
-        clear: none
-        color: $text-municipality
-        float: left
-        font-size: 14px
-        line-height: 1.2em
-        margin: 1.04167vw 0 0
-        padding: 0px
-        width: auto
+        @include font-mask( normal, 15px, 1em, $asap-regular, $text-municipality )
+        box-sizing: border-box
+        display: block
+        float: left !important
+        margin: 7px 2px
+        overflow: hidden
+        padding: 0 !important
+        text-overflow: ellipsis
+        width: auto !important
+        white-space: nowrap
         li
-            font-size: 14px
-            line-height: 1.2em
+            @include font-mask( normal, 15px, 1em, $asap-regular, $text-municipality )
+            display: inline-block
+            list-style: none inside
+            padding: 0 !important
             a
                 color: $text-municipality
+                text-decoration: none
                 span
         .slash_crumb
-            color: $text-municipality
-            font-size: 14px
-            line-height: 1.2em
+            @include font-mask( normal, 15px, 1em, $asap-regular, $text-municipality )
+            &:nth-child( 1n )
+                display: none
+            &:nth-child( 1n + 3 )
+                display: inline
         .B_firstCrumb
+            display: none
         .B_homeCrumb
         .B_crumb
         .B_lastCrumb
         .B_currentCrumb
-            color: $text-municipality
-            font-size: 14px
-            line-height: 1.2em
+            @include font-mask( normal, 15px, 1em, $asap-regular, $text-municipality )
 label
     font-size: 3.5211267606vw
     margin: 3.5211267606vw 2.2887323944vw
@@ -197,12 +219,51 @@ input:-moz-placeholder
             select
                 option
 .paging
+    clear: both
+    display: block
+    float: none
+    margin: 10px auto
+    width: 100%
     .pageList
+        display: block
+        float: none
+        margin: 0 auto
+        padding: 0
         li
+            background: #F5F5F5
+            box-sizing: border-box
+            display: inline-block
+            float: left
+            height: 30px
+            margin: 0 1.25px 0
+            padding: 7px 10px
+            width: 29px
+            &:first-child
+                margin: 0 1.25px 0 0
+            &:last-child
+                margin: 0 0 0 1.25px
+            &.control
+                height: 30px
+                padding: 0
+                width: 29px
+            &.current
+                background: $light-green
+                a
+                    color: $white-color
             a
+                @include font-mask( normal, 16px, 1em, $asap-bold, $placeholder-color )
+                display: block
+                height: 100%
+                text-align: center
+                text-decoration: none
+                width: 100%
                 .arrow
+                    height: 100%
+                    fill: $placeholder-color
+                    width: 100%
         &:empty
+            margin: 0 auto
 .return
-    margin: 0 0 0 4.0625vw
+    margin: 0 0 0 0.8802816901vw // 0 0 0 5px
 .wrapper
     position: relative
