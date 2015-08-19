@@ -3,114 +3,38 @@
         z-index: 1
         .central
             h1
-                display: inline-block
-                float: left
             .B_crumbBox
                 margin: 12px 0 12px 25px !important
             .return
                 margin: 0 0 24px 25px
             .principal-photography
-                border: 0 none transparent
-                display: block
                 float: none
                 margin: 6.25vw auto 0
-                position: relative
                 .navigator
-                    display: inline-block
-                    height: 10.416666667vw
-                    margin: ( -15.625vw / 2 ) 0 0
-                    padding: 0
-                    position: absolute
-                    top: 29.947916667vw
-                    width: 10.416666667vw
-                    z-index: 2
-                    li
-                        height: 100%
-                        list-style: none inside
-                        padding: 0
-                        width: 100%
-                        a
-                            font-size: 10.416666667vw // 80px
-                            height: 100%
-                            line-height: 8.59375vw // 66px
-                            width: 100%
-                            .arrow-big
+                    top: 50% !important
                 .prev
-                    left: 5.2083333333vw // 40px
+                    left: 4.5572916667vw // 35px
                 .next
-                    right: 5.2083333333vw // 40px
+                    right: 4.5572916667vw // 35px
                 figure
-                    border: 0 none transparent
-                    display: block
-                    height: auto
-                    margin: 0 auto
                     width: 94.010416667vw // 722px
                     img
-                        border: 1.5625vw solid $white-color
-                        box-sizing: border-box
                     .display
-                        box-sizing: border-box
-                        display: block
-                        height: auto
                         margin: 6.25vw auto 0
-                        position: relative
                         width: 78.75vw
                         p
-                            @include font-mask( normal, 4.375vw, 6.25vw, $asap-regular, $dark_green )
-                            box-sizing: border-box
-                            margin: 1.25vw
-                            width: auto
             aside
-                border: 0
-                bottom: 0
-                box-sizing: border-box
-                display: flex
-                float: none
                 height: 7.8125vw //60px
-                margin: 0
-                opacity: 1
-                padding: 0
-                position: fixed
-                transition: all 0.3s ease 0.3s
                 width: 100vw
-                z-index: 9
-                &.share
-                    opacity: 1
-                    transition: all 0.3s ease 0.3s
                 h2
-                    display: none
                 ul
-                    align-content: space-between
                     height: 100%
-                    margin: 0
-                    padding: 0
-                    width: 100%
-                    z-index: 10
                     .social-button
-                        align-self: center
-                        display: block
-                        float: left
                         height: 100%
-                        margin: 0 !important
                         width: 25%
-                        &:nth-child( 1 )
-                            background: #405A97
-                        &:nth-child( 3 )
-                            background: #2CB203
-                        &:nth-child( 4 )
-                            background: #55A3DF
-                        &:nth-child( 6 )
-                            background: #757575
                         a
-                            color: $dark_green
-                            display: flex
                             height: 100%
                             img, svg
-                                align-self: center
-                                box-shadow: 0 0 0 0 rgba(0,0,0,0.0)
-                                display: block
-                                float: none
-                                margin: 0 auto
                             svg
                                 height: 7.1614583333vw // 55px
                                 width: 7.1614583333vw // 55px
@@ -119,17 +43,9 @@
                                 width: 4.5572916667vw // 35px
                             span
                                 display: none
-                                @include font-mask( normal, 4.375vw, 9.375vw, $asap-regular, $dark_green )
-                                margin: 0 0 0 6.25vw
                 form
-                    background-color: rgb(255, 255, 255)
-                    bottom: 140px
-                    box-sizing: border-box
-                    display: none
-                    left: 0
-                    margin-top: 0px
+                    bottom: 111px
                     padding: 20px
-                    position: absolute
                     fieldset
                         .input
                             font-size: 16px
@@ -142,12 +58,10 @@
                         .submit
                             width: 26.5625vw
                             .button
-                                height: auto
-                                margin: 0
-                                padding: 10px 20px
                 .alert
-                    bottom: 20.833333333vw // 160px
-                    left: 634px
+                    display: block
+                    bottom: 17.057291667vw // 131px
+                    left: 114px
                     width: 634px
     .banner
         display: none
