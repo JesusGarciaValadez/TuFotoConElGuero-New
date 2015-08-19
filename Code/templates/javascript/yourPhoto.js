@@ -161,11 +161,11 @@
         resizePaginator:    function() {
             var _childrensLength, _childrensWidth,
                 _childrensMargin, _childrensMarginTotal,
-                _paginatorWidthPX, _paginatorWidthVW,
+                _paginatorWidthPX = 0, _paginatorWidthVW,
                 _childrens;
             _childrens              = $('.pageList:visible li');
-            _childrensLength        = _childrens.length / 2;
-            _childrensWidth         = _childrens.width();
+            _childrensLength        = _childrens.length;
+            _childrensWidth         = $('.pageList:visible li.control').eq( 0 ).width();
 
             //  Obtain a sample of the margin used for the items in paginator
             //  And parse like an integer to strip px measurements
@@ -176,9 +176,11 @@
             //  Calculate the width in px
             _paginatorWidthPX       =(_childrensLength * _childrensWidth) +(_childrensMarginTotal);
 
+            console.log( 'Paginator width: ', ( _paginatorWidthPX * _childrensLength ) );
+            console.log( 'Margin total: ' + _childrensMarginTotal );
             //  Make the calcule to translate in viewport width
             _paginatorWidthVW       = _paginatorWidthPX /(window.innerWidth * 0.01);
-            $('.paging, .pageList').width(_paginatorWidthVW + 'vw');
+            $('.pageList:visible').width( _paginatorWidthVW + 'vw');
         },
         showAlert:          function(_class, _text) {
             $('.alert').addClass(_class);
