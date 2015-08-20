@@ -72726,6 +72726,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/privacy-policy-mobile-landscape.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/privacy-policy-mobile-landscape.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/privacy-policy-mobile-landscape.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/Code\/templates\/sass\/custom-styles\/mobile\/privacy-policy-mobile.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
