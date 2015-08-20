@@ -5,6 +5,8 @@
             h1
                 display: inline-block
                 float: left
+            .B_crumbBox, .return
+                margin-left: 2.8169014085vw // 16px
             .principal-photography
                 border: 0 none transparent
                 display: block
@@ -17,17 +19,30 @@
                     margin: ( -15.625vw / 2 ) 0 0
                     padding: 0
                     position: absolute
-                    top: 32.206119162vw
+                    top: 42.253521127vw
                     width: 8.6956521739vw
                     z-index: 2
                     li
+                        height: 100%
+                        list-style: none inside
+                        padding: 0
+                        width: 100%
                         a
-                            line-height: 75px !important
+                            background-color: rgba( 255, 255, 255, 0.8 )
+                            border-radius: 50%
+                            color: $text-municipality
+                            display: block
+                            font-size: 8.8028169014vw
+                            height: 100%
+                            line-height: 7.0422535211vw
+                            text-align: center
+                            text-decoration: none
+                            width: 100%
                             .arrow-big
                 .prev
                     left: 9.375vw
                 .next
-                    right: 9.375vw
+                    right: 14.084507042vw
                 figure
                     border: 0 none transparent
                     display: block
@@ -120,6 +135,7 @@
                 form
                     background-color: $white-color
                     bottom: auto
+                    display: none
                     box-shadow: 0 0 15px -3px #000
                     height: auto
                     left: 10%

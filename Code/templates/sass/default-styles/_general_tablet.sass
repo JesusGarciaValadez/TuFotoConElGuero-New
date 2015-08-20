@@ -216,24 +216,35 @@ input:-moz-placeholder
                 padding: 0
                 option
 .paging
-    float: none
+    clear: both !important
     display: block
-    margin: 0 auto
+    float: none !important
+    height: 40px
+    margin: 0px auto
     width: 100%
     .pageList
         display: block
         float: none
-        margin: 0 auto
+        margin: 0 auto 10px
         li
-            height: 6.25vw
-            margin: 0 0.9375vw 0
-            width: 6.25vw
+            box-sizing: border-box
+            height: 40px
+            margin: 0 6px 0
+            padding: 0
+            width: 40px !important
             &:first-child
-                margin: 0 1.875vw 0 0
+                margin: 0 6px 0 0
             &:last-child
-                margin: 0 0 0 1.875vw
+                margin: 0 0 0 6px
+            &.control
+                height: 40px
+                padding: 0
+                width: 40px
             a
-                @include font-mask( normal, 3.125vw, 6.25vw, $asap-bold, $placeholder-color )
+                @include font-mask( normal, 20px, 40px, $asap-bold, $placeholder-color )
+                clear: both
+                display: block
+                float: left
                 height: 100%
                 width: 100%
                 .arrow

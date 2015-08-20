@@ -71884,6 +71884,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/Code\/templates\/css\/main.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/Code\/templates\/event.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -72534,6 +72543,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/Code\/templates\/sass\/custom-styles\/mobile\/events-mobile-landscape.sass": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/mobile\/events-mobile-landscape.sass",
+		"outputAbbreviatedPath": "\/Code\/templates\/sass\/custom-styles\/css\/events-mobile-landscape.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/Code\/templates\/sass\/custom-styles\/mobile\/events-mobile.sass": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -73075,7 +73100,7 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
+		"shouldRunBless": 0,
 		"useLibsass": false
 		},
 	"\/config.core.php": {
