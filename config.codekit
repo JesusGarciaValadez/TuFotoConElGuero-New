@@ -71884,15 +71884,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Code\/templates\/css\/main.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/css\/main.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/Code\/templates\/event.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -72021,7 +72012,7 @@
 		},
 	"\/Code\/templates\/javascript\/vendor\/jquery-2.1.3.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery-2.1.3.js",
 		"outputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/min\/jquery-2.1.3.min.js",
@@ -72043,7 +72034,7 @@
 		},
 	"\/Code\/templates\/javascript\/vendor\/jquery.jscrollpane.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.jscrollpane.js",
 		"outputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/min\/jquery.jscrollpane.min.js",
@@ -72076,7 +72067,7 @@
 		},
 	"\/Code\/templates\/javascript\/vendor\/jquery.mousewheel.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/jquery.mousewheel.js",
 		"outputAbbreviatedPath": "\/Code\/templates\/javascript\/vendor\/min\/jquery.mousewheel.min.js",
@@ -73098,7 +73089,7 @@
 		"outputAbbreviatedPath": "\/assets\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 3,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": false
