@@ -55,7 +55,7 @@
         <table width="600" border="0" align="center" cellpadding="1" cellspacing="1">
             <tr>
                 <td align="center">
-                    <img src="http://www.tufotoconelguero.com/css/img/logotipo.png" alt="Tu foto con El Güero.Com">
+                    <img src="http://www.tufotoconelguero.com/assets/img/home/logotipo.png" alt="Tu foto con El Güero.Com">
                 </td>
             </tr>
             <tr>
@@ -67,7 +67,7 @@
             </tr>
             <tr>
                 <td align="center">
-                    <img src="[+image+]" alt="Tu foto con El Güero.Com" />
+                    <img src="[+image+]" alt="Tu foto con El Güero.Com" width="600" />
                 </td>
             </tr>
             <tr>

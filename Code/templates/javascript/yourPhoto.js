@@ -171,7 +171,7 @@
             //  And parse like an integer to strip px measurements
             _childrensMargin        = Math.ceil(parseFloat(_childrens.eq(0).css('margin-right')));
             //  Calculate the total of the margin used for all the items in paginator
-            _childrensMarginTotal   = _childrensMargin *((_childrensLength * 2) - 2);
+            _childrensMarginTotal   = _childrensMargin *((_childrensLength * 2) - 1);
 
             //  Calculate the width in px
             _paginatorWidthPX       =(_childrensLength * _childrensWidth) +(_childrensMarginTotal);
