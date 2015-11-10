@@ -1,0 +1,53 @@
+<!--@import head-->
+    <body class="page events">
+<!--@import svgMenu-->
+
+        <div class="wrapper">
+<!--@import header-internal-->
+
+            <section class="central clearfix">
+                <h1>[[*pagetitle]]</h1>
+<!--@import breadcrumbs-->
+<!--@import yearpicker-->
+<!--@import returnButton-->
+                <div class="desktop">
+<!--@import pagination-->
+                </div>
+                <h2>[[*longtitle]]</h2>
+
+                <div class="clearfix">
+                    [[!getPage?
+                        &element=`getResources`
+                        &parents=`[[*id]]`
+                        &limit=`12`
+                        &tplPath=`[[++assets_path]]../Code/chunks/`
+                        &tpl=`@FILE events-figure-item.html`
+                        &includeTVs=`1`
+                        &processTVs=`1`
+                        &tvPrefix=``
+                        &showUnpublished=`0`
+                        &showHidden=`0`
+                        &includeContent=`1`
+                        &hideContainers=`0`
+                        &pageVarKey=`page`
+                        &where=`{"template:=":5}`
+                        &sortby=`{"publishedon":"ASC","menuindex":"ASC","createdon":"ASC"}`
+                        &pageNavOuterTpl=`[[+prev]][[+pages]][[+next]]`
+                        &pagePrevTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-left-small" viewBox="5 4 26 26"><use xlink:href="#arrow-left-small"></use></svg></a></li>`
+                        &pageNextTpl=`<li class="control"><a[[+classes]][[+title]] href="[[++site_url]][[+href]]"><svg class="arrow arrow-right-small" viewBox="5 4 26 26"><use xlink:href="#arrow-right-small"></use></svg></a></li>`
+                        &pageNavTpl=`<li[[+classes]]><a[[+classes]][[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
+                        &pageActiveTpl=`<li[[+activeClasses]][[+activeClasses:default=` class="current"`]]><a[[+title]] href="[[++site_url]][[+href]]">[[+pageNo]]</a></li>`
+                    ]]
+                </div>
+                <div class="mobile">
+<!--@import pagination-->
+                </div>
+            </section>
+<!--@import footer-mobile-->
+
+<!--@import banner-->
+
+<!--@import footer-desktop-->
+
+        </div>
+<!--@import html_end-->
